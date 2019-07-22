@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/b9f2ae3468.js"></script>
+  <title>Introduction</title>
+    
+</head>
+<body>
+  <!-- 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Intro <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="data-strategy.html">Data Strategy</a>
+            <a class="nav-item nav-link" href="#">About Us</a>
+            </div>
+        </div>
+        <form class="nav-search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="form-control" type="text" placeholder="search" aria-label="Search">
+        </form>
+    </nav> -->
+    <div class="container-fluid" style="max-width: 90%;">
+        <div class="jumbotron-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">PHAC</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Read More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Intro</a>
+                                <a class="dropdown-item" href="#">Vision</a>
+                                <a class="dropdown-item" href="#">What We Heard</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Targets</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Phase 1: 2019-2020</a>
+                                <a class="dropdown-item" href="#">Phase 2: 2021-2022</a>
+                                <a class="dropdown-item" href="#">Phase 3: 2023-2024</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="nav-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input class="form-control" type="text" placeholder="search" aria-label="Search">
+                    </form>
+                </div>                        
+            </nav>
+            <h2 class="phac" >PHAC<br>Data<br>Strategy</h2>
+            <h4 class="phac">Building a foundation for<br>the future of data. |</h4>
+            <hr class="my-4">
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <h3 class="phac">Overview</h3>
+                <p class="phac">Data is the raw ingredient for surveillance, evidence, research and science. It plays a key role in informing
+                    interventions and policy decisions, and supporting core public health functions. PHAC’s Data Strategy represents an
+                    opportunity to examine our fundamental relationship with data and improve upon how we collect, analyze, share and manage
+                    our data. This interactive website will show you what we heard from employees across PHAC and how we plan to achieve
+                    the goals in the Data Strategy over the next five years.
+                </p>
+                <h3 class="phac">Elements</h3>
+                <p class="phac">The Data Strategy consists of six elements with specific goals and targets for each: 1) Data Governance; 2) Data as 
+                    an Asset; 3) Data Infrastructure; 4) Science-based Analytics; 5) Partnerships and Collaboration; and 6) People and Culture.
+                </p>
+                <h3 class="phac">Implementation Plan</h3>
+                <p class="phac">Over the next five years, the PHAC Data Strategy has set specific actions, organized by phases, that the Agency will
+                        undertake in order to achieve our ultimate goal of PHAC being a world class organization with respect to public health data.
+                </p>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#introModal">
+                    Intro
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visionModal">
+                    Vision
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#whatWeHeardModal">
+                    What We Heard
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#targetModal">
+                    Targets
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#phase1Modal">
+                    Phase 1
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#phase2Modal">
+                    Phase 2
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#phase3Modal">
+                    Phase 3
+                </button>
+                <div class="modal fade bd-example-modal-lg" id="introModal" tabindex="-1" role="dialog" aria-labelledby="introModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="introModalLabel">Intro</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <p class="def">Curabitur laoreet venenatis pharetra. Curabitur a tortor rutrum libero egestas cursus. Integer et hendrerit purus. 
+                                        Fusce facilisis et augue sit amet aliquet. Aliquam porta id nibh a iaculis. Morbi lobortis fringilla rhoncus. 
+                                        Nullam maximus ex at augue faucibus, sed imperdiet elit feugiat.
+                                    </p>
+                                    <br>
+                                    <div style="text-align: center">
+                                        <video width="480" height="360" controls>
+                                            <source src="movie.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="visionModal" tabindex="-1" role="dialog" aria-labelledby="visionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="visionModalLabel">Vision</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <p class="def">Sed vitae elit at quam tempus interdum. Duis tincidunt enim vitae luctus pharetra. Vestibulum ante ipsum primis in faucibus orci luctus
+                                        et ultrices posuere cubilia Curae; Morbi gravida massa ligula, quis posuere magna interdum id. Proin accumsan semper sollicitudin.
+                                    </p>                
+                                    <h4 class="nocap">A message from the CPHO and President</h4>
+                                    <video width="480" height="360" controls>
+                                        <source src="movie.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                    </video>
+                                    <br>
+                                    <br>
+                                    <h4 class="nocap">When you think of data, what comes to mind...</h4>
+                                    <div class="container">
+                                        <div class="row pb-4">
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <div class="card text-white">
+                                                    <img class="card-img" src="canada.jpg" alt="canada">
+                                                    <div class="card-img-overlay ovl">
+                                                        <h4 class="card-title">Card Title</h4>
+                                                        <p class="card-text">This is the card text</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="whatWeHeardModal" tabindex="-1" role="dialog" aria-labelledby="whatWeHeardModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="whatWeHeardModalLabel">What We Heard</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <p class="def">Sed vitae elit at quam tempus interdum. Duis tincidunt enim vitae luctus pharetra. Vestibulum ante ipsum primis in faucibus orci 
+                                        luctus et ultrices posuere cubilia Curae.
+                                    </p>
+                                    <img src="#" alt="Infographic">
+                                    <h4 class="nocap" style="letter-spacing: 0.1em">Data As An Asset</h4>
+                                    <p class="def">Sed vitae elit at quam tempus interdum. Duis tincidunt enim vitae luctus pharetra. Vestibulum ante ipsum primis in faucibus orci 
+                                        luctus et ultrices posuere cubilia Curae.
+                                    </p>
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators my-4">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+                                                    <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="center-block" src="..." alt="First Slide">
+                                                <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                                                    <h3>Data as an Asset</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et quam a turpis condimentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                            Vivamus ante mauris, accumsan non tincidunt vitae, ultrices a dui.</p>
+                                                </div>
+                                                
+                                            </div>                                    
+                                            <div class="carousel-item">
+                                                <img class="center-block" src="..." alt="Second Slide">
+                                                <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                                                    <h3>Future of Data</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et quam a turpis condimentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                        Vivamus ante mauris, accumsan non tincidunt vitae, ultrices a dui.</p>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="center-block" src="..." alt="Third Slide">
+                                                <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                                                <h3>Thoughts on Data</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et quam a turpis condimentum vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                    Vivamus ante mauris, accumsan non tincidunt vitae, ultrices a dui.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Left and right controls -->
+                                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                            <span class="fa fa-chevron-left icon-prev" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                            <span class="fa fa-chevron-right icon-next" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="targetModal" tabindex="-1" role="dialog" aria-labelledby="targetModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="targetModalLabel">Targets</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <h4 class="targ">Data Governance</h4>
+                                    <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                        pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                        libero quis nulla volutpat egestas.
+                                    </p>
+                                    <h4 class="targ">Data As An Asset</h4>
+                                    <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                        pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                        libero quis nulla volutpat egestas.
+                                    </p>
+                                    <h4 class="targ">Data Infrastructure</h4>
+                                    <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                        pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                        libero quis nulla volutpat egestas.
+                                    </p>
+                                    <h4 class="targ">Science-Based Analytics</h4>
+                                    <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                        pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                        libero quis nulla volutpat egestas.
+                                    </p>
+                                    <h4 class="targ">Partnerships & Collaboration</h4>
+                                    <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                        pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                        libero quis nulla volutpat egestas.
+                                    </p>
+                                    <h4 class="targ">People & Culture</h4>
+                                    <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                        pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                        libero quis nulla volutpat egestas.
+                                    </p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="phase1Modal" tabindex="-1" role="dialog" aria-labelledby="phase1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="phase1ModalLabel">Phase 1: 2019-2020</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <h4 class="quote">"Establishing a renewed data identity!"</h4>
+                                    <br>
+                                    <h4 class="targ">Data Governance</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Data As An Asset</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Data Infrastructure</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Science-Based Analytics</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Partnerships & Collaboration</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">People & Culture</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="phase2Modal" tabindex="-1" role="dialog" aria-labelledby="phase2ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="phase2ModalLabel">Phase 2: 2021-2022</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <h4 class="quote">"Establishing a renewed data identity!"</h4>
+                                    <br>
+                                    <h4 class="targ">Data Governance</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Data As An Asset</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Data Infrastructure</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Science-Based Analytics</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Partnerships & Collaboration</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">People & Culture</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade bd-example-modal-lg" id="phase3Modal" tabindex="-1" role="dialog" aria-labelledby="phase3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="phase3ModalLabel">Phase 3: 2023-2024</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <h4 class="quote">"Establishing a renewed data identity!"</h4>
+                                    <br>
+                                    <h4 class="targ">Data Governance</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Data As An Asset</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Data Infrastructure</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Science-Based Analytics</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">Partnerships & Collaboration</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                    <h4 class="targ">People & Culture</h4>
+                                    <ol>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                            libero quis nulla volutpat egestas.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

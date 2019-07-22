@@ -1,0 +1,159 @@
+body {
+  background-color: rgb(103, 202, 226);
+}
+
+h2.phac{
+  text-align: left;
+  color:white;
+  font-size: 48px;
+  letter-spacing: 0.15em;
+  font-family:Consolas, monaco, monospace; 
+  text-transform: uppercase;
+  font-weight: 550;
+}
+
+h3.phac{
+  text-align: left;
+  color:white;
+  font-size: 36px;
+  letter-spacing: 0.225em;
+  font-family:Consolas, monaco, monospace; 
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h4.phac{
+  text-align: left;
+  color:white;
+  font-size: 22px;
+  letter-spacing: 0.225em;
+  font-family:courier, courier new, serif;
+  font-weight: 200;
+}
+
+p.phac{
+  color: black;
+  text-align: left;
+  font-family:courier, courier new, serif;
+  font-size: 22px;
+}
+
+h4.targ{
+  text-align: left;
+  text-transform: uppercase;
+  font-family:Consolas, monaco, monospace;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+
+h4.nocap{
+  text-align: left;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 22px;
+}
+
+h4.quote{
+  text-align: left;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.1em;
+  font-weight: bolder;
+}
+
+p.targ{
+  color: black;
+  text-align: left;
+  font-family:courier, courier new, serif;
+  font-size: 20px;
+}
+
+p.def{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  font-size: 18px;
+}
+
+h4.modal-title {
+  text-transform: uppercase;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+ol {
+  padding-left: 2.25em;
+}
+
+
+li{
+  color: black;
+  text-align: left;
+  font-family:courier, courier new, serif;
+  font-size: 20px;
+}
+
+.nav-item{
+  color:white;
+  font-size: 20;
+  font-family:Consolas, monaco, monospace;
+}
+
+.nav-search { 
+  position: relative; 
+}
+
+.nav-search input { 
+  text-indent: 16px;
+}
+
+.nav-search .fa-search { 
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 15px;
+}
+
+.carousel-inner > .carousel-item > img {
+    margin: auto;
+    width:400px;
+    height:400px;
+  }
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.modal-lg {
+    max-width: 60%;
+}
+
+.ovl {
+    opacity: 0;
+}
+
+.ovl:hover{
+    opacity: 1;
+    background: rgb(0,0,0,0.6);
+    transition-duration: 700ms;
+
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 20px 20px;
+  }
+
+.row2{
+    border: 2px solid black;
+  }
+
+ .card{
+      margin: 0 auto;
+      float: none;
+  }
+
+.card-text .card-title{
+    color: white;
+}
