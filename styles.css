@@ -1,5 +1,5 @@
-body {
-  background-color: rgb(103, 202, 226);
+html, body {
+  overflow-x: hidden;
 }
 
 h2.phac{
@@ -25,16 +25,16 @@ h3.phac{
 h4.phac{
   text-align: left;
   color:white;
-  font-size: 22px;
-  letter-spacing: 0.225em;
-  font-family:courier, courier new, serif;
+  font-size: 24px;
+  letter-spacing: 0.25em;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
 }
 
 p.phac{
   color: black;
   text-align: left;
-  font-family:courier, courier new, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
 }
 
@@ -63,7 +63,7 @@ h4.quote{
 p.targ{
   color: black;
   text-align: left;
-  font-family:courier, courier new, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -73,21 +73,28 @@ p.def{
   font-size: 18px;
 }
 
-h4.modal-title {
+h4.collapse-title {
   text-transform: uppercase;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 0.1em;
 }
 
-ol {
+ol.phase {
   padding-left: 2.25em;
 }
 
+ol.carousel-indicators{
+  margin-bottom: -1rem;
+}
+
+.carousel-indicators li{
+  background-color: rgb(14, 132, 161)
+}
 
 li{
   color: black;
   text-align: left;
-  font-family:courier, courier new, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -112,7 +119,7 @@ li{
   font-size: 15px;
 }
 
-.carousel-inner > .carousel-item > img {
+/* .carousel-inner > .carousel-item > img {
     margin: auto;
     width:400px;
     height:400px;
@@ -123,7 +130,7 @@ li{
     left: 0;
     top: 0;
 }
-
+ */
 .modal-lg {
     max-width: 60%;
 }
@@ -145,10 +152,6 @@ li{
     padding: 20px 20px;
   }
 
-.row2{
-    border: 2px solid black;
-  }
-
  .card{
       margin: 0 auto;
       float: none;
@@ -156,4 +159,54 @@ li{
 
 .card-text .card-title{
     color: white;
+}
+
+body{
+  background-color: rgb(103, 202, 226);
+}
+
+.row.over {
+  padding-bottom: 1em;
+  background-color: rgb(103, 202, 226);
+}
+
+.row.elem {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgb(20, 158, 191);
+}
+
+.row.impl {
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgb(0,206,255);
+}
+
+.hexagon {
+  position: relative;
+  width: 100px; 
+  height: 57.74px;
+  background-color: #ffffff;
+  margin: 28.87px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 28.87px solid #ffffff;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 28.87px solid #ffffff;
 }
