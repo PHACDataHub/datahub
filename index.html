@@ -79,146 +79,155 @@
                 </p> 
             </div>
             <div class="col">
-                <div class="button-wrap">
-                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#introCollapse">
-                        Intro
-                    </button>
-                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#visionCollapse">
-                        Vision
-                    </button>
-                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#whatWeHeardCollapse">
-                        What We Heard
-                    </button>
-                </div>
-                <div class="overview">
-                    <div class="collapse multi-collapse" id="introCollapse">
-                        <div class="card card-body">
-                            <div class="container">
-                                <h4 class="collapse-title">Intro</h4>
-                                <p class="def">Curabitur laoreet venenatis pharetra. Curabitur a tortor rutrum libero egestas cursus. Integer et hendrerit purus. 
-                                    Fusce facilisis et augue sit amet aliquet. Aliquam porta id nibh a iaculis. Morbi lobortis fringilla rhoncus. 
-                                    Nullam maximus ex at augue faucibus, sed imperdiet elit feugiat.
-                                </p>
-                                <br>
-                                <div style="text-align: center">
-                                    <video width="480" height="360" controls>
-                                        <source src="movie.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <br>
-                                <h4 class="nocap">Timeline</h4>
-                            </div>
-                        </div>
-                    </div>            
-                    <div class="collapse multi-collapse" id="visionCollapse">
-                            <div class="card card-body">
-                                <div class="container">
-                                    <h4 class="collapse-title">Vision</h4>
-                                    <p class="def">Sed vitae elit at quam tempus interdum. Duis tincidunt enim vitae luctus pharetra. Vestibulum ante ipsum primis in faucibus orci luctus
-                                        et ultrices posuere cubilia Curae; Morbi gravida massa ligula, quis posuere magna interdum id. Proin accumsan semper sollicitudin.
-                                    </p>                
-                                    <h4 class="nocap">A message from the CPHO and President</h4>
-                                    <video width="480" height="360" controls>
-                                        <source src="movie.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                    </video>
-                                    <br>
-                                    <br>
-                                    <h4 class="nocap">When you think of data, what comes to mind...</h4>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <br>
+                            <button type="button" class="btn hexagon" data-toggle="collapse" data-target="#introCollapse">
+                                Intro
+                            </button>
+                            <div class="collapse multi-collapse" id="introCollapse">
+                                <div class="card card-body">
                                     <div class="container">
-                                        <div class="row pb-4">
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Character 1.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Female head.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Character 2.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <h4 class="collapse-title">Intro</h4>
+                                        <p class="def">Curabitur laoreet venenatis pharetra. Curabitur a tortor rutrum libero egestas cursus. Integer et hendrerit purus. 
+                                            Fusce facilisis et augue sit amet aliquet. Aliquam porta id nibh a iaculis. Morbi lobortis fringilla rhoncus. 
+                                            Nullam maximus ex at augue faucibus, sed imperdiet elit feugiat.
+                                        </p>
+                                        <br>
+                                        <div style="text-align: center">
+                                            <video width="480" height="360" controls>
+                                                <source src="movie.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                            </video>
                                         </div>
-                                        <div class="row pb-4">
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Female head 2.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Character 3.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
+                                        <br>
+                                        <h4 class="nocap">Timeline</h4>
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <button type="button" class="btn hexagon offset" data-toggle="collapse" data-target="#visionCollapse">
+                                Vision
+                            </button>
+                            <div class="collapse multi-collapse" id="visionCollapse">
+                                <div class="card card-body">
+                                    <div class="container">
+                                        <h4 class="collapse-title">Vision</h4>
+                                        <p class="def">Sed vitae elit at quam tempus interdum. Duis tincidunt enim vitae luctus pharetra. Vestibulum ante ipsum primis in faucibus orci luctus
+                                            et ultrices posuere cubilia Curae; Morbi gravida massa ligula, quis posuere magna interdum id. Proin accumsan semper sollicitudin.
+                                        </p>                
+                                        <h4 class="nocap">A message from the CPHO and President</h4>
+                                        <video width="480" height="360" controls>
+                                            <source src="movie.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                        </video>
+                                        <br>
+                                        <br>
+                                        <h4 class="nocap">When you think of data, what comes to mind...</h4>
+                                        <div class="container">
+                                            <div class="row pb-4">
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Character 1.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
                                                         </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Female head.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="row pb-4">
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Character 2.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Female head.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
+                                                            </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Female head 2.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Character 2.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
                                                         </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm">
-                                                <div class="card text-white">
-                                                    <img class="card-img" src="Character 1.jpg" alt="...">
-                                                    <div class="card-img-overlay ovl">
-                                                        <h4 class="card-title">Card Title</h4>
-                                                        <p class="card-text">This is the card text</p>
+                                            <div class="row pb-4">
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Female head 2.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Character 3.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Female head.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-4">
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Character 2.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Female head 2.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <div class="card text-white">
+                                                        <img class="card-img" src="Character 1.jpg" alt="...">
+                                                        <div class="card-img-overlay ovl">
+                                                            <h4 class="card-title">Card Title</h4>
+                                                            <p class="card-text">This is the card text</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
-                        <div class="collapse multi-collapse" id="whatWeHeardCollapse">
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <button type="button" class="btn hexagon" data-toggle="collapse" data-target="#whatWeHeardCollapse">
+                                What We Heard
+                            </button>
+                            <div class="collapse multi-collapse" id="whatWeHeardCollapse">
                                 <div class="card card-body">
                                     <div class="container">
                                         <h4 class="collapse-title">What We Heard</h4>
@@ -270,10 +279,12 @@
                                             <span class="control-right" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
                                         </a>        
-                            </div>    
+                                    </div>    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>         
             </div>
         </div>
         <div class="row elem">
@@ -284,49 +295,48 @@
                 </p>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#targetCollapse">
+                <br>
+                <button type="button" class="btn hexagon offset" data-toggle="collapse" data-target="#targetCollapse">
                     Targets
                 </button>
-                <div col="elements">
-                    <div class="collapse multi-collapse" id="targetCollapse">
-                        <div class="card card-body">
-                            <div class="container">
-                                <h4 class="collapse-title">Targets</h4>
-                                <h4 class="targ">Data Governance</h4>
-                                <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                    libero quis nulla volutpat egestas.
-                                </p>
-                                <h4 class="targ">Data As An Asset</h4>
-                                <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                    libero quis nulla volutpat egestas.
-                                </p>
-                                <h4 class="targ">Data Infrastructure</h4>
-                                <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                    libero quis nulla volutpat egestas.
-                                </p>
-                                <h4 class="targ">Science-Based Analytics</h4>
-                                <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                    libero quis nulla volutpat egestas.
-                                </p>
-                                <h4 class="targ">Partnerships & Collaboration</h4>
-                                <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                    libero quis nulla volutpat egestas.
-                                </p>
-                                <h4 class="targ">People & Culture</h4>
-                                <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                    libero quis nulla volutpat egestas.
-                                </p>
-                            </div>
+                <div class="collapse multi-collapse" id="targetCollapse">
+                    <div class="card card-body">
+                        <div class="container">
+                            <h4 class="collapse-title">Targets</h4>
+                            <h4 class="targ">Data Governance</h4>
+                            <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                libero quis nulla volutpat egestas.
+                            </p>
+                            <h4 class="targ">Data As An Asset</h4>
+                            <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                libero quis nulla volutpat egestas.
+                            </p>
+                            <h4 class="targ">Data Infrastructure</h4>
+                            <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                libero quis nulla volutpat egestas.
+                            </p>
+                            <h4 class="targ">Science-Based Analytics</h4>
+                            <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                libero quis nulla volutpat egestas.
+                            </p>
+                            <h4 class="targ">Partnerships & Collaboration</h4>
+                            <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                libero quis nulla volutpat egestas.
+                            </p>
+                            <h4 class="targ">People & Culture</h4>
+                            <p class="targ">Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                libero quis nulla volutpat egestas.
+                            </p>
                         </div>
                     </div>
-                </div>    
-            </div>
+                </div>
+            </div>    
         </div>
         <div class="row impl">
             <div class="col">
@@ -336,310 +346,323 @@
                 </p>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#phase1Collapse">
-                    Phase 1
-                </button>
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#phase2Collapse">
-                    Phase 2
-                </button>
-                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#phase3Collapse">
-                    Phase 3
-                </button>
-                <div class="implementation">
-                    <div class="collapse multi-collapse" id="phase1Collapse">
-                        <div class="card card-body">
-                            <div class="container">
-                                    <h4 class="collapse-title">Phase 1: 2019-2020</h4>
-                                    <h4 class="quote">"Establishing a renewed data identity!"</h4>
-                                    <br>
-                                    <h4 class="targ">Data Governance</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Data As An Asset</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Data Infrastructure</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Science-Based Analytics</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Partnerships & Collaboration</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">People & Culture</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol> 
+                <br>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <button type="button" class="btn hexagon" data-toggle="collapse" data-target="#phase1Collapse">
+                                Phase 1
+                            </button>
+                            <div class="collapse multi-collapse" id="phase1Collapse">
+                                <div class="card card-body">
+                                    <div class="container">
+                                            <h4 class="collapse-title">Phase 1: 2019-2020</h4>
+                                            <h4 class="quote">"Establishing a renewed data identity!"</h4>
+                                            <br>
+                                            <h4 class="targ">Data Governance</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Data As An Asset</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Data Infrastructure</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Science-Based Analytics</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Partnerships & Collaboration</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">People & Culture</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="collapse multi-collapse" id="phase2Collapse">
-                        <div class="card card-body">
-                            <div class="container">
-                                    <h4 class="collapse-title">Phase 2: 2021-2022</h4>
-                                    <h4 class="quote">"Establishing a renewed data identity!"</h4>
-                                    <br>
-                                    <h4 class="targ">Data Governance</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Data As An Asset</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Data Infrastructure</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Science-Based Analytics</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">Partnerships & Collaboration</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>
-                                    <h4 class="targ">People & Culture</h4>
-                                    <ol class="phase">
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                        <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                            pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                            libero quis nulla volutpat egestas.
-                                        </li>
-                                    </ol>           
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <button type="button" class="btn hexagon offset" data-toggle="collapse" data-target="#phase2Collapse">
+                                Phase 2
+                            </button>
+                            <div class="collapse multi-collapse" id="phase2Collapse">
+                                <div class="card card-body">
+                                    <div class="container">
+                                            <h4 class="collapse-title">Phase 2: 2021-2022</h4>
+                                            <h4 class="quote">"Establishing a renewed data identity!"</h4>
+                                            <br>
+                                            <h4 class="targ">Data Governance</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Data As An Asset</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Data Infrastructure</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Science-Based Analytics</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Partnerships & Collaboration</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">People & Culture</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>           
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="collapse multi-collapse" id="phase3Collapse">
-                            <div class="card card-body">
-                                <div class="container">
-                                        <h4 class="collapse-title">Phase 3: 2023-2024</h4>
-                                        <h4 class="quote">"Establishing a renewed data identity!"</h4>
-                                        <br>
-                                        <h4 class="targ">Data Governance</h4>
-                                        <ol class="phase">
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                        </ol>
-                                        <h4 class="targ">Data As An Asset</h4>
-                                        <ol class="phase">
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                        </ol>
-                                        <h4 class="targ">Data Infrastructure</h4>
-                                        <ol class="phase">
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                        </ol>
-                                        <h4 class="targ">Science-Based Analytics</h4>
-                                        <ol class="phase">
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                        </ol>
-                                        <h4 class="targ">Partnerships & Collaboration</h4>
-                                        <ol class="phase">
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                        </ol>
-                                        <h4 class="targ">People & Culture</h4>
-                                        <ol class="phase">
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                            <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
-                                                pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
-                                                libero quis nulla volutpat egestas.
-                                            </li>
-                                        </ol>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <button type="button" class="btn hexagon" data-toggle="collapse" data-target="#phase3Collapse">
+                                Phase 3
+                            </button>
+                            <div class="collapse multi-collapse" id="phase3Collapse">
+                                <div class="card card-body">
+                                    <div class="container">
+                                            <h4 class="collapse-title">Phase 3: 2023-2024</h4>
+                                            <h4 class="quote">"Establishing a renewed data identity!"</h4>
+                                            <br>
+                                            <h4 class="targ">Data Governance</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Data As An Asset</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Data Infrastructure</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Science-Based Analytics</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">Partnerships & Collaboration</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                            <h4 class="targ">People & Culture</h4>
+                                            <ol class="phase">
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                                <li>Curabitur varius pellentesque tristique. Praesent mollis at lacus sed
+                                                    pulvinar. Ut at commodo velit. Suspendisse potenti. Nulla laoreet
+                                                    libero quis nulla volutpat egestas.
+                                                </li>
+                                            </ol>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

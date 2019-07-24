@@ -35,7 +35,7 @@ p.phac{
   color: black;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h4.targ{
@@ -184,29 +184,44 @@ body{
 }
 
 .hexagon {
-  position: relative;
-  width: 100px; 
-  height: 57.74px;
-  background-color: #ffffff;
-  margin: 28.87px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+	background:white;
+	color:rgb(0,206,255);
+	display:inline-block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 16px;
+	height:60px;
+	letter-spacing: 3px;
+	margin-bottom: 24px;
+	position:relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	width:120px;	
 }
 
 .hexagon:before {
-  bottom: 100%;
-  border-bottom: 28.87px solid #ffffff;
+	border-bottom:25px solid white;
+	border-left:60px solid transparent;
+	border-right:60px solid transparent;
+	content:'';
+	left:0;
+	position:absolute;
+	top:-25px;
 }
 
 .hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 28.87px solid #ffffff;
+	border-left:60px solid transparent;
+	border-right:60px solid transparent;
+	border-top:25px solid white;
+	bottom:-25px;
+	content:'';
+	left:0;
+	position:absolute;	
+}
+
+.hexagon.offset{
+  transform: translateX(60px);
+}
+
+.timeline-item{
+  margin-bottom:24px;
 }
