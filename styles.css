@@ -5,8 +5,8 @@ html, body {
 h2.phac{
   text-align: left;
   color:white;
-  font-size: 48px;
-  letter-spacing: 0.15em;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
   font-family:Consolas, monaco, monospace; 
   text-transform: uppercase;
   font-weight: 550;
@@ -15,8 +15,8 @@ h2.phac{
 h3.phac{
   text-align: left;
   color:white;
-  font-size: 36px;
-  letter-spacing: 0.225em;
+  font-size: 2.5rem;
+  letter-spacing: 0.225rem;
   font-family:Consolas, monaco, monospace; 
   text-transform: uppercase;
   font-weight: 500;
@@ -25,8 +25,8 @@ h3.phac{
 h4.phac{
   text-align: left;
   color:white;
-  font-size: 24px;
-  letter-spacing: 0.25em;
+  font-size: 1.8rem;
+  letter-spacing: 0.25rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
 }
@@ -35,28 +35,28 @@ p.phac{
   color: black;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 h4.targ{
   text-align: left;
   text-transform: uppercase;
   font-family:Consolas, monaco, monospace;
-  font-size: 24px;
-  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
 h4.nocap{
   text-align: left;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 22px;
+  font-size: 1.4rem;
 }
 
 h4.quote{
   text-align: left;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 26px;
-  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
   font-weight: bolder;
 }
 
@@ -64,13 +64,13 @@ p.targ{
   color: black;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 p.def{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 h4.collapse-title {
@@ -80,7 +80,14 @@ h4.collapse-title {
 }
 
 ol.phase {
-  padding-left: 2.25em;
+  padding-left: 1.7rem;
+}
+
+ol.phase li {
+  color: black;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
 }
 
 ol.carousel-indicators{
@@ -91,16 +98,9 @@ ol.carousel-indicators{
   background-color: rgb(14, 132, 161)
 }
 
-li{
-  color: black;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
 .nav-item{
   color:white;
-  font-size: 20;
+  font-size: 1.4rem;
   font-family:Consolas, monaco, monospace;
 }
 
@@ -166,20 +166,17 @@ body{
 }
 
 .row.over {
-  padding-bottom: 1em;
+  padding-top: 1.3rem;
   background-color: rgb(103, 202, 226);
 }
 
 .row.elem {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.3rem;
   background-color: rgb(20, 158, 191);
 }
 
 .row.impl {
-
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.3rem;
   background-color: rgb(0,206,255);
 }
 
@@ -188,40 +185,39 @@ body{
 	color:rgb(0,206,255);
 	display:inline-block;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  font-size: 16px;
-	height:60px;
-	letter-spacing: 3px;
-	margin-bottom: 24px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+	height:4.6rem;
+	margin-bottom: 2.3rem;
 	position:relative;
-	text-decoration: none;
 	text-transform: uppercase;
-	width:120px;	
+	width:8rem;	
 }
 
 .hexagon:before {
-	border-bottom:25px solid white;
-	border-left:60px solid transparent;
-	border-right:60px solid transparent;
+	border-bottom:2.3rem solid white;
+	border-left:4rem solid transparent;
+  border-right:4rem solid transparent;
+  top:-2.3rem;
 	content:'';
 	left:0;
 	position:absolute;
-	top:-25px;
 }
 
 .hexagon:after {
-	border-left:60px solid transparent;
-	border-right:60px solid transparent;
-	border-top:25px solid white;
-	bottom:-25px;
+	border-left:4rem solid transparent;
+	border-right:4rem solid transparent;
+	border-top:2.3rem solid white;
+	bottom:-2.3rem;
 	content:'';
 	left:0;
 	position:absolute;	
 }
 
 .hexagon.offset{
-  transform: translateX(60px);
+  transform: translateX(5rem);
 }
 
 .timeline-item{
-  margin-bottom:24px;
+  margin-bottom:3.5rem;
 }
