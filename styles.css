@@ -1,5 +1,25 @@
-html, body {
+body {
   overflow-x: hidden;
+  background-color: rgb(103, 202, 226);
+}
+
+.row.over {
+  padding-top: 1.3rem;
+  background-color: rgb(103, 202, 226);
+}
+
+.row.elem {
+  padding-top: 1.3rem;
+  background-color: rgb(20, 158, 191);
+}
+
+.row.impl {
+  padding-top: 1.3rem;
+  background-color: rgb(0,206,255);
+}
+
+.box{
+  padding-left: 1.8rem;
 }
 
 h2.phac{
@@ -33,7 +53,7 @@ h4.phac{
 
 p.phac{
   color: black;
-  text-align: left;
+  text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
 }
@@ -90,12 +110,29 @@ ol.phase li {
   font-size: 1.2rem;
 }
 
+/* .carousel-control-prev {
+  margin-left: -3.5rem;
+}
+
+.carousel-control-next {
+  margin-right: -1rem;
+}
+
+.carousel-inner{
+  margin-left: -1.25rem;
+} */
+
 ol.carousel-indicators{
-  margin-bottom: -1rem;
+  margin-bottom: -1.4rem;
 }
 
 .carousel-indicators li{
   background-color: rgb(14, 132, 161)
+}
+
+.caret{
+  color:black;
+  font-size: 3rem;
 }
 
 .nav-item{
@@ -119,22 +156,6 @@ ol.carousel-indicators{
   font-size: 15px;
 }
 
-/* .carousel-inner > .carousel-item > img {
-    margin: auto;
-    width:400px;
-    height:400px;
-  }
-
-.carousel-caption {
-    position: relative;
-    left: 0;
-    top: 0;
-}
- */
-.modal-lg {
-    max-width: 60%;
-}
-
 .ovl {
     opacity: 0;
 }
@@ -146,39 +167,25 @@ ol.carousel-indicators{
 
 }
 
-.column {
-    float: left;
-    width: 30%;
-    padding: 20px 20px;
-  }
-
- .card{
+.card.text-white{
       margin: 0 auto;
       float: none;
   }
+
+.card-body{
+  transform: translateX(4rem);
+  width: 45rem;
+}
+
+.card-body.offset{
+  transform: translateX(9rem);
+  width: 45rem;
+}
 
 .card-text .card-title{
     color: white;
 }
 
-body{
-  background-color: rgb(103, 202, 226);
-}
-
-.row.over {
-  padding-top: 1.3rem;
-  background-color: rgb(103, 202, 226);
-}
-
-.row.elem {
-  padding-top: 1.3rem;
-  background-color: rgb(20, 158, 191);
-}
-
-.row.impl {
-  padding-top: 1.3rem;
-  background-color: rgb(0,206,255);
-}
 
 .hexagon {
 	background:white;
@@ -188,7 +195,7 @@ body{
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
 	height:4.6rem;
-	margin-bottom: 2.3rem;
+	/* margin-bottom: 2.3rem; */
 	position:relative;
 	text-transform: uppercase;
 	width:8rem;	
@@ -219,5 +226,5 @@ body{
 }
 
 .timeline-item{
-  margin-bottom:3.5rem;
+  margin-bottom:3rem;
 }
