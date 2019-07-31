@@ -3,23 +3,51 @@ body {
   background-color: rgb(103, 202, 226);
 }
 
+/* body, html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.parallax {
+  background-image: url("header.png");
+
+  height: 100%;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.container-fluid{
+  background: url("header.png") no-repeat center center; 
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .row.over {
   padding-top: 1.3rem;
-  background-color: rgb(103, 202, 226);
+  background-color: rgb(103, 202, 226, 0.8);
 }
 
 .row.elem {
   padding-top: 1.3rem;
-  background-color: rgb(20, 158, 191);
+  background-color: rgb(20, 158, 191, 0.8);
 }
 
 .row.impl {
   padding-top: 1.3rem;
-  background-color: rgb(0,206,255);
-}
-
-.box{
-  padding-left: 1.8rem;
+  background-color: rgb(0,206,255, 0.8);
 }
 
 h2.phac{
@@ -46,14 +74,14 @@ h4.phac{
   text-align: left;
   color:white;
   font-size: 1.8rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.22rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
 }
 
 p.phac{
   color: black;
-  text-align: justify;
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
 }
@@ -135,6 +163,15 @@ ol.carousel-indicators{
   font-size: 3rem;
 }
 
+/* .jumbotron-fluid {
+  color: hex(#0e5160);
+  background-image: url("header.png");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+} */
+
 .nav-item{
   color:white;
   font-size: 1.4rem;
@@ -173,14 +210,13 @@ ol.carousel-indicators{
   }
 
 .card-body{
-  transform: translateX(4rem);
-  width: 45rem;
+  margin-bottom: 1rem;
 }
 
-.card-body.offset{
+/* .card-body.offset{
   transform: translateX(9rem);
   width: 45rem;
-}
+} */
 
 .card-text .card-title{
     color: white;
