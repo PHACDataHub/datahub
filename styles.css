@@ -1,89 +1,81 @@
-body {
-  overflow-x: hidden;
-  background-color: rgb(103, 202, 226);
-}
-
-/* body, html {
-  overflow-x: hidden;
-  height: 100%;
-}
-
-.parallax {
-  background-image: url("header.png");
-
-  height: 100%;
-  width: 100%;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* body, html { 
+  min-height: 100%;
 } */
 
-.container-fluid{
-  background: url("header.png") no-repeat center center; 
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-  height: 100%;
-  width: 100%;
-
-  background-attachment: fixed;
-  background-position: center;
+body {
+  overflow-x: hidden;
+  /* background-image: url('header.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  background-position: center center; */
+  background-color: #020242;
 }
 
 .row.over {
   padding-top: 1.3rem;
-  background-color: rgb(103, 202, 226, 0.8);
+  background-color: #00839bcc;
 }
 
 .row.elem {
   padding-top: 1.3rem;
-  background-color: rgb(20, 158, 191, 0.8);
+  background-color: #008baccc;
 }
 
 .row.impl {
   padding-top: 1.3rem;
-  background-color: rgb(0,206,255, 0.8);
+  background-color: #00acc8cc;
+}
+
+h1.phac{
+  text-align: left;
+  color:white;
+  font-size: 3rem;
+  font-family:Arial, Helvetica, sans-serif; 
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 h2.phac{
   text-align: left;
-  color:white;
-  font-size: 3rem;
+  color:#00acc8;
+  font-size: 1.1rem;
   letter-spacing: 0.15rem;
-  font-family:Consolas, monaco, monospace; 
+  font-family:Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
-  font-weight: 550;
 }
 
 h3.phac{
   text-align: left;
   color:white;
-  font-size: 2.5rem;
-  letter-spacing: 0.225rem;
-  font-family:Consolas, monaco, monospace; 
+  font-size: 1.8rem;
+  font-family:Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+h3.button-title{
+  text-align: left;
+  color:white;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  font-family:Arial, Helvetica, sans-serif; 
+  text-transform: uppercase;
+  transform: translateY(0.6rem)
 }
 
 h4.phac{
   text-align: left;
-  color:white;
-  font-size: 1.8rem;
-  letter-spacing: 0.22rem;
+  color:#00acc8;
+  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
 }
 
 p.phac{
-  color: black;
+  color: white;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 h4.targ{
@@ -122,9 +114,12 @@ p.def{
 }
 
 h4.collapse-title {
+  text-align: left;
+  color:#00acc8;
+  font-size: 2rem;
+  font-family:Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 ol.phase {
@@ -224,42 +219,79 @@ ol.carousel-indicators{
 
 
 .hexagon {
-	background:white;
-	color:rgb(0,206,255);
-	display:inline-block;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
-	height:4.6rem;
-	/* margin-bottom: 2.3rem; */
+	background:transparent;
+  display:inline-block;
+	height:3.45rem;
 	position:relative;
-	text-transform: uppercase;
-	width:8rem;	
+  width:6rem;
+  margin-bottom: 2rem;
+  border: 0;
 }
 
 .hexagon:before {
-	border-bottom:2.3rem solid white;
-	border-left:4rem solid transparent;
-  border-right:4rem solid transparent;
+	border-bottom:1.725rem solid black;
+	border-left:3rem solid transparent;
+  border-right:3rem solid transparent;
   top:-2.3rem;
 	content:'';
-	left:0;
+  left:0;
+  border: 0;
 	position:absolute;
 }
 
 .hexagon:after {
-	border-left:4rem solid transparent;
-	border-right:4rem solid transparent;
-	border-top:2.3rem solid white;
+	border-left:3rem solid transparent;
+	border-right:3rem solid transparent;
+	border-top:1.725rem solid black;
 	bottom:-2.3rem;
 	content:'';
-	left:0;
+  left:0;
+  border: 0;
 	position:absolute;	
 }
 
-.hexagon.offset{
-  transform: translateX(5rem);
+svg{
+  transform: translateY(-1.7rem);
 }
+
+.intro{
+  background:transparent;
+  display:inline-block;
+	height:3.45rem;
+	position:relative;
+  width:6rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.intro::before{
+  border-bottom:1.725rem solid black;
+	border-left:3rem solid transparent;
+  border-right:3rem solid transparent;
+  top:-2.3rem;
+	content:'';
+  left:0;
+  border: 0;
+	position:absolute;
+}
+
+.intro::after{
+  border-left:3rem solid transparent;
+	border-right:3rem solid transparent;
+	border-top:1.725rem solid black;
+	bottom:-2.3rem;
+	content:'';
+  left:0;
+  border: 0;
+	position:absolute;	
+}
+
+/* .intro:hover{
+  background-image:url("Buttons/H Intro.svg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center center;
+} */
 
 .timeline-item{
   margin-bottom:3rem;
