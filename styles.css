@@ -51,7 +51,7 @@ h3.phac{
   font-weight: 600;
 }
 
-h3.button-title{
+h3.button-title, .button-title{
   text-align: left;
   color:white;
   font-size: 1.1rem;
@@ -59,7 +59,7 @@ h3.button-title{
   font-family:Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
   transform: translateY(0.6rem);
-  line-height: 5.45rem;
+  line-height: 8.45rem;
 }
 
 h4.phac{
@@ -252,9 +252,12 @@ ol.carousel-indicators{
 
 */
 
+/* I'm guessing that this is meant to vertically align the svg, but it shouldn't apply to all svg's (in case we use them elsewhere), and I think I found a different way to do it 
 svg{
   transform: translateY(-1.7rem);
-}
+} */
+
+/* not sure what the .intro-specific formatting is for 
 
 .intro{
   background:transparent;
@@ -277,6 +280,8 @@ svg{
 	position:absolute;
 }
 
+
+
 .intro::after{
   border-left:3rem solid transparent;
 	border-right:3rem solid transparent;
@@ -286,7 +291,7 @@ svg{
   left:0;
   border: 0;
 	position:absolute;	
-}
+} */
 
 /* .intro:hover{
   background-image:url("Buttons/H Intro.svg");
@@ -327,4 +332,63 @@ footer {
 	background: white;
 	position: absolute;
 	left: 3rem;
+}
+
+button:hover .st0 {
+	fill: #fff!important;
+}
+
+button:hover .st1 {
+	fill: #00839b!important;
+}
+
+svg {
+	overflow: visible;
+}
+
+
+
+.button-title2 {
+	text-align: left;
+	color:white;
+	font-size: 1.1rem;
+	font-weight: lighter;
+	font-family:Arial, Helvetica, sans-serif; 
+	text-transform: uppercase;
+}
+
+.main-button {
+  height: 6rem;
+  width: 6rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  &:focus {
+    outline: 2px dashed #17171D;
+  }
+  &:hover {
+    svg {
+      transform: scale(1.1);
+    }
+  }
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  svg {
+    outline: none;
+    transition: transform 0.3s linear;
+  }
+}
+ /* 
+.svg-button {
+	height: 6rem;
+  width: 6rem;
+}*/
+
+.main-button h3 {
+	float: right;
+}
+
+button {
+	padding: none;
 }
