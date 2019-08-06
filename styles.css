@@ -8,22 +8,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center center; */
-  background-color: #020242;
+  background-color: #00839b;
 }
 
-.row.over {
-  padding-top: 1.3rem;
-  background-color: #00839bcc;
+.row.over, .over svg {
+  /* background-color: #00839bcc; alpha hex codes are cool but don't work on IE */
+  background-color: #00839b;
 }
 
-.row.elem {
-  padding-top: 1.3rem;
-  background-color: #008baccc;
+.row.elem, .elem svg {
+  background-color: #008bac;
 }
 
-.row.impl {
-  padding-top: 1.3rem;
-  background-color: #00acc8cc;
+.row.impl, .impl svg {
+  background-color: #00acc8;
 }
 
 h1.phac{
@@ -60,7 +58,8 @@ h3.button-title{
   font-weight: lighter;
   font-family:Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
-  transform: translateY(0.6rem)
+  transform: translateY(0.6rem);
+  line-height: 5.45rem;
 }
 
 h4.phac{
@@ -220,14 +219,15 @@ ol.carousel-indicators{
 
 .hexagon {
 	background:transparent;
-  display:inline-block;
+	display:inline-block;
 	height:3.45rem;
 	position:relative;
-  width:6rem;
-  margin-bottom: 2rem;
-  border: 0;
+	width:6rem;
+	margin: 2rem 0;
+	border: 0;
 }
 
+/* not needed with svg buttons?
 .hexagon:before {
 	border-bottom:1.725rem solid black;
 	border-left:3rem solid transparent;
@@ -249,6 +249,8 @@ ol.carousel-indicators{
   border: 0;
 	position:absolute;	
 }
+
+*/
 
 svg{
   transform: translateY(-1.7rem);
@@ -295,4 +297,34 @@ svg{
 
 .timeline-item{
   margin-bottom:3rem;
+}
+
+header {
+	padding: 2rem 0;
+}
+
+.header {
+	background-image: url('Header-no-title.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	min-height: 300px;
+	height: 30vh;
+	max-height: 560px;
+}
+
+.section {
+	padding: 2rem 0;
+}
+
+footer {
+	background: #888
+}
+
+.temp123:before {
+	content: "";
+	height: 100%;
+	width: 1px;
+	background: white;
+	position: absolute;
+	left: 3rem;
 }
