@@ -320,13 +320,18 @@ footer {
 	background: #888
 }
 
-.hex-row:before {
+.hex-col {
+	position: relative;
+}
+
+.hex-col:before {
 	content: "";
-	height: 100%;
+	height: calc(100% + 4rem);
 	width: 1px;
 	background: white;
 	position: absolute;
 	left: 2.5rem;
+	top: -2rem;
 }
 
 
@@ -340,12 +345,21 @@ svg {
 /* sets the BG color of the hexagons based on each row, to cover the white line */
 .vision .hex {fill: #317789;}
 .context .hex {fill: #00839b;}
+.consults .hex {fill: #007187;}
+.strategy .hex {fill: #005d70;}
+.implement .hex {fill: #00505e;}
 
 .vision {background: #317789;}
 .context {background: #00839b;}
+.consults {background: #007187;}
+.strategy {background: #005d70;}
+.implement {background: #00505e;}
 
 .vision .hex-button:hover i {color: #317789;}
 .context .hex-button:hover i {color: #00839b;}
+.consults .hex-button:hover i {color: #007187;}
+.strategy .hex-button:hover i {color: #005d70;}
+.implement .hex-button:hover i {color: #005d70;}
 
 
 .hex {
@@ -433,8 +447,11 @@ svg {
 .expanded-content {
 	position: fixed;
 	right: 0;
-	top: 30vh;
-	height: 100%;
+	bottom: 0px;
+	height: 70vh;
+	overflow: scroll;
+	background: white;
+	padding: 2rem;
 }
 
 .tent {
