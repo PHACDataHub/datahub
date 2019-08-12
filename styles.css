@@ -1,6 +1,31 @@
+
+@font-face {
+	font-family: "BebasneueBold";
+	src: url("fonts/BebasNeue-Regular.eot"); /* IE9*/
+	src: url("fonts/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("fonts/BebasNeue-Regular.woff2") format("woff2"), /* chrome、firefox */
+		url("fonts/BebasNeue-Regular.woff") format("woff"), /* chrome、firefox */
+		url("fonts/BebasNeue-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+	font-family: "DINOT-Medium";
+  src: url("fonts/7251ae7cbcc9c197274aae57493f42ad.eot"); /* IE9*/
+  src: url("fonts/7251ae7cbcc9c197274aae57493f42ad.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	  url("fonts/7251ae7cbcc9c197274aae57493f42ad.woff2") format("woff2"), /* chrome、firefox */
+	  url("fonts/7251ae7cbcc9c197274aae57493f42ad.woff") format("woff"), /* chrome、firefox */
+	  url("fonts/7251ae7cbcc9c197274aae57493f42ad.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	  url("fonts/7251ae7cbcc9c197274aae57493f42ad.svg#DINOT-Medium") format("svg"); /* iOS 4.1- */
+}
+
+
+
 /* body, html { 
   min-height: 100%;
 } */
+
+
+
 
 body {
   overflow-x: hidden;
@@ -23,7 +48,7 @@ h1.phac{
   text-align: left;
   color:white;
   font-size: 3rem;
-  font-family:Arial, Helvetica, sans-serif; 
+  font-family:"BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -41,7 +66,7 @@ h3.phac{
   text-align: left;
   color:white;
   font-size: 1.8rem;
-  font-family:Arial, Helvetica, sans-serif; 
+  font-family: "BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -465,4 +490,6 @@ svg {
 	box-shadow: none;
 }
 
-
+.card {
+	border: 0;
+}
