@@ -64,164 +64,188 @@
 		<div class="row section vision"> <!-- Vision Row -->
 			<div class="col-2">
                 <h3 class="phac">Vision</h3>
-            </div> 
-            <div class="col hex-col"> <!-- column with all the hex buttons, but /not/ the expandable content -->
-				<div class="row hex-row"> <!-- hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#visionCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-eye"></i>
+            </div>
+			
+			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
+				<div class="row hex-row"> <!-- Hex Row -->
+					<div class="col-4 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#visionCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-eye"></i>
+							</div>
+							<h3 class="button-title">Our Vision</h3>
+						</button>
+					</div> <!-- end of hex row -->
+					<div class="col-6"> <!-- column with the expandable content -->
+						<div class="collapse multi-collapse" id="visionCollapse">
+							<div class="card card-body">
+								<div class="container">
+									<!-- This is an example of how this content section could be filled by embedding a google doc -->
+									<iframe class="tent" src="https://docs.google.com/document/d/e/2PACX-1vQlIkmDPx_Nbs1mgnzh572ZhXWAX8DPdvCgLjJ8YLszSfUsaYgTxvB16pRGaE6_3R6P-hRaV1mxYVtd/pub?embedded=true#this"></iframe>
+								</div>
+							</div>
 						</div>
-						<h3 class="button-title">Our Vision</h3>
-					</button>
-				</div> <!-- end of hex row -->
-			</div>
-			<div class="col-6"> <!-- column with the expandable content -->
-				<div class="collapse multi-collapse" id="visionCollapse">
-					<div class="card card-body">
-						<div class="container">
-							<!-- This is an example of how this content section could be filled by embedding a google doc -->
-							<iframe class="tent" src="https://docs.google.com/document/d/e/2PACX-1vQlIkmDPx_Nbs1mgnzh572ZhXWAX8DPdvCgLjJ8YLszSfUsaYgTxvB16pRGaE6_3R6P-hRaV1mxYVtd/pub?embedded=true#this"></iframe>
-						</div>
-					</div>
+					</div> <!-- end of content column -->
 				</div>
-			</div> <!-- end of content column -->
+			</div>
 		</div> <!-- end of vision row -->
 		
 		<div class="row section context"> <!-- Data Context Row -->
 			<div class="col-2">
                 <h3 class="phac">PHAC's Data Context</h3>
             </div> 
-            <div class="col hex-col"> <!-- column with all the hex buttons, but /not/ the expandable content -->
+			
+			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#landscapeCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-mountain"></i>
-						</div>
-						<h3 class="button-title">Data Landscape</h3>
-					</button>
-				</div> <!-- end of hex row -->
-				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#problematiqueCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-skating"></i>
-						</div>
-						<h3 class="button-title">Problematique</h3>
-					</button>
-				</div> <!-- end of hex row -->
-			</div> <!-- end of hex column -->
-			<div class="col-6"> <!-- column with the expandable content -->
-                <div class="collapse multi-collapse" id="landscapeCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Data Landscape</h4>
-						<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
-						<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
-						<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
-						<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
-						<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
-						</div>
+					<div class="col-4 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#landscapeCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-mountain"></i>
+							</div>
+							<h3 class="button-title">Data Landscape</h3>
+						</button>
 					</div>
-				</div>						
-                <div class="collapse multi-collapse" id="problematiqueCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Problematique</h4>
-						<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-						<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
-						<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
-						<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="landscapeCollapse">
+							<div class="card card-body">
+								<div class="container">
+								<h4 class="collapse-title">Data Landscape</h4>
+								<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
+								<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
+								<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
+								<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
+								<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>		
-			</div> <!-- end of content column -->
-		</div> <!-- end of data context row -->
+					</div> <!-- end of column for expandable content -->
+				</div> <!-- end of hex row -->
+					
+				<div class="row hex-row"> <!-- Hex Row -->	
+					<div class="col-4 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#problematiqueCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-skating"></i>
+							</div>
+							<h3 class="button-title">Problematique</h3>
+						</button>
+					</div> <!-- end of column for expandable content -->
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="problematiqueCollapse">
+							<div class="card card-body">
+								<div class="container">
+								<h4 class="collapse-title">Problematique</h4>
+								<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
+								<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
+								<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
+								<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+								</div>
+							</div>
+						</div>
+					</div> <!-- end of content column -->
+				</div> <!-- end of hex row -->
+			</div>
+		</div> <!-- end of data context row -->	
+
 		
-		
-		
+ 
 		<div class="row section consults"> <!-- Consultations Row -->
 			<div class="col-2">
                 <h3 class="phac">Consultations</h3>
             </div> 
-            <div class="col hex-col"> <!-- column with all the hex buttons, but /not/ the expandable content -->
+            
+			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#approachCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-sign-language"></i>
+					<div class="col-4 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#approachCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-sign-language"></i>
+							</div>
+							<h3 class="button-title">Approach</h3>
+						</button>
+					</div>
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="approachCollapse">
+							<div class="card card-body">
+								<div class="container">
+								<h4 class="collapse-title">Approach</h4>
+								<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
+								<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
+								<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
+								<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
+								<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
+								</div>
+							</div>
 						</div>
-						<h3 class="button-title">Approach</h3>
-					</button>
+					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
+					
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#heardCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-volume-up"></i>
-						</div>
-						<h3 class="button-title">What we heard</h3>
-					</button>
+					<div class="col-4 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#heardCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-volume-up"></i>
+							</div>
+							<h3 class="button-title">What we heard</h3>
+						</button>
+					</div> <!-- end of column for expandable content -->
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="heardCollapse">
+							<div class="card card-body">
+								<div class="container">
+								<h4 class="collapse-title">What we heard</h4>
+								<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
+								<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
+								<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
+								<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+								</div>
+							</div>
+						</div> 
+					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
+				
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#voicesCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-users"></i>
-						</div>
-						<h3 class="button-title">500+ Voices</h3>
-					</button>
+					<div class="col-4 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#voicesCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-users"></i>
+							</div>
+							<h3 class="button-title">500+ Voices</h3>
+						</button>
+					</div>
+					<div class="col-6"> <!-- column with the expandable content -->
+						<div class="collapse multi-collapse" id="voicesCollapse">
+							<div class="card card-body">
+								<div class="container">
+								<h4 class="collapse-title">500+ Voices</h4>
+								<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
+								<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
+								<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
+								<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+								</div>
+							</div>
+						</div>		
+					</div> <!-- end of content column -->
 				</div> <!-- end of hex row -->
-			</div> <!-- end of hex column -->
-			<div class="col-6"> <!-- column with the expandable content -->
-                <div class="collapse multi-collapse" id="approachCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Approach</h4>
-						<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
-						<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
-						<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
-						<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
-						<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
-						</div>
-					</div>
-				</div>
-                <div class="collapse multi-collapse" id="heardCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">What we heard</h4>
-						<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-						<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
-						<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
-						<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
-						</div>
-					</div>
-				</div>
-                <div class="collapse multi-collapse" id="voicesCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">500+ Voices</h4>
-						<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-						<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
-						<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
-						<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
-						</div>
-					</div>
-				</div>		
-			</div> <!-- end of content column -->
+			</div>
 		</div> <!-- end of data context row -->
 		
 		
@@ -230,133 +254,153 @@
 			<div class="col-2">
                 <h3 class="phac">Data Strategy</h3>
             </div> 
-            <div class="col hex-col"> <!-- column with all the hex buttons, but /not/ the expandable content -->
+			
+			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#glanceCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-cubes"></i>
+					<div class="col-3 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#glanceCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-cubes"></i>
+							</div>
+							<h3 class="button-title">Strategy at a glance</h3>
+						</button>
+					</div>
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="glanceCollapse">
+							<div class="card card-body">
+								<div class="container">
+									<h4 class="collapse-title">Strategy at a glance</h4>
+									<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
+									<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
+									<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
+									<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
+									<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
+								</div>
+							</div>
 						</div>
-						<h3 class="button-title">Strategy at a glance</h3>
-					</button>
+					</div> <!-- end of column for expandable content -->
+				</div> <!-- end of hex row -->
+					
+				<div class="row hex-row"> <!-- Hex Row -->
+					<div class="col-3 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#themesCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-project-diagram"></i>
+							</div>
+							<h3 class="button-title">Six themes</h3>
+						</button>
+					</div>
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="themesCollapse">
+							<div class="card card-body">
+								<div class="container">
+									<h4 class="collapse-title">Six themes</h4>
+									<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
+									<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
+									<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
+									<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+								</div>
+							</div>
+						</div>
+					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#themesCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-project-diagram"></i>
+					<div class="col-3 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#principlesCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-graduation-cap"></i>
+							</div>
+							<h3 class="button-title">Principles</h3>
+						</button>
+					</div>
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="principlesCollapse">
+							<div class="card card-body">
+								<div class="container">
+									<h4 class="collapse-title">Principles</h4>
+									<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
+									<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
+									<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
+									<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+								</div>
+							</div>
 						</div>
-						<h3 class="button-title">Six themes</h3>
-					</button>
+					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#principlesCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-graduation-cap"></i>
-						</div>
-						<h3 class="button-title">Principles</h3>
-					</button>
-				</div> <!-- end of hex row -->
-				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#futureCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-robot"></i>
-						</div>
-						<h3 class="button-title">Future state</h3>
-					</button>
-				</div> <!-- end of hex row -->
-			</div> <!-- end of hex column -->
-			<div class="col-6"> <!-- column with the expandable content -->
-                <div class="collapse multi-collapse" id="glanceCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Strategy at a glance</h4>
-						<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
-						<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
-						<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
-						<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
-						<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
-						</div>
+					<div class="col-3 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#futureCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-robot"></i>
+							</div>
+							<h3 class="button-title">Future state</h3>
+						</button>
 					</div>
-				</div>
-                <div class="collapse multi-collapse" id="themesCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Six themes</h4>
-						<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-						<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
-						<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
-						<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
-						</div>
-					</div>
-				</div>
-                <div class="collapse multi-collapse" id="principlesCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Principles</h4>
-						<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-						<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
-						<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
-						<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
-						</div>
-					</div>
-				</div>
-                <div class="collapse multi-collapse" id="futureCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Future State</h4>
-						<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-						<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
-						<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
-						<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
-						</div>
-					</div>
-				</div>		
-			</div> <!-- end of content column -->
-		</div> <!-- end of data context row -->
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="futureCollapse">
+							<div class="card card-body">
+								<div class="container">
+								<h4 class="collapse-title">Future State</h4>
+								<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
+								<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
+								<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
+								<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+								</div>
+							</div>
+						</div>	
+					</div> <!-- end of column for expandable content -->
+				</div> <!-- end of hex row -->					
+			</div>
+		</div> <!-- end of data strat row -->
 		
 		<div class="row section implement"> <!-- Implementation plan Row -->
 			<div class="col-2">
                 <h3 class="phac">Implementation plan</h3>
-            </div> 
-            <div class="col hex-col"> <!-- column with all the hex buttons, but /not/ the expandable content -->
+            </div>
+            
+			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
-					<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#implementCollapse">
-						<svg viewBox="0 0 300 300" >
-						<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
-						</svg>
-						<div class="hex-icon-container">
-							<i class="fas fa-hippo"></i>
-						</div>
-						<h3 class="button-title">Project Plan at a glance </h3>
-					</button>
-				</div> <!-- end of hex row -->
-			</div> <!-- end of hex column -->
-			<div class="col-6"> <!-- column with the expandable content -->
-                <div class="collapse multi-collapse" id="implementCollapse">
-                    <div class="card card-body">
-                        <div class="container">
-						<h4 class="collapse-title">Project plan at a glance</h4>
-						<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
-						<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
-						<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
-						<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
-						<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
-						</div>
+					<div class="col-3 hex-col"> <!-- column for the hex button -->
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#implementCollapse">
+							<svg viewBox="0 0 300 300" >
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							</svg>
+							<div class="hex-icon-container">
+								<i class="fas fa-hippo"></i>
+							</div>
+							<h3 class="button-title">Project Plan at a glance </h3>
+						</button>
 					</div>
-				</div>						
-			</div> <!-- end of content column -->
-		</div> <!-- end of data context row -->
+					<div class="col-6"> <!-- column with the expandable content -->	
+						<div class="collapse multi-collapse" id="implementCollapse">
+							<div class="card card-body">
+								<div class="container">
+									<h4 class="collapse-title">Project plan at a glance</h4>
+									<p>Data are the raw ingredient for surveillance, evidence, research and science. Data play a key role in informing interventions and policy decisions, and supporting core public health functions. Data inform evaluation, performance information, and results-based management of PHAC’s programs and initiatives. Data contributes to knowledge translation, education, and public health information that is tailored and disseminated for Canadians.</p>
+									<p>The current PHAC data culture is characterized by data planning, acquisition, collection, and management activities dispersed across branches and focused on meeting individual program needs in a classic siloed approach to data. The siloed approach to data culture has benefits as well as challenges. The benefits include strong collaboration and partnerships with external data providers established by individual programs and data management procedures tailored to program needs. The challenges occur as a result of incongruent approaches for data management, in some cases a lack of formal data sharing agreements, no systematic data profile for PHAC’s health data holdings as well as a broad range of independent, incompatible data structures and technology.</p>
+									<p>In addition to these challenges, the major change in how the federal government approaches the management of information technology through the creation of Shared Services Canada (SSC), has led some departments to be vocal with regard to how this change has impacted on their ability to successfully execute their mandates. We will need to work with SSC to break through technological barriers facing our staff.</p>
+									<p>This is our opportunity to set a new path forward in how we approach data. By establishing clear governance, developing horizontal data infrastructure, adopting innovative approaches, encouraging experimentation, putting users at the centre of our efforts, and forging partnerships with jurisdictions and external organizations, we can ensure that PHAC has a clear and consistent approach to data management that supports decision-making and action. The Data Strategy intends to bring PHAC leaders together and data holders from all fields to better serve Canadians.</p>
+									<p>Making change in PHAC’s data culture represents an organizational transformation and will require careful, determined, strategic leadership and long-term investments in order to improve PHAC’s data management capabilities, technical infrastructure and analytic resources, including human resources.
+								</div>
+							</div>
+							</div>
+						</div>
+					</div> <!-- end of column for expandable content -->
+				</div> <!-- end of hex row -->		
+			</div>
+		</div> <!-- end of implementation row -->
 		
 
     </div>

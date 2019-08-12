@@ -330,7 +330,7 @@ footer {
 	width: 1px;
 	background: white;
 	position: absolute;
-	left: 2.5rem;
+	left: 3.5rem;
 	top: -2rem;
 }
 
@@ -422,7 +422,7 @@ svg {
 
 }
 
-.hex-button:hover h3:after {
+.hex-button:hover h3:after{
   visibility: visible;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -459,3 +459,10 @@ svg {
 	height: 70vh;
 	border: 0;
 }
+
+
+.btn.focus, .btn:focus {
+	box-shadow: none;
+}
+
+
