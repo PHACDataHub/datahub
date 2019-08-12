@@ -368,23 +368,23 @@ svg {
 }
 
 /* sets the BG color of the hexagons based on each row, to cover the white line */
-.vision .hex {fill: #317789;}
-.context .hex {fill: #00839b;}
-.consults .hex {fill: #007187;}
-.strategy .hex {fill: #005d70;}
-.implement .hex {fill: #00505e;}
+.vision .hex {fill: #1A5C82;}
+.context .hex {fill: #175375;}
+.consults .hex {fill: #12415C;}
+.strategy .hex {fill: #0F364D;}
+.implement .hex {fill: #0B2636;}
 
-.vision {background: #317789;}
-.context {background: #00839b;}
-.consults {background: #007187;}
-.strategy {background: #005d70;}
-.implement {background: #00505e;}
+.vision {background: #1A5C82;}
+.context {background: #175375;}
+.consults {background: #12415C;}
+.strategy {background: #0F364D;}
+.implement {background: #0B2636;}
 
-.vision .hex-button:hover i {color: #317789;}
-.context .hex-button:hover i {color: #00839b;}
-.consults .hex-button:hover i {color: #007187;}
-.strategy .hex-button:hover i {color: #005d70;}
-.implement .hex-button:hover i {color: #005d70;}
+.vision .hex-button:hover i {color: #1A5C82;}
+.context .hex-button:hover i {color: #175375;}
+.consults .hex-button:hover i {color: #12415C;}
+.strategy .hex-button:hover i {color: #0F364D;}
+.implement .hex-button:hover i {color: #0B2636;}
 
 
 .hex {
