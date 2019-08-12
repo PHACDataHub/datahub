@@ -34,6 +34,7 @@ body {
   background-size: cover; 
   background-position: center center; */
   background-color: #1A5C82;
+  font-family: "DINOT-Medium", helvetica, arial, sans-serif;
 }
 
 .row.elem, .elem svg {
@@ -342,10 +343,6 @@ header {
 	padding: 2rem 0;
 }
 
-footer {
-	background: #888
-}
-
 .hex-col {
 	position: relative;
 }
@@ -494,3 +491,11 @@ svg {
 .card {
 	border: 0;
 }
+
+footer {
+	background: #040f16;
+	color: white;
+}
+
+footer a {color: #1A5C82;}
+footer a:hover {color: #fff;}
