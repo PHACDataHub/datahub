@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center center; */
-  background-color: #00839b;
+  background-color: #1A5C82;
 }
 
 .row.elem, .elem svg {
@@ -329,9 +329,10 @@ header {
 }
 
 .header {
-	background-image: url('Header-no-title.png');
+	background-image: url('Header-final.jpg');
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-size: cover;
+    background-position: center;
 	min-height: 300px;
 	height: 30vh;
 	max-height: 560px;
