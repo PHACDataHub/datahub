@@ -24,8 +24,30 @@
   min-height: 100%;
 } */
 
+/* This sets all the colours, including the background of the hexs to match their respective row */
+.vision .hex {fill: #01043f;}
+.context .hex {fill: #010659;}
+.consults .hex {fill: #02098c;}
+.strategy .hex {fill: #030dbf;}
+.implement .hex {fill: #040ed8;}
 
+.vision {background: #01043f;}
+.context {background: #010659;}
+.consults {background: #02098c;}
+.strategy {background: #030dbf;}
+.implement {background: #040ed8;}
+footer {background: #01043f;}
 
+.vision .hex-button:hover i {color: #01043f;}
+.context .hex-button:hover i {color: #010659;}
+.consults .hex-button:hover i {color: #02098c;}
+.strategy .hex-button:hover i {color: #030dbf;}
+.implement .hex-button:hover i {color: #040ed8;}
+
+h1.phac{color:#fff;}
+h2.phac{color:#ced3ff;}
+h3.phac{color:#fff;}
+h4.phac{color:#ced3ff;}
 
 body {
   overflow-x: hidden;
@@ -47,7 +69,6 @@ body {
 
 h1.phac{
   text-align: left;
-  color:white;
   font-size: 3rem;
   font-family:"BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
@@ -56,7 +77,6 @@ h1.phac{
 
 h2.phac{
   text-align: left;
-  color:#00acc8;
   font-size: 1.1rem;
   letter-spacing: 0.15rem;
   font-family:Arial, Helvetica, sans-serif; 
@@ -65,7 +85,6 @@ h2.phac{
 
 h3.phac{
   text-align: left;
-  color:white;
   font-size: 1.8rem;
   font-family: "BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
@@ -85,7 +104,6 @@ h3.button-title, .button-title{
 
 h4.phac{
   text-align: left;
-  color:#00acc8;
   font-size: 1.1rem;
   letter-spacing: 0.15rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -365,24 +383,7 @@ svg {
 	width: 5rem;
 }
 
-/* sets the BG color of the hexagons based on each row, to cover the white line */
-.vision .hex {fill: #01043f;}
-.context .hex {fill: #010659;}
-.consults .hex {fill: #02098c;}
-.strategy .hex {fill: #030dbf;}
-.implement .hex {fill: #040ed8;}
 
-.vision {background: #01043f;}
-.context {background: #010659;}
-.consults {background: #02098c;}
-.strategy {background: #030dbf;}
-.implement {background: #040ed8;}
-
-.vision .hex-button:hover i {color: #01043f;}
-.context .hex-button:hover i {color: #010659;}
-.consults .hex-button:hover i {color: #02098c;}
-.strategy .hex-button:hover i {color: #030dbf;}
-.implement .hex-button:hover i {color: #040ed8;}
 
 
 .hex {
@@ -493,7 +494,6 @@ svg {
 }
 
 footer {
-	background: #040f16;
 	color: white;
 }
 
