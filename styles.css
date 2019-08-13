@@ -351,13 +351,13 @@ header {
 }
 
 .header {
-	background-image: url('Header-final.jpg');
+	background-image: url('header-final.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-    background-position: top;
+    background-position: center 14%;
 	min-height: 300px;
 	height: 30vh;
-	max-height: 560px;
+	max-height: 400px;
 }
 
 .section {
