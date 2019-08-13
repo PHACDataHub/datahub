@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center center; */
-  background-color: #1A5C82;
+  background-color: #02098c;
   font-family: "DINOT-Medium", helvetica, arial, sans-serif;
 }
 
@@ -333,7 +333,7 @@ header {
 	background-image: url('Header-final.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-    background-position: center;
+    background-position: top;
 	min-height: 300px;
 	height: 30vh;
 	max-height: 560px;
@@ -366,23 +366,23 @@ svg {
 }
 
 /* sets the BG color of the hexagons based on each row, to cover the white line */
-.vision .hex {fill: #1A5C82;}
-.context .hex {fill: #175375;}
-.consults .hex {fill: #12415C;}
-.strategy .hex {fill: #0F364D;}
-.implement .hex {fill: #0B2636;}
+.vision .hex {fill: #01043f;}
+.context .hex {fill: #010659;}
+.consults .hex {fill: #02098c;}
+.strategy .hex {fill: #030dbf;}
+.implement .hex {fill: #040ed8;}
 
-.vision {background: #1A5C82;}
-.context {background: #175375;}
-.consults {background: #12415C;}
-.strategy {background: #0F364D;}
-.implement {background: #0B2636;}
+.vision {background: #01043f;}
+.context {background: #010659;}
+.consults {background: #02098c;}
+.strategy {background: #030dbf;}
+.implement {background: #040ed8;}
 
-.vision .hex-button:hover i {color: #1A5C82;}
-.context .hex-button:hover i {color: #175375;}
-.consults .hex-button:hover i {color: #12415C;}
-.strategy .hex-button:hover i {color: #0F364D;}
-.implement .hex-button:hover i {color: #0B2636;}
+.vision .hex-button:hover i {color: #01043f;}
+.context .hex-button:hover i {color: #010659;}
+.consults .hex-button:hover i {color: #02098c;}
+.strategy .hex-button:hover i {color: #030dbf;}
+.implement .hex-button:hover i {color: #040ed8;}
 
 
 .hex {
