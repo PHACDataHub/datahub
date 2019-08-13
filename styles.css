@@ -53,10 +53,20 @@ body {
   overflow-x: hidden;
   background-color: #0a0fbd;
   font-family: "DINOT-Medium", helvetica, arial, sans-serif;
-  background-image: url(Header-final.jpg);
+  background-image: url(header-final.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center -9vh;
+}
+
+body:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url(images/bgcircuits.png) no-repeat;
 }
 
 p, ul {
@@ -551,18 +561,19 @@ content: "";
     background: url(images/2.jpg);
     background-size: 30%;
     background-repeat: no-repeat;
-	background-position: center left;
+	background-position: 0% 50%;
     height: 100%;
     left: 0;
     width: 100%;
     top: 0;
     position: absolute;
     opacity: 0;
-	-webkit-transition: opacity 20s, background-size 20s; /* For Safari 3.1 to 6.0 */
-	transition: opacity 20s, background-size 20s;
+	-webkit-transition: opacity 20s, background-size 20s, background-position 20s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 20s, background-size 20s, background-position 20s;
 }
 
 .vision:hover:before {
 	opacity: 0.3;
 	background-size: 50%;
+	background-position: -10% 50%;
 }
