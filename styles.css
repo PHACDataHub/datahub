@@ -59,15 +59,36 @@ body {
   background-position: center -9vh;
 }
 
-body:before {
+/* just tryin somethin out here
+	body:before {
 	position: absolute;
 	top: 0;
 	left: 0;
 	content: "";
 	width: 100%;
-	height: 100%;
-	background: url(images/bgcircuits.png) no-repeat;
+	height: 0%;
+	background: url(images/header-2.jpg) no-repeat;
+	background-size: 100%;
+    background-position: center -9vh;
+	animation: pulse 2s infinite;
+	opacity: 0.4;
 }
+
+@keyframes pulse {
+
+  20% {
+	  height: 0%;
+  }
+  50% {
+	height: 100%; 
+		bottom: 100%;
+  }
+  70% {
+	  height: 0%;
+  }
+
+}
+*/
 
 p, ul {
 	font-size: 1.1rem;
@@ -380,6 +401,8 @@ header {
 	min-height: 300px;
 	height: 30vh;
 	max-height: 400px;
+    display: flex;
+    align-items: center;
 }
 
 .section {
@@ -410,6 +433,11 @@ header {
 	position: absolute;
 	left: 3.5rem;
 	top: -2rem;
+}
+
+.vision .hex-col:before {
+	height: 100%;
+	top: 2rem;
 }
 
 
