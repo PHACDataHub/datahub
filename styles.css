@@ -198,6 +198,15 @@ h4.collapse-title {
 	margin: 1rem -1rem;
 }
 
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-container img {
+	margin: auto;
+}
+
 .emph {
 	font-size: 1.2rem;
     margin-left: -35px;
