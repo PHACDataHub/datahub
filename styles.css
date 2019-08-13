@@ -373,18 +373,15 @@ header {
 }
 
 .section {
-	padding: 2rem 0;
-	position: relative;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
 }
 
 .section-title {
-	position: absolute;
-    left: 6rem;
-    top: 0;
-    background: rgba(1, 4, 63, 0.9);
     height: 100%;
-    z-index: 4;
-    padding-left: 4rem;
+    display: flex;
+    align-items: center;
 }
 
 .section-title h3.phac {
@@ -545,6 +542,27 @@ footer a:hover {color: #fff;}
 	width: 10%;
 }
 
-.section-title {
-	position: absolute;
+.section {
+	position: relative;
+}
+
+.vision:before {
+content: "";
+    background: url(images/2.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+	background-position: center left;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+	-webkit-transition: opacity 20s, background-size 20s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 20s, background-size 20s;
+}
+
+.vision:hover:before {
+	opacity: 0.3;
+	background-size: 50%;
 }
