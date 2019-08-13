@@ -24,7 +24,7 @@
   min-height: 100%;
 } */
 
-/* This sets all the colours, including the background of the hexs to match their respective row */
+/* This sets mostly all the colours, including the background of the hexs to match their respective row */
 .vision .hex {fill: #01043f;}
 .context .hex {fill: #010659;}
 .consults .hex {fill: #02098c;}
@@ -193,6 +193,11 @@ h4.collapse-title {
   font-weight: 600;
 }
 
+.temph {
+    padding: 0;
+	margin: 1rem -1rem;
+}
+
 .emph {
 	font-size: 1.2rem;
     margin-left: -35px;
@@ -201,11 +206,18 @@ h4.collapse-title {
     margin-bottom: 0;
     color: white;
     background: #030ff6;
+	margin: 1rem -35px;
 }
 
 .emph i {
 	font-size: 2rem;
 }
+
+.emph .row {
+	padding: 0.5rem 0;
+}
+
+
 ol.phase {
   padding-left: 1.7rem;
 }
@@ -604,4 +616,22 @@ content: "";
 	opacity: 0.3;
 	background-size: 50%;
 	background-position: -10% 50%;
+}
+
+
+
+.module-module-module {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.module {
+	-ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+	-ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+	padding: 0 1rem;
 }
