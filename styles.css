@@ -38,11 +38,11 @@
 .implement {background: rgba(4, 14, 216, 0.9);}
 footer {background: #01043f;}
 
-.vision .hex-button:hover i, .vision h4.collapse-title {color: #01043f;}
-.context .hex-button:hover i, .context h4.collapse-title {color: #010659;}
-.consults .hex-button:hover i, .consults h4.collapse-title {color: #02098c;}
-.strategy .hex-button:hover i, .strategy h4.collapse-title {color: #030dbf;}
-.implement .hex-button:hover i, .implement h4.collapse-title {color: #040ed8;}
+.vision .hex-button:hover i/*, .vision h4.collapse-title*/ {color: #01043f;}
+.context .hex-button:hover i/*, .context h4.collapse-title*/ {color: #010659;}
+.consults .hex-button:hover i/*, .consults h4.collapse-title*/ {color: #02098c;}
+.strategy .hex-button:hover i/*, .strategy h4.collapse-title*/ {color: #030dbf;}
+.implement .hex-button:hover i/*, .implement h4.collapse-title*/ {color: #040ed8;}
 
 h1.phac{color:#fff;}
 h2.phac{color:#ced3ff;}
@@ -104,15 +104,16 @@ p, ul {
 
 h1.phac{
   text-align: left;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family:"BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
   font-weight: 600;
+  letter-spacing: .2rem;
 }
 
 h2.phac{
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.15rem;
   font-family:Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
@@ -121,15 +122,15 @@ h2.phac{
 h3.phac{
   text-align: left;
   font-size: 1.8rem;
+  letter-spacing: 0.1rem;
   font-family: "BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 h3.button-title, .button-title{
   text-align: left;
   color:white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: lighter;
   font-family:Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
@@ -139,8 +140,8 @@ h3.button-title, .button-title{
 
 h4.phac{
   text-align: left;
-  font-size: 1.1rem;
-  letter-spacing: 0.15rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -187,11 +188,54 @@ p.def{
 }
 
 h4.collapse-title {
+<<<<<<< HEAD
+  color: white!important;
+  background: #030dbf;
+  text-transform: uppercase;
+  padding: 0.5rem;
+=======
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "DINOT-Medium", Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.15rem;
+  transform: translateY(.7rem);
+  padding-left: .5rem;
 }
+
+.collapse-title-vision {
+  background-color: #01043f;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.collapse-title-context {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #010659;
+}
+
+.collapse-title-consults {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #02098c;
+}
+
+.collapse-title-strategy {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #030dbf;
+}
+
+.collapse-title-implement {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #040ed8;
+>>>>>>> e337d7149bbb7ac2278718507b5dc0aadb193a4f
+}
+
+
 
 .temph {
     padding: 0;
@@ -593,9 +637,8 @@ footer a:hover {color: #fff;}
 
 
 
-.vision:before {
-content: "";
-    background: url(images/2.jpg);
+.section:before {
+	content: "";
     background-size: 30%;
     background-repeat: no-repeat;
 	background-position: 0% 50%;
@@ -609,11 +652,37 @@ content: "";
 	transition: opacity 20s, background-size 20s, background-position 20s;
 }
 
-.vision:hover:before {
+.section:hover:before {
 	opacity: 0.3;
 	background-size: 50%;
 	background-position: -10% 50%;
 }
+
+.vision:before {
+    background-image: url(images/vision-hover.png);
+	mix-blend-mode: lighten;	
+}
+
+.context:before {
+	background-image: url(images/data-context.png);
+    mix-blend-mode: normal;	
+}
+
+
+.consults:before {
+	background-image: url(images/consultations.png);
+    mix-blend-mode: normal;	
+}
+
+.consults:hover:before {
+	background-image: url(images/consultations.png);
+    mix-blend-mode: normal;	
+	opacity: 0.1;
+}
+
+
+
+
 
 .header {
 	position: relative;
@@ -673,7 +742,7 @@ content: "";
 }
 
 #whatweheard {
-	min-height: 1050px;
+	min-height: 1100px;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -725,4 +794,24 @@ content: "";
 	width: 10%;
 	align-items: start;
 	opacity: 1;
+}
+
+.img-right {
+  float:right;
+  width: 50%;
+}
+
+.img-right img {
+  width: 100%;
+}
+
+
+.img-left {
+  float: left;
+  width: 60%;
+}
+
+strong {
+  font-weight: normal;
+  color: #030dbf;
 }
