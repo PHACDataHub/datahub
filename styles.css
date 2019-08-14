@@ -56,7 +56,7 @@ body {
   background-image: url(header-final.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center -9vh;
+  background-position: center -10vh;
 }
 
 /* just tryin somethin out here
@@ -588,7 +588,7 @@ footer a:hover {color: #fff;}
 
 
 .carousel-item {
-	background: #030ff6;
+	background: #000;
 	color: white;
 	padding: 4rem;
 }
@@ -604,6 +604,8 @@ footer a:hover {color: #fff;}
 .section {
 	position: relative;
 }
+
+
 
 .vision:before {
 content: "";
@@ -627,6 +629,45 @@ content: "";
 	background-position: -10% 50%;
 }
 
+.header {
+	position: relative;
+}	
+.header:after {
+    content: "";
+    position: absolute;
+    width: 3755px;
+    left: 48%;
+    -webkit-clip-path: polygon(0% 66.6%, 0% 80%, 50.2% 80%, 51.2% 47.8%, 100% 47.8%, 100% 33.3%, 51% 33.3%, 50% 66.6%);
+    clip-path: polygon(0% 66.6%, 0% 80%, 50% 80%, 50.7% 47.8%, 100% 47.8%, 100% 33.3%, 50.6% 33.3%, 49.9% 66.6%);
+    height: 3rem;
+    margin-bottom: -1rem;
+    margin-left: -1877.5px;
+    background: white;
+    bottom: 0;
+    z-index: 2;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    width: 3755px;
+    left: 48%;
+    -webkit-clip-path: polygon(0% 66.6%, 0% 80%, 50.2% 80%, 51.2% 47.8%, 100% 47.8%, 100% 33.3%, 51% 33.3%, 50% 66.6%);
+    clip-path: polygon(0% 66.6%, 0% 80%, 50% 80%, 50.7% 47.8%, 100% 47.8%, 100% 33.3%, 50.6% 33.3%, 49.9% 66.6%);
+    height: 3rem;
+    margin-bottom: -1rem;
+    margin-left: -1877.5px;
+    background: white;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+.vision {
+	padding-top: 4rem!important;
+    margin-top: -1rem;
+    clip-path: polygon(0% 1rem, 0% 100%, 100% 100%, 100% 0%, 50.5% 0%, 48% 1rem);
+}
 
 
 .module-module-module {
@@ -643,4 +684,20 @@ content: "";
     flex-basis: 33.333%;
     max-width: 33.333%;
 	padding: 0 1rem;
+}
+
+.whatweheard {
+	min-height: 1050px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    margin-top: -20rem;
+}
+
+.carousel-indicators {
+	top: 0;
+}
+
+.carousel-indicators li {
+	background-color: white;
 }
