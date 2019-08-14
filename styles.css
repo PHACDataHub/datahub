@@ -24,25 +24,25 @@
   min-height: 100%;
 } */
 
-/* This sets all the colours, including the background of the hexs to match their respective row */
+/* This sets mostly all the colours, including the background of the hexs to match their respective row */
 .vision .hex {fill: #01043f;}
 .context .hex {fill: #010659;}
 .consults .hex {fill: #02098c;}
 .strategy .hex {fill: #030dbf;}
 .implement .hex {fill: #040ed8;}
 
-.vision {background: #01043f;}
-.context {background: #010659;}
-.consults {background: #02098c;}
-.strategy {background: #030dbf;}
-.implement {background: #040ed8;}
+.vision {background: rgba(1, 4, 63, 0.9);}
+.context {background: rgba(1, 6, 89, 0.9);}
+.consults {background: rgba(2, 9, 140, 0.9);}
+.strategy {background: rgba(3, 13, 191, 0.9);}
+.implement {background: rgba(4, 14, 216, 0.9);}
 footer {background: #01043f;}
 
-.vision .hex-button:hover i, h4.collapse-title {color: #01043f;}
-.context .hex-button:hover i, h4.collapse-title {color: #010659;}
-.consults .hex-button:hover i, h4.collapse-title {color: #02098c;}
-.strategy .hex-button:hover i, h4.collapse-title {color: #030dbf;}
-.implement .hex-button:hover i, h4.collapse-title {color: #040ed8;}
+.vision .hex-button:hover i, .vision h4.collapse-title {color: #01043f;}
+.context .hex-button:hover i, .context h4.collapse-title {color: #010659;}
+.consults .hex-button:hover i, .consults h4.collapse-title {color: #02098c;}
+.strategy .hex-button:hover i, .strategy h4.collapse-title {color: #030dbf;}
+.implement .hex-button:hover i, .implement h4.collapse-title {color: #040ed8;}
 
 h1.phac{color:#fff;}
 h2.phac{color:#ced3ff;}
@@ -53,11 +53,42 @@ body {
   overflow-x: hidden;
   background-color: #0a0fbd;
   font-family: "DINOT-Medium", helvetica, arial, sans-serif;
-  background-image: url(Header-final.jpg);
+  background-image: url(header-final.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center -9vh;
 }
+
+/* just tryin somethin out here
+	body:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 0%;
+	background: url(images/header-2.jpg) no-repeat;
+	background-size: 100%;
+    background-position: center -9vh;
+	animation: pulse 2s infinite;
+	opacity: 0.4;
+}
+
+@keyframes pulse {
+
+  20% {
+	  height: 0%;
+  }
+  50% {
+	height: 100%; 
+		bottom: 100%;
+  }
+  70% {
+	  height: 0%;
+  }
+
+}
+*/
 
 p, ul {
 	font-size: 1.1rem;
@@ -158,10 +189,43 @@ p.def{
 h4.collapse-title {
   text-align: left;
   font-size: 2rem;
-  font-family:Arial, Helvetica, sans-serif; 
-  text-transform: uppercase;
+  font-family: "DINOT-Medium", Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
+
+.temph {
+    padding: 0;
+	margin: 1rem -1rem;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-container img {
+	margin: auto;
+}
+
+.emph {
+	font-size: 1.2rem;
+    margin-left: -35px;
+    margin-right: -35px;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+    color: white;
+    background: #030ff6;
+	margin: 1rem -35px;
+}
+
+.emph i {
+	font-size: 2rem;
+}
+
+.emph .row {
+	padding: 0.5rem 0;
+}
+
 
 ol.phase {
   padding-left: 1.7rem;
@@ -358,11 +422,24 @@ header {
 	min-height: 300px;
 	height: 30vh;
 	max-height: 400px;
+    display: flex;
+    align-items: center;
 }
 
 .section {
-	padding: 2rem 0;
-	opacity: 0.9;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.section-title h3.phac {
+	line-height: 100%;
 }
 
 .hex-col {
@@ -377,6 +454,11 @@ header {
 	position: absolute;
 	left: 3.5rem;
 	top: -2rem;
+}
+
+.vision .hex-col:before {
+	height: 100%;
+	top: 2rem;
 }
 
 
@@ -511,10 +593,54 @@ footer a:hover {color: #fff;}
 	padding: 4rem;
 }
 
-.carousel-item h4 {
+.carousel-item h4.collapse-title {
 	color: white;
 }
 
 .carousel-control-next, .carousel-control-prev {
 	width: 10%;
+}
+
+.section {
+	position: relative;
+}
+
+.vision:before {
+content: "";
+    background: url(images/2.jpg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+	background-position: 0% 50%;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+	-webkit-transition: opacity 20s, background-size 20s, background-position 20s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 20s, background-size 20s, background-position 20s;
+}
+
+.vision:hover:before {
+	opacity: 0.3;
+	background-size: 50%;
+	background-position: -10% 50%;
+}
+
+
+
+.module-module-module {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.module {
+	-ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+	-ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+	padding: 0 1rem;
 }
