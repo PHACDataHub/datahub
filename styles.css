@@ -104,10 +104,10 @@ p, ul {
 
 h1.phac{
   text-align: left;
-  font-size: 6rem;
-  letter-spacing: .25rem;
-  font-family: 'Teko', sans-serif;
+  font-size: 3rem;
+  font-family:"BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 h2.phac{
@@ -120,10 +120,10 @@ h2.phac{
 
 h3.phac{
   text-align: left;
-  font-size: 2.5rem;
-  letter-spacing: .15rem;
-  font-family: 'Teko', sans-serif;
+  font-size: 1.8rem;
+  font-family: "BebasneueBold", Arial, Helvetica, sans-serif; 
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 h3.button-title, .button-title{
