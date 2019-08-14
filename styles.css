@@ -622,20 +622,6 @@ footer a {color: #1A5C82;}
 footer a:hover {color: #fff;}
 
 
-.carousel-item {
-	background: #000;
-	color: white;
-	padding: 4rem;
-}
-
-.carousel-item h4.collapse-title {
-	color: white;
-}
-
-.carousel-control-next, .carousel-control-prev {
-	width: 10%;
-}
-
 .section {
 	position: relative;
 }
@@ -721,18 +707,57 @@ content: "";
 	padding: 0 1rem;
 }
 
-.whatweheard {
+#whatweheard {
 	min-height: 1050px;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    margin-top: -20rem;
+    margin-top: 5rem;
 }
 
 .carousel-indicators {
 	top: 0;
+	bottom: auto;
 }
 
 .carousel-indicators li {
 	background-color: white;
+}
+
+.carousel {
+	margin: 0 -35px;
+}
+
+.carousel-item {
+	background: #01043f;
+	color: white;
+	padding: 4rem;
+}
+
+.carousel-item h4.collapse-title {
+    color: #01043f;
+    background: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-align: center;
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.carousel-item h4.collapse-title:before {
+	content: "";
+	padding: 10px 16px;
+	background: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: -8px;
+    -webkit-clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+    clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 10%;
+	align-items: start;
+	opacity: 1;
 }
