@@ -331,14 +331,14 @@
 								<div class="container">
 								<h4 class="collapse-title">What we heard</h4>
 								<p>From March 2019 to July 2019, we, a team within the PHAC Data, Partnerships and Innovation Hub, consulted with over 500 PHAC employees. Time after time, we heard from PHAC staff that the value of our data will be optimized when it is easily found, readily available, and have multiple applications for our public health functions. We also heard PHAC’s data culture described as a collection of “independent islands,” with plenty of opportunities to share resources, best practices, and data standards. The most common solution proposed for this was horizontal collaboration, integration, and leadership on data initiatives. Overall, there was a widespread desire to get on the same page in order to streamline and rationalize the bespoke processes currently in place to all elements of the data lifecycle.</p>
-								<div id="carouselExampleControls" class="carousel slide whatweheard" data-ride="carousel">
+								<div id="whatweheard" class="carousel slide">
 									  <ol class="carousel-indicators">
-											<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">1/6</li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="1">2/6</li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="2">3/6</li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="3">4/6</li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="4">5/6</li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="5">6/6</li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 									  </ol>	
 									  <div class="carousel-inner">
 										<div class="carousel-item active">
@@ -386,16 +386,22 @@
 											<p>While it is possible for individuals to work around these challenges, it is clear from our consultations that measurable and incremental changes require a cultural shift. This shift is about “ensuring that people have the skills to collect the data” and recognizing every public servant as a ‘data agent’: capable of managing and drawing on data to make better decisions.</p>
 										</div>
 									  </div>
-									  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+									  <a class="carousel-control-prev" href="#whatweheard" role="button" data-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 										<span class="sr-only">Previous</span>
 									  </a>
-									  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+									  <a class="carousel-control-next" href="#whatweheard" role="button" data-slide="next">
 										<span class="carousel-control-next-icon" aria-hidden="true"></span>
 										<span class="sr-only">Next</span>
 									  </a>
 									</div>
 								</div>
+								<script>
+									$(document).ready(function(){
+									  // Activate Carousel
+									  $("#whatweheard").carousel({interval: false, pause: "hover"});
+									});
+								</script>
 							</div>
 						</div> 
 					</div> <!-- end of column for expandable content -->
