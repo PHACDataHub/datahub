@@ -20,7 +20,7 @@
 
 
 
-/* body, html { 
+/* body, html {
   min-height: 100%;
 } */
 
@@ -80,7 +80,7 @@ body {
 	  height: 0%;
   }
   50% {
-	height: 100%; 
+	height: 100%;
 		bottom: 100%;
   }
   70% {
@@ -105,7 +105,7 @@ p, ul {
 h1.phac{
   text-align: left;
   font-size: 4rem;
-  font-family:"BebasneueBold", Arial, Helvetica, sans-serif; 
+  font-family:"BebasneueBold", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .2rem;
@@ -115,7 +115,7 @@ h2.phac{
   text-align: left;
   font-size: 1.2rem;
   letter-spacing: 0.15rem;
-  font-family:Arial, Helvetica, sans-serif; 
+  font-family:Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -123,7 +123,7 @@ h3.phac{
   text-align: left;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  font-family: "BebasneueBold", Arial, Helvetica, sans-serif; 
+  font-family: "BebasneueBold", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -132,7 +132,7 @@ h3.button-title, .button-title{
   color:white;
   font-size: 1.2rem;
   font-weight: lighter;
-  font-family:Arial, Helvetica, sans-serif; 
+  font-family:Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   transform: translateY(0.6rem);
   line-height: 8.45rem;
@@ -188,12 +188,6 @@ p.def{
 }
 
 h4.collapse-title {
-<<<<<<< HEAD
-  color: white!important;
-  background: #030dbf;
-  text-transform: uppercase;
-  padding: 0.5rem;
-=======
   text-align: left;
   font-size: 1.8rem;
   font-family: "DINOT-Medium", Arial, Helvetica, sans-serif;
@@ -232,7 +226,6 @@ h4.collapse-title {
   width: 100%;
   height: 3.5rem;
   background-color: #040ed8;
->>>>>>> e337d7149bbb7ac2278718507b5dc0aadb193a4f
 }
 
 
@@ -322,15 +315,15 @@ ol.carousel-indicators{
   font-family:Consolas, monaco, monospace;
 }
 
-.nav-search { 
-  position: relative; 
+.nav-search {
+  position: relative;
 }
 
-.nav-search input { 
+.nav-search input {
   text-indent: 16px;
 }
 
-.nav-search .fa-search { 
+.nav-search .fa-search {
   position: absolute;
   top: 12px;
   left: 10px;
@@ -397,17 +390,17 @@ ol.carousel-indicators{
 	content:'';
   left:0;
   border: 0;
-	position:absolute;	
+	position:absolute;
 }
 
 */
 
-/* I'm guessing that this is meant to vertically align the svg, but it shouldn't apply to all svg's (in case we use them elsewhere), and I think I found a different way to do it 
+/* I'm guessing that this is meant to vertically align the svg, but it shouldn't apply to all svg's (in case we use them elsewhere), and I think I found a different way to do it
 svg{
   transform: translateY(-1.7rem);
 } */
 
-/* not sure what the .intro-specific formatting is for 
+/* not sure what the .intro-specific formatting is for
 
 .intro{
   background:transparent;
@@ -440,13 +433,13 @@ svg{
 	content:'';
   left:0;
   border: 0;
-	position:absolute;	
+	position:absolute;
 } */
 
 /* .intro:hover{
   background-image:url("Buttons/H Intro.svg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: center center;
 } */
 
@@ -517,7 +510,7 @@ svg {
 
 
 .hex {
-	
+
 	stroke: #ffffff;
 	stroke-width: 5px;
 	stroke-miterlimit:10;
@@ -567,7 +560,7 @@ svg {
   visibility: hidden;
   background-color: #fff;
   -webkit-transition: all .1s ease;
-  transition: all 0.3s ease;  
+  transition: all 0.3s ease;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -660,23 +653,23 @@ footer a:hover {color: #fff;}
 
 .vision:before {
     background-image: url(images/vision-hover.png);
-	mix-blend-mode: lighten;	
+	mix-blend-mode: lighten;
 }
 
 .context:before {
 	background-image: url(images/data-context.png);
-    mix-blend-mode: normal;	
+    mix-blend-mode: normal;
 }
 
 
 .consults:before {
 	background-image: url(images/consultations.png);
-    mix-blend-mode: normal;	
+    mix-blend-mode: normal;
 }
 
 .consults:hover:before {
 	background-image: url(images/consultations.png);
-    mix-blend-mode: normal;	
+    mix-blend-mode: normal;
 	opacity: 0.1;
 }
 
@@ -686,7 +679,7 @@ footer a:hover {color: #fff;}
 
 .header {
 	position: relative;
-}	
+}
 .header:after {
     content: "";
     position: absolute;
