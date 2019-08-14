@@ -588,7 +588,7 @@ footer a:hover {color: #fff;}
 
 
 .carousel-item {
-	background: #030ff6;
+	background: #000;
 	color: white;
 	padding: 4rem;
 }
@@ -684,4 +684,20 @@ content: "";
     flex-basis: 33.333%;
     max-width: 33.333%;
 	padding: 0 1rem;
+}
+
+.whatweheard {
+	min-height: 1050px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    margin-top: -20rem;
+}
+
+.carousel-indicators {
+	top: 0;
+}
+
+.carousel-indicators li {
+	background-color: white;
 }
