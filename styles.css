@@ -40,12 +40,14 @@
 .consults .hex {fill: #02098c;}
 .strategy .hex {fill: #030dbf;}
 .implement .hex {fill: #040ed8;}
+.action .hex {fill: #030ff6;}
 
 .vision {background: rgba(1, 4, 63, 0.9);}
 .context {background: rgba(1, 6, 89, 0.9);}
 .consults {background: rgba(2, 9, 140, 0.9);}
 .strategy {background: rgba(3, 13, 191, 0.9);}
 .implement {background: rgba(4, 14, 216, 0.9);}
+.action {background: rgba(3, 15, 246, 0.9);}
 footer {background: #01043f;}
 
 .vision .hex-button:hover i/*, .vision h4.collapse-title*/ {color: #01043f;}
@@ -53,6 +55,8 @@ footer {background: #01043f;}
 .consults .hex-button:hover i/*, .consults h4.collapse-title*/ {color: #02098c;}
 .strategy .hex-button:hover i/*, .strategy h4.collapse-title*/ {color: #030dbf;}
 .implement .hex-button:hover i/*, .implement h4.collapse-title*/ {color: #040ed8;}
+.action .hex-button:hover i/*, .action h4.collapse-title*/ {color: #030ff6;}
+
 
 h1.phac{color:#fff;}
 h2.phac{color:#ced3ff;}
