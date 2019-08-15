@@ -25,11 +25,11 @@
 } */
 
 /* This sets mostly all the colours, including the background of the hexs to match their respective row */
-.vision .hex {fill: #01043f;}
-.context .hex {fill: #010659;}
-.consults .hex {fill: #02098c;}
-.strategy .hex {fill: #030dbf;}
-.implement .hex {fill: #040ed8;}
+.vision .hex, .vision .hex-button:hover .hex-icon-container g {fill: #01043f;}
+.context .hex, .context .hex-button:hover .hex-icon-container g {fill: #010659;}
+.consults .hex, .consults .hex-button:hover .hex-icon-container g {fill: #02098c;}
+.strategy .hex, .strategy .hex-button:hover .hex-icon-container g {fill: #030dbf;}
+.implement .hex, .implement .hex-button:hover .hex-icon-container g {fill: #040ed8;}
 
 .vision {background: rgba(1, 4, 63, 0.9);}
 .context {background: rgba(1, 6, 89, 0.9);}
@@ -568,8 +568,15 @@ svg {
 	width: 4rem;
 }
 
-.hex-button:hover .hex-icon-container g {
-	fill: #01043f;
+.shrink-icon {
+  height: 3rem!important;
+  width: 3.5rem;
+  margin-top: 1rem;
+}
+
+.hex-button:hover .shrink-icon {
+  height: 3.5rem!important;
+  margin-top: 0.75rem;
 }
 
 .hex-button:hover img {
