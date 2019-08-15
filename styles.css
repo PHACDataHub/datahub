@@ -35,12 +35,12 @@
 } */
 
 /* This sets mostly all the colours, including the background of the hexs to match their respective row */
-.vision .hex {fill: #01043f;}
-.context .hex {fill: #010659;}
-.consults .hex {fill: #02098c;}
-.strategy .hex {fill: #030dbf;}
-.implement .hex {fill: #040ed8;}
-.action .hex {fill: #030ff6;}
+.vision .hex, .vision .hex-button:hover .hex-icon-container g {fill: #01043f;}
+.context .hex, .context .hex-button:hover .hex-icon-container g {fill: #010659;}
+.consults .hex, .consults .hex-button:hover .hex-icon-container g {fill: #02098c;}
+.strategy .hex, .strategy .hex-button:hover .hex-icon-container g {fill: #030dbf;}
+.implement .hex, .implement .hex-button:hover .hex-icon-container g {fill: #040ed8;}
+.action .hex, .action .hex-button:hover .hex-icon-container g {fill: #030ff6;}
 
 .vision {background: rgba(1, 4, 63, 0.9);}
 .context {background: rgba(1, 6, 89, 0.9);}
@@ -120,14 +120,14 @@ h1.phac{
   text-align: left;
   font-size: 7rem;
   letter-spacing: 0.4rem;
-  font-family:"Built-Titling-Rg"; 
+  font-family:"Built-Titling-Rg";
   text-transform: uppercase;
 }
 
 h2.phac{
   text-align: left;
   font-size: 1.3rem;
-  font-family:Arial, Helvetica, sans-serif; 
+  font-family:Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -135,7 +135,7 @@ h3.phac{
   text-align: left;
   font-size: 3rem;
   letter-spacing: 0.2rem;
-  font-family: "Built-Titling-Rg"; 
+  font-family: "Built-Titling-Rg";
   text-transform: uppercase;
 }
 
@@ -257,9 +257,9 @@ blockquote{
   width: max-content;
   height: auto;
 }
-/* 
+/*
 .img-fluid:hover{
-  color: #424242; 
+  color: #424242;
 -webkit-transition: all .3s ease-in;
 -moz-transition: all .3s ease-in;
 -ms-transition: all .3s ease-in;
@@ -267,8 +267,8 @@ blockquote{
 transition: all .3s ease-in;
 opacity: 1;
 transform: scale(1.5);
--ms-transform: scale(1.5); 
--webkit-transform: scale(1.5); 
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
 } */
 
 .img.left{
@@ -608,7 +608,7 @@ svg {
     height: 5rem;
     width: 3.5rem;
 	-webkit-transition: width ease-out 150ms; /* For Safari 3.1 to 6.0 */
-	transition: width ease-out 150ms;	
+	transition: width ease-out 150ms;
 }
 .hex-icon-container g {
 	fill: white;
@@ -618,8 +618,15 @@ svg {
 	width: 4rem;
 }
 
-.hex-button:hover .hex-icon-container g {
-	fill: #01043f;
+.shrink-icon {
+  height: 2.5rem!important;
+  width: 3.5rem;
+  margin-top: 1.25rem;
+}
+
+.hex-button:hover .shrink-icon {
+  height: 3rem!important;
+  margin-top: 1rem;
 }
 
 .hex-button:hover img {
@@ -779,7 +786,7 @@ footer a:hover {color: #fff;}
 	position: relative;
 }
 
-/* old version of white bar before I switched to an SVG 
+/* old version of white bar before I switched to an SVG
 .header:after {
     content: "";
     position: absolute;
@@ -808,7 +815,7 @@ footer a:hover {color: #fff;}
 }
 
 .header:after {
-	
+
 }
 
 .vision {
@@ -867,7 +874,7 @@ footer a:hover {color: #fff;}
     padding: 0.5rem;
     text-align: center;
 	position: relative;
-	margin-bottom: 2rem; 
+	margin-bottom: 2rem;
 }
 
 .carousel-item h4.collapse-title:before {
@@ -913,4 +920,3 @@ strong {
 	width: 33vw;
     font-size: 1rem;
 }
-
