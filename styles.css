@@ -48,7 +48,7 @@
 .strategy {background: rgba(3, 13, 191, 0.9);}
 .implement {background: rgba(4, 14, 216, 0.9);}
 .action {background: rgba(3, 15, 246, 0.9);}
-footer {background: #01043f;}
+footer {background: #fff;}
 
 .vision .hex-button:hover i/*, .vision h4.collapse-title*/ {color: #01043f;}
 .context .hex-button:hover i/*, .context h4.collapse-title*/ {color: #010659;}
@@ -722,11 +722,48 @@ svg {
 }
 
 footer {
-	color: white;
+  color: #000;
+  position: relative;
 }
 
-footer a {color: #1A5C82;}
-footer a:hover {color: #fff;}
+.bottom-bar {
+  fill: #fff;
+  width: 3755px;
+  height: 3rem;
+  position: absolute;
+  left: 48%;
+  top: 0;
+  margin-left: -1877.5px;
+  z-index: 2;
+  margin-top: -1rem;
+}
+
+/*
+footer:before {
+	content: "";
+	height: calc(5rem);
+	width: calc(5rem);
+	position: absolute;
+	background: white;
+	-webkit-clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
+	clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
+	top: -0.5rem;
+	left: calc(16.66667% + 1rem);
+	margin-top: -1px;
+}*/
+
+footer h2.phac {
+  color: #000;
+}
+
+footer a {color: #040ed8;}
+footer a:hover {color: #01043f;}
+
+.footerp {
+	max-width: 600px;
+	width: 33vw;
+  font-size: 1rem;
+}
 
 
 .section {
@@ -814,9 +851,7 @@ footer a:hover {color: #fff;}
     z-index: 2;
 }
 
-.header:after {
 
-}
 
 .vision {
 	padding-top: 4rem!important;
@@ -915,8 +950,3 @@ strong {
   color: #030dbf;
 }
 
-.footerp {
-	max-width: 600px;
-	width: 33vw;
-    font-size: 1rem;
-}
