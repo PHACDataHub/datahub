@@ -118,7 +118,7 @@ p, ul {
 
 h1.phac{
   text-align: left;
-  font-size: 7rem;
+  font-size: 6.5rem;
   letter-spacing: 0.4rem;
   font-family:"Built-Titling-Rg";
   text-transform: uppercase;
@@ -126,15 +126,16 @@ h1.phac{
 
 h2.phac{
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
   font-family:Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
 h3.phac{
   text-align: left;
-  font-size: 3rem;
-  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
   font-family: "Built-Titling-Rg";
   text-transform: uppercase;
 }
@@ -160,7 +161,7 @@ h3.carousel-title{
 h4.phac{
   text-align: left;
   font-size: 1.3rem;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
