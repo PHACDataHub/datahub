@@ -618,14 +618,14 @@ svg {
 }
 
 .shrink-icon {
-  height: 3rem!important;
+  height: 2.5rem!important;
   width: 3.5rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
 .hex-button:hover .shrink-icon {
-  height: 3.5rem!important;
-  margin-top: 0.75rem;
+  height: 3rem!important;
+  margin-top: 1rem;
 }
 
 .hex-button:hover img {
