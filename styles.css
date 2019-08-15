@@ -40,6 +40,7 @@
 .consults .hex, .consults .hex-button:hover .hex-icon-container g {fill: #02098c;}
 .strategy .hex, .strategy .hex-button:hover .hex-icon-container g {fill: #030dbf;}
 .implement .hex, .implement .hex-button:hover .hex-icon-container g {fill: #040ed8;}
+.action .hex, .action .hex-button:hover .hex-icon-container g {fill: #030ff6;}
 
 .vision {background: rgba(1, 4, 63, 0.9);}
 .context {background: rgba(1, 6, 89, 0.9);}
