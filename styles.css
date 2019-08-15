@@ -536,6 +536,14 @@ svg {
 	transition: font-size ease-out 250ms;
 }
 
+.hex-icon-container img {
+	width: 3rem;
+	margin-top: 1rem;
+	-webkit-transition: width ease-out 250ms, margin-top ease-out 250ms; /* For Safari 3.1 to 6.0 */
+	transition: width ease-out 250ms, margin-top ease-out 250ms;
+	position:relative;
+}
+
 .hex-button:hover .hex {
 	fill: #fff;
 	stroke-width: 10px;
@@ -543,6 +551,16 @@ svg {
 
 .hex-button:hover i {
 	font-size: 3rem
+}
+
+.hex-button:hover img {
+	width: 3.5rem;
+	margin-top: 0.75rem;
+}
+
+.hex-button:hover .invert {
+	filter: invert(0%);
+	-webkit-filter: invert(0%);
 }
 
 .hex-button h3 {
@@ -589,6 +607,11 @@ svg {
 
 .hex-icon-container i {
 	margin-left: 0;
+}
+
+.invert {
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
 }
 
 .expanded-content {
@@ -768,7 +791,7 @@ footer a:hover {color: #fff;}
     padding: 0.5rem;
     text-align: center;
 	position: relative;
-	margin-bottom: 2rem;
+	margin-bottom: 2rem; 
 }
 
 .carousel-item h4.collapse-title:before {
