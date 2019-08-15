@@ -603,14 +603,36 @@ svg {
 	font-size: 3rem
 }
 
+/* styling for the hex icons from icons8 */
+.hex-icon-container svg {
+    height: 5rem;
+    width: 3.5rem;
+	-webkit-transition: width ease-out 150ms; /* For Safari 3.1 to 6.0 */
+	transition: width ease-out 150ms;	
+}
+.hex-icon-container g {
+	fill: white;
+}
+
+.hex-button:hover .hex-icon-container svg {
+	width: 4rem;
+}
+
+.hex-button:hover .hex-icon-container g {
+	fill: #01043f;
+}
+
 .hex-button:hover img {
 	width: 3.5rem;
 	margin-top: 0.75rem;
 }
 
 .hex-button:hover .invert {
+	filter: invert;
+	-ms-filter: invert;
 	filter: invert(0%);
 	-webkit-filter: invert(0%);
+	filter: brightness(1)
 }
 
 .hex-button h3 {
@@ -653,6 +675,9 @@ svg {
 	-webkit-clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
 	clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
 }
+
+
+
 
 
 .hex-icon-container i {
@@ -753,6 +778,8 @@ footer a:hover {color: #fff;}
 .header {
 	position: relative;
 }
+
+/* old version of white bar before I switched to an SVG 
 .header:after {
     content: "";
     position: absolute;
@@ -766,23 +793,23 @@ footer a:hover {color: #fff;}
     background: white;
     bottom: 0;
     z-index: 2;
-}
+}*/
 
-.header:before {
-    content: "";
-    position: absolute;
-    width: 3755px;
-    left: 48%;
-    -webkit-clip-path: polygon(0% 66.6%, 0% 80%, 50.2% 80%, 51.2% 47.8%, 100% 47.8%, 100% 33.3%, 51% 33.3%, 50% 66.6%);
-    clip-path: polygon(0% 66.6%, 0% 80%, 50% 80%, 50.7% 47.8%, 100% 47.8%, 100% 33.3%, 50.6% 33.3%, 49.9% 66.6%);
-    height: 3rem;
+.white-bar {
+	fill: white;
+	width: 3755px;
+	height: 3rem;
+	position: absolute;
+	left: 48%;
+    bottom: 0;
     margin-bottom: -1rem;
     margin-left: -1877.5px;
-    background: white;
-    bottom: 0;
     z-index: 2;
 }
 
+.header:after {
+	
+}
 
 .vision {
 	padding-top: 4rem!important;
@@ -880,3 +907,10 @@ strong {
   font-weight: normal;
   color: #030dbf;
 }
+
+.footerp {
+	max-width: 600px;
+	width: 33vw;
+    font-size: 1rem;
+}
+
