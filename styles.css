@@ -30,6 +30,10 @@
 
 
 
+html {
+	font-size: calc(8px+118vw);
+}
+
 /* body, html {
   min-height: 100%;
 } */
@@ -725,6 +729,7 @@ svg {
 footer {
   color: #000;
   position: relative;
+  padding-top: 2rem;
 }
 
 .bottom-bar {
@@ -951,3 +956,24 @@ strong {
   color: #030dbf;
 }
 
+.card-col {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-col {
+    position: relative;
+    flex: 6%;
+    max-width: 6%;
+  }
+  .section-col h3.phac {
+  	transform-origin: 0 0;
+  	transform: rotate(-90deg);
+  	font-size: 1.2rem;
+  	width: 240px;
+  	position: absolute;
+  	text-align: center;
+  	margin-top: 120px;
+  }
+}
