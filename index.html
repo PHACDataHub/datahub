@@ -33,67 +33,34 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+
+	<script src="jquery.js"></script>
 </head>
 <body>
-    <div class="container-fluid header"> 
-        <!-- We probably aren't going to have a navbar up here.
-		
-		<nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">PHAC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Read More
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Intro</a>
-                                <a class="dropdown-item" href="#">Vision</a>
-                                <a class="dropdown-item" href="#">What We Heard</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Targets</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Phase 1: 2019-2020</a>
-                                <a class="dropdown-item" href="#">Phase 2: 2021-2022</a>
-                                <a class="dropdown-item" href="#">Phase 3: 2023-2024</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="nav-search">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                        <input class="form-control" type="text" placeholder="search" aria-label="Search">
-                    </form>
-                </div>                        
-            </nav> -->
+    <div class="container-fluid header">
         <header>
 			<h2 class="phac">Public Health Agency <span style="text-transform: lowercase;">of</span> Canada</h2>
             <h1 class="phac">Data Strategy</h1>
             <h4 class="phac">Building a foundation for <br>federal public health data</h4>
 		</header>
     </div> <!-- end of container-fluid for all header content -->
-	
-	<div class="container-fluid main"> 
-	
+
+	<div class="container-fluid main">
+
 		<div class="row section vision"> <!-- Vision Row -->
 			<div class="col-2">
                 <h3 class="phac">Vision</h3>
             </div>
-			
+
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-4 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#visionCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
-								<i class="fas fa-eye"></i>
+								<img class="invert" src="https://img.icons8.com/wired/64/000000/light.png">
 							</div>
 							<h3 class="button-title">Our Vision</h3>
 						</button>
@@ -148,8 +115,6 @@
 										<img src="images/vision2.png" />
 									</div>
 
-					
-									
 									<div class="temph col-list">
 											<section class="module-module-module">
 												<div class="module">
@@ -186,26 +151,26 @@
 				</div>
 			</div>
 		</div> <!-- end of vision row -->
-		
+
 		<div class="row section context"> <!-- Data Context Row -->
 			<div class="col-2">
                 <h3 class="phac">PHAC's Data Context</h3>
-            </div> 
-			
+            </div>
+
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-4 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#landscapeCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
-								<i class="fas fa-mountain"></i>
+								<img class="invert" src="https://img.icons8.com/dotty/80/000000/company.png">
 							</div>
 							<h3 class="button-title">Our Data Landscape</h3>
 						</button>
 					</div>
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="landscapeCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -228,12 +193,12 @@
 						</div>
 					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
-					
-				<div class="row hex-row"> <!-- Hex Row -->	
+
+				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-4 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#problematiqueCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-skating"></i>
@@ -241,7 +206,7 @@
 							<h3 class="button-title">Our Problematique</h3>
 						</button>
 					</div> <!-- end of column for expandable content -->
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="problematiqueCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -267,21 +232,21 @@
 					</div> <!-- end of content column -->
 				</div> <!-- end of hex row -->
 			</div>
-		</div> <!-- end of data context row -->	
+		</div> <!-- end of data context row -->
 
-		
- 
+
+
 		<div class="row section consults"> <!-- Consultations Row -->
 			<div class="col-2">
                 <h3 class="phac">Consultations</h3>
-            </div> 
-            
+            </div>
+
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-4 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#approachCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-sign-language"></i>
@@ -289,7 +254,7 @@
 							<h3 class="button-title">Our Approach</h3>
 						</button>
 					</div>
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="approachCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -344,12 +309,12 @@
 						</div>
 					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
-					
+
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-4 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#heardCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-volume-up"></i>
@@ -357,7 +322,7 @@
 							<h3 class="button-title">What we heard</h3>
 						</button>
 					</div> <!-- end of column for expandable content -->
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="heardCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -445,15 +410,15 @@
 									});
 								</script>
 							</div>
-						</div> 
+						</div>
 					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
-				
+
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-4 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#voicesCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-users"></i>
@@ -475,25 +440,25 @@
 								<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
 								</div>
 							</div>
-						</div>		
+						</div>
 					</div> <!-- end of content column -->
 				</div> <!-- end of hex row -->
 			</div>
 		</div> <!-- end of data context row -->
-		
-		
-		
+
+
+
 		<div class="row section strategy"> <!-- Data Strategy Row -->
 			<div class="col-2">
                 <h3 class="phac">Data Strategy</h3>
-            </div> 
-			
+            </div>
+
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-3 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#glanceCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-cubes"></i>
@@ -501,7 +466,7 @@
 							<h3 class="button-title">Our Strategy at a glance</h3>
 						</button>
 					</div>
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="glanceCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -522,12 +487,12 @@
 						</div>
 					</div> <!-- end of column for expandable content -->
 				</div> <!-- end of hex row -->
-					
+
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-3 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#themesCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-project-diagram"></i>
@@ -535,7 +500,7 @@
 							<h3 class="button-title">Moving the dial</h3>
 						</button>
 					</div>
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="themesCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -556,7 +521,7 @@
 					<div class="col-3 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#principlesCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-graduation-cap"></i>
@@ -564,7 +529,7 @@
 							<h3 class="button-title">Our Principles</h3>
 						</button>
 					</div>
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="principlesCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -586,7 +551,7 @@
 					<div class="col-3 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#futureCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-robot"></i>
@@ -594,7 +559,7 @@
 							<h3 class="button-title">Our Future state</h3>
 						</button>
 					</div>
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="futureCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -608,23 +573,23 @@
 								<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
 								</div>
 							</div>
-						</div>	
+						</div>
 					</div> <!-- end of column for expandable content -->
-				</div> <!-- end of hex row -->					
+				</div> <!-- end of hex row -->
 			</div>
 		</div> <!-- end of data strat row -->
-		
+
 		<div class="row section implement"> <!-- Implementation plan Row -->
 			<div class="col-2">
                 <h3 class="phac">Implementation plan</h3>
             </div>
-            
+
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-3 hex-col"> <!-- column for the hex button -->
 						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#implementCollapse">
 							<svg viewBox="0 0 300 300" >
-							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>			
+							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
 								<i class="fas fa-hippo"></i>
@@ -632,7 +597,7 @@
 							<h3 class="button-title">Project Plan at a glance </h3>
 						</button>
 					</div>
-					<div class="col-6"> <!-- column with the expandable content -->	
+					<div class="col-6"> <!-- column with the expandable content -->
 						<div class="collapse multi-collapse" id="implementCollapse">
 							<div class="card card-body">
 								<div class="container">
@@ -645,10 +610,10 @@
 							</div>
 						</div>
 					</div> <!-- end of column for expandable content -->
-				</div> <!-- end of hex row -->		
+				</div> <!-- end of hex row -->
 			</div>
 		</div> <!-- end of implementation row -->
-		
+
 
     </div>
 
@@ -666,7 +631,7 @@
 
 			<!-- Content -->
 			<h2 class="phac">PHAC’s Data Partnerships and Innovation Hub</h5>
-			<p>Want to learn more about what we're up to? Check out these rad links.</p>
+			<p>Want to reach out to us? You can contact us at phacdatastrategy@canada.ca</p>
 
 		  </div>
 		  <!-- Grid column -->
@@ -735,6 +700,6 @@
 
 	</footer>
 	<!-- Footer -->
-	
+
 </body>
 </html>
