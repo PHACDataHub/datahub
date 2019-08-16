@@ -735,6 +735,32 @@ footer {
   padding-top: 2rem;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-content span {
+  flex: 0 0 66.6666%;
+  padding-left: 30px;
+}
+
+.footer-content span:before {
+  content: "";
+  background: black;
+  height: 15px;
+  width: 24px;
+  position: absolute;
+  margin-left: -30px;
+  border-radius: 50%;
+  top:50%;
+  margin-top: -7px;
+}
+
+.footer-content a {
+  flex: 0 0 11.11111%
+}
+
 .bottom-bar {
   fill: #fff;
   width: 3755px;
@@ -747,25 +773,15 @@ footer {
   margin-top: -1rem;
 }
 
-/*
-footer:before {
-	content: "";
-	height: calc(5rem);
-	width: calc(5rem);
-	position: absolute;
-	background: white;
-	-webkit-clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
-	clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
-	top: -0.5rem;
-	left: calc(16.66667% + 1rem);
-	margin-top: -1px;
-}*/
-
 footer h2.phac {
   color: #000;
 }
 
-footer a {color: #040ed8;}
+footer a {
+  color: black;
+  text-transform: uppercase;
+}
+
 footer a:hover {color: #01043f;}
 
 .footerp {
