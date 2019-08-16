@@ -881,14 +881,14 @@ footer a:hover {color: #01043f;}
 
 .carousel {
   margin: 0 -35px -35px -35px;
-  height: 75rem;
+  height: 60rem;
 }
 
 .carousel-item {
 	background: rgb(1,6,89);
 	color: white;
   padding: 4rem;
-  height: 75rem;
+  height: 60rem;
   width: 100%;
 }
 
