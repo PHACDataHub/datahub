@@ -241,7 +241,10 @@ blockquote{
   padding: 0.5rem 1rem;
 }
 
-
+div.carousel-item p {
+  font-size: 1.05rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .temph {
     padding: 0;
@@ -896,14 +899,14 @@ footer a:hover {color: #01043f;}
 
 .carousel {
   margin: 0 -35px -35px -35px;
-  max-height: 65rem;
+  height: 75rem;
 }
 
 .carousel-item {
 	background: rgb(1,6,89);
 	color: white;
   padding: 4rem;
-  height: 65rem;
+  height: 75rem;
   width: 100%;
 }
 
