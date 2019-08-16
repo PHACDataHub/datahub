@@ -18,14 +18,15 @@
 	  url("fonts/7251ae7cbcc9c197274aae57493f42ad.svg#DINOT-Medium") format("svg"); /* iOS 4.1- */
 }
 
-@font-face {
-  font-family: "Built-Titling-Lt";
-  src: url("fonts/built-titling-lt.ttf");
-}
+@import url(//db.onlinewebfonts.com/c/ebced14106f874979db9a35d284bc6da?family=Built+Titling);
 
 @font-face {
-  font-family: "Built-Titling-Rg";
-  src: url("fonts/built-titling-rg.ttf");
+  font-family: "Built-Titling";
+  src: url("fonts/ebced14106f874979db9a35d284bc6da.eot");
+  src: url("fonts/ebced14106f874979db9a35d284bc6da.eot?#iefix") format("embedded-opentype"),
+      url("fonts/ebced14106f874979db9a35d284bc6da.woff2") format("woff2"),
+      url("fonts/ebced14106f874979db9a35d284bc6da.woff") format("woff"),
+      url("fonts/ebced14106f874979db9a35d284bc6da.ttf") format("truetype");
 }
 
 
@@ -124,7 +125,7 @@ h1.phac{
   text-align: left;
   font-size: 6.5rem;
   letter-spacing: 0.4rem;
-  font-family:"Built-Titling-Rg";
+  font-family:"Built-Titling";
   text-transform: uppercase;
 }
 
@@ -140,7 +141,7 @@ h3.phac{
   text-align: left;
   font-size: 2.5vw;
   letter-spacing: 0.3rem;
-  font-family: "Built-Titling-Rg";
+  font-family: "Built-Titling";
   text-transform: uppercase;
 }
 
@@ -167,7 +168,6 @@ h4.phac{
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
 }
 
 p.phac{
@@ -214,21 +214,21 @@ p.def{
 
 h4.collapse-title {
   text-align: left;
-  font-size: 3rem;
-  font-family: "Built-Titling-Rg";
+  font-size: 2.7rem;
+  font-family: "Built-Titling";
   text-transform: uppercase;
   color: white;
   letter-spacing: 0.3rem;
   padding-left: .5rem;
+  padding-top: 0.15rem;
 }
 
 h4.video-title{
-  font-family: "Built-Titling-Lt";
+  font-family: "Built-Titling";
   text-transform: uppercase;
   color: #01043f;
   font-size: 2.3rem;
   letter-spacing: 0.1rem;
-  font-weight: bolder;
 }
 
 .collapse-title-box {
@@ -242,7 +242,10 @@ blockquote{
   padding: 0.5rem 1rem;
 }
 
-
+div.carousel-item p {
+  font-size: 1.05rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .temph {
     padding: 0;
@@ -897,19 +900,19 @@ footer a:hover {color: #01043f;}
 
 .carousel {
   margin: 0 -35px -35px -35px;
-  max-height: 65rem;
+  height: 75rem;
 }
 
 .carousel-item {
-	background: #01043f;
+	background: rgb(1,6,89);
 	color: white;
   padding: 4rem;
-  height: 65rem;
+  height: 75rem;
   width: 100%;
 }
 
 .carousel-item h4.collapse-title {
-    color: #01043f;
+    color: rgb(1,6,89);
     background: white;
     border-radius: 10px;
     padding: 0.5rem;
