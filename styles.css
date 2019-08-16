@@ -818,51 +818,10 @@ footer a:hover {color: #01043f;}
 	background-position: -10% 50%;
 }
 
-.vision:before {
-    background-image: url(images/vision-hover.png);
-	mix-blend-mode: lighten;
-}
-
-.context:before {
-	background-image: url(images/data-context.png);
-    mix-blend-mode: normal;
-}
-
-
-.consults:before {
-	background-image: url(images/consultations.png);
-    mix-blend-mode: normal;
-}
-
-.consults:hover:before {
-	background-image: url(images/consultations.png);
-    mix-blend-mode: normal;
-	opacity: 0.1;
-}
-
-
-
-
 
 .header {
 	position: relative;
 }
-
-/* old version of white bar before I switched to an SVG
-.header:after {
-    content: "";
-    position: absolute;
-    width: 3755px;
-    left: 48%;
-    -webkit-clip-path: polygon(0% 66.6%, 0% 80%, 50.2% 80%, 51.2% 47.8%, 100% 47.8%, 100% 33.3%, 51% 33.3%, 50% 66.6%);
-    clip-path: polygon(0% 66.6%, 0% 80%, 50% 80%, 50.7% 47.8%, 100% 47.8%, 100% 33.3%, 50.6% 33.3%, 49.9% 66.6%);
-    height: 3rem;
-    margin-bottom: -1rem;
-    margin-left: -1877.5px;
-    background: white;
-    bottom: 0;
-    z-index: 2;
-}*/
 
 .white-bar {
 	fill: white;
@@ -883,7 +842,6 @@ footer a:hover {color: #01043f;}
     margin-top: -1rem;
     clip-path: polygon(0% 1rem, 0% 100%, 100% 100%, 100% 0%, 50.5% 0%, 48% 1rem);
 }
-
 
 .module-module-module {
 	display: -ms-flexbox;
