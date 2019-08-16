@@ -167,7 +167,6 @@ h4.phac{
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
 }
 
 p.phac{
@@ -901,7 +900,7 @@ footer a:hover {color: #01043f;}
 }
 
 .carousel-item {
-	background: #01043f;
+	background: rgb(1,6,89);
 	color: white;
   padding: 4rem;
   height: 65rem;
@@ -909,7 +908,7 @@ footer a:hover {color: #01043f;}
 }
 
 .carousel-item h4.collapse-title {
-    color: #01043f;
+    color: rgb(1,6,89);
     background: white;
     border-radius: 10px;
     padding: 0.5rem;
