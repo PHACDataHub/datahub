@@ -281,14 +281,14 @@ transform: scale(1.5);
 
 .img.left{
   float: left;
-  height: 67%;
+  /* height: 67%; this stretches the images in IE, if you do just width it should scape proportionately. */
   width: 67%;
   padding-right: 0.5rem;
 }
 
 .img.right{
   float: right;
-  height: 67%;
+  /* height: 67%; this stretches the images in IE, if you do just width it should scape proportionately. */
   width: 67%;
   padding-left: 0.5rem;
 }
@@ -937,21 +937,6 @@ footer a:hover {color: #01043f;}
 	width: 10%;
 	align-items: start;
 	opacity: 1;
-}
-
-.img-right {
-  float:right;
-  width: 50%;
-}
-
-.img-right img {
-  width: 100%;
-}
-
-
-.img-left {
-  float: left;
-  width: 60%;
 }
 
 strong {
