@@ -231,6 +231,13 @@ h4.video-title{
   letter-spacing: 0.1rem;
 }
 
+p.glance {
+  font-weight: bolder;
+  font-size:1.85rem;
+  font-family: "Built-Titling";
+  letter-spacing: 0.15rem;
+}
+
 .collapse-title-box {
   background-color: rgb(3,13,191);
   width: 100%;
