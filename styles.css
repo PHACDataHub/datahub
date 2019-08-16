@@ -213,12 +213,13 @@ p.def{
 
 h4.collapse-title {
   text-align: left;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-family: "Built-Titling-Rg";
   text-transform: uppercase;
   color: white;
   letter-spacing: 0.3rem;
   padding-left: .5rem;
+  padding-top: 0.15rem;
 }
 
 h4.video-title{
