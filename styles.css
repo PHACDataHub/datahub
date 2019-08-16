@@ -139,7 +139,7 @@ h2.phac{
 
 h3.phac{
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   letter-spacing: 0.3rem;
   font-family: "Built-Titling";
   text-transform: uppercase;
@@ -288,14 +288,14 @@ transform: scale(1.5);
 
 .img.left{
   float: left;
-  height: 67%;
+  /* height: 67%; this stretches the images in IE, if you do just width it should scape proportionately. */
   width: 67%;
   padding-right: 0.5rem;
 }
 
 .img.right{
   float: right;
-  height: 67%;
+  /* height: 67%; this stretches the images in IE, if you do just width it should scape proportionately. */
   width: 67%;
   padding-left: 0.5rem;
 }
@@ -742,6 +742,32 @@ footer {
   padding-top: 2rem;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-content span {
+  flex: 0 0 66.6666%;
+  padding-left: 30px;
+}
+
+.footer-content span:before {
+  content: "";
+  background: black;
+  height: 15px;
+  width: 24px;
+  position: absolute;
+  margin-left: -30px;
+  border-radius: 50%;
+  top:50%;
+  margin-top: -7px;
+}
+
+.footer-content a {
+  flex: 0 0 11.11111%
+}
+
 .bottom-bar {
   fill: #fff;
   width: 3755px;
@@ -754,25 +780,15 @@ footer {
   margin-top: -1rem;
 }
 
-/*
-footer:before {
-	content: "";
-	height: calc(5rem);
-	width: calc(5rem);
-	position: absolute;
-	background: white;
-	-webkit-clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
-	clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0%);
-	top: -0.5rem;
-	left: calc(16.66667% + 1rem);
-	margin-top: -1px;
-}*/
-
 footer h2.phac {
   color: #000;
 }
 
-footer a {color: #040ed8;}
+footer a {
+  color: black;
+  text-transform: uppercase;
+}
+
 footer a:hover {color: #01043f;}
 
 .footerp {
@@ -809,51 +825,10 @@ footer a:hover {color: #01043f;}
 	background-position: -10% 50%;
 }
 
-.vision:before {
-    background-image: url(images/vision-hover.png);
-	mix-blend-mode: lighten;
-}
-
-.context:before {
-	background-image: url(images/data-context.png);
-    mix-blend-mode: normal;
-}
-
-
-.consults:before {
-	background-image: url(images/consultations.png);
-    mix-blend-mode: normal;
-}
-
-.consults:hover:before {
-	background-image: url(images/consultations.png);
-    mix-blend-mode: normal;
-	opacity: 0.1;
-}
-
-
-
-
 
 .header {
 	position: relative;
 }
-
-/* old version of white bar before I switched to an SVG
-.header:after {
-    content: "";
-    position: absolute;
-    width: 3755px;
-    left: 48%;
-    -webkit-clip-path: polygon(0% 66.6%, 0% 80%, 50.2% 80%, 51.2% 47.8%, 100% 47.8%, 100% 33.3%, 51% 33.3%, 50% 66.6%);
-    clip-path: polygon(0% 66.6%, 0% 80%, 50% 80%, 50.7% 47.8%, 100% 47.8%, 100% 33.3%, 50.6% 33.3%, 49.9% 66.6%);
-    height: 3rem;
-    margin-bottom: -1rem;
-    margin-left: -1877.5px;
-    background: white;
-    bottom: 0;
-    z-index: 2;
-}*/
 
 .white-bar {
 	fill: white;
@@ -874,7 +849,6 @@ footer a:hover {color: #01043f;}
     margin-top: -1rem;
     clip-path: polygon(0% 1rem, 0% 100%, 100% 100%, 100% 0%, 50.5% 0%, 48% 1rem);
 }
-
 
 .module-module-module {
 	display: -ms-flexbox;
@@ -946,27 +920,13 @@ footer a:hover {color: #01043f;}
 	opacity: 1;
 }
 
-.img-right {
-  float:right;
-  width: 50%;
-}
-
-.img-right img {
-  width: 100%;
-}
-
-
-.img-left {
-  float: left;
-  width: 60%;
-}
-
 strong {
   font-weight: normal;
   color: #030dbf;
 }
 
-.card-col {
+/*.card-col {*/
+.card {
   max-width: 800px;
   margin: auto;
 }
