@@ -931,6 +931,10 @@ strong {
   margin: auto;
 }
 
+.pop-out:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1000px) {
   .section-col {
     position: relative;
@@ -947,3 +951,4 @@ strong {
   	margin-top: 120px;
   }
 }
+

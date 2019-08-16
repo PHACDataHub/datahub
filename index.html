@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://olivercrosby.github.io/datahub/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/b9f2ae3468.js"></script>
@@ -16,23 +17,19 @@
 	<style type="text/css" media="print">
     body { visibility: hidden; display: none }
 	</style>
-	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="57x57" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="https://olivercrosby.github.io/datahub/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://olivercrosby.github.io/datahub/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://olivercrosby.github.io/datahub/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://olivercrosby.github.io/datahub/favicon/favicon-16x16.png">
 
 	<!-- <script src="jquery.js"></script> only works if installed locally... -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -383,7 +380,7 @@
 									<li>Other jurisdictions are getting data out in weeks, when it takes months and years at PHAC. Timely collection and reporting can be difficult, especially to support emergency response efforts.</li>
 									<li>We are not using data as well as we should be for policy development and investments.</li>
 								</ul>
-								<div id="whatweheard" class="carousel slide" data-ride="carousel">
+								<div id="whatweheard" class="carousel slide" data-ride="carousel" data-interval="false">
 									  <ol class="carousel-indicators">
 											<li data-target="#whatweheard" data-slide-to="0" class="active"></li>
 											<li data-target="#whatweheard" data-slide-to="1"></li>
@@ -452,12 +449,6 @@
 									  </a>
 									</div>
 								</div>
-								<script>
-									$(document).ready(function(){
-									  // Activate Carousel
-									  $("#whatweheard").carousel({interval: false, pause: "hover"});
-									});
-								</script>
 							</div>
 						</div>
 					</div> <!-- end of column for expandable content -->
@@ -787,10 +778,7 @@
 										<h4 class="collapse-title">Future State</h4>
 									</div>
 									<br>
-								<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-								<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains fragmented and inconsistent. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
-								<p>These challenges reduces PHAC’s capacity to fulfill our mandate, especially given the interdisciplinary nature of the field of public health. For example, the need for a comprehensive understanding of linkages across chronic and infectious diseases is necessary as we foster these partnerships and tap into more opportunities for innovation. Our dispersed data accountability structure prohibits maximization of the value from our data, making it difficult to evaluate the impact and efficiency of our collective efforts in achieving important organizational goals. When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do basic data analysis – let alone anything innovative.  We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and data analytics challenges – much to the chagrin of our data providers and partners. And where innovative best practices exist within PHAC, as well as from other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
-								<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. What’s at stake? Our reputation as a trusted source of public health information.</p>
+									<p>Visual representation in progress, to be included in final version</p>
 								</div>
 							</div>
 						</div>
@@ -825,7 +813,7 @@
 										<h4 class="collapse-title">Project plan at a glance</h4>
 									</div>
 									<br>
-									<img src="https://olivercrosby.github.io/datahub/images/Implementation-Plan-Eng.png" class="img-fluid" alt="A graphic demonstrating the implementation plan">	
+									<img src="https://olivercrosby.github.io/datahub/images/Implementation-Plan-Eng.png" class="img-fluid" alt="A graphic demonstrating the implementation plan">
 								</div>
 							</div>
 						</div>
@@ -847,7 +835,7 @@
 							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
-								<i class="fas fa-hippo"></i>
+									<svg class="shrink-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#01043f"><path d="M32.25,37.625c-9.675,0 -17.46875,7.79375 -17.46875,17.46875v79.28125c0,2.28438 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125v-79.28125c0,-5.24063 4.16563,-9.40625 9.40625,-9.40625h107.5c5.24062,0 9.40625,4.16562 9.40625,9.40625v79.28125c0,2.28438 1.74687,4.03125 4.03125,4.03125c2.28438,0 4.03125,-1.74687 4.03125,-4.03125v-79.28125c0,-9.675 -7.79375,-17.46875 -17.46875,-17.46875zM5.375,145.125c-2.28438,0 -4.03125,1.74687 -4.03125,4.03125v4.03125c0,9.675 7.79375,17.46875 17.46875,17.46875h134.375c9.675,0 17.46875,-7.79375 17.46875,-17.46875v-4.03125c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125h-47.03125c-2.28437,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74688,4.03125 4.03125,4.03125h43c0,5.24062 -4.16563,9.40625 -9.40625,9.40625h-134.375c-5.24062,0 -9.40625,-4.16563 -9.40625,-9.40625h43c2.28438,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74687,-4.03125 -4.03125,-4.03125zM72.5625,145.125c-2.28437,0 -4.03125,1.74687 -4.03125,4.03125c0,2.28438 1.74688,4.03125 4.03125,4.03125h26.875c2.28437,0 4.03125,-1.74687 4.03125,-4.03125c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125z"></path></g></g></svg>
 							</div>
 							<h3 class="button-title">Learning from the experts</h3>
 						</button>
@@ -873,7 +861,7 @@
 							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
 							<div class="hex-icon-container">
-								<i class="fas fa-hippo"></i>
+								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#01043f"><g id="surface1"><path d="M127.925,36.55c-0.30234,0 -0.5291,0.04199 -0.77266,0.07559c-0.0084,0 -0.0168,0 -0.0252,0c-0.14277,-0.0084 -0.29394,0 -0.43672,0.0168l-59.51133,8.52441c-0.5123,0.07559 -0.98262,0.32754 -1.31855,0.72226c-1.94844,0.80625 -3.51055,2.41035 -3.51055,4.63594c0,2.93945 2.43555,5.375 5.375,5.375c0.32754,0 0.44512,-0.0252 0.50391,-0.03359l9.17109,-0.65508v13.25273c-14.5125,2.03242 -28.39512,4.90469 -39.10312,7.39063l-15.18437,-17.08242c-0.41152,-0.46191 -0.99941,-0.72227 -1.6125,-0.72227h-12.9c-0.65508,0 -1.26816,0.29395 -1.67969,0.80625c-0.40313,0.5123 -0.5627,1.18418 -0.41992,1.81406l6.57597,29.11738c0.09238,0.38633 0.28555,0.74746 0.57109,1.03301c0.73906,1.83926 2.10801,3.2334 3.92207,4.01445c0.20996,0.22676 0.45352,0.39473 0.73906,0.5123c0,0 30.33516,12.55566 81.29688,17.02363l4.2832,8.15488c-1.73008,1.57051 -2.83867,3.82129 -2.83867,6.32402c0,4.72832 3.87168,8.6 8.6,8.6c4.72832,0 8.6,-3.87168 8.6,-8.6c0,-4.72832 -3.87168,-8.6 -8.6,-8.6c-0.68027,0 -1.32695,0.10078 -1.96523,0.25195l-3.01504,-5.73613c9.61621,0.72226 19.83711,1.18418 30.78027,1.18418h2.15c7.09668,0 12.9,-5.80332 12.9,-12.9v-4.3h4.3v15.05c-0.0084,0.77266 0.39473,1.49492 1.0666,1.88965c0.67188,0.38633 1.49492,0.38633 2.1668,0c0.67188,-0.39472 1.075,-1.11699 1.0666,-1.88965v-15.48672c1.81406,-0.77266 3.10742,-2.49434 3.66172,-4.49316c0.41152,-0.40313 0.63828,-0.94902 0.63828,-1.52012c0,-2.77988 -1.81406,-5.14824 -4.3,-6.04687v-15.45312c0.0084,-0.57949 -0.21836,-1.14219 -0.62988,-1.55371c-0.41152,-0.41152 -0.97422,-0.63828 -1.55371,-0.62988c-1.18418,0.0252 -2.1332,0.99941 -2.11641,2.18359v15.05h-4.3v-4.3c0,-7.09668 -5.80332,-12.9 -12.9,-12.9h-2.15c-3.7877,0 -8.75117,0.07559 -12.9,0.20156v-14.84844l5.9209,-0.42832c0.5627,-0.03359 1.0834,-0.29394 1.46133,-0.71387c3.06543,-0.94062 5.51777,-3.41816 5.51777,-6.78594c0,-4.13203 -3.39297,-7.525 -7.525,-7.525zM127.925,40.85c1.80566,0 3.225,1.41934 3.225,3.225c0,1.72168 -1.30176,3.06543 -2.98984,3.19141c-0.09238,0.0084 -0.17637,0.0252 -0.26875,0.04199l-59.96484,4.25801c-0.03359,0.0084 -0.06719,0.0084 -0.09238,0.0084c-0.22676,0.0252 -0.25195,0.0252 -0.10918,0.0252c-0.61309,0 -1.075,-0.46191 -1.075,-1.075c0,-0.58789 0.41992,-1.01621 0.99941,-1.0582c1.17578,-0.09238 2.06601,-1.11699 1.98203,-2.30117l0.13438,1.97363l57.25215,-8.19687c0.10918,0 0.22676,-0.0084 0.34434,-0.0252c0.24356,-0.05039 0.42832,-0.06719 0.5627,-0.06719zM118.25,52.30547v16.6877c0,0.0252 0,0.04199 0,0.06719c0,2.02402 -0.07559,4.38398 -1.97363,6.41641c-1.88965,2.03242 -6.03847,4.07324 -15.22637,4.07324c-4.22441,0 -9.40625,-0.57949 -13.26113,-2.11641c-1.92324,-0.77266 -3.48535,-1.77207 -4.50996,-2.92266c-1.02461,-1.15059 -1.57891,-2.41875 -1.57891,-4.19922v-15.41113zM156.95,58.05c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM11.2875,62.35h9.24668l13.15195,14.78965l-1.42774,1.25137l0.15957,1.92324l1.6293,1.02461l0.75586,-0.05879l0.20156,-0.05039l1.36055,-1.20098c0.48711,0.31914 1.0834,0.41992 1.65449,0.29395c10.69961,-2.51953 25.04414,-5.47578 39.83379,-7.5502c0.41992,1.73008 1.0918,3.34258 2.20879,4.59395c1.6293,1.83926 3.7877,3.11582 6.13926,4.05645c4.69473,1.87285 10.25449,2.42715 14.84844,2.42715c9.82617,0 15.34395,-2.19199 18.37578,-5.44219c1.96524,-2.09961 2.56152,-4.3252 2.79668,-6.29043c0.17637,-0.28555 0.28555,-0.61309 0.31914,-0.94062c4.09844,-0.13438 9.1291,-0.22676 12.9084,-0.22676h2.15c4.77031,0 8.6,3.82969 8.6,8.6v21.5c0,4.77031 -3.82969,8.6 -8.6,8.6h-2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.12539 0.87344,2.06602 1.99883,2.15c-71.15996,-0.03359 -114.78984,-18.04824 -115.19297,-18.21621c-0.0084,0 -0.0168,-0.0084 -0.0252,-0.0084c-0.13438,-0.06719 -0.28555,-0.12598 -0.42832,-0.15957c-1.19258,-0.30234 -2.10801,-1.23457 -2.36836,-2.41875c-0.0168,-0.05879 -0.03359,-0.11758 -0.05039,-0.16797c0,-0.0168 0,-0.0252 -0.0084,-0.04199l-0.69707,-3.06543l0.50391,0.30234l0.74746,-0.05879l0.20996,-0.05879l1.43613,-1.27656l-0.15957,-1.92324l-1.64609,-1.01621l-0.75586,0.06719l-0.20156,0.05879l-0.83984,0.74746zM135.45,70.95c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM26.13594,79.24766l-0.75586,0.06719l-0.20996,0.05039l-1.43613,1.28496l0.16797,1.92324l1.6293,1.00781l0.76426,-0.06719l0.20996,-0.05039l1.43613,-1.28496l-0.16797,-1.91484zM135.45,79.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM135.45,88.15c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM150.5,88.15h6.08887c0.15957,0.0252 0.32754,0.03359 0.48711,0.0252c1.15059,0.06719 2.02402,0.95742 2.02402,2.1248c0,1.16738 -0.87344,2.05762 -2.02402,2.1248c-0.05879,0 -0.10918,-0.0084 -0.15957,-0.0084c-0.10078,0.0084 -0.20996,0.0168 -0.31074,0.03359h-6.10566zM135.45,96.75c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM156.95,118.25c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM109.65,122.55c2.40195,0 4.3,1.89805 4.3,4.3c0,2.40195 -1.89805,4.3 -4.3,4.3c-2.40195,0 -4.3,-1.89805 -4.3,-4.3c0,-2.40195 1.89805,-4.3 4.3,-4.3z"></path></g></g></g></svg>
 							</div>
 							<h3 class="button-title">New Data Science Pilots</h3>
 						</button>
