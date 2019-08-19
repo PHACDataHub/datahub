@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://olivercrosby.github.io/datahub/styles.css">
+    <!-- <link rel="stylesheet" href="https://olivercrosby.github.io/datahub/styles.css"> -->
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -50,6 +50,9 @@
 	<script>
 		document.getElementsByTagName('head')[0].innerHTML = "hi"
 	</script>-->
+
+
+
 </head>
 <body>
     <div class="container-fluid header">
@@ -63,7 +66,7 @@
 		  </svg>
     </div> <!-- end of container-fluid for all header content -->
 
-	<div class="container-fluid main">
+	<div class="container-fluid main" id="accordian">
 
 		<div class="row section vision"> <!-- Vision Row -->
 			<div class="col-2 section-col">
@@ -85,7 +88,7 @@
 						</button>
 					</div> <!-- end of hex row -->
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="visionCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="visionCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -94,63 +97,7 @@
 										<h4 class="collapse-title">Vision</h4>
 									</div>
 									<br>
-									<!-- hiding this one for now
-									<div class="emph">
-										<div class="row">
-											<div class="col-1">
-												<i class="fas fa-walking"></i>
-											</div>
-											<div class="col">
-												<p>We promote and protect the health of Canadians through leadership, partnership, innovation and action in public health.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-1">
-												<i class="fas fa-heartbeat"></i>
-											</div>
-											<div class="col">
-												<p>We strive to prevent and control chronic and infectious diseases as well as injuries, and we prepare for and respond to public health emergencies.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-1">
-												<i class="fas fa-file-medical-alt"></i>
-											</div>
-											<div class="col">
-												<p>Our actions have been, and always will be, guided by sound data.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-1">
-												<i class="fas fa-running"></i>
-											</div>
-											<div class="col">
-												<p>We are conveners, generators, and users of public health data.</p>
-											</div>
-										</div>
-									</div> -->
-									
-									<!-- <div class="img-container">
-										<img src="images/vision2.png" />
-									</div>
-
-									<div class="temph col-list">
-											<section class="module-module-module">
-												<div class="module">
-													<h3>Leadership</h3>
-													<p>We promote and protect the health of Canadians through leadership, partnership, innovation and action in public health.</p>
-												</div>
-												<div class="module">
-													<h3>Purpose</h3>
-													<p>We strive to prevent and control chronic and infectious diseases as well as injuries, and we prepare for and respond to public health emergencies.</p>
-												</div>
-												<div class="module">
-													<h3>Data</h3>
-													<p>Our actions have been, and always will be, guided by sound data. We are conveners, generators, and users of public health data.</p>
-												</div>
-											</section>
-									</div> -->
-									<h4 class="video-title">A message from the CPHO and President</h4>
+									<!-- <h4 class="video-title">A message from the CPHO and President</h4> -->
 									<img src="https://olivercrosby.github.io/datahub/images/Vision-2.png" class="img right" alt="An image presenting vision, leadership, partnership, action and innovation.">			
 									<p>As the Public Health Agency of Canada (PHAC), promote and protect the health of Canadians through <strong>leadership, partnership, innovation</strong> and <strong>action</strong> in public health.</p>
 									<p>We strive to <strong>prevent</strong> and <strong>control</strong> chronic and infectious diseases as well as injuries, and we <strong>prepare</strong> for and <strong>respond</strong> to public health emergencies.</p>
@@ -179,7 +126,8 @@
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#landscapeCollapse">
+						
+						<button type="button" class="btn hex-button" data-toggle="collapse" data-target="#landscapeCollapse" data-parent="#accordian">
 							<svg viewBox="0 0 300 300" >
 							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
@@ -190,7 +138,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="landscapeCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="landscapeCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -224,16 +172,15 @@
 						</button>
 					</div> <!-- end of column for expandable content -->
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="problematiqueCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="problematiqueCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
 										<h4 class="collapse-title">Problematique</h4>
 									</div>
 									<br>
-									<h4 class="video-title">Animation Video</h4>
+									<!-- <h4 class="video-title">Animation Video</h4> -->
 									<p>PHAC produces, collects and disseminates a wide range of public health data – this includes data for its many surveillance programs that monitor infectious and chronic diseases, and other emerging public health events.</p>
-									<img src="https://olivercrosby.github.io/datahub/images/Problematique.png" class="img right" alt="A graphic representing PHAC's collection and dissemination of data.">			
 									<p>Despite the high-quality data and analyses generated by PHAC programs, our overarching approach to data management remains <span style="font-weight:bold;">fragmented</span> and <span style="font-weight:bold;">inconsistent</span>. Looking at data from an Agency-wide perspective, it is not clear what data is held collectively, and what can be accessed by employees. Similarly, it’s hard to identify the Agency's data priorities to inform decision-making and action. When we approach our partners (including provinces and territories, Statistics Canada or the Canadian Institute for Health Information (CIHI)) about our data or surveillance priorities, we do so as individual programs and not as a unified federal entity.</p>
 									<p>Branch by branch, public health data are collected through many different channels, stored on different mediums, analysed using different methods, and disseminated in different ways. These challenges reduce PHAC’s capacity to fulfill our mandate, especially given the heightened importance of interdisciplinary work in public health. Consequently, our reputation as a trusted source of public health information is at risk.</p>
 									<p>When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do their regular data analysis and their ongoing IT-related challenges – let alone determining opportunities for innovation.We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and analytics challenges. Where innovative best practices do exist within PHAC, or other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
@@ -275,7 +222,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="approachCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="approachCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -294,7 +241,7 @@
 								<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#engagedCollapse" aria-expanded="false" aria-controls="collapseExample">
 									Who was engaged?
 								  </button>
-								<div class="collapse multi-collapse" id="engagedCollapse">
+								<div class="collapse multi-collapse" data-parent="#accordian" id="engagedCollapse">
 									<div class="card card-body">
 										<div class="container">
 											<ul>
@@ -343,7 +290,7 @@
 						</button>
 					</div> <!-- end of column for expandable content -->
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="heardCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="heardCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">	
@@ -467,7 +414,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="voicesCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="voicesCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -526,7 +473,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="glanceCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="glanceCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -536,7 +483,6 @@
 									<div style="text-align: center">
 										<img src="https://olivercrosby.github.io/datahub/images/Strategy-at-a-glance.png" class="img-fluid" alt="One strategy, six themes, three phases">
 									</div>
-									<h4 class="video-title">Strategy at a Glance</h4>
 									<p>PHAC’s Data Strategy is our opportunity to examine our fundamental relationship with public health data, and how this relationship is impacted by a rapidly evolving environment of technological change and heightened expectations for data in the public health community, the Government of Canada, and across all sectors of the Canadian economy.</p>
 									<p>PHAC’s Data Strategy represents our continuously evolving approach in how we use data to inform our actions and decision-making.  It is version 1.0 as it is not static and focuses our efforts in building a stronger foundation.</p>
 									<p>The scope of the Data Strategy is vast, covering quantitative and qualitative data, program data, surveillance data, performance measurement data, administrative data, as well as corporate, financial and human resources data. It aims to create a data environment where all data are seen as a shared resource and common responsibility.</p>
@@ -564,165 +510,202 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="themesCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="themesCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
 										<h4 class="collapse-title">Six themes</h4>
 									</div>
 									<br>
-									<h4 class="video-title">Data Governance</h4>
-									<p>Data governance is about formalizing and establishing leadership, roles, accountabilities and practices for setting business priorities and objectives. The actions in the Data Strategy will provide oversight for existing and anticipated challenges in data planning, acquisition and management, as well as relationships with data providers.</p>
-									<p class="glance">The goal</p>
-									<p>A data governance structure that supports the strategic and efficient management of data within PHAC and is inclusive of public health government partners.</p>
-									<p class="glance">The plan</p>
-									<p>Phase 1 - We will adopt a data governance structure to enable strategic and effective management of data across PHAC by:</p>
-									<ol>
-										<li>Appointing a Chief Data Officer with clear and proactive roles and responsibilities approved by EC</li>
-										<li>Establishing a principles-based executive-level data governance committee, with Terms of Reference co-developed with all Branches and existing governance committees</li>
-										<li>Establishing a network of communities of practice to inform the formal governance structure, including a new working-level data community of practice, surveillance community of practice, and other existing communities and subject matter experts</li>
-										<li>Communicating the vision and intent of the PHAC Data Strategy with government partners</li>
-									</ol>
-									<p>Phase 2 - We will develop a deeper understanding of our data ecosystem PHAC-wide to enable strategic data management by:</p>
-									<ol>
-										<li>Undertaking and completing an environmental scan of our data needs, data holdings, data use - and the resulting gaps</li>
-										<li>Undertaking and completing an environmental scan of our data sharing agreements and methods of data procurement, acquisition & dissemination</li>
-										<li>Establishing a data priority-setting exercise and central funding source for data acquisitions within PHAC</li>
-									</ol>
-									<p>Phase 3 - We will expand PHAC’s data governance structure to be inclusive of partners with other levels of government and other federal organizations by:</p>
-									<ol>
-										<li>Consulting partners (F/P/T and NIOs) to co-develop a collaborative data governance approach</li>
-										<li>Leveraging existing F/P/T structures to address shared data management issues and developing joint solutions</li>
-										<li>Establishing working-level F/P/T and NIO communities of practice in support of Pan-Canadian public health data management</li>
-									</ol>
-									<h4 class="video-title">Data As An Asset</h4>
-									<p>Treating data as an asset is about shifting our focus from data management in individual programs and activities to data management as a single enterprise to achieve our collective public health mandate. The Data Strategy will set the path for establishing PHAC-wide standards, processes and best practices in data collection, storage, access, use, dissemination, retention and disposal to make datasets easier to work with across disciplines and made fit for multiple purposes.It will also emphasize our commitment to ensuring that data and information respect diversity and inclusion, as well as compliance with policy and legislative requirements, especially with regards to privacy and personal information.</p>
-									<p class="glance">The goal</p>
-									<p>A collaborative and integrated data planning, acquisition, and management cycle.</p>
-									<p class="glance">The plan</p>
-									<p>Phase 1 - We will know our PHAC data landscape and understand its interconnectivity by:</p>
-									<ol>
-										<li>Publishing an interactive and searchable data inventory</li>
-									</ol>
-									<p>Phase 2* - We will implement an integrated approach for data planning, acquisition, and management PHAC-wide by:</p>
-									<ol>
-										<li>Launching, implementing, and updating a “data policy suite” to manage data across the data lifecycle, while ensuring alignment with the evolving data landscape to protect privacy, respect diversity (including SGBA+), as well as manage risks and opportunities in the era of machine learning and artificial intelligence</li>
-										<li>Creating an Agency-wide data and analysis plan (by integrating individual program-level plans where they exist)</li>
-										<li>Establishing a baseline cost for our data holdings and acquisitions to inform costing of future data needs </li>
-										<li>Optimizing the data procurement process for consistency, efficiency and value </li>
-										<li>Implementing strategies and tools for interoperability of data and metadata standards, aligned with open science</li>
-										<li>Increasing the amount of sex- and gender-disaggregated data (especially for priority health issues), and encouraging F/P/T partners and G&C recipients to collect data in a gender sensitive manner and to integrate SGBA+ considerations </li>
-									</ol>
-									<p>Phase 3 - We will adopt a collaborative data management approach with external partners to enhance PHAC’s acquisition and integration of data assets by:</p>
-									<ol>
-										<li>Establishing a team to negotiate and register data sharing agreements, broker bulk data sharing agreements where feasible, and support data acquisitions from P/Ts</li>
-										<li>Acquiring data assets from GoC partners to better inform interventions that address social determinants of health</li>
-									</ol>
-									<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
-									<h4 class="video-title">Science-based analytics</h4>
-									<p>Improving science-based analytics at the Agency will support the identification of use cases and leverage the power of predictive insights and analytics. This will enable improved organizational performance by using not only the data already available to us, but also by tapping into new and innovative sources of data and leveraging technology for advanced analytics using the potential that comes with artificial intelligence and machine learning. The Data Strategy integrates our current successes in these areas and emphasizes our desire for augmented science-based analytics PHAC-wide to support our capacity for advanced evidence-based decisions, especially in response to public health events and emerging health risks.</p>
-									<p class="glance">The goal</p>
-									<p>A broad, dedicated capability for advanced analytics and public health informatics.</p>
-									<p class="glance">The plan</p>
-									<p>Phase 1 - We will showcase and leverage PHAC’s existing science-based analytics capacity by:</p>
-									<ol>
-										<li>Showcasing data analytics expertise and accomplishments through immersive engagement opportunities</li>
-										<li>Undertaking innovative data science pilot projects</li>
-										<li>Creating job-shadowing opportunities with the NML to foster knowledge translation and showcase genomics and bioinformatics advancements </li>
-									</ol>
-									<p>Phase 2* - We will enhance PHAC’s capacity for nimble and agile data analytics and public health informatics by:</p>
-									<ol>
-										<li>Launching and resourcing a cross-functional public health informatics surge team with diverse analytics expertise (epidemiology, economic, geo-spatial analysis, predictive analytics, data science biostatistics, data privacy, etc)</li>
-										<li>Identifying and piloting new software for the management of qualitative data</li>
-										<li>Augmenting capability and capacity for data visualization to better support decision-making and knowledge transfer</li>
-										<li>Increasing and resourcing Agency-wide genomics  capabilities in alignment with the Public Health Genomics Plan</li>
-										<li>Increasing and resourcing Agency-wide capabilities in artificial intelligence and machine learning</li>
-										<li>Augmenting platforms and enhancing access to scientific publications to inform AI-based evidence synthesis for more robust evidence-based decision-making</li>
-									</ol>
-									<p>Phase 3 - We will maximize PHAC’s data science capacity to support evidence-based decision-making in response to public health events and emerging health risks by:</p>
-									<ol>
-										<li>Leveraging the NML (Public Health Risk Sciences, CNPHI, Bioinformatics) to strengthen the capacity for rapid dissemination of information</li>
-										<li>Establishing means for real-time data analysis and sharing, especially in support of emergency response efforts</li>
-									</ol>
-									<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
-									<h4 class="video-title">Data Infrastructure</h4>
-									<p>Data infrastructure is the collection of technological resources (hardware and software) needed to acquire, manage, analyse and use/disseminate public health data at the Agency. Going forward, PHAC will need a modern, reliable, and flexible infrastructure, with secure network access and secure collaborative storage. In turn, this will provide staff with the tools, systems and platforms to carry out their business functions; drive interoperability between data sources and systems; and ensure the seamless conversion of data into easily communicable information and visuals. The Data Strategy will set the stage for collaborative engagement with IT leadership to plan and implement this nimble and accessible data infrastructure to meet our public health needs and federal mandate.</p>
-									<p class="glance">The goal</p>
-									<p>A stable, modern technical infrastructure for data collection, storage, analysis and dissemination.</p>
-									<p class="glance">The plan</p>
-									<p>Phase 1 - We will stabilize our collective foundation and define our needs for PHAC’s data IT infrastructure and tools by:</p>
-									<ol>
-										<li>Completing the SAS migration to an expanded and stable network grid</li>
-										<li>Introducing a new software/hardware profile with augmented tools for data users </li>
-										<li>Streamlining an acquisition and deployment process for additional data analytics software/hardware</li>
-										<li>Establishing means to assign CS staff for data areas requiring IT expertise</li>
-										<li>Establishing a protected cloud environment for data science pilots</li>
-										<li>Developing the "Technical Infrastructure Plan for Public Health Data"</li>
-										<li>Assigning funding for the "Technical Infrastructure Plan for Public Health Data"</li>
-									</ol>
-									<p>Phase 2* - We will launch a secure, reliable and interactive PHAC technical infrastructure to support public health data by:</p>
-									<ol>
-										<li>mplementing new technical infrastructure and tools for data collection, storage, analysis and dissemination, in an agile and iterative manner to meet security requirements of PHAC’s key data providers</li>
-									</ol>
-									<p>Phase 3 - We will adopt an approach of continuous improvement to ensure PHAC has a relevant, reliable and modern technical infrastructure in a rapidly evolving data environment, by:</p>
-									<ol>
-										<li>Re-evaluating the infrastructure and tools for effectiveness</li>
-										<li>Implementing small and incremental changes in response to new requirements</li>
-									</ol>
-									<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
-									<h4 class="video-title">Partnerships and Collaboration</h4>
-									<p>Public health is society's collective effort to put in place structures and systems that protect everyone's health. Collaboration is at the heart of this effort. Success in public health depends largely on our ability to work together across jurisdictions, disciplines and sectors.  PHAC has a lead role in ensuring that the public health perspective is optimally integrated into national data collections and health information planning. The Data Strategy aims to strengthen existing external collaborations and embrace opportunities to establish new partnerships.</p>
-									<p class="glance">The goal</p>
-									<p>A dedicated network of public and private partners working together to leverage shared public health data, nationally and internationally.</p>
-									<p class="glance">The plan</p>
-									<p>Phase 1 - We will identify PHAC’s data partners and understand the nature of each relationship and their collective magnitude by:</p>
-									<ol>
-										<li>Working with all Branches to identify existing data partners and opportunities for new strategic data partnerships</li>
-										<li>Creating an interactive map to categorize and understand the terms of existing data partnerships (e.g. user, funder, collaborator, broker, curator, convenor, advisor, researcher, etc.)</li>
-									</ol>
-									<p>Phase 2* - We will enhance existing and establish new partnerships by:</p>
-									<ol>
-										<li>Engaging other government departments to identify and share interoperable data</li>
-										<li>Co-developing population health data projects with other federal departments to address social determinants of health where levers are under their purview</li>
-										<li>Engaging with other levels of government and bringing in the Public Health Chairs, to determine how PHAC can best work with them on data projects</li>
-										<li>Developing public health data projects with available open data sets to support open science</li>
-										<li>Identifying opportunities and pilots with new non-traditional and non-government data partners where internal data gaps have been identified, to support internal data needs</li>
-									</ol>
-									<p>Phase 3 - We will create a deeper and more engaged network of data partners to support PHAC and broader public health objectives by:</p>
-									<ol>
-										<li>Establishing an external data partnership community of practice</li>
-										<li>Developing public health data pilots with external partners, with a focus on complementing existing science-based analytics to support targeted public health interventions</li>
-									</ol>
-									<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
-									<h4 class="video-title">People and Culture</h4>
-									<p>Our staff are at the heart of our data culture. In order for us to deliver on the five other themes of the strategy, we must ensure that we champion and showcase our in-house data expertise, provide our staff with opportunities to enhance their data skills as needed, and ensure that we continue to recruit top talent to propel us forward as a data-centric organization. The Data Strategy aims to enhance our overall data culture such that we value, develop and retain our staff, who in turn, serve as our foundation as we strive to be a world-class public health organization.</p>
-									<p class="glance">The goal</p>
-									<p>A data culture where our staff have the knowledge, capacity and training to manage, interpret, use and understand data to inform public health decision-making and action.</p>
-									<p class="glance">The plan</p>
-									<p>Phase 1 - We will mobilize PHAC’s existing data expertise to create a “data community” and showcase achievements by:</p>
-									<ol>
-										<li>Identifying existing data science expertise within PHAC</li>
-										<li>Launching an online data newsletter to enhance information sharing and knowledge dissemination</li>
-										<li>Establishing a data science community of practice and an “online directory” of internal data expertise and resources</li>
-										<li>Championing use of modern collaborative tools that enable sharing of data-related best practices</li>
-									</ol>
-									<p>Phase 2 - We will provide opportunities for new and current PHAC staff to expand their understanding of data, data analytics, and digital technology by:</p>
-									<ol>
-										<li>Developing a learning roadmap for data science and analytics by leveraging modern third-party web-based tools and self-directed learning</li>
-										<li>Developing a “Data 101” onboarding package for PHAC staff</li>
-										<li>Building data awareness training related to privacy, ethics, information management, and program evaluation for all employees </li>
-										<li>Expanding offerings of PHAC’s “Fundamentals of Innovation” training and aligning course projects with Branch needs</li>
-										<li>Launching “Data and Digital” learning streams for PHAC staff, in partnership with the Digital Academy </li>
-										<li>Creating partnerships with post-secondary institutions for year-round work opportunities - for students specializing in data science and analytics, and for PHAC staff to work closer with academia in public health and data analytics</li>
-										<li>Launching a targeted recruitment program for data science and analytics, with rotational assignments in different complementary areas (including laboratory science, strategic policy, program evaluation, privacy and ethics, and predictive analytics for finance and HR)</li>
-										<li>Deploying data scientists for micro missions in other Branches within PHAC to enhance their public health understanding</li>
-										<li>Establishing a multi-year data science and analytics development program (EC03 to EC06)</li>
-									</ol>
-									<p>Phase 3 - We will foster a sustainable learning environment and data community in PHAC that is capable of evolving with the data and technology around it by:</p>
-									<ol>
-										<li>Establishing a joint group of senior-level & working-level individuals on the “Future of work” to plan and make recommendations for future data-related HR and technology needs</li>
-									</ol>
-									<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
+									<div id="sixthemes" class="carousel slide" data-ride="carousel" data-interval="false">
+											<ol class="carousel-indicators">
+												  <li data-target="#sixthemes" data-slide-to="0" class="active"></li>
+												  <li data-target="#sixthemes" data-slide-to="1"></li>
+												  <li data-target="#sixthemes" data-slide-to="2"></li>
+												  <li data-target="#sixthemes" data-slide-to="3"></li>
+												  <li data-target="#sixthemes" data-slide-to="4"></li>
+												  <li data-target="#sixthemes" data-slide-to="5"></li>
+											</ol>	
+											<div class="carousel-inner">
+												<div class="carousel-item active"> <!-- data gov panel-->
+													<h3 class="carousel-title">Data Governance (1/6)</h3>
+													<p>Data governance is about formalizing and establishing leadership, roles, accountabilities and practices for setting business priorities and objectives. The actions in the Data Strategy will provide oversight for existing and anticipated challenges in data planning, acquisition and management, as well as relationships with data providers.</p>
+													<p class="glance">The goal</p>
+													<p>A data governance structure that supports the strategic and efficient management of data within PHAC and is inclusive of public health government partners.</p>
+													<p class="glance">The plan</p>
+													<p>Phase 1 - We will adopt a data governance structure to enable strategic and effective management of data across PHAC by:</p>
+													<ol>
+														<li>Appointing a Chief Data Officer with clear and proactive roles and responsibilities approved by EC</li>
+														<li>Establishing a principles-based executive-level data governance committee, with Terms of Reference co-developed with all Branches and existing governance committees</li>
+														<li>Establishing a network of communities of practice to inform the formal governance structure, including a new working-level data community of practice, surveillance community of practice, and other existing communities and subject matter experts</li>
+														<li>Communicating the vision and intent of the PHAC Data Strategy with government partners</li>
+													</ol>
+													<p>Phase 2 - We will develop a deeper understanding of our data ecosystem PHAC-wide to enable strategic data management by:</p>
+													<ol>
+														<li>Undertaking and completing an environmental scan of our data needs, data holdings, data use - and the resulting gaps</li>
+														<li>Undertaking and completing an environmental scan of our data sharing agreements and methods of data procurement, acquisition & dissemination</li>
+														<li>Establishing a data priority-setting exercise and central funding source for data acquisitions within PHAC</li>
+													</ol>
+													<p>Phase 3 - We will expand PHAC’s data governance structure to be inclusive of partners with other levels of government and other federal organizations by:</p>
+													<ol>
+														<li>Consulting partners (F/P/T and NIOs) to co-develop a collaborative data governance approach</li>
+														<li>Leveraging existing F/P/T structures to address shared data management issues and developing joint solutions</li>
+														<li>Establishing working-level F/P/T and NIO communities of practice in support of Pan-Canadian public health data management</li>
+													</ol>
+												</div>
+
+												<div class="carousel-item"> <!-- data asset panel-->
+													<h3 class="carousel-title">Data As An Asset (2/6)</h3>
+													<p>Treating data as an asset is about shifting our focus from data management in individual programs and activities to data management as a single enterprise to achieve our collective public health mandate. The Data Strategy will set the path for establishing PHAC-wide standards, processes and best practices in data collection, storage, access, use, dissemination, retention and disposal to make datasets easier to work with across disciplines and made fit for multiple purposes.It will also emphasize our commitment to ensuring that data and information respect diversity and inclusion, as well as compliance with policy and legislative requirements, especially with regards to privacy and personal information.</p>
+													<p class="glance">The goal</p>
+													<p>A collaborative and integrated data planning, acquisition, and management cycle.</p>
+													<p class="glance">The plan</p>
+													<p>Phase 1 - We will know our PHAC data landscape and understand its interconnectivity by:</p>
+													<ol>
+														<li>Publishing an interactive and searchable data inventory</li>
+													</ol>
+													<p>Phase 2* - We will implement an integrated approach for data planning, acquisition, and management PHAC-wide by:</p>
+													<ol>
+														<li>Launching, implementing, and updating a “data policy suite” to manage data across the data lifecycle, while ensuring alignment with the evolving data landscape to protect privacy, respect diversity (including SGBA+), as well as manage risks and opportunities in the era of machine learning and artificial intelligence</li>
+														<li>Creating an Agency-wide data and analysis plan (by integrating individual program-level plans where they exist)</li>
+														<li>Establishing a baseline cost for our data holdings and acquisitions to inform costing of future data needs </li>
+														<li>Optimizing the data procurement process for consistency, efficiency and value </li>
+														<li>Implementing strategies and tools for interoperability of data and metadata standards, aligned with open science</li>
+														<li>Increasing the amount of sex- and gender-disaggregated data (especially for priority health issues), and encouraging F/P/T partners and G&C recipients to collect data in a gender sensitive manner and to integrate SGBA+ considerations </li>
+													</ol>
+													<p>Phase 3 - We will adopt a collaborative data management approach with external partners to enhance PHAC’s acquisition and integration of data assets by:</p>
+													<ol>
+														<li>Establishing a team to negotiate and register data sharing agreements, broker bulk data sharing agreements where feasible, and support data acquisitions from P/Ts</li>
+														<li>Acquiring data assets from GoC partners to better inform interventions that address social determinants of health</li>
+													</ol>
+													<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
+												</div>
+
+												<div class="carousel-item"> <!-- Science-based analytics panel-->
+													<h3 class="carousel-title">Science-based analytics (3/6)</h3>
+													<p>Improving science-based analytics at the Agency will support the identification of use cases and leverage the power of predictive insights and analytics. This will enable improved organizational performance by using not only the data already available to us, but also by tapping into new and innovative sources of data and leveraging technology for advanced analytics using the potential that comes with artificial intelligence and machine learning. The Data Strategy integrates our current successes in these areas and emphasizes our desire for augmented science-based analytics PHAC-wide to support our capacity for advanced evidence-based decisions, especially in response to public health events and emerging health risks.</p>
+													<p class="glance">The goal</p>
+													<p>A broad, dedicated capability for advanced analytics and public health informatics.</p>
+													<p class="glance">The plan</p>
+													<p>Phase 1 - We will showcase and leverage PHAC’s existing science-based analytics capacity by:</p>
+													<ol>
+														<li>Showcasing data analytics expertise and accomplishments through immersive engagement opportunities</li>
+														<li>Undertaking innovative data science pilot projects</li>
+														<li>Creating job-shadowing opportunities with the NML to foster knowledge translation and showcase genomics and bioinformatics advancements </li>
+													</ol>
+													<p>Phase 2* - We will enhance PHAC’s capacity for nimble and agile data analytics and public health informatics by:</p>
+													<ol>
+														<li>Launching and resourcing a cross-functional public health informatics surge team with diverse analytics expertise (epidemiology, economic, geo-spatial analysis, predictive analytics, data science biostatistics, data privacy, etc)</li>
+														<li>Identifying and piloting new software for the management of qualitative data</li>
+														<li>Augmenting capability and capacity for data visualization to better support decision-making and knowledge transfer</li>
+														<li>Increasing and resourcing Agency-wide genomics  capabilities in alignment with the Public Health Genomics Plan</li>
+														<li>Increasing and resourcing Agency-wide capabilities in artificial intelligence and machine learning</li>
+														<li>Augmenting platforms and enhancing access to scientific publications to inform AI-based evidence synthesis for more robust evidence-based decision-making</li>
+													</ol>
+													<p>Phase 3 - We will maximize PHAC’s data science capacity to support evidence-based decision-making in response to public health events and emerging health risks by:</p>
+													<ol>
+														<li>Leveraging the NML (Public Health Risk Sciences, CNPHI, Bioinformatics) to strengthen the capacity for rapid dissemination of information</li>
+														<li>Establishing means for real-time data analysis and sharing, especially in support of emergency response efforts</li>
+													</ol>
+													<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
+												</div>
+
+												<div class="carousel-item"> <!-- data infrastructure panel -->
+													<h3 class="carousel-title">Data Infrastructure (4/6)</h3>
+													<p>Data infrastructure is the collection of technological resources (hardware and software) needed to acquire, manage, analyse and use/disseminate public health data at the Agency. Going forward, PHAC will need a modern, reliable, and flexible infrastructure, with secure network access and secure collaborative storage. In turn, this will provide staff with the tools, systems and platforms to carry out their business functions; drive interoperability between data sources and systems; and ensure the seamless conversion of data into easily communicable information and visuals. The Data Strategy will set the stage for collaborative engagement with IT leadership to plan and implement this nimble and accessible data infrastructure to meet our public health needs and federal mandate.</p>
+													<p class="glance">The goal</p>
+													<p>A stable, modern technical infrastructure for data collection, storage, analysis and dissemination.</p>
+													<p class="glance">The plan</p>
+													<p>Phase 1 - We will stabilize our collective foundation and define our needs for PHAC’s data IT infrastructure and tools by:</p>
+													<ol>
+														<li>Completing the SAS migration to an expanded and stable network grid</li>
+														<li>Introducing a new software/hardware profile with augmented tools for data users </li>
+														<li>Streamlining an acquisition and deployment process for additional data analytics software/hardware</li>
+														<li>Establishing means to assign CS staff for data areas requiring IT expertise</li>
+														<li>Establishing a protected cloud environment for data science pilots</li>
+														<li>Developing the "Technical Infrastructure Plan for Public Health Data"</li>
+														<li>Assigning funding for the "Technical Infrastructure Plan for Public Health Data"</li>
+													</ol>
+													<p>Phase 2* - We will launch a secure, reliable and interactive PHAC technical infrastructure to support public health data by:</p>
+													<ol>
+														<li>Implementing new technical infrastructure and tools for data collection, storage, analysis and dissemination, in an agile and iterative manner to meet security requirements of PHAC’s key data providers</li>
+													</ol>
+													<p>Phase 3 - We will adopt an approach of continuous improvement to ensure PHAC has a relevant, reliable and modern technical infrastructure in a rapidly evolving data environment, by:</p>
+													<ol>
+														<li>Re-evaluating the infrastructure and tools for effectiveness</li>
+														<li>Implementing small and incremental changes in response to new requirements</li>
+													</ol>
+													<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
+												</div>
+
+												<div class="carousel-item"> <!-- Partnerships panel -->
+													<h3 class="carousel-title">Partnerships and Collaboration (5/6)</h3>
+													<p>Public health is society's collective effort to put in place structures and systems that protect everyone's health. Collaboration is at the heart of this effort. Success in public health depends largely on our ability to work together across jurisdictions, disciplines and sectors.  PHAC has a lead role in ensuring that the public health perspective is optimally integrated into national data collections and health information planning. The Data Strategy aims to strengthen existing external collaborations and embrace opportunities to establish new partnerships.</p>
+													<p class="glance">The goal</p>
+													<p>A dedicated network of public and private partners working together to leverage shared public health data, nationally and internationally.</p>
+													<p class="glance">The plan</p>
+													<p>Phase 1 - We will identify PHAC’s data partners and understand the nature of each relationship and their collective magnitude by:</p>
+													<ol>
+														<li>Working with all Branches to identify existing data partners and opportunities for new strategic data partnerships</li>
+														<li>Creating an interactive map to categorize and understand the terms of existing data partnerships (e.g. user, funder, collaborator, broker, curator, convenor, advisor, researcher, etc.)</li>
+													</ol>
+													<p>Phase 2* - We will enhance existing and establish new partnerships by:</p>
+													<ol>
+														<li>Engaging other government departments to identify and share interoperable data</li>
+														<li>Co-developing population health data projects with other federal departments to address social determinants of health where levers are under their purview</li>
+														<li>Engaging with other levels of government and bringing in the Public Health Chairs, to determine how PHAC can best work with them on data projects</li>
+														<li>Developing public health data projects with available open data sets to support open science</li>
+														<li>Identifying opportunities and pilots with new non-traditional and non-government data partners where internal data gaps have been identified, to support internal data needs</li>
+													</ol>
+													<p>Phase 3 - We will create a deeper and more engaged network of data partners to support PHAC and broader public health objectives by:</p>
+													<ol>
+														<li>Establishing an external data partnership community of practice</li>
+														<li>Developing public health data pilots with external partners, with a focus on complementing existing science-based analytics to support targeted public health interventions</li>
+													</ol>
+													<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
+												</div>
+
+												<div class="carousel-item"> <!-- People and culture panel -->
+													<h3 class="carousel-title">People and Culture (6/6)</h3>
+													<p>Our staff are at the heart of our data culture. In order for us to deliver on the five other themes of the strategy, we must ensure that we champion and showcase our in-house data expertise, provide our staff with opportunities to enhance their data skills as needed, and ensure that we continue to recruit top talent to propel us forward as a data-centric organization. The Data Strategy aims to enhance our overall data culture such that we value, develop and retain our staff, who in turn, serve as our foundation as we strive to be a world-class public health organization.</p>
+													<p class="glance">The goal</p>
+													<p>A data culture where our staff have the knowledge, capacity and training to manage, interpret, use and understand data to inform public health decision-making and action.</p>
+													<p class="glance">The plan</p>
+													<p>Phase 1 - We will mobilize PHAC’s existing data expertise to create a “data community” and showcase achievements by:</p>
+													<ol>
+														<li>Identifying existing data science expertise within PHAC</li>
+														<li>Launching an online data newsletter to enhance information sharing and knowledge dissemination</li>
+														<li>Establishing a data science community of practice and an “online directory” of internal data expertise and resources</li>
+														<li>Championing use of modern collaborative tools that enable sharing of data-related best practices</li>
+													</ol>
+													<p>Phase 2 - We will provide opportunities for new and current PHAC staff to expand their understanding of data, data analytics, and digital technology by:</p>
+													<ol>
+														<li>Developing a learning roadmap for data science and analytics by leveraging modern third-party web-based tools and self-directed learning</li>
+														<li>Developing a “Data 101” onboarding package for PHAC staff</li>
+														<li>Building data awareness training related to privacy, ethics, information management, and program evaluation for all employees </li>
+														<li>Expanding offerings of PHAC’s “Fundamentals of Innovation” training and aligning course projects with Branch needs</li>
+														<li>Launching “Data and Digital” learning streams for PHAC staff, in partnership with the Digital Academy </li>
+														<li>Creating partnerships with post-secondary institutions for year-round work opportunities - for students specializing in data science and analytics, and for PHAC staff to work closer with academia in public health and data analytics</li>
+														<li>Launching a targeted recruitment program for data science and analytics, with rotational assignments in different complementary areas (including laboratory science, strategic policy, program evaluation, privacy and ethics, and predictive analytics for finance and HR)</li>
+														<li>Deploying data scientists for micro missions in other Branches within PHAC to enhance their public health understanding</li>
+														<li>Establishing a multi-year data science and analytics development program (EC03 to EC06)</li>
+													</ol>
+													<p>Phase 3 - We will foster a sustainable learning environment and data community in PHAC that is capable of evolving with the data and technology around it by:</p>
+													<ol>
+														<li>Establishing a joint group of senior-level & working-level individuals on the “Future of work” to plan and make recommendations for future data-related HR and technology needs</li>
+													</ol>
+													<p style="font-size: 1rem;">* To be completed in conjunction with the review of data needs, data holdings, and data gaps.</p>
+												</div>
+											</div> <!-- end of carousel-inner -->
+												<a class="carousel-control-prev" data-target="#sixthemes" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" data-target="#sixthemes" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -741,7 +724,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="principlesCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="principlesCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -771,7 +754,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="futureCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="futureCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -806,7 +789,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="implementCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="implementCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -841,7 +824,7 @@
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="bestCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="bestCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
@@ -863,15 +846,15 @@
 							<div class="hex-icon-container">
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#01043f"><g id="surface1"><path d="M127.925,36.55c-0.30234,0 -0.5291,0.04199 -0.77266,0.07559c-0.0084,0 -0.0168,0 -0.0252,0c-0.14277,-0.0084 -0.29394,0 -0.43672,0.0168l-59.51133,8.52441c-0.5123,0.07559 -0.98262,0.32754 -1.31855,0.72226c-1.94844,0.80625 -3.51055,2.41035 -3.51055,4.63594c0,2.93945 2.43555,5.375 5.375,5.375c0.32754,0 0.44512,-0.0252 0.50391,-0.03359l9.17109,-0.65508v13.25273c-14.5125,2.03242 -28.39512,4.90469 -39.10312,7.39063l-15.18437,-17.08242c-0.41152,-0.46191 -0.99941,-0.72227 -1.6125,-0.72227h-12.9c-0.65508,0 -1.26816,0.29395 -1.67969,0.80625c-0.40313,0.5123 -0.5627,1.18418 -0.41992,1.81406l6.57597,29.11738c0.09238,0.38633 0.28555,0.74746 0.57109,1.03301c0.73906,1.83926 2.10801,3.2334 3.92207,4.01445c0.20996,0.22676 0.45352,0.39473 0.73906,0.5123c0,0 30.33516,12.55566 81.29688,17.02363l4.2832,8.15488c-1.73008,1.57051 -2.83867,3.82129 -2.83867,6.32402c0,4.72832 3.87168,8.6 8.6,8.6c4.72832,0 8.6,-3.87168 8.6,-8.6c0,-4.72832 -3.87168,-8.6 -8.6,-8.6c-0.68027,0 -1.32695,0.10078 -1.96523,0.25195l-3.01504,-5.73613c9.61621,0.72226 19.83711,1.18418 30.78027,1.18418h2.15c7.09668,0 12.9,-5.80332 12.9,-12.9v-4.3h4.3v15.05c-0.0084,0.77266 0.39473,1.49492 1.0666,1.88965c0.67188,0.38633 1.49492,0.38633 2.1668,0c0.67188,-0.39472 1.075,-1.11699 1.0666,-1.88965v-15.48672c1.81406,-0.77266 3.10742,-2.49434 3.66172,-4.49316c0.41152,-0.40313 0.63828,-0.94902 0.63828,-1.52012c0,-2.77988 -1.81406,-5.14824 -4.3,-6.04687v-15.45312c0.0084,-0.57949 -0.21836,-1.14219 -0.62988,-1.55371c-0.41152,-0.41152 -0.97422,-0.63828 -1.55371,-0.62988c-1.18418,0.0252 -2.1332,0.99941 -2.11641,2.18359v15.05h-4.3v-4.3c0,-7.09668 -5.80332,-12.9 -12.9,-12.9h-2.15c-3.7877,0 -8.75117,0.07559 -12.9,0.20156v-14.84844l5.9209,-0.42832c0.5627,-0.03359 1.0834,-0.29394 1.46133,-0.71387c3.06543,-0.94062 5.51777,-3.41816 5.51777,-6.78594c0,-4.13203 -3.39297,-7.525 -7.525,-7.525zM127.925,40.85c1.80566,0 3.225,1.41934 3.225,3.225c0,1.72168 -1.30176,3.06543 -2.98984,3.19141c-0.09238,0.0084 -0.17637,0.0252 -0.26875,0.04199l-59.96484,4.25801c-0.03359,0.0084 -0.06719,0.0084 -0.09238,0.0084c-0.22676,0.0252 -0.25195,0.0252 -0.10918,0.0252c-0.61309,0 -1.075,-0.46191 -1.075,-1.075c0,-0.58789 0.41992,-1.01621 0.99941,-1.0582c1.17578,-0.09238 2.06601,-1.11699 1.98203,-2.30117l0.13438,1.97363l57.25215,-8.19687c0.10918,0 0.22676,-0.0084 0.34434,-0.0252c0.24356,-0.05039 0.42832,-0.06719 0.5627,-0.06719zM118.25,52.30547v16.6877c0,0.0252 0,0.04199 0,0.06719c0,2.02402 -0.07559,4.38398 -1.97363,6.41641c-1.88965,2.03242 -6.03847,4.07324 -15.22637,4.07324c-4.22441,0 -9.40625,-0.57949 -13.26113,-2.11641c-1.92324,-0.77266 -3.48535,-1.77207 -4.50996,-2.92266c-1.02461,-1.15059 -1.57891,-2.41875 -1.57891,-4.19922v-15.41113zM156.95,58.05c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM11.2875,62.35h9.24668l13.15195,14.78965l-1.42774,1.25137l0.15957,1.92324l1.6293,1.02461l0.75586,-0.05879l0.20156,-0.05039l1.36055,-1.20098c0.48711,0.31914 1.0834,0.41992 1.65449,0.29395c10.69961,-2.51953 25.04414,-5.47578 39.83379,-7.5502c0.41992,1.73008 1.0918,3.34258 2.20879,4.59395c1.6293,1.83926 3.7877,3.11582 6.13926,4.05645c4.69473,1.87285 10.25449,2.42715 14.84844,2.42715c9.82617,0 15.34395,-2.19199 18.37578,-5.44219c1.96524,-2.09961 2.56152,-4.3252 2.79668,-6.29043c0.17637,-0.28555 0.28555,-0.61309 0.31914,-0.94062c4.09844,-0.13438 9.1291,-0.22676 12.9084,-0.22676h2.15c4.77031,0 8.6,3.82969 8.6,8.6v21.5c0,4.77031 -3.82969,8.6 -8.6,8.6h-2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.12539 0.87344,2.06602 1.99883,2.15c-71.15996,-0.03359 -114.78984,-18.04824 -115.19297,-18.21621c-0.0084,0 -0.0168,-0.0084 -0.0252,-0.0084c-0.13438,-0.06719 -0.28555,-0.12598 -0.42832,-0.15957c-1.19258,-0.30234 -2.10801,-1.23457 -2.36836,-2.41875c-0.0168,-0.05879 -0.03359,-0.11758 -0.05039,-0.16797c0,-0.0168 0,-0.0252 -0.0084,-0.04199l-0.69707,-3.06543l0.50391,0.30234l0.74746,-0.05879l0.20996,-0.05879l1.43613,-1.27656l-0.15957,-1.92324l-1.64609,-1.01621l-0.75586,0.06719l-0.20156,0.05879l-0.83984,0.74746zM135.45,70.95c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM26.13594,79.24766l-0.75586,0.06719l-0.20996,0.05039l-1.43613,1.28496l0.16797,1.92324l1.6293,1.00781l0.76426,-0.06719l0.20996,-0.05039l1.43613,-1.28496l-0.16797,-1.91484zM135.45,79.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM135.45,88.15c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM150.5,88.15h6.08887c0.15957,0.0252 0.32754,0.03359 0.48711,0.0252c1.15059,0.06719 2.02402,0.95742 2.02402,2.1248c0,1.16738 -0.87344,2.05762 -2.02402,2.1248c-0.05879,0 -0.10918,-0.0084 -0.15957,-0.0084c-0.10078,0.0084 -0.20996,0.0168 -0.31074,0.03359h-6.10566zM135.45,96.75c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM156.95,118.25c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM109.65,122.55c2.40195,0 4.3,1.89805 4.3,4.3c0,2.40195 -1.89805,4.3 -4.3,4.3c-2.40195,0 -4.3,-1.89805 -4.3,-4.3c0,-2.40195 1.89805,-4.3 4.3,-4.3z"></path></g></g></g></svg>
 							</div>
-							<h3 class="button-title">New Data Science Pilots</h3>
+							<h3 class="button-title">Pilot Projects</h3>
 						</button>
 					</div>
 					<div class="col card-col"> <!-- column with the expandable content -->
-						<div class="collapse multi-collapse" id="pilotsCollapse">
+						<div class="collapse multi-collapse" data-parent="#accordian" id="pilotsCollapse">
 							<div class="card card-body">
 								<div class="container">
 									<div class="collapse-title-box">
-										<h4 class="collapse-title">New Data Science Pilots</h4>
+										<h4 class="collapse-title">Pilot Projects</h4>
 									</div>
 									<br>
 									<p>In addition to the sampling of “PHAC success stories” showcased in the previous section, the implementation of the Data Strategy will be supported by new data science pilots to demonstrate the vision of the strategy in action. Colleagues from across PHAC have approached the Data Hub for support in visualizing their data to make them more accessible and relevant for various audiences. Interactive data allow for better understanding of public health trends and in turn a better foundation for public health decision making.</p>
@@ -885,7 +868,6 @@
 			</div>
 		</div> <!-- end of strategy in action row -->
 
-
     </div>
 
 
@@ -898,7 +880,7 @@
 			<span>phacdatahub@canada.ca</span>
 			<a href="#">The Data Hub</a>
 			<a href="#">Rad Links</a>
-			<a href="#">Press Kit</a>
+			<a href="#">Strategy Essentials</a>
 		</div>
 	</footer>
 	<!-- Footer -->

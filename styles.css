@@ -521,8 +521,8 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
     background-position: center 14%;*/
-	min-height: 300px;
-	height: 30vh;
+	min-height: 200px;
+	height: 25vh;
 	max-height: 400px;
     display: flex;
     align-items: center;
@@ -881,14 +881,20 @@ footer a:hover {color: #01043f;}
 
 .carousel {
   margin: 0 -35px -35px -35px;
+}
+
+#whatweheard, #whatweheard .carousel-item {
   height: 60rem;
+}
+
+#sixthemes, #sixthemes .carousel-item {
+ height: 110rem;
 }
 
 .carousel-item {
 	background: rgb(1,6,89);
 	color: white;
   padding: 4rem;
-  height: 60rem;
   width: 100%;
 }
 
@@ -917,12 +923,15 @@ footer a:hover {color: #01043f;}
 .carousel-control-next, .carousel-control-prev {
 	width: 10%;
 	align-items: start;
-	opacity: 1;
+  opacity: 1;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  cursor: pointer;
 }
 
 strong {
-  font-weight: normal;
-  color: #030dbf;
+  font-weight: bold;
 }
 
 /*.card-col {*/
