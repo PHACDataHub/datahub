@@ -609,6 +609,10 @@ svg {
 	position:relative;
 }
 
+.hex-button:hover {
+  cursor:pointer;
+}
+
 .hex-button:hover .hex {
 	fill: #fff;
 	stroke-width: 10px;
@@ -937,7 +941,7 @@ strong {
 /*.card-col {*/
 .card {
   max-width: 800px;
-  margin: auto;
+  margin: auto 12% auto auto;
 }
 
 .pop-out:hover {
