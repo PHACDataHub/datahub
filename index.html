@@ -16,7 +16,49 @@
 
     <title>PHAC Data Strategy</title>
 	<style type="text/css" media="print">
-    body { visibility: hidden; display: none }
+		.collapse {
+			display: block !important;
+			height: auto !important;
+		}
+		.section-col, .hex-col {
+			display: none;
+		}
+
+		.collapse {
+			margin-left:  auto;
+			margin-right: auto;
+		}
+
+		.card {
+			margin: auto;
+			width: 80vw;
+		}
+
+		.carousel-item {
+			color: black;
+			display: block;
+			page-break-after:always;
+			padding: 100px;
+		}
+
+
+		.carousel-indicators{display: none;}
+		.item{display:block;}
+		.carousel-item { page-break-after:always;}
+
+
+
+		#whatweheard, #whatweheard .carousel-item {
+			height: auto;
+		}
+
+		.carousel-inner {
+			display: flex;
+			flex-direction: column;
+		}
+		#sixthemes, #sixthemes .carousel-item{
+			height: auto;
+		}
 	</style>
 	<link rel="apple-touch-icon" sizes="57x57" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="https://olivercrosby.github.io/datahub/favicon/apple-icon-60x60.png">
