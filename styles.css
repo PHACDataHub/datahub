@@ -751,12 +751,29 @@ footer {
   flex-direction: row;
 }
 
-.footer-content span {
+.footer-content .contact-container {
   flex: 0 0 66.6666%;
   padding-left: 30px;
 }
 
-.footer-content span:before {
+
+.footer-content > a {
+  flex: 0 0 11.11111%
+}
+
+footer iframe {
+  overflow: hidden;
+  margin-left: -4rem;
+}
+
+.contact-link {
+  position: relative;
+}
+.contact-link:hover {
+  cursor: pointer;
+}
+
+.contact-link:before {
   content: "";
   background: black;
   height: 15px;
@@ -768,8 +785,9 @@ footer {
   margin-top: -7px;
 }
 
-.footer-content a {
-  flex: 0 0 11.11111%
+
+.contact-iframe-container {
+  display: flex;
 }
 
 .bottom-bar {
@@ -975,3 +993,29 @@ strong {
   }
 }
 
+#whoengaged {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.clickable-img:hover:before {
+	content: "click to enlarge";
+	position: absolute;
+	top: 0;
+	background: rgba(3, 15, 246, 0.5);
+	width: 100%;
+	opacity: 1;
+	font-size: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	color: white;
+	padding-top: calc(33.333% - 2rem);
+  padding-bottom: calc(33.333% - 2rem);
+  display: block;
+}
+
+.clickable-img {
+	position: relative;
+	display: block;
+}

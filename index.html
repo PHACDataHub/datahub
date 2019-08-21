@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://olivercrosby.github.io/datahub/styles.css">
-    <link rel="stylesheet" href="https://olivercrosby.github.io/datahub/print.css" media="print"> -->
+	<link rel="stylesheet" href="https://olivercrosby.github.io/datahub/print.css" media="print"> -->
+	<script src="https://olivercrosby.github.io/datahub/scripts.js"></script>
+	<script src="scripts.js"></script>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="print.css" media="print">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -236,7 +238,7 @@ $(function(){
 									<p>When our staff are asked about the data innovations they’d like to see, they often cannot get past the daily obstacles they face to do their regular data analysis and their ongoing IT-related challenges – let alone determining opportunities for innovation.We have accepted work-arounds and band-aid solutions as the norm to overcome our data infrastructure and analytics challenges. Where innovative best practices do exist within PHAC, or other groups and jurisdictions, they are not shared or scaled-up Agency-wide.</p>
 									<p>Collectively, we recognize our challenges. This is emphasized in the PHAC Corporate Risk Profile: 
 									<blockquote style="font-style: italic">"There is a risk that, as the volume of and need for public health data increases both domestically and internationally, PHAC may not have access to timely, reliable and accurate information and/or data nor the ability to undertake the necessary data analysis, which could reduce effective evidence-based decision-making pertaining to public health matters.”</blockquote>
-									<p>These challenges reduce PHAC’s capacity to fulfill our mandate. For example, while we may collect an impressive amount of data, little is done in the way of data integration between disciplines such as chronic and infectious diseases, as well as between social and economic determinants of health. This can only be achieved through fostering effective partnerships and leveraging novel technologies to create more opportunities for data innovation. Furthermore, our dispersed data and data accountability structures have undeniably lead us to miss opportunities to extract greater public health insights. This reality has made it difficult for us to realize our commitment in the PHAC Strategic Plan: “release timely and interactive data and high-quality analysis to support decision making and action.”</p>
+									<p>These challenges reduce PHAC’s capacity to fulfill our mandate. For example, while we may collect an impressive amount of data, little is done in the way of data integration between disciplines such as chronic and infectious diseases, as well as between social and economic determinants of health. This can only be achieved through fostering effective partnerships and leveraging novel technologies to create more opportunities for data innovation.</p>
 									<p>Furthermore, our dispersed data and data accountability structures have undeniably lead us to miss opportunities to extract greater public health insights. This reality has made it difficult for us to realize our commitment in the PHAC Strategic Plan:</p>
 									<blockquote style="font-style: italic;">“release timely and interactive data and high-quality analysis to support decision making and action.”</blockquote> 
 									<p>At the heart of “Learning from SARS”, otherwise known as the Naylor Report, were recommendations pertaining to the need for information architecture, models and standards, technology transfer, privacy and information management, development of data sources and system development. We are still working towards these objectives.</p>
@@ -260,7 +262,7 @@ $(function(){
 
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
-					<div class="col-md-auto hex-col"> <!-- column for the hex button -->
+					<div class="col-md-auto hex-col" data-spy="affix" data-offset-top="197"> <!-- column for the hex button -->
 						<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#approachCollapse" aria-expanded="false" aria-controls="approachCollapse">
 							<svg viewBox="0 0 300 300" >
 							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
@@ -288,39 +290,31 @@ $(function(){
 								</ol>
 								<p>This broad consultation approach ensured that areas of expertise specific to data informed the scope of the strategy - and inclusive of PHAC’s program areas, laboratory sciences, as well as evaluation and results-based management. By the end of the 6-month consultation period, over 25% of PHAC’s employees attended and contributed to one or more of the consultation sessions.</p>
 								<p>The PHAC Data Hub also committed to <span style="font-weight:bolder;">working in the open</span> during this process. Summaries and notes were sent for validation and then posted for others to read. For a full list of consultations, and the notes from all of the sessions conducted by the Data Hub, visit the PHAC Data Strategy page on GCCollab, <a href="https://gccollab.ca/groups/profile/1801344/entrue-story-a-data-strategy-for-public-healthfr">True Story: A Data Strategy for Public Health</a>.</p>
-								<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#engagedCollapse" aria-expanded="false" aria-controls="collapseExample">
-									Who was engaged?
-								  </a>
-								<div class="collapse panel-collapse multi-collapse" data-parent="#approachexpander" id="engagedCollapse">
-									<div class="card card-body">
-										<div class="container">
-											<ul>
-												<li>All staff, via workshops & online (including Colonnade, Carling and all five Regions)</li>
-												<li>Office of the Chief Science Officer</li>
-												<li>National Microbiology Laboratory</li>
-												<li>Centre for Surveillance and Applied Research</li>
-												<li>Office of the Chief Public Health Officer</li>
-												<li>Privacy Management Division</li>
-												<li>Infectious Diseases Prevention and Control Branch (IDPCB) Branch Executive Committee</li>
-												<li>Health Security Infrastructure Branch (HSIB) Branch Executive Committee</li>
-												<li>Health Promotion and Chronic Disease Prevention Branch (HPCDPB) Branch Executive Committee</li>
-												<li>Office of Audit and Evaluation</li>
-												<li>Strategic Policy and Planning</li>
-												<li>PHAC’s G5</li>
-												<li>Chief Financial Officer</li>
-												<li>Information Management Services Directorate</li>
-												<li>Human Resources Services Directorate</li>
-												<li>Surveillance Integration Team</li>
-												<li>Sex and Gender-Based Analysis Plus (SGBA+) Champion and Centre for Chronic Disease Prevention and Health Equity</li>
-												<li>Policy Committee</li>
-												<li>Operations Committee</li>
-												<li>Communications and Public Affairs Branch</li>
-												<li>Corporate Services Branch</li>
-												<li>Office of International Affairs</li>
-											</ul>
-											</div>
-										</div>
-									</div>
+									<h4>Who was engaged</h4>
+										<ul id="whoengaged">
+											<li>All staff, via workshops & online (including Colonnade, Carling and all five Regions)</li>
+											<li>Office of the Chief Science Officer</li>
+											<li>National Microbiology Laboratory</li>
+											<li>Centre for Surveillance and Applied Research</li>
+											<li>Office of the Chief Public Health Officer</li>
+											<li>Privacy Management Division</li>
+											<li>Infectious Diseases Prevention and Control Branch (IDPCB) Branch Executive Committee</li>
+											<li>Health Security Infrastructure Branch (HSIB) Branch Executive Committee</li>
+											<li>Health Promotion and Chronic Disease Prevention Branch (HPCDPB) Branch Executive Committee</li>
+											<li>Office of Audit and Evaluation</li>
+											<li>Strategic Policy and Planning</li>
+											<li>PHAC’s G5</li>
+											<li>Chief Financial Officer</li>
+											<li>Information Management Services Directorate</li>
+											<li>Human Resources Services Directorate</li>
+											<li>Surveillance Integration Team</li>
+											<li>Sex and Gender-Based Analysis Plus (SGBA+) Champion and Centre for Chronic Disease Prevention and Health Equity</li>
+											<li>Policy Committee</li>
+											<li>Operations Committee</li>
+											<li>Communications and Public Affairs Branch</li>
+											<li>Corporate Services Branch</li>
+											<li>Office of International Affairs</li>
+										</ul>
 								</div>
 							</div>
 						</div>
@@ -846,8 +840,8 @@ $(function(){
 										<a name="Projectplanataglance"><h4 class="collapse-title">Project plan at a glance</h4></a>
 									</div> 
 									<br>
-									<a href="https://olivercrosby.github.io/datahub/images/Implementation-Plan-Eng.png">
-										<img src="https://olivercrosby.github.io/datahub/images/Implementation-Plan-Eng.png" class="img-fluid" alt="A graphic demonstrating the implementation plan">
+									<a class="clickable-img" href="https://olivercrosby.github.io/datahub/images/Implementation-Plan-Eng.png" target="_blank">
+										<img src="https://olivercrosby.github.io/datahub/images/Implementation-Plan-Eng.png" class="img-fluid" alt="A graphic table demonstrating the implementation plan">
 									</a>
 								</div>
 							</div>
@@ -929,10 +923,15 @@ $(function(){
 			<polygon points="100 33.3, 100 0, 50.6 0, 49.9 33.3"></polygon>
 		</svg>
 		<div class="footer-content container-fluid">
-			<span>phacdatahub@canada.ca</span>
-			<a href="#">The Data Hub</a>
-			<a href="#">Rad Links</a>
-			<a href="#">Strategy Essentials</a>
+			<div class="contact-container">
+				<a class="contact-link" data-toggle="collapse" data-target="#contact" aria-expanded="false" aria-controls="contact">Contact the Data Hub</a>
+				<div class="collapse panel-collapse contact-iframe-container" id="contact">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdB1PSsboYBdehAoU-3y_4Yuor5cnJQxGstUsYcV4YGlEgQcQ/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
+				</div>
+			</div>
+			<a href="#">The Data Hub (forthcoming)</a>
+			<a href="#">Rad Links (forthcoming)</a>
+			<a href="#">Strategy Essentials (forthcoming)</a>
 		</div>
 	</footer>
 	<!-- Footer -->
