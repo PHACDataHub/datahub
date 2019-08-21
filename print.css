@@ -11,6 +11,17 @@
     margin-right: auto;
 }
 
+.print-message {
+    display: block;
+  
+    background: orange!important;
+    padding: 1rem!important;
+    position: absolute;
+    top: 1rem;
+    border: 6px solid orange;
+    font-size: 20px;
+}
+
 .card {
     margin: 0;
     width: 100%;

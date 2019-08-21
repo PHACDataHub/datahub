@@ -912,6 +912,15 @@ footer a:hover {color: #01043f;}
 	margin-bottom: 2rem;
 }
 
+.print-message {
+  display: none;
+  
+  background: orange!important;
+  padding: 1rem!important;
+  position: absolute;
+  top: 1rem;
+}
+
 .carousel-item h4.collapse-title:before {
 	content: "";
 	padding: 10px 16px;
