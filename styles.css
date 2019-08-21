@@ -941,14 +941,15 @@ strong {
 /*.card-col {*/
 .card {
   max-width: 800px;
-  margin: auto 12% auto auto;
+  margin: auto 10vw auto auto;
+  width: 45vw;
 }
 
 .pop-out:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
   .section-col {
     position: relative;
     flex: 6%;
