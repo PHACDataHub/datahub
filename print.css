@@ -1,6 +1,6 @@
 .collapse {
-    display: block !important;
-    height: auto !important;
+    /* display: block !important; enable to display all for printing */
+    height: auto !important; 
 }
 .section-col, .hex-col {
     display: none;
