@@ -1,42 +1,43 @@
 .collapse {
-			display: block !important;
-			height: auto !important;
-		}
-		.section-col, .hex-col {
-			display: none;
-		}
+    display: block !important;
+    height: auto !important;
+}
+.section-col, .hex-col {
+    display: none;
+}
 
-		.collapse {
-			margin-left:  auto;
-			margin-right: auto;
-		}
+.collapse {
+    margin-left:  0;
+    margin-right: auto;
+}
 
-		.card {
-			margin: auto;
-			width: 80vw;
-		}
+.card {
+    margin: 0;
+    width: 100%;
+    padding-right: 8%;
+}
 
-		.carousel-item {
-			color: black;
-			display: block;
-			page-break-after:always;
-			padding: 100px;
-		}
-
-
-		.carousel-indicators{display: none;}
-		.item{display:block;}
-		.carousel-item { page-break-after:always;}
+.carousel-item {
+    color: black;
+    display: block;
+    page-break-after:always;
+    padding: 100px;
+}
 
 
+.carousel-indicators{display: none;}
+.item{display:block;}
+.carousel-item { page-break-after:always;}
 
-		#whatweheard, #whatweheard .carousel-item {
-			height: auto;
-		}
 
-		.carousel-inner {
-			display: flex;
-			flex-direction: column;
-		}
-		#sixthemes, #sixthemes .carousel-item{
-			height: auto;
+
+#whatweheard, #whatweheard .carousel-item {
+    height: auto;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+}
+#sixthemes, #sixthemes .carousel-item{
+    height: auto;
