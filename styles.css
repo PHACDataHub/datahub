@@ -40,12 +40,12 @@ html {
 } */
 
 /* This sets mostly all the colours, including the background of the hexs to match their respective row */
-.vision .hex, .vision .hex-button:hover .hex-icon-container g {fill: #01043f;}
-.context .hex, .context .hex-button:hover .hex-icon-container g {fill: #010659;}
-.consults .hex, .consults .hex-button:hover .hex-icon-container g {fill: #02098c;}
-.strategy .hex, .strategy .hex-button:hover .hex-icon-container g {fill: #030dbf;}
-.implement .hex, .implement .hex-button:hover .hex-icon-container g {fill: #040ed8;}
-.action .hex, .action .hex-button:hover .hex-icon-container g {fill: #030ff6;}
+.vision .hex, .vision .hex-button:hover .hex-icon-container g, .vision .open .hex-icon-container g {fill: #01043f;}
+.context .hex, .context .hex-button:hover .hex-icon-container g, .context .open .hex-icon-container g {fill: #010659;}
+.consults .hex, .consults .hex-button:hover .hex-icon-container g, .consults .open .hex-icon-container g {fill: #02098c;}
+.strategy .hex, .strategy .hex-button:hover .hex-icon-container g, .strategy .open .hex-icon-container g {fill: #030dbf;}
+.implement .hex, .implement .hex-button:hover .hex-icon-container g, .implement .open .hex-icon-container g {fill: #040ed8;}
+.action .hex, .action .hex-button:hover .hex-icon-container g, .action .open .hex-icon-container g {fill: #030ff6;}
 
 .vision {background: rgba(1, 4, 63, 0.9);}
 .context {background: rgba(1, 6, 89, 0.9);}
@@ -613,9 +613,56 @@ svg {
   cursor:pointer;
 }
 
-.hex-button:hover .hex {
+.hex-button:hover .hex, .open .hex {
 	fill: #fff;
 	stroke-width: 10px;
+}
+.open:before {
+  content: "";
+  height: 94px;
+  width: 82px;
+  background-image: url(images/openhex.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: -6px;
+  margin-left: -0.1rem;
+  animation: rotation 2s infinite linear, appear 1s forwards ease-in;
+  opacity: 0;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.open:hover svg g{
+	display: none;
+}
+
+.open:hover .hex-icon-container:after {
+	content: "x";
+	font-family: sans-serif;
+	position: absolute;
+	font-size: 30px;
+	line-height: 5rem;
+	width: 5rem;
+	left:  0;
 }
 
 .hex-button:hover i {
@@ -633,7 +680,7 @@ svg {
 	fill: white;
 }
 
-.hex-button:hover .hex-icon-container svg {
+.hex-button:hover .hex-icon-container svg, .open .hex-icon-container svg {
 	width: 4rem;
 }
 
@@ -643,17 +690,17 @@ svg {
   margin-top: 1.25rem;
 }
 
-.hex-button:hover .shrink-icon {
+.hex-button:hover .shrink-icon, .open .shrink-icon {
   height: 3rem!important;
   margin-top: 1rem;
 }
 
-.hex-button:hover img {
+.hex-button:hover img, .open .shrink-icon {
 	width: 3.5rem;
 	margin-top: 0.75rem;
 }
 
-.hex-button:hover .invert {
+.hex-button:hover .invert, .open .invert {
 	filter: invert;
 	-ms-filter: invert;
 	filter: invert(0%);
@@ -685,7 +732,7 @@ svg {
 
 }
 
-.hex-button:hover h3:after{
+.hex-button:hover h3:after, .open h3:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -1018,4 +1065,28 @@ strong {
 .clickable-img {
 	position: relative;
 	display: block;
+}
+
+
+header h1, header h2.phac, header h4.phac {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: 0 0 7px #01004e, 0 0 7px #01004e, 0 0 7px #01004e;
+	color: white;
+}
+
+header h1.phac {
+	font-size: calc(4rem + 4vh);
+	line-height: calc(4rem + 4vh);
+	margin: 0 0 0 -2px;
+}
+
+header h2.phac, header h4.phac {
+	font-size: calc(1rem + 0.6vh);
+	line-height: calc(1rem + 0.6vh);
+	margin-bottom: 0;
+}
+
+header h4 {
+	margin-top: -4px;
 }
