@@ -626,11 +626,11 @@ svg {
   position: absolute;
   margin-top: -6px;
   margin-left: -0.1rem;
-  animation: rotation 2s infinite linear, appear 1s forwards ease-in;
+  animation: appear 500ms forwards ease-in, breath 2s infinite linear;
   opacity: 0;
 }
 
-@keyframes rotation {
+@keyframes breath {
   0% {
     transform: scale(1, 1);
   }
@@ -645,17 +645,19 @@ svg {
 @keyframes appear {
   from {
     opacity: 0;
+    transform: rotate(0deg);
   }
   to {
     opacity: 1;
+    transform: rotate(360deg);
   }
 }
 
-.open:hover svg g{
+.open2:hover svg g{
 	display: none;
 }
 
-.open:hover .hex-icon-container:after {
+.open2:hover .hex-icon-container:after {
 	content: "x";
 	font-family: sans-serif;
 	position: absolute;
@@ -663,6 +665,12 @@ svg {
 	line-height: 5rem;
 	width: 5rem;
 	left:  0;
+}
+
+.open {
+  position: -webkit-sticky;
+  position: sticky;
+	top: 20px;
 }
 
 .hex-button:hover i {

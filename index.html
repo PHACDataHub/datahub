@@ -7,15 +7,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://olivercrosby.github.io/datahub/styles.css">
-	<link rel="stylesheet" href="https://olivercrosby.github.io/datahub/print.css" media="print">
-	<script src="https://olivercrosby.github.io/datahub/scripts.js"></script> -->
-	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="https://olivercrosby.github.io/datahub/print.css" media="print"> -->
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="print.css" media="print">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/b9f2ae3468.js"></script>
+	<script src="https://use.fontawesome.com/b9f2ae3468.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
     <title>PHAC Data Strategy</title>
@@ -50,7 +48,7 @@
 
 	<!-- this replaces GCPedia's header content with the word "hi". It should only be enabled on the GCpedia page 
 	<script>
-		document.getElementsByTagName('head')[0].innerHTML = "<p>hi, if you're seeing this message, then the page has not rendered properly.</p>"
+		document.getElementsByTagName('head')[0].innerHTML = "<p class="hidden">Hi there, if you're seeing this message, then the page didn't load properly. Try using Chrome.</p>"
 	</script>-->
 
 <script>
@@ -62,53 +60,25 @@ $('#accordion').on('shown.bs.collapse', function () {
 
 /* This function adds the 'open' class to the hex button when clicked. */
 $(function(){
+	var elem = $(this);
+
 	$('.hex-button').on('click', function () {
 		if ($(this).hasClass("open")) {
 			$(this).removeClass("open");
+			$(this).removeClass("open2");
 		}
 		else {
 			$(this).addClass("open");
+
+			var button = $(this);
+
+			setTimeout(function() {
+				button.addClass('open2');
+			}, 2000);
 		}
 	});
 });
 
-/*
-function scrollfix() {
-	console.log($(this).parent().parent().find('.collapse').height());
-	var elemtop = $(this).offset().top; // gets height of the button
-	console.log("distance between button and top: ", elemtop);
-
-	$('html,body').animate({
-		scrollTop: $('body').offset().top + elemtop
-	}, 1000);
-};
-
-
-
-$(function(){
-	$('#accordion').on( "click", '.hex-button', scrollfix);
-});
-
-
-$(function(){
-	$('#accordion').on( "click", '.hex-button', function() {
-		var elemtop = $(this).offset().top; // gets height of the button
-		console.log("distance between button and top: ", elemtop);
-
-		var card = $('.show').height()
-		console.log("height of the open card: ", card);
-
-		var newcard = $(this).parent().parent().find('.collapse').height()
-		console.log("height of the newly opened card: ", newcard);
-		
-		var adjustby = newcard + (card - newcard)
-		console.log("adjust: ", adjustby);
-
-		$('html,body').animate({
-			scrollTop: $(this).offset().top - adjustby - 80
-		}, 1000); 
-	});
-});*/
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -145,7 +115,7 @@ $(function(){
 			<div class="col"> <!-- this column houses a hex-button and the expandable content -->
 				<div class="row hex-row"> <!-- Hex Row -->
 					<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-						<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#visionCollapse" aria-expanded="false" aria-controls="visionCollapse">
+						<a class="btn hex-button sticky" href="##" data-toggle="collapse" data-target="#visionCollapse" aria-expanded="false" aria-controls="visionCollapse">
 							<svg viewBox="0 0 300 300" >
 							<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 							</svg>
