@@ -584,12 +584,12 @@ svg {
 }
 
 .hex-button {
-	height:5rem;
-	width:auto;
-	margin: 2rem 0;
-	padding: 0;
-	position:relative;
-	display: flex;
+	height:5rem!important;
+	width:auto!important;
+	margin: 2rem 0!important;
+	padding: 0!important;
+	position:relative!important;
+	display: flex!important;
 }
 
 .hex-button i {
