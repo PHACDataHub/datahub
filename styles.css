@@ -588,7 +588,7 @@ svg {
 	width:auto!important;
 	margin: 2rem 0!important;
 	padding: 0!important;
-	position:relative!important;
+	position:relative;
 	display: flex!important;
 }
 
