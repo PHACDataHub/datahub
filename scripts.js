@@ -9,7 +9,7 @@ console.log('i loaded');
 
 // checks if this is the GCpedia version and changes things accordingly
 // check if url contains 'gcpedia'
-if (window.location.href.indexOf("GCpedia") > -1) {
+if (window.location.href.indexOf("gcpedia") > -1) {
     console.log('GCpedia detected.')
     //if ya..
     //remove the content from the head and replace it with a message that I hope nobody ever sees. 
