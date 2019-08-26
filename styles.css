@@ -961,7 +961,7 @@ footer a:hover {color: #01043f;}
 }
 
 #whatweheard, #whatweheard .carousel-item {
-  height: 60rem;
+  height: 80rem;
 }
 
 #sixthemes, #sixthemes .carousel-item {
@@ -1087,6 +1087,15 @@ header h1.phac {
 	font-size: calc(4rem + 4vh);
 	line-height: calc(4rem + 4vh);
 	margin: 0 0 0 -2px;
+}
+
+#enfrançais header h1.phac {
+  font-size: calc(2rem + 4vh);
+  line-height: calc(3rem + 4vh);
+}
+
+#enfrançais header h4 {
+  margin-top: -8px;
 }
 
 header h2.phac, header h4.phac {
