@@ -70,7 +70,7 @@ h4.phac{color:#ced3ff;}
 
 body {
   overflow-x: hidden;
-  background-color: #0a0fbd;
+  background-color: #0a0fbd!important;
   font-family: "DINOT-Medium", helvetica, arial, sans-serif;
   background-image: url(header-final.jpg);
   background-repeat: no-repeat;
