@@ -1066,6 +1066,10 @@ strong {
   color: white;
 }
 
+#enfrançais .clickable-img:hover:before {
+content: "Cliquez pour agrandir";
+}
+
 .clickable-img {
 	position: relative;
 	display: block;
