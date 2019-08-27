@@ -961,7 +961,7 @@ footer a:hover {color: #01043f;}
 }
 
 #whatweheard, #whatweheard .carousel-item {
-  height: 80rem;
+  height: 100rem;
 }
 
 #sixthemes, #sixthemes .carousel-item {
@@ -1055,19 +1055,15 @@ strong {
 }
 
 .clickable-img:hover:before {
-	content: "click to enlarge";
-	position: absolute;
-	top: 0;
-	background: rgba(3, 15, 246, 0.5);
-	width: 100%;
-	opacity: 1;
-	font-size: 4rem;
-	line-height: 4rem;
-	text-align: center;
-	color: white;
-	padding-top: calc(33.333% - 2rem);
-  padding-bottom: calc(33.333% - 2rem);
-  display: block;
+  content: "click to enlarge";
+  position: absolute;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  opacity: 1;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
 }
 
 .clickable-img {
