@@ -1131,3 +1131,24 @@ header h4 {
   background: #000;
   color: white;
 }
+
+#enfrançais #whatweheard .clickable-img {
+  display: none;
+}
+
+#enfrançais #whatweheard .clickable-img img{
+  filter: brightness(100);
+}
+
+#enfrançais #whatweheard .clickable-img:before {
+  content: "This image is out for translation";
+  width: 100%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 100%;
+  color: black;
+  padding: 2rem;
+  position: absolute;
+  z-index: 99;
+}
