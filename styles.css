@@ -1132,7 +1132,7 @@ header h4 {
   color: white;
 }
 
-#enfrançais #whatweheard .clickable-img {
+#whatweheard .clickable-img {
   display: none;
 }
 
@@ -1140,7 +1140,7 @@ header h4 {
   filter: brightness(100);
 }
 
-#enfrançais #whatweheard .clickable-img:before {
+/*#enfrançais #whatweheard .clickable-img:before {
   content: "This image is out for translation";
   width: 100%;
   line-height: 2rem;
@@ -1151,4 +1151,4 @@ header h4 {
   padding: 2rem;
   position: absolute;
   z-index: 99;
-}
+}*/
