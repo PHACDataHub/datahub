@@ -28,7 +28,7 @@ $(function(){
     var elem = $(this);
 
     $('.hex-button').on('click', function () {
-        if ($(this).hasClass("open")) {
+        if ($(this).parent().next().find('.collapse').hasClass('show')) {
             $(this).removeClass("open");
             $(this).removeClass("open2");
         }
@@ -38,7 +38,9 @@ $(function(){
             var button = $(this);
 
             setTimeout(function() {
-                button.addClass('open2');
+                if (button.hasClass("open")) {
+                    button.addClass('open2');
+                }
             }, 2000);
         }
     });
