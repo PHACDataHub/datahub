@@ -24,10 +24,6 @@ else {
     //if not gcpedia, use local stylesheets
     $('head').append('<link rel="stylesheet" href="styles.css">');
     $('head').append('<link rel="stylesheet" href="print.css" media="print">');
-}
-
-
-
 
   
 /* This function adds the 'open' class to the hex button when clicked. */
