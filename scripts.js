@@ -45,3 +45,68 @@ $(function(){
         }
     });
 });
+
+// SEARCH MODE
+$(document).ready(function(){
+
+    // When the user does ctrl-f or ctrl-/
+    var keydown = null;
+
+    $(window).keydown(function(e) {
+        if ( ( e.keyCode == 70 && ( e.ctrlKey || e.metaKey ) ) ||
+            ( e.keyCode == 191 ) ) {
+            keydown = new Date().getTime();
+        }
+
+        return true;
+    }).blur(function() {
+        if ( keydown !== null ) {
+            var delta = new Date().getTime() - keydown;
+            if ( delta >= 0 && delta < 1000 )
+                console.log('finding');
+                $('.collapse').show();
+            keydown = null;
+
+            // activate search mdoe
+            $('#searchingBG').show();
+            // this removes clip-path from the vision section, which somehow screws up z-index.
+            $('.vision').removeClass('first-category');
+
+            // setup the hidey effect
+            $('#searchModedies').fadeTo( 1, 1 );
+            $('#searchModedies').hide();
+            $('.bye').hide();
+
+
+        }
+    });
+
+    $('#searchingBG').click(function() {
+        $('#searchingBG').hide();
+        $('.collapse').hide();
+        $('#searchModedies').show();
+        $('#searchModedies').fadeTo( 1500, 0 );
+
+        setTimeout(function() {
+            $('.bye').show();
+        }, 750);
+        setTimeout(function() {
+            $('#searchModedies').hide();
+        }, 1500);
+    });
+});
+
+$(document).ready(function(){
+    $('.expandAll').click(function() {
+        $('.collapse').show();
+        $('.expandAll').hide();
+        $('.collapseAll').show();
+    });
+
+    $('.collapseAll').click(function() {
+        $('.collapse').hide();
+        $('.collapseAll').hide();
+        $('.expandAll').show();
+    });
+
+});

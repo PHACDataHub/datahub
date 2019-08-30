@@ -563,7 +563,7 @@ header {
 
 .vision .hex-col:before {
 	height: 100%;
-	top: 2rem;
+  top: 2rem;
 }
 
 
@@ -909,9 +909,12 @@ footer a:hover, footer a:focus {color: #01043f;}
 
 
 .vision {
-	padding-top: 4rem!important;
-    margin-top: -1rem;
-    clip-path: polygon(0% 1rem, 0% 100%, 100% 100%, 100% 0%, 50.5% 0%, 48% 1rem);
+  padding-top: 4rem!important;
+  margin-top: -1rem;
+}
+
+.first-category {
+  clip-path: polygon(0% 1rem, 0% 100%, 100% 100%, 100% 0%, 50.5% 0%, 48% 1rem);
 }
 
 .module-module-module {
@@ -1172,4 +1175,59 @@ header h4 {
 
 blockquote {
   font-style: italic;
+}
+
+#searchingBG, #searchModedies {
+  background: #000000aa;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+  display: none;
+  color: white;
+  line-height: 100vh;
+  padding-left: 10vw;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); 
+}
+
+.card {
+  z-index: 4;
+}
+
+
+.searchmodeTitle {
+  font-size: 2rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  display: block;
+  color: white;
+  text-align: center;
+  margin-right: 1rem;
+  text-shadow: 0 1px 1px #00000099;
+}
+
+.expandCollapse {
+  color: white!important;
+  position: absolute;
+  font-size: 0.8rem;
+  z-index: 3;
+  margin: 0 0.6rem;
+  right: 0;
+}
+
+.expandCollapse:hover {
+  cursor: pointer;
+}
+
+.collapseAll {
+  display: none;
+}
+
+#presidentsvideo {
+  display: none;
 }
