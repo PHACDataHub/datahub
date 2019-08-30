@@ -949,7 +949,7 @@ footer a:hover, footer a:focus {color: #01043f;}
 }
 
 #sixthemes, #sixthemes .carousel-item {
- height: 115rem;
+ height: 30rem;
 }
 
 .carousel-item {
@@ -1157,4 +1157,8 @@ header h4 {
 
 .themeHeaders {
   width: 70%
+}
+
+blockquote {
+  font-style: italic;
 }
