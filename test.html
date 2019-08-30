@@ -70,6 +70,10 @@
 			<h2 class="phac">Public Health Agency <span style="text-transform: lowercase;">of</span> Canada</h2>
             <h1 class="phac">Data Strategy</h1>
 			<h4 class="phac">Building a foundation for federal public health data</h4>
+			<!-- Search form -->
+				<div class="md-form mt-0">
+					<input id="searchBtn" class="form-control" type="text" placeholder="Search" aria-label="Search">
+				</div>
 			
 			<div class="lang">
 				<a href="frindex.html">Français</a>
@@ -111,18 +115,11 @@
 									</div>
 									<br>
 									<!-- <h4 class="video-title">A message from the CPHO and President</h4> -->
-									<img src="images/Vision-2.png" class="img right" alt="An image presenting vision, leadership, partnership, action and innovation.">			
-									<p>As the Public Health Agency of Canada (PHAC), promote and protect the health of Canadians through <strong>leadership, partnership, innovation</strong> and <strong>action</strong> in public health.</p>
-									<p>We strive to <strong>prevent</strong> and <strong>control</strong> chronic and infectious diseases as well as injuries, and we <strong>prepare</strong> for and <strong>respond</strong> to public health emergencies.</p>
-									<p>Our actions have been, and always will be, guided by sound data.</p>
-									<p>We are <strong>conveners, generators,</strong> and <strong>users</strong> of <strong>public health data.</strong></p>
-									<p>Our ability to <strong>collect, secure, manage, access,</strong> and <strong>analyze</strong> data is essential to our mandate, and we recognize that the value of our data will be optimized when they are easily found, readily available, and have multiple purposes.</p>
-									<img src="images/Vision-1.png" class="img left" alt="A graphic illustrating the components of quality data.">
-									<p>Our need for, and the availability of timely data will continue to grow exponentially in the years ahead.Technology is advancing rapidly, creating unprecedented <strong>opportunities</strong> to integrate machine learning and artificial intelligence into science-based analytics that will improve our ability to generate predictive models for important public health outcomes. There is also a growing expectation for real-time data that informs analysis for timely decisions. The Agency is increasingly combining innovative data analytics and visualization tools with traditional epidemiologic research and surveillance methods, transforming our data rich environment into meaningful public health information. This is enabling us to learn more about our public health ecosystem and about public policies so that we can support all Canadians in achieving optimal health and reduce health disparities in key populations across the country. Of course, and importantly, these advancements are closely made with a deep understanding that Canadians expect more of their governments to safeguard privacy.</p>
-									<p>These are the <strong>drivers</strong> behind the Public Health Agency of Canada’s first <strong>Data Strategy</strong>; as informed by consultations with over 500 PHAC employees from across the country.</p>
-									<p>This Data Strategy is designed to be both aspirational and practical. Delivering on the strategy will enable us to build a foundation for public health data.</p>
-									<p>When fully realized, the implementation plan will establish clear governance, develop horizontal data infrastructure, adopt innovative approaches, encourage iterative experimentation, prioritize users, and forge partnerships with jurisdictions and external organizations. And foundational to all of this is recognition that our culture must support our staff's development and need for tools and resources so that they can continue to excel at being the fabric of our federal public health organization.</p>
-									<p>Through the actions outlined in this PHAC Data Strategy, we aspire to be an Agency that leverages data innovations and modern technical capacity in pursuit of our mandate to promote and protect the health of Canadians.</p>
+									<script>
+                                        $(document).ready(function(){
+                                            $("#box").load("https://olivercrosby.github.io/datahub/vision.html");
+                                        });
+                                    </script>
 								</div>
 							</div>
 						</div>
@@ -363,7 +360,6 @@
 										</div>
 										<div class="carousel-item">
 											<h3 class="carousel-title">Science-based Analytics (3/6)</h4>
-											<!-- <img class="themeHeaders" src="images/Data as an Asset.jpg"> -->
 											<p>During our consultations, we wanted to learn about the potential for advanced and innovative analytics could be done with public health data. Data can provide us with powerful predictive insights, from early detection of infectious disease outbreaks, to predictions of individual risk, to chronic illnesses. Staff were asked about PHAC’s future potential in this regard.</p>
 											<p>What we heard, however, was that our capacity to collect, manage, and use data does not easily support new or innovative uses. Many employees cautioned that before we make investments in new technologies, we need to ensure that we achieve a sufficient baseline efficacy."Innovation is nice," one respondent noted, "but I just want the basics to work."</p>
 											<p>We also need to change the way that we work, focusing less on using restricted data to produce static (mostly textual) reports, to providing the public with real-time, open, and visual communications of what we do.</p>

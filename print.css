@@ -58,3 +58,9 @@
 body {
     padding-top: 40px;
 }
+
+
+footer, #gcpediafooter {
+    display: none!important;
+}
+
