@@ -939,6 +939,14 @@ footer a:hover, footer a:focus {color: #01043f;}
 	bottom: auto;
 }
 
+.carousel-control-prev:focus span, .carousel-control-next:focus span{
+  border-left: 3px solid white;
+}
+
+.carousel-control-prev:focus, .carousel-control-next:focus{
+  opacity: 1;
+}
+
 .carousel-indicators li {
 	background-color: white;
 }
