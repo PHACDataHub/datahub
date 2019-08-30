@@ -40,12 +40,12 @@ html {
 } */
 
 /* This sets mostly all the colours, including the background of the hexs to match their respective row */
-.vision .hex, .vision .hex-button:hover .hex-icon-container g, .vision .open .hex-icon-container g {fill: #01043f;}
-.context .hex, .context .hex-button:hover .hex-icon-container g, .context .open .hex-icon-container g {fill: #010659;}
-.consults .hex, .consults .hex-button:hover .hex-icon-container g, .consults .open .hex-icon-container g {fill: #02098c;}
-.strategy .hex, .strategy .hex-button:hover .hex-icon-container g, .strategy .open .hex-icon-container g {fill: #030dbf;}
-.implement .hex, .implement .hex-button:hover .hex-icon-container g, .implement .open .hex-icon-container g {fill: #040ed8;}
-.action .hex, .action .hex-button:hover .hex-icon-container g, .action .open .hex-icon-container g {fill: #030ff6;}
+.vision .hex, .vision .hex-button:hover .hex-icon-container g, .vision .hex-button:focus .hex-icon-container g, .vision .open .hex-icon-container g {fill: #01043f;}
+.context .hex, .context .hex-button:hover .hex-icon-container g, .context .hex-button:focus .hex-icon-container g, .context .open .hex-icon-container g {fill: #010659;}
+.consults .hex, .consults .hex-button:hover .hex-icon-container g, .consults .hex-button:focus .hex-icon-container g, .consults .open .hex-icon-container g {fill: #02098c;}
+.strategy .hex, .strategy .hex-button:hover .hex-icon-container g, .strategy .hex-button:focus .hex-icon-container g, .strategy .open .hex-icon-container g {fill: #030dbf;}
+.implement .hex, .implement .hex-button:hover .hex-icon-container g, .implement .hex-button:focus .hex-icon-container g, .implement .open .hex-icon-container g {fill: #040ed8;}
+.action .hex, .action .hex-button:hover .hex-icon-container g, .action .hex-button:focus .hex-icon-container g, .action .open .hex-icon-container g {fill: #030ff6;}
 
 .vision {background: rgba(1, 4, 63, 0.9);}
 .context {background: rgba(1, 6, 89, 0.9);}
@@ -613,7 +613,7 @@ svg {
   cursor:pointer;
 }
 
-.hex-button:hover .hex, .open .hex {
+.hex-button:hover .hex, .open .hex, .hex-button:focus .hex {
 	fill: #fff;
 	stroke-width: 10px;
 }
@@ -653,11 +653,11 @@ svg {
   }
 }
 
-.open2:hover svg g{
+.open2:hover svg g, .open2:focus svg g {
 	display: none;
 }
 
-.open2:hover .hex-icon-container:after {
+.open2:hover .hex-icon-container:after, .open2:focus .hex-icon-container:after  {
 	content: "x";
 	font-family: sans-serif;
 	position: absolute;
@@ -688,7 +688,7 @@ svg {
 	fill: white;
 }
 
-.hex-button:hover .hex-icon-container svg, .open .hex-icon-container svg {
+.hex-button:hover .hex-icon-container svg, .open .hex-icon-container svg, .hex-button:focus .hex-icon-container svg {
 	width: 4rem;
 }
 
@@ -698,17 +698,17 @@ svg {
   margin-top: 1.25rem;
 }
 
-.hex-button:hover .shrink-icon, .open .shrink-icon {
+.hex-button:hover .shrink-icon, .open .shrink-icon, .hex-button:focus .shrink-icon {
   height: 3rem!important;
   margin-top: 1rem;
 }
 
-.hex-button:hover img, .open .shrink-icon {
+.hex-button:hover img, .open .shrink-icon, .hex-button:focus img {
 	width: 3.5rem;
 	margin-top: 0.75rem;
 }
 
-.hex-button:hover .invert, .open .invert {
+.hex-button:hover .invert, .open .invert, .hex-button:focus .invert {
 	filter: invert;
 	-ms-filter: invert;
 	filter: invert(0%);
@@ -740,7 +740,7 @@ svg {
 
 }
 
-.hex-button:hover h3:after, .open h3:after {
+.hex-button:hover h3:after, .open h3:after, .hex-button:focus h3:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -798,7 +798,7 @@ svg {
 footer {
   color: #000;
   position: relative;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .footer-content {
@@ -858,6 +858,18 @@ footer iframe {
   margin-top: -1rem;
 }
 
+.bottomer-bar {
+  fill: #007bff;
+  width: 3755px;
+  height: 3rem;
+  position: absolute;
+  left: 48%;
+  top: 0;
+  margin-left: -1877.5px;
+  z-index: 0;
+  margin-top: -1rem;
+}
+
 footer h2.phac {
   color: #000;
 }
@@ -867,42 +879,13 @@ footer a {
   text-transform: uppercase;
 }
 
-footer a:hover {color: #01043f;}
+footer a:hover, footer a:focus {color: #01043f;}
 
 .footerp {
 	max-width: 600px;
 	width: 33vw;
   font-size: 1rem;
 }
-
-
-.section {
-	position: relative;
-}
-
-
-
-.section:before {
-	content: "";
-    background-size: 30%;
-    background-repeat: no-repeat;
-	background-position: 0% 50%;
-    height: 100%;
-    left: 0;
-    width: 100%;
-    top: 0;
-    position: absolute;
-    opacity: 0;
-	-webkit-transition: opacity 20s, background-size 20s, background-position 20s; /* For Safari 3.1 to 6.0 */
-	transition: opacity 20s, background-size 20s, background-position 20s;
-}
-
-.section:hover:before {
-	opacity: 0.3;
-	background-size: 50%;
-	background-position: -10% 50%;
-}
-
 
 .header {
 	position: relative;
@@ -1055,7 +1038,7 @@ strong {
   -moz-columns: 2;
 }
 
-.clickable-img:hover:before {
+.clickable-img:hover:before, .clickable-img:focus:before {
   content: "click to enlarge";
   position: absolute;
   top: 0px;
@@ -1067,7 +1050,7 @@ strong {
   color: white;
 }
 
-#enfrançais .clickable-img:hover:before {
+#enfrançais .clickable-img:hover:before, #enfrançais .clickable-img:focus:before {
 content: "Cliquez pour agrandir";
 }
 
@@ -1127,7 +1110,7 @@ header h4 {
   clip-path: polygon(0 20%, 10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%);
 }
 
-.lang a:hover { 
+.lang a:hover, .lang a:focus { 
   background: #000;
   color: white;
 }
@@ -1152,3 +1135,26 @@ header h4 {
   position: absolute;
   z-index: 99;
 }*/
+
+.bold-gc {
+  font-weight: 800;
+  font-family: sans-serif;
+
+}
+
+#gcpediafooter {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: center;
+  position: relative;
+}
+
+.gcpediaLink{
+  line-height: 2.6rem;
+  padding: 0.5rem 1rem;
+}
+
+.themeHeaders {
+  width: 70%
+}
