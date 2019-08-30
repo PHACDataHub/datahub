@@ -241,10 +241,10 @@ p.glance {
   letter-spacing: 0.15rem;
 }
 
-.collapse-title-box {
+.collapse-title-box h4 {
   background-color: rgb(3,13,191);
   width: 100%;
-  height: 3.5rem;
+  line-height: 3.5rem;
 }
 
 blockquote{
