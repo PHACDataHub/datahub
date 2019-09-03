@@ -81,6 +81,10 @@ body {
   background-position: center -10vh;
 }
 
+.ie body {
+  font-family: helvetica, arial, sans-serif;
+}
+
 /* just tryin somethin out here
 	body:before {
 	position: absolute;
@@ -1218,7 +1222,7 @@ blockquote {
   z-index: 3;
   margin: 0 0.6rem;
   right: 0;
-  display:none;
+  /*display:none;*/
 }
 
 .expandCollapse:hover {

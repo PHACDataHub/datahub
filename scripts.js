@@ -1,29 +1,32 @@
 $('document').on('shown.bs.collapse', function () {
-    console.log("shown.bs.collapse worked!");
+    console.log("Dude, shown.bs.collapse actually worked!");
 });
 
 
-// Attempt #1 at expanding cards when words are searched.
-$(document).ready(function(){
-    $("#searchBtn").keypress(search);
-    $("#searchBtn").focus(search);
-    $("#searchBtn").click(search);
+/*
+function openHex() {
 
-    function search() {
-        var searchTerm = $("#searchBtn").val();
-        console.log("Searching for:", searchTerm);
-        if ($("p:contains('" + searchTerm + "')").length >= 1) {
-            // opens all cards that contain the search term
-            $("p:contains('" + searchTerm + "')").parents('.collapse').show();
+    $( ".show" ).change(function() {
+        console.log( "Handler for .change() called." );
+      });
+
+    
+    $( ".hex-button" ).each( function( index, element ){
+
+        // if hex-button has .show --- problem is they don't have yet...
+        if ($(element).parent().next().find('.collapse').hasClass('show')) {
+            $(element).addClass("open");
+            $(element).removeClass("open2");
+
+            console.log( $(element).text());
         }
-        else {
-            console.log('no luck boss!');
-        }
-    }
 
-});
+    });
 
-/* This function adds the 'open' class to the hex button when clicked. */
+
+}*/
+
+// This function adds the 'open' class to the hex button when clicked. 
 $(function(){
     var elem = $(this);
 
@@ -46,7 +49,10 @@ $(function(){
     });
 });
 
-/*// SEARCH MODE 
+
+
+
+// SEARCH MODE 
 $(document).ready(function(){
 
     // When the user does ctrl-f or ctrl-/
@@ -64,7 +70,10 @@ $(document).ready(function(){
             var delta = new Date().getTime() - keydown;
             if ( delta >= 0 && delta < 1000 )
                 console.log('finding');
-                $('.collapse').show();
+                
+                $('.collapse:not(".show")')
+                    .collapse('show');// show anything that isn't already shown
+
                 console.log('expanded');
             keydown = null;
 
@@ -84,7 +93,8 @@ $(document).ready(function(){
 
     $('#searchingBG').click(function() {
         $('#searchingBG').hide();
-        $('.collapse').hide();
+        $('.collapse.show')
+            .collapse('hide');// collapse anything thats already shown
         console.log('collapsed');
         $('#searchModedies').show();
         $('#searchModedies').fadeTo( 1500, 0 );
@@ -96,27 +106,51 @@ $(document).ready(function(){
             $('#searchModedies').hide();
         }, 1500);
     });
-}); 
+});
 
 
-// expand / collapse
+// expand / collapse button
 $(document).ready(function(){
+
+    // expand all button
     $('.expandAll').click(function() {
-        $('.collapse').show();
-        $('.expandAll').hide();
-        $('.collapseAll').show();
+        $('.collapse:not(".show")')
+            .collapse('show');// show anything that isn't already shown
+        $('.expandAll').hide(); // hide the expand all button
+        $('.collapseAll').show(); // show the collapse all button
+
         console.log('all expanded');
+        //openHex();
     });
 
+    // collapse all button
     $('.collapseAll').click(function() {
-        $('.collapse').hide();
-        $('.collapseAll').hide();
-        $('.expandAll').show();
+        $('.collapse.show')
+            .collapse('hide');// collapse anything thats already shown
+        $('.collapseAll').hide();// hide the collapse all button
+        $('.expandAll').show(); // show the expand all button
         console.log('all collapsed');
     });
+});
 
-    $('.hex-button').click(function() {
-        $(this).find('.collapse').show();
-        console.log('you click I show how')
-    })
-});*/
+
+
+
+// adds .ie to html tag if browser is ie
+$(document).ready(function() {
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
+    
+    if ( isIE ) {
+      document.documentElement.classList.add('ie');
+      console.log('this browser is IE');
+    }
+    else {
+        console.log("this browser ain't IE");
+    }
+})
+
+
+$(document).ready(function(){
+
+});
