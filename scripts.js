@@ -28,7 +28,7 @@ $(function(){
     var elem = $(this);
 
     $('.hex-button').on('click', function () {
-        if ($(this).parent().next().find('.collapse').hasClass('show')) {
+        if ($(this).parent().next().find('.collapse').hasClass('show') && $(this).parent().next().find('.collapse').show()) {
             $(this).removeClass("open");
             $(this).removeClass("open2");
         }
@@ -46,7 +46,7 @@ $(function(){
     });
 });
 
-// SEARCH MODE
+/*// SEARCH MODE 
 $(document).ready(function(){
 
     // When the user does ctrl-f or ctrl-/
@@ -65,6 +65,7 @@ $(document).ready(function(){
             if ( delta >= 0 && delta < 1000 )
                 console.log('finding');
                 $('.collapse').show();
+                console.log('expanded');
             keydown = null;
 
             // activate search mdoe
@@ -84,6 +85,7 @@ $(document).ready(function(){
     $('#searchingBG').click(function() {
         $('#searchingBG').hide();
         $('.collapse').hide();
+        console.log('collapsed');
         $('#searchModedies').show();
         $('#searchModedies').fadeTo( 1500, 0 );
 
@@ -94,19 +96,27 @@ $(document).ready(function(){
             $('#searchModedies').hide();
         }, 1500);
     });
-});
+}); 
 
+
+// expand / collapse
 $(document).ready(function(){
     $('.expandAll').click(function() {
         $('.collapse').show();
         $('.expandAll').hide();
         $('.collapseAll').show();
+        console.log('all expanded');
     });
 
     $('.collapseAll').click(function() {
         $('.collapse').hide();
         $('.collapseAll').hide();
         $('.expandAll').show();
+        console.log('all collapsed');
     });
 
-});
+    $('.hex-button').click(function() {
+        $(this).find('.collapse').show();
+        console.log('you click I show how')
+    })
+});*/
