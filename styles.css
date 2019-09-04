@@ -973,6 +973,10 @@ footer a:hover, footer a:focus {color: #01043f;}
   padding: 2rem;
 }
 
+#datadef h2 {
+  display: none;
+}
+
 .carousel-item {
 	background: rgb(1,6,89);
 	color: white;
