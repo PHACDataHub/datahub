@@ -116,7 +116,7 @@ body {
 }
 */
 
-p, ul {
+p, ul, li {
 	font-size: 1.1rem;
 }
 
@@ -156,6 +156,7 @@ h3.button-title, .button-title{
   text-align: left;
   color:white;
   font-size: 1.2rem;
+  font-size: calc(0.7rem + 0.5vw);
   font-weight: lighter;
   font-family:Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -814,14 +815,21 @@ footer {
 }
 
 .footer-content .contact-container {
-  flex: 0 0 66.6666%;
+  flex: 0 0 50%;
   padding-left: 30px;
 }
 
+.footerlinks > a {
+  margin: auto;
+  font-size: calc(0.5rem + 0.4vw);
+}
 
-.footer-content > a {
-  flex: 0 0 11.11111%;
-  padding: 0 1rem;
+.footerlinks {
+  margin-left: auto;
+  flex: 0 0 48%;
+  flex-direction: row;
+  display: flex;
+  align-items: flex-start;
 }
 
 footer iframe {
@@ -1040,6 +1048,13 @@ strong {
   cursor: pointer;
 }
 
+
+@media only screen and (max-width: 1600px) {
+  .card {
+    margin: auto 5vw auto auto;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .section-col {
     position: relative;
@@ -1053,14 +1068,38 @@ strong {
   	width: 240px;
   	position: absolute;
   	text-align: center;
-  	margin-top: 120px;
+    margin-top: 120px;
+  }
+  .card {
+    margin: auto 2.5vw auto auto;
+    width: 50vw;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    margin: auto 0 auto auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    margin: auto 0 auto -2vw;
+    width: calc(80vw - 2.5rem);
+  }
+}
+
+
+
 
 #whoengaged {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+}
+
+.ie #whoengaged {
+  list-style-position: inside;
 }
 
 .clickable-img:hover:before, .clickable-img:focus:before {
@@ -1173,6 +1212,7 @@ header h4 {
   background-color: white;
   justify-content: center;
   position: relative;
+  font-size: 0.8rem;
 }
 
 .gcpediaLink{
@@ -1201,6 +1241,11 @@ blockquote {
   padding-left: 10vw;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px); 
+}
+
+.ie #searchingBG, .ie #searchModedies {
+  background: #000;
+  opacity: 0.7;
 }
 
 .card {
@@ -1243,3 +1288,4 @@ blockquote {
 #presidentsvideo {
   display: none;
 }
+
