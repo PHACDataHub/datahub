@@ -963,11 +963,11 @@ footer a:hover, footer a:focus {color: #01043f;}
 }
 
 #whatweheard, #whatweheard .carousel-item {
-  height: 60rem;
+  min-height: auto;
 }
 
 #sixthemes, #sixthemes .carousel-item {
- height: 30rem;
+ 
 }
 
 .carousel-item {

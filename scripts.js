@@ -1,4 +1,4 @@
-$('document').on('shown.bs.collapse', function () {
+$('.collapse').on('shown.bs.collapse', function (e) {
     console.log("Dude, shown.bs.collapse actually worked!");
 });
 
@@ -26,6 +26,9 @@ function openHex() {
 
 }*/
 
+
+
+
 // This function adds the 'open' class to the hex button when clicked. 
 $(function(){
     var elem = $(this);
@@ -52,6 +55,8 @@ $(function(){
 
 
 
+
+
 // SEARCH MODE 
 $(document).ready(function(){
 
@@ -70,7 +75,7 @@ $(document).ready(function(){
             var delta = new Date().getTime() - keydown;
             if ( delta >= 0 && delta < 1000 )
                 console.log('finding');
-                
+
                 $('.collapse:not(".show")')
                     .collapse('show');// show anything that isn't already shown
 
@@ -114,13 +119,13 @@ $(document).ready(function(){
 
     // expand all button
     $('.expandAll').click(function() {
+        
         $('.collapse:not(".show")')
             .collapse('show');// show anything that isn't already shown
         $('.expandAll').hide(); // hide the expand all button
         $('.collapseAll').show(); // show the collapse all button
 
         console.log('all expanded');
-        //openHex();
     });
 
     // collapse all button
@@ -151,6 +156,29 @@ $(document).ready(function() {
 })
 
 
-$(document).ready(function(){
+$(document).ready(function() {
+
+    var maxHeight = -1;
+
+    $('#whatweheard .carousel-item').each(function() {
+        maxHeight = maxHeight > $(this).actual('height') ? maxHeight : $(this).actual('height');
+    });
+
+    $('#whatweheard .carousel-item').each(function() {
+        console.log("final max height is ", maxHeight);
+        $(this).height(maxHeight);
+    });
+
+
+    var maxHeight2 = -1;
+
+    $('#sixthemes .carousel-item').each(function() {
+        maxHeight2 = maxHeight2 > $(this).actual('height') ? maxHeight2 : $(this).actual('height');
+    });
+
+    $('#sixthemes .carousel-item').each(function() {
+        console.log("final max height is ", maxHeight2);
+        $(this).height(maxHeight2);
+    });
 
 });
