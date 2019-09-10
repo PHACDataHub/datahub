@@ -18,7 +18,7 @@
 	<script src="https://use.fontawesome.com/b9f2ae3468.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="jquery.actual.js"></script>
+    <script type="text/javascript" src="jquery.actual.js"></script>
 
 
 	<script src="scripts.js"></script>
@@ -510,11 +510,51 @@
 											<a name="Projectplanataglance"><h4 class="collapse-title">Project plan at a glance</h4></a>
 										</div> 
 										<br>
-										<a class="clickable-img" href="images/Implementation-Plan-Eng.png" target="_blank">
-											<img src="images/Implementation-Plan-Eng.png" class="img-fluid" alt="A graphic table demonstrating the implementation plan">
-											
-										</a>
-										<p>Text-based version to follow</p>
+										<p>Click on the image for the one-page implementation plan, or scroll down to the text version below.</p>			
+										<a class="clickable-img" href="images/Implementation-Plan-Eng.png" target="_blank"><img src="images/Implementation-Plan-Eng.png" class="img-fluid" alt="A graphic table demonstrating the implementation plan"></a>
+
+										<div id="plancontainer" class="carousel slide" data-ride="carousel" data-interval="false">
+												<ol class="carousel-indicators">
+													<li data-target="#plancontainer" data-slide-to="0" class="active"></li>
+													<li data-target="#plancontainer" data-slide-to="1"></li>
+													<li data-target="#plancontainer" data-slide-to="2"></li>
+													<li data-target="#plancontainer" data-slide-to="3"></li>
+													<li data-target="#plancontainer" data-slide-to="4"></li>
+													<li data-target="#plancontainer" data-slide-to="5"></li>
+												</ol>	
+												<div class="carousel-inner">
+													<div class="carousel-item active"> <!-- data gov panel-->
+														<iframe class="plantheme" id="datagov" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vTkZczPkD95WBDM0QAlpEgD1a5d9EgMjBmNeWPCw8lUaPtj2sS1nMyPUuJNRu9qm7nGGF0c_GlY00sc/pub?embedded=true"></iframe>
+													</div>
+													<div class="carousel-item"> <!-- data asset panel-->
+														<iframe class="plantheme" id="datasset" scrolling="no"  src="https://docs.google.com/document/d/e/2PACX-1vSPSPvNunKrFvL7jwx7FnyNLTaQGvqRl0cA1Q5_BEbJOhdDB1KuBuKocHJC8zYPfFRv-JnNv_U8qler/pub?embedded=true"></iframe>
+													</div>
+
+													<div class="carousel-item"> <!-- data infrastructure  panel-->
+														<iframe class="plantheme" id="datainf" scrolling="no"  src="https://docs.google.com/document/d/e/2PACX-1vRnc1R-W30bHTutyb3F-vdMqlePyCX3XNvwyYFhIcyB0y_QFWT4vR6b26-yg6pGj03PJQzlRbRkneD5/pub?embedded=true"></iframe>
+													</div>
+
+													<div class="carousel-item"> <!-- Science-based analytics panel -->
+														<iframe class="plantheme" id="science" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vSZ3ilH-o4G34WGLG0O0C0pFQ5XXvDbORbbrV5Zj8yRwYXxvAMDDGAXLwU6sKQH3NA7rqJCR8pN2CGZ/pub?embedded=true"></iframe>
+													</div>
+
+													<div class="carousel-item"> <!-- Partnerships panel -->
+														<iframe class="plantheme" id="partnerships" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vTlAz21nSMHlnOJPhxmoRvIYmBXZI1ytZukh17VQlXdztNHVwoLRf1fonJiCZUb-P8LPS4Tvdc7yMAd/pub?embedded=true"></iframe>
+													</div>
+
+													<div class="carousel-item"> <!-- People and culture panel -->
+														<iframe class="plantheme" id="peopleculture" scrolling="no" src="https://docs.google.com/document/d/e/2PACX-1vRd0nSany5QUSGUUh7cbvmuyfeQXGR6QFbaAj4-fL4iVYnJ2aSovDothfTljB8LqTTl5XaMBNiE9-8f/pub?embedded=true"></iframe>
+													</div>
+												</div> <!-- end of carousel-inner -->
+													<a tabindex="0" class="carousel-control-prev" data-target="#plancontainer" role="button" data-slide="prev" href="#previous">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a tabindex="0" class="carousel-control-next" data-target="#plancontainer" role="button" data-slide="next" href="#next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+											</div> <!-- end of carousel -->
 									</div>
 								</div>
 							</div>
