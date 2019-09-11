@@ -974,11 +974,11 @@ footer a:hover, footer a:focus {color: #01043f;}
   min-height: auto;
 }
 
-#datadef {
-  background: #01043f;
-  color: white;
-  margin: 1rem -35px;
-  padding: 2rem;
+.darkbg {
+    background: #01043f;
+    color: white;
+    margin: 1rem -35px;
+    padding: 2rem;
 }
 
 #datadef h2 {
@@ -1270,7 +1270,7 @@ blockquote {
 .expandCollapse {
   color: white!important;
   position: absolute;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   z-index: 3;
   margin: 0 0.6rem;
   right: 0;

@@ -155,7 +155,7 @@ $(document).ready(function() {
     }
 })
 
-
+// Automatically adjust the height of the carousels based on their largest panel.
 $(document).ready(function() {
 
     var maxHeight = -1;
@@ -165,7 +165,7 @@ $(document).ready(function() {
     });
 
     $('#whatweheard .carousel-item').each(function() {
-        console.log("final max height is ", maxHeight);
+        console.log("what we heard final max height is ", maxHeight);
         $(this).height(maxHeight);
     });
 
@@ -177,7 +177,7 @@ $(document).ready(function() {
     });
 
     $('#sixthemes .carousel-item').each(function() {
-        console.log("final max height is ", maxHeight2);
+        console.log("six themes final max height is ", maxHeight2);
         $(this).height(maxHeight2);
     });
 
