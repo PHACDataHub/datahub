@@ -239,13 +239,17 @@ h4.video-title{
   letter-spacing: 0.1rem;
 }
 
-p.glance {
-  font-weight: bolder;
-  font-size:1.85rem;
-  font-family: "Built-Titling";
-  letter-spacing: 0.15rem;
+.glance {
+  font-size: 1.2rem;
+  background: white;
+  color: rgb(3, 13, 191);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
+.glance p {
+  margin-bottom: 0;
+}
 .collapse-title-box h4 {
   background-color: rgb(3,13,191);
   width: 100%;
@@ -276,10 +280,16 @@ div.carousel-item p {
 	margin: auto;
 }
 
-.img-fluid{
+.img-fluid {
   width: max-content;
   height: auto;
 }
+
+.ie .img-fluid {
+  width: -ms-max-content;
+  width: 100%;
+}
+
 /*
 .img-fluid:hover{
   color: #424242;
