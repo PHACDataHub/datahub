@@ -4,7 +4,8 @@ $('.collapse').on('shown.bs.collapse', function (e) {
 
 
 // Figure out if we're local, github, or gcpedia...
-console.log($(location).attr("href"));
+var url = $(location).attr("href")
+console.log('%%%%%%%%%%%%%%%%%%%%%%%%', url);
 
 
 /*
