@@ -116,7 +116,7 @@ body {
 }
 */
 
-p, ul, li {
+p, ul, li, .darkbg {
 	font-size: 1.1rem;
 }
 

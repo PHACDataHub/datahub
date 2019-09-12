@@ -3,9 +3,41 @@ $('.collapse').on('shown.bs.collapse', function (e) {
 });
 
 
-// Figure out if we're local, github, or gcpedia...
+// Change local URLS for GCpedia
+// get url
 var url = $(location).attr("href")
-console.log('%%%%%%%%%%%%%%%%%%%%%%%%', url);
+
+$(document).ready(function() {
+    // check if this is gcpedia
+    if (url.indexOf('gcpedia') != -1) {
+        console.log('this is gcpedia');
+
+        //remove last bit from url
+        var to = url.lastIndexOf('/');
+        to = to == -1 ? url.length : to + 1;
+        url = url.substring(0, to);
+
+        // for each of those elements, get the url/src and fix it
+        $('.local').each(function () {
+            if ($(this).attr('src') === undefined) {
+                var thisHREF = $(this).attr('href');
+                $(this).attr('src', 'https://olivercrosby.github.io/datahub/' + thisHREF);
+            }
+            else if ($(this).attr('href') === undefined) {
+                var thisSRC = $(this).attr('src');
+                $(this).attr('src', 'https://olivercrosby.github.io/datahub/' + thisSRC);
+                console.log('https://olivercrosby.github.io/datahub/' + thisSRC)
+            }
+            else {
+                console.log('uh oh')
+            }
+        })
+    }
+
+})
+
+
+
 
 
 /*
@@ -170,7 +202,7 @@ $(document).ready(function() {
     });
 
     $('#whatweheard .carousel-item').each(function() {
-        console.log("what we heard final max height is ", maxHeight);
+        //console.log("what we heard final max height is ", maxHeight);
         $(this).height(maxHeight);
     });
 
@@ -182,7 +214,7 @@ $(document).ready(function() {
     });
 
     $('#sixthemes .carousel-item').each(function() {
-        console.log("six themes final max height is ", maxHeight2);
+        //console.log("six themes final max height is ", maxHeight2);
         $(this).height(maxHeight2);
     });
 
