@@ -1227,10 +1227,10 @@ header h4 {
   justify-content: center;
   position: relative;
   font-size: 0.8rem;
+  margin-top: 3rem
 }
 
 .gcpediaLink{
-  line-height: 2.6rem;
   padding: 0.5rem 1rem;
 }
 
