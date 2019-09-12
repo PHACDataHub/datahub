@@ -113,8 +113,7 @@ $(document).ready(function(){
             if ( delta >= 0 && delta < 1000 )
                 console.log('finding');
 
-                $('.collapse:not(".show")')
-                    .collapse('show');// show anything that isn't already shown
+                $('.collapse:not(".show")').collapse('show');// show anything that isn't already shown
 
                 console.log('expanded');
             keydown = null;

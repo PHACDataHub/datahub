@@ -1220,6 +1220,10 @@ header h4 {
 
 }
 
+main {
+  position: relative;
+}
+
 #gcpediafooter {
   display: flex;
   flex-direction: row;
