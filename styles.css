@@ -1194,7 +1194,7 @@ header h4 {
 }
 
 #whatweheard .clickable-img {
-  display: none;
+  margin-bottom: 2rem;
 }
 
 #enfrançais #whatweheard .clickable-img img{
