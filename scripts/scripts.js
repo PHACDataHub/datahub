@@ -2,7 +2,7 @@ $('.collapse').on('shown.bs.collapse', function (e) {
     console.log("Dude, shown.bs.collapse actually worked!");
 });
 
-
+// ----------------------------------- works, just need to do it to images too.
 // Change local URLS for GCpedia
 // get url
 var url = $(location).attr("href")

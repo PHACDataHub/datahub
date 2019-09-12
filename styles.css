@@ -116,8 +116,12 @@ body {
 }
 */
 
-p, ul, li, .darkbg {
+p, ul, li {
 	font-size: 1.1rem;
+}
+
+.darkbg {
+  font-size: 1.4rem;
 }
 
 .row.elem, .elem svg {
@@ -1282,9 +1286,17 @@ blockquote {
   position: absolute;
   font-size: 0.9rem;
   z-index: 3;
-  margin: 0 0.6rem;
+  margin: 0.3rem 0.6rem;
   right: 0;
   /*display:none;*/
+}
+
+.expandAll:before {
+  content: "+ ";
+}
+
+.collapseAll:before {
+  content: "- ";
 }
 
 .expandCollapse:hover {
