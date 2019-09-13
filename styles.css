@@ -116,6 +116,10 @@ body {
 }
 */
 
+a {
+  text-decoration: underline;
+}
+
 p, ul, li {
 	font-size: 1.1rem;
 }
