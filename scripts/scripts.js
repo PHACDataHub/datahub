@@ -9,7 +9,7 @@ var url = $(location).attr("href")
 
 $(document).ready(function() {
     // check if this is gcpedia
-    if (url.indexOf('gcpedia') != -1) {
+    if (url.indexOf('datahub') != -1) {
         console.log('this is gcpedia');
 
         //remove last bit from url
@@ -23,12 +23,13 @@ $(document).ready(function() {
                 // change local for HREF files
                 var thisHREF = $(this).attr('href');
                 $(this).attr('href', 'https://olivercrosby.github.io/datahub/' + thisHREF);
+                console.log('href', 'https://olivercrosby.github.io/datahub/' + thisHREF)
             }
             else if ($(this).attr('href') === undefined) {
                 // change local for SRC files.
                 var thisSRC = $(this).attr('src');
                 $(this).attr('src', 'https://olivercrosby.github.io/datahub/' + thisSRC);
-                console.log('https://olivercrosby.github.io/datahub/' + thisSRC)
+                console.log('src', 'https://olivercrosby.github.io/datahub/' + thisSRC)
             }
             else {
                 console.log('uh oh')
