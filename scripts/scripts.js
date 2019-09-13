@@ -9,7 +9,7 @@ var url = $(location).attr("href")
 
 $(document).ready(function() {
     // check if this is gcpedia
-    if (url.indexOf('datahub') != -1) {
+    if (url.indexOf('gcpedia') != -1) {
         console.log('this is gcpedia,', url);
 
         //remove last bit from url
