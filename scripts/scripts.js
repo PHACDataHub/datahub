@@ -70,6 +70,8 @@ function openHex() {
 
 // This function adds the 'open' class to the hex button when clicked. 
 $(function(){
+
+    console.log('open hex function fired')
     var elem = $(this);
 
     $('.hex-button').on('click', function () {
