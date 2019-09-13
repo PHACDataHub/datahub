@@ -10,7 +10,7 @@ var url = $(location).attr("href")
 $(document).ready(function() {
     // check if this is gcpedia
     if (url.indexOf('datahub') != -1) {
-        console.log('this is gcpedia');
+        console.log('this is gcpedia,', url);
 
         //remove last bit from url
         var to = url.lastIndexOf('/');
@@ -38,36 +38,6 @@ $(document).ready(function() {
     }
 
 })
-
-
-
-
-
-/*
-function openHex() {
-
-    $( ".show" ).change(function() {
-        console.log( "Handler for .change() called." );
-      });
-
-    
-    $( ".hex-button" ).each( function( index, element ){
-
-        // if hex-button has .show --- problem is they don't have yet...
-        if ($(element).parent().next().find('.collapse').hasClass('show')) {
-            $(element).addClass("open");
-            $(element).removeClass("open2");
-
-            console.log( $(element).text());
-        }
-
-    });
-
-
-}*/
-
-
-
 
 // This function adds the 'open' class to the hex button when clicked. 
 $(function(){
