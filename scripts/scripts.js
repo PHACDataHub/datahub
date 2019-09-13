@@ -20,10 +20,12 @@ $(document).ready(function() {
         // for each of those elements, get the url/src and fix it
         $('.local').each(function () {
             if ($(this).attr('src') === undefined) {
+                // change local for HREF files
                 var thisHREF = $(this).attr('href');
-                $(this).attr('src', 'https://olivercrosby.github.io/datahub/' + thisHREF);
+                $(this).attr('href', 'https://olivercrosby.github.io/datahub/' + thisHREF);
             }
             else if ($(this).attr('href') === undefined) {
+                // change local for SRC files.
                 var thisSRC = $(this).attr('src');
                 $(this).attr('src', 'https://olivercrosby.github.io/datahub/' + thisSRC);
                 console.log('https://olivercrosby.github.io/datahub/' + thisSRC)
