@@ -1437,7 +1437,30 @@ blockquote {
 
 #meetthehub {
   padding: 1vw;
+  width: 100%;
+}
+
+#meetthehub a {
+  display: flex;
+  flex-direction: row;
+}
+
+#meetthehub-expanded {
   max-width: 70ch;
+}
+
+
+#meetthehub svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+#meetthehub h3 {
+  color: black;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  position: relative;
+  padding-left: 1rem;
 }
 
 #godataweek a {
