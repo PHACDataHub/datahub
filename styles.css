@@ -116,6 +116,10 @@ body {
 }
 */
 
+a {
+  color: #030ba6;
+}
+
 main a {
   text-decoration: underline;
 }
@@ -1249,10 +1253,6 @@ main {
 
 .themeHeaders {
   width: 70%
-}
-
-blockquote {
-  font-style: italic;
 }
 
 #searchingBG, #searchModedies {
