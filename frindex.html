@@ -4,39 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 	
-	<link rel="stylesheet" href="styles.css">
+	<link class="local" rel="stylesheet" href="styles.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/b9f2ae3468.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="scripts/jquery.actual.js"></script>
+	<script class="local" type="text/javascript" src="scripts/jquery.actual.js"></script>
 	
-	<script src="scripts/scripts.js"></script>
+	<script class="local" src="scripts/scripts.js"></script>
 
     <title>Stratégie de données ASPC</title>
 
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-
+	<link class="local" rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link class="local" rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link class="local" rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link class="local" rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link class="local" rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link class="local" rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link class="local" rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link class="local" rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link class="local" rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link class="local" rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link class="local" rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link class="local" rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link class="local" rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 
 	<!-- Hotjar Tracking Code for https://olivercrosby.github.io/datahub/ -->
 	<script>
@@ -78,10 +75,13 @@
 		 <svg class="white-bar" preserveAspectRatio="none" viewBox="0 0 100 100"> <!-- white bar for header -->
 			<polygon points="0 66.6, 0 80, 50 80, 50.7 47.8, 100 47.8, 100 33.3, 50.6 33.3, 49.9 66.6"></polygon>
 		  </svg>
-    </div> <!-- end of container-fluid for all header content -->
+	</div> <!-- end of container-fluid for all header content -->
+	
 	<main>
+		<!-- buttons to expand all the cards -->
 		<a class="expandAll expandCollapse">afficher toutes les sections</a>
 		<a class="collapseAll expandCollapse">masquer toutes les sections</a>
+
 		<div class="container-fluid main" id="accordion">
 
 			<div class="row section vision first-category"> <!-- Prologue Row -->
@@ -93,7 +93,7 @@
 
 					<div class="row hex-row"> <!-- Hex Row -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button sticky" href="##" data-toggle="collapse" data-target="#visionCollapse" aria-expanded="false" aria-controls="visionCollapse">
+							<a class="btn hex-button sticky" data-toggle="collapse" data-target="#visionCollapse" aria-expanded="false" aria-controls="visionCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -112,24 +112,18 @@
 										</div>
 										<br>
 										<!-- <h4 class="video-title">A message from the CPHO and President</h4> -->
-										
-										<div class="darkbg">Notre vision est que l’Agence de la santé publique du Canada soit la source d’information sur la santé publique la plus
-										fiable au pays. En misant sur l’innovation en matière de données, la capacité technique moderne et des données sur la
-										santé publique opportunes et de qualité, nous voulons permettre à nos employés et à nos partenaires de remplir notre
-										mission : protéger et promouvoir la santé des Canadiens.</div>
-
-										<img src="images/Vision-2fr.jpg" class="img right"
-											alt="Une image montrant la vision, le leadership, les partenariats, les mesures et l'innovation">
-											
-										<p>L’Agence de la santé publique du Canada (ASPC) a pour mandat de promouvoir et de protéger la santé des Canadiens au moyen du leadership, de partenariats, d’innovation et d’interventions en santé publique.</p>
-                                        <p>Nous œuvrons sans relâche afin de prévenir et de contrôler les maladies chroniques et infectieuses ainsi que les blessures et nous nous tenons prêts à répondre aux urgences en matière de santé publique.</p>
-                                        <p>Nos interventions reposent, et reposeront toujours, sur des données fiables.</p>
-                                        <p><strong>Notre capacité de recueillir, de produire, d’obtenir, de gérer, d’analyser des données et d’y accéder est essentielle à l’exécution de notre mandat</strong>, et nous reconnaissons que la valeur de nos données sera optimale lorsqu’il sera facile de les trouver et d’y accéder, et lorsqu’elles serviront à des fins multiples et seront impartiales et exactes.</p>
-                                        <p>Qu’il s’agisse d’avis de santé publique au sujet d’éclosions d’origine alimentaire ou d’avis de santé aux voyageurs, la population canadienne compte sur l’ASPC pour lui fournir des renseignements exacts et opportuns. Notre capacité de créer, de recueillir et d’échanger efficacement des données est indissociable de notre capacité de fournir aux Canadiens des renseignements essentiels sur la santé publique. Nous sommes cependant éminemment conscients qu’il est important de protéger la vie privée et de faire barrage aux préjugés lorsque nous recueillons, analysons et utilisons nos fonds de données.</p>
-										<img src="images/Vision-1fr.jpg" class="img left" alt="Un graphique illustrant les composantes des données de qualité">
-										<p>Notre besoin en matière de données et la disponibilité de ces données continueront de croître de façon exponentielle dans les années à venir. La technologie avance à grands pas, créant des<strong> occasions sans précédent </strong>d’intégrer l’apprentissage machine et l’intelligence artificielle à l’analytique scientifique qui renforcera notre capacité de générer des modèles prédictifs d’une action d’envergure en santé publique. Aussi, les attentes sont de plus en plus grandesen matière de données en temps réel qui orientent les analyses afin de permettre une prise de décisions en temps opportun. L’ASPC allie de plus en plus des pratiques novatrices en analyse de données et en outils de visualisation sophistiqués à des méthodes de recherche et de surveillance traditionnelles en épidémiologie. Cela transforme notre environnement riche en données en de l’information cruciale en santé publique. Nous pouvons ainsi en apprendre davantage sur notre écosystème de santé publique et sur les politiques publiques afin de soutenir l’ensemble des Canadiens dans l’atteinte d’une santé optimale et de réduire les disparités en matière de santé dans les populations clés partout au pays.</p>
-                                        <p>Cette <strong>stratégie de données</strong> est conçue pour être à la fois<strong> ambitieuse et pratique</strong>. L’exécution de la stratégie permettra à l’ASPC de créer une assise pour les données sur la santé publique. Une fois terminé, le plan de mise en œuvre nous permettra de mettre en place des principes de gouvernance clairs, de concevoir une infrastructure de données horizontale, d’adopter des approches novatrices, d’encourager l’expérimentation itérative, de placer les utilisateurs au centre de nos activités et de former des partenariats avec des administrations et des organisations externes. Dans le cadre de cette initiative, nous reconnaissons que notre culture doit soutenir à la fois le perfectionnement de notre personnel et son besoin d’outils et de ressources afin qu’il puisse continuer d’être le tissu qui consolide notre organisation de santé publique.</p>
-                                        <p>Grâce aux mesures présentées dans cette Stratégie sur les données de l’ASPC, nous aspirons à être un organisme qui tire profit des innovations en matière de données et es capacités technologiques modernes afin de réaliser son mandat de promouvoir et de protéger la santé des Canadiens.</p>
+										<div class="darkbg">Notre vision est que l’Agence de la santé publique du Canada soit la source d’information sur la santé publique la plus fiable au pays. En misant sur l’innovation en matière de données, la capacité technique moderne et des données sur la santé publique opportunes et de qualité, nous voulons permettre à nos employés et à nos partenaires de remplir notre mission : protéger et promouvoir la santé des Canadiens.</div>
+										<p>L’Agence de la santé publique du Canada (ASPC) a  pour mandat de promouvoir et de protéger la santé des Canadiens au moyen de <strong>leadership</strong>, de <strong>partenariats</strong>, d’<strong>innovation</strong> et d’<strong>interventions</strong> en santé publique.</p>
+										<img class="local" src="images/Vision-2fr.jpg" class="img right" alt="Une image montrant la vision, le leadership, les partenariats, les mesures et l'innovation">
+										<p>Nous œuvrons sans relâche afin de prévenir et de contrôler les maladies chroniques et infectieuses ainsi que les blessures et nous nous tenons prêts à répondre aux urgences en matière de santé publique.</p>
+										<p>Nos interventions reposent, et reposeront toujours, sur des données fiables.</p>
+										<p><strong>Notre capacité de recueillir, de produire, d’obtenir, de gérer, d’analyser des données et d’y accéder est essentielle à l’exécution de notre mandat</strong>, et nous reconnaissons que la valeur de nos données sera optimale lorsqu’il sera facile de les trouver et d’y accéder, et lorsqu’elles serviront à des fins multiples et seront impartiales et exactes.</p>
+										<p>Qu’il s’agisse d’avis de santé publique au sujet d’éclosions d’origine alimentaire ou d’avis de santé aux voyageurs, la population canadienne compte sur l’ASPC pour lui fournir des renseignements exacts et opportuns. Notre capacité de créer, de recueillir et de partager efficacement des données est indissociable de notre capacité de fournir aux Canadiens des renseignements essentiels sur la santé publique. Nous sommes cependant éminemment conscients qu’il est important de protéger les renseignements personnels et de prévenir la partialité lorsque nous recueillons, analysons et utilisons nos fonds de données.</p>
+										<img class="local" src="images/Vision-1fr.jpg" class="img left" alt="Un graphique illustrant les composantes des données de qualité">
+										<p>Notre besoin en matière de données et la disponibilité de ces données en temps opportun continueront de croître de façon exponentielle dans les années à venir. La technologie avance à grands pas, créant des<strong> occasions sans précédent </strong>d’intégrer l’apprentissage automatique et l’intelligence artificielle à l’analytique fondée sur la science. Ce faisant, nous renforcerons notre capacité de générer des modèles prédictifs pour prendre des mesures importantes en matière de santé publique. <strong>Les attentes en matière de données en temps réel capables d’orienter les analyses pour une prise de décisions en temps opportun sont aussi à la hausse</strong>. Pour ces raisons, l’ASPC allie de plus en plus des pratiques novatrices en analyse de données et en outils de visualisation sophistiqués à des méthodes de recherche et de surveillance traditionnelles en épidémiologie. Cela transforme notre environnement riche en données en de l’information utile en santé publique. Nous pouvons ainsi en apprendre davantage sur notre écosystème de santé publique afin de soutenir l’ensemble des Canadiens dans l’atteinte d’une santé optimale et de réduire les inéquitésen matière de santé partout au pays.</p>
+										<p>Cette <strong>Stratégie de données</strong> est conçue pour être à la fois<strong> ambitieuse et pratique</strong>. L’exécution de la stratégie permettra à l’ASPC d’établir une base pour les données en santé publique. Une fois terminé, le plan de mise en œuvre nous permettra de mettre en place des principes de gouvernance clairs, de concevoir une infrastructure de données horizontale, d’adopter des approches novatrices, d’encourager l’expérimentation itérative, de placer les utilisateurs au centre de nos activités et de former des partenariats avec des administrations et des organisations externes, tout en restant ouverts et transparents. Dans le cadre de cette initiative, nous reconnaissons que notre culture doit soutenir à la fois le perfectionnement de notre personnel et son besoin d’outils et de ressources afin qu’il puisse continuer d’être le tissu qui consolide notre organisation de santé publique.</p>
+										<p>Grâce aux mesures présentées dans cette Stratégie de données, nous aspirons à être un organisme qui tire profit des innovations en matière de données et en capacités technologiques modernes afin de réaliser son mandat de promouvoir et de protéger la santé des Canadiens.</p>										
+									
 									</div>
 								</div>
 							</div>
@@ -139,7 +133,7 @@
 
 					<div class="row hex-row" id="presidentsvideo"> <!-- Hex Row President's video -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button sticky" href="##" data-toggle="collapse" data-target="#presidentsVideo" aria-expanded="false" aria-controls="presidentsVideo">
+							<a class="btn hex-button sticky" data-toggle="collapse" data-target="#presidentsVideo" aria-expanded="false" aria-controls="presidentsVideo">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -170,7 +164,7 @@
 
 			<div class="row section context"> <!-- Data Context Row -->
 				<div class="col-2 section-col">
-					<h3 class="phac">Contexte des données</h3>
+					<h3 class="phac">Contexte des données de l’ASPC</h3>
 				</div>
 
 				<div class="col"> <!-- this column houses a hex-button and the expandable content -->
@@ -195,16 +189,17 @@
 											<a name="DataLandscape"><h4 class="collapse-title">Portrait des données</h4></a>
 										</div>
 										<br>
-									<img src="images/Data-Landscapefr.jpg" class="img-fluid" alt="Un dessin de plusieurs personnes dans une ville avec le mot données flottant dans le ciel. La lettre « A » est soulevée par un hélicoptère.">
-									<div id="datadef">
+									<img src="images/Data-Landscapefr.jpg" class="img-fluid local" alt="Un dessin de plusieurs personnes dans une ville avec le mot données flottant dans le ciel. La lettre « A » est soulevée par un hélicoptère.">
+									<div class="darkbg" id="datadef">
 										<h2>Qu'entend-on par données?</h2>
-										<p>Les données constituent la matière première de la surveillance, de la preuve, de la recherche et de la science. Elles jouent un rôle clé dans l’orientation des interventions et des décisions politiques en plus de soutenir les principales fonctions en santé publique. Les données contribuent à l’évaluation, à l’information sur le rendement et à la gestion axée sur les résultats des programmes et initiatives de l’ASPC. Elles concourent au transfert des connaissances, à l’éducation et à la production d’information en santé publique adaptée et diffusée aux Canadiens. </p>
-										<p>Dans leur forme la plus élémentaire, les données brutes sont des chiffres, des nombres et des relevés provenant d’une source. Les données jouent un rôle structurel important pour les organismes scientifiques, car elles fournissent les mesures et observations essentielles qui guident nos recherches, font avancer nos analyses et éclairent nos prises de décisions. L’innovation et la collaboration peuvent servir de catalyseurs durant ce processus de transformation. Les données deviennent des preuves et de l’information en santé publique qui, conséquemment, mènent à des décisions éclairées.</p>
+										<p><strong>Les données constituent la matière première de la surveillance, de la preuve, de la recherche et de la science.</strong> Elles jouent un rôle clé dans l’orientation des interventions et des décisions politiques en plus de soutenir les principales fonctions en santé publique. Les données contribuent à l’évaluation, à l’information sur le rendement et à la gestion axée sur les résultats des programmes et des initiatives de l’ASPC. Elles concourent au transfert des connaissances, à l’éducation et à la production d’information en santé publique adaptée et diffusée aux Canadiens.</p>
+										<p>Dans leur forme la plus élémentaire, les données  peuvent être des chiffres, des nombres, des figures, du texte, des dialogues et des images provenant de diversessources. Les données jouent un rôle structurel important pour les organismes scientifiques, car elles fournissent les mesures et les observations essentielles qui guident nos recherches, font avancer nos analyses et orientent nos décisions<strong>.</strong> Les données sont transformées par les employés de l’ASPC et deviennent des preuves et de l’information en santé publique qui, conséquemment, mènent à une prise de décisions éclairées.</p>										
 									</div>
-                                    <p>Pour nous acquitter de notre mission en tant qu’agence, nous utilisons des données pour produire une vue d’ensemble de la santé de la population dans l’ensemble du Canada. Les couplages de données sont nécessaires afin de maximiser la valeur de l’information et augmenter sa portée auprès des déterminants sociaux de la santé. Quand elles sont bien utilisées, les données permettent de dresser un portrait global de la situation de tous les aspects importants de la santé publique au pays, qu’il s’agisse de maladies d’origine alimentaire, des maladies chroniques, ou de programmes de surveillance de la santé. Il est également essentiel de bien utiliser les données pour faire en sorte qu’elles servent pour le bien public - pour le bien des personnes, des collectivités et de la société dans son ensemble.</p>
-                                    <p>Toutefois, vu la complexité du paysage canadien, le processus de transformation des données est loin d’être simple. <strong>À l’ASPC, les données peuvent être qualitatives et quantitatives, et elles sont recueillies au moyen d’enquêtes, de statistiques de l’état civil, du recensement, dans les laboratoires et les hôpitaux. Elles comprennent également des données internes comme des rapports ministériels, des évaluations de programme, des données financières, sur les ressources humaines, l’élaboration de méthodes, etc</strong>. Tout comme celui du Canada, le paysage des données de l’ASPC est diversifié et riche. Par ailleurs, les résultats en matière de santé publique ont des origines multifactorielles qui peuvent être difficiles à évaluer et à aborder de façon exhaustive sans adopter une approche interdisciplinaire concertée.</p>
-                                    <p>Beaucoup d’organismes comptent sur d’importantes sources de données qui contribuent à la prise de décisions concernant de nombreux déterminants sociaux de la santé. Néanmoins, si nous étions en mesure de déterminer, d’intégrer et d’interpréter plus facilement toutes les sources de données pertinentes (grâce à l’innovation et à la collaboration), nous pourrions influencer les changements qui permettront de réduire les disparités en matière de santé.</p>
-                                    <p>Aussi, le paysage dans lequel nous évoluons est caractérisé par une incertitude découlant des risques liés aux maladies infectieuses émergentes et réémergentes, y compris celles causées par la résistance aux antimicrobiens et les changements climatiques. Afin de nous préparer à ces difficultés et aux autres imprévus, il est nécessaire de mettre en place une structure qui nous permettra de délivrer la pleine puissance des données issues de multiples sources. Cela nécessitera de renforcer notre engagement envers l’innovation en matière d’analyse des données et de technologie (y compris l’intelligence artificielle et l’apprentissage automatique) en plus de favoriser des partenariats stratégiques permettant de solutionner les anciens, nouveaux et futurs problèmes en santé publique. Ce faisant, nous pourrons améliorer le travail de l’ASPC en matière de détection, d’éradication, de prévention et de contrôle des maladies pour, au bout du compte, assurer la santé des Canadiens.</p>
+									<p>En tant qu’Agence, nous utilisons des données pour produire une vue d’ensemble de la santé de la population canadienne. Les couplages de données sont nécessaires afin de maximiser la valeur de l’information et d’augmenter sa portée auprès des déterminants sociaux de la santé. Quand elles sont bien utilisées, les données offrent des perspectives nationales différentes, cruciales pour tout ce qui touche à la santé publique, qu’il s’agisse de maladies d’origine alimentaire, de maladies chroniques, ou de programmes de surveillance de la santé. Les données nous donnent aussi de la rétroaction sur l’incidence de notre leadership, de nos services et de nos initiatives de promotion de la santé. Bien utiliser les données est essentiel afin d’assurerqu’elles sont utilisées de façon transparente et qu’elles servent pour le bien public.</p>
+									<p><strong>À l’ASPC, les données peuvent être qualitatives et quantitatives, et elles sont recueillies au moyen de sondages, de statistiques de l’état civil, du recensement, des laboratoires, des hôpitaux, </strong><strong>d’entrevues, de groupes de discussion et d’observations</strong><strong>. Elles comprennent également des données internes comme des rapports ministériels, des évaluations de programme, des données financières, des données sur les ressources humaines, des élaborations de méthodes, etc</strong>. Notre gouvernance et nos systèmes de santé publique sont constitués de plusieurs intervenants, certains possédant des responsabilités législatives partagées (entre les juridictions fédérales et provinciales), d’autres ayant des priorités différentes. Par ailleurs, les résultats en matière de santé publique ont des origines multifactorielles qui peuvent être difficiles à évaluer et à aborder de façon exhaustive sans adopter une approche interdisciplinaire concertée.</p>
+									<p>Beaucoup d’organismes comptent sur d’importantes sources de données qui contribuent à la prise de décisions concernant de nombreux déterminants sociaux de la santé. Néanmoins, si nous étions en mesure de déterminer, d’intégrer et d’interpréter plus facilement toutes les sources de données pertinentes, nous pourrions influencer les changements qui permettront de réduire les inégalitésen matière de santé.</p>
+									<p>À l’échelle organisationnelle, des efforts considérables sont en place afin d’appuyer une utilisation stratégique des données. Ces efforts comprennent, entre autres, la « <a target="_blank" href="https://www.canada.ca/fr/conseil-prive/organisation/greffier/publications/strategie-donnees.html">Feuille de route de la Stratégie de données pour la fonction publique fédérale</a> » (La Feuille de route). La Feuille de route reconnaît que le gouvernement n’a pas la fondation nécessaire pour traiter les données comme actifs stratégiques pour l’élaboration de politiques, la conception de programmes ou la prestation de services. Le paysage complexe de la législation et de la réglementation canadienne ainsi que les processus de partage de données administrativement fastidieux empirent plusieurs des problèmes auxquels l’ASPC doit faire face en tant qu’organisation.</p>
+									<p>Aussi, le paysage dans lequel nous évoluons est caractérisé par une incertitude découlant des risques liés aux maladies infectieuses émergentes et réémergentes, y compris celles causées par la résistance aux antimicrobiens et par les changements climatiques. Afin de nous préparer à ces difficultés et aux autres imprévus, il est nécessaire de mettre en place une structure qui nous permettra de délivrer la pleine puissance des données issues de multiples sources. Cela nécessitera de renforcer notre engagement à innover en analyse des données,en technologie, en recherche sur l’intervention, en recherche sur la politique, en plus de favoriser des partenariats stratégiques pour  résoudre les anciens, nouveaux et futurs problèmes en santé publique. Ce faisant, nous pourrons améliorer le travail de l’ASPC en matière de détection, d’éradication, de prévention et de contrôle des maladies pour, au bout du compte, assurer la santé des Canadiens.</p>									
 									</div>
 								</div>
 							</div>
@@ -213,7 +208,7 @@
 
 					<div class="row hex-row"> <!-- Hex Row -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#problematiqueCollapse" aria-expanded="false" aria-controls="problematiqueCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#problematiqueCollapse" aria-expanded="false" aria-controls="problematiqueCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -230,25 +225,24 @@
 										<div class="collapse-title-box">
 											<a name="Problematique"><h4 class="collapse-title">Problématique</h4></a>
 										</div>
-										<p>L’ASPC produit, recueille et diffuse un large éventail de données en santé publique, notamment pour ses nombreux programmes de surveillance des maladies infectieuses et chroniques ou d’autres événements liés à la santé publique qui surviennent.</p>
-                                        <p>Malgré que des données et des analyses de grande qualité émergent des programmes de l’ASPC, notre approche globale en matière de gestion des données demeure fragmentée et inégale. Lorsqu’on considère les données du point de vue de l’Agence dans son ensemble, il est difficile d’établir clairement lesquelles sont détenues collectivement et lesquelles peuvent être consultées par les employés. De même, il est difficile de dégager les priorités de l’ASPC en matière de données pour éclairer la prise de décision et les interventions. Lorsque nous abordons nos partenaires (y compris les provinces et les territoires, Statistique Canada ou l’Institut canadien d’information sur la santé [ICIS]) concernant nos priorités en matière de données ou de surveillance, nous le faisons programme par programme et non en tant qu’organisme fédéral homogène.</p>
-                                        <p>De direction générale à direction générale, les données en santé publique sont recueillies par une pluralité de canaux, stockées sur divers médias, analysées au moyen de plusieurs méthodes et diffusées de diverses façons. Cela réduit la capacité de l’ASPC à remplir son mandat, surtout en raison de l’importance du travail interdisciplinaire dans le domaine de la santé publique. Par conséquent, notre réputation de source d’information fiable en santé publique est remise en question.</p>
-                                        <p>Lorsqu’on demande à nos employés les innovations en matière de données qu’ils aimeraient voir se réaliser, ils ne peuvent généralement voir plus loin que les obstacles quotidiens à franchir pour faire leur analyse de données habituelle et les difficultés actuelles sur le plan des TI, et encore moins dégager les possibilités d’innover. Pour de nombreuses parties de l’organisation, nous avons accepté de contourner les problèmes et d’adopter des <strong>solutions de fortune</strong> comme norme afin de <strong>surmonter nos difficultés en matière d’infrastructure de données</strong> et d’analytique. Lorsque des pratiques exemplaires novatrices sont suivies à l’ASPC, ou avec d’autres groupes et administrations, elles ne sont souvent pas échangées ou élargies à l’ensemble de l’Agence : </p>
-                                        
-                                        <blockquote>« Il y a un risque que, au fur et à mesure que le volume et le besoin de données sur la santé publique augmentent, tant à l’échelle nationale qu’à l’échelle internationale, l’ASPC ne puisse pas avoir accès à des données ou à des renseignements exacts, fiables et en temps opportun, ni la capacité d’entreprendre une analyse nécessaire des données, ce qui pourrait réduire l’efficacité du processus décisionnel fondé sur des données probantes en santé publique »</blockquote>
-                                        
-										<p>Ces défis limitent la capacité de l’ASPC à remplir son mandat. Par exemple, bien que nous amassions une quantité impressionnante de données, très peu de choses sont réalisées sur le plan de l’intégration des données entre les disciplines, comme les maladies infectieuses et les maladies chroniques, ainsi qu’entre les déterminants sociaux et économiques de la santé. Cela ne pourra se faire qu’en favorisant des partenariats efficaces et en tirant parti des nouvelles technologies afin de créer un plus grand nombre d’occasions d’innover en matière de données.</p>
-                                        <p>De plus, en raison de nos structures éparses en matière des données et en matière de responsabilisation à l’égard des données, nous avons manqué des occasions d’acquérir de meilleures connaissances en santé publique. Cette réalité a rendu le respect de notre engagement dans le cadre du Plan stratégique de l’ASPC difficile : </p>
-                                        
-                                        <blockquote>« Publier des données interactives en temps opportun et des analyses de grande qualité afin d’appuyer la prise de décision et les interventions. »</blockquote>
-                                        
-                                        <p>Au cœur des « Leçons de la crise du SRAS », aussi connues sous le nom de Rapport Naylor, se trouvent des recommandations liées au besoin de mettre en place une architecture de l’information, des modèles et des normes, des transferts technologiques, la protection des renseignements personnels et la gestion de l’information et l’élaboration des sources de données et de systèmes. Nous travaillons toujours à l’atteinte de ces objectifs.</p>
-                                        
-                                        <blockquote>« Les services de santé publique doivent encore chercher à réaliser le potentiel de surveillance efficace que permettent les nouvelles technologies. ... les progrès ont été trop lents et les systèmes en vase clos sont encore présents partout. » (Naylor, 2003)</blockquote>
+										<p>L’ASPC produit, recueille et diffuse un large éventail de données en santé publique, notamment pour ses nombreux programmes de surveillance des maladies infectieuses et chroniques ou d’autres événements émergents liés à la santé publique.</p>
+										<p>Malgré la production de données et d’analyses de grande qualité par les programmes de l’ASPC, notre approche globale en matière de gestion des données demeure <strong>fragmentée </strong>et<strong> inégale</strong>. Des efforts ont été déployés dans le passé pour tenter de corriger la nature fragmentée et incohérente des données au sein de l’organisation, mais il y avait un manque de gestion du changement, d’appui et de changement de culture pour soutenir une approche organisationnelle de la gestion des données.Du point de vue de toute l’Agence, il est difficile d’établir clairement lesquelles des données sont détenues collectivement et lesquelles peuvent être consultées par les employés. De même, il est difficile de dégager les priorités de l’ASPC en matière de données pour éclairer la prise de décision et les interventions. <strong>Lorsque nous abordons nos partenaires (y compris les provinces et les territoires, Statistique Canada ou l’Institut canadien d’information sur la santé [ICIS]) concernant nos priorités en matière de données ou de surveillance, nous le faisons programme par programme et non en tant qu’organisme fédéral unifié.</strong></p>
+										<p>De direction générale à direction générale, les données en santé publique sont recueillies par différents canaux, stockées sur divers médias, analysées au moyen de plusieurs méthodes et diffusées de diverses façons. Cela réduit la capacité de l’ASPC à remplir son mandat, surtout en raison de l’importance du travail interdisciplinaire dans le domaine de la santé publique.</p>
+										<p>Lorsqu’on demande à nos employés les innovations en matière de données qu’ils aimeraient voir se réaliser, ils ne peuvent généralement pas surmonter les obstacles quotidiens qu’ils ont à franchir pour faire leur analyse de données habituelle et les défis constants auxquels ils font face en matière de TI, sans parler de trouver de nouvelles occasions d’innover. Pour de nombreuses parties de l’organisation, nous avons accepté de contourner les problèmes et d’adopter des <strong>solutions de fortune</strong> comme norme afin de <strong>surmonter nos difficultés en matière d’infrastructure de données</strong> et d’analytique. Lorsque des pratiques exemplaires novatrices sont suivies à l’ASPC ou au sein d’autres groupes et juridictions, elles ne sont souvent pas échangées ou élargies à l’échelle de l’Agence.</p>
+										
+										<a id="infographic" class="clickable-img local" href="images/lifecyclefr.png" target="_blank"><img src="images/lifecyclefr.png" class="img-fluid local" alt="Une image hexagonale illustrant les 6 défis rencontrés au cours du cycle de vie de la gestion des données."></a>
+										
+										<p>Collectivement, nous sommes conscients des <strong>défis</strong> auxquels nous faisons face, comme le montre le Profil de risque organisationnel de l’ASPC. À mesure que le volume et le besoin de données en santé publique augmente, tant à l’échelle nationale qu’à l’échelle internationale, l’ASPC doit avoir accès à des données et des renseignements fiables et exacts, et ce, en temps opportun. Il est tout aussi important d’avoir la capacité d’entreprendre les analyses de données qui sont nécessaires pour une prise de décision efficace et fondée sur les faits, lorsqu’il est question de santé publique.</p>
 
-                                        <p>L’ASPC compte donner aux Canadiens les moyens d’améliorer leur santé et veille pour cela à ce que de l’information exacte sur la santé publique soit diffusée en temps opportun. L’Agence doit évoluer et continuer de renforcer sa capacité de s’acquitter de cette responsabilité fondamentale pour faire en sorte que la réputation que nous avons d’être une source d’information digne de confiance sur la santé publique ne soit pas menacée - et que la réputation de chef de file en santé publique dont jouit l’ASPC demeure intacte.</p>
-                                        <p>Le changement de notre culture des données constitue une transformation organisationnelle qui nécessitera un leadership attentif, déterminé et stratégique ainsi que des investissements à long terme afin d’améliorer les capacités de gestion des données, l’infrastructure technique et les ressources analytiques de l’ASPC.</p>
-                                        <p>La présente Stratégie sur les données représente l’occasion d’ouvrir une nouvelle voie dans notre façon de traiter les données afin d’établir une approche claire et cohérente en matière de gestion des données qui contribuera à la prise de décisions et aux interventions. Il s’agit de la version 1.0 qui axe nos efforts sur l’établissement d’une base de données plus solide.</p>
+										<p>Ces défis limitent la capacité de l’ASPC à remplir son mandat. Par exemple, bien que nous amassions une quantité impressionnante de données, peu de mesures sont prises sur le plan de l’intégration des données entre les disciplines, comme les maladies infectieuses et les maladies chroniques, ainsi qu’entre les déterminants sociaux et économiques de la santé. </p>
+
+										<p>Au cœur des «<a target="_blank" href="https://www.canada.ca/fr/sante-publique/services/rapports-publications/lecons-crise-sras-renouvellement-sante-publique-canada.html">Leçons de la crise du SRAS</a> », aussi connues sous le nom de Rapport Naylor, se trouvent des recommandations liées au besoin de mettre en place une architecture de l’information, des modèles et des normes, des transferts technologiques, la protection des renseignements personnels et la gestion de l’information ainsi que l’élaboration des sources de données et de systèmes. Nous travaillons toujours à l’atteinte de ces objectifs.</p>
+
+										<blockquote>« Les services de santé publique doivent encore chercher à réaliser le potentiel de surveillance efficace que permettent les nouvelles technologies. ... les progrès ont été trop lents et les systèmes en vase clos sont encore présents partout. » (Naylor, 2003)</blockquote>
+										<p>L’ASPC vise à donner aux Canadiens les moyens d’améliorer leur santé et veille pour cela à ce que de l’information exacte sur la santé publique soit diffusée en temps opportun. L’Agence doit évoluer et continuer à renforcer sa capacité de s’acquitter de cette responsabilité fondamentale pour assurer notre réputation de source d’information digne de confiance sur la santé publique.</p>
+										<p>Le changement de notre culture des données constitue une transformation organisationnelle qui nécessitera un leadership attentif, déterminé et stratégique ainsi que des investissements à long terme afin d’améliorer les capacités de gestion des données, l’infrastructure technique et les ressources analytiques de l’ASPC.</p>
+										<p><strong>La présente Stratégie de données représente l’occasion pour l’ASPC d’ouvrir une nouvelle voie dans sa façon de traiter les données</strong> et d’établir une approche claire et cohérente en matière de gestion des données qui contribuera à la prise de décisions et aux interventions.</p>
+										
 									</div>
 								</div>
 							</div>
@@ -260,7 +254,7 @@
 
 			<div class="row section strategy"> <!-- Data Strategy Row -->
 				<div class="col-2 section-col">
-					<h3 class="phac">Stratégie sur les données</h3>
+					<h3 class="phac">Stratégie de données</h3>
 				</div>
 
 				<div class="col"> <!-- this column houses a hex-button and the expandable content -->
@@ -269,7 +263,7 @@
 					
 					<div class="row hex-row"> <!-- Hex Row  Strategy at a glance -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#glanceCollapse" aria-expanded="false" aria-controls="glanceCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#glanceCollapse" aria-expanded="false" aria-controls="glanceCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -288,17 +282,21 @@
 										</div>
 										<br>
 										<div style="text-align: center">
-                                                <img src="images/Strategy-at-a-glancefr.jpg" class="img-fluid" alt="Une stratégie, six thèmes, trois phases">
+                                                <img src="images/Strategy-at-a-glancefr.jpg" class="img-fluid local" alt="Une stratégie, six thèmes, trois phases">
                                         </div>
-										<p>La Stratégie sur les données de l’ASPC est l’occasion pour nous d’examiner notre relation fondamentale avec les données de santé publique et la façon dont cette relation est influencée par l’évolution rapide de l’environnement technologique et les attentes en matière de données de plus en plus élevées au sein de la communauté de la santé publique, du gouvernement du Canada et de l’ensemble des secteurs de l’économie canadienne.</p>
-                                        <p>La Stratégie sur les données de l’ASPC constitue une approche en constante évolution quant à la façon dont nous orientons nos interventions et nos décisions. Il s’agit de la version 1.0 car celle-ci n’est pas statique et parce qu’elle se concentre sur nos efforts pour bâtir des fondations plus solides.</p>
-                                        <p>La portée de cette Stratégie sur les données est vaste et couvre les données quantitatives et qualitatives, les données des programmes, les données de surveillance, les mesures de rendement, les données administratives ainsi que les données d’entreprise, financières et relatives aux ressources humaines. Elle vise à créer un environnement de données au sein duquel toutes les données sont perçues comme une ressource partagée et une responsabilité commune.</p>
-                                        <p>La Stratégie sur les données s’articule autour de six thèmes clés : l’analyse fondée sur la science, les données en tant qu’actif, l’infrastructure de données, le partenariat et la collaboration, la gouvernance des données ainsi que les personnes et la culture. Chacun de ces thèmes est accompagné d’un plan en trois phases doté de mesures concrètes pour s’attaquer aux problèmes et saisir les occasions en matière de données à l’échelle de l’ASPC. La Stratégie de données sera réalisée au moyen d’un plan de mise en œuvre qui sera exécuté au moyen de 55 mesures sur cinq ans.</p>
-                                        <p>La première phase du plan de mise en œuvre comprendra des activités menées à partir du Centre de données, de partenariats et d’innovation. <strong>L’établissement d’un modèle de gouvernance des données au niveau de la direction s’inscrit également dans cette première phase du plan de mise en œuvre. Avec le concours du Centre de données, le modèle de gouvernance guidera les travaux de l’Agence aux deuxième et troisième phases, en déterminant l’orientation future des activités proposées dans le plan de mise en œuvre actuel</strong>.</p>
-                                        <p>Les deuxième et troisième phases du plan de mise en œuvre comportent un certain nombre de mesures qui exigent la participation et l’adhésion de l’ensemble de l’Agence.</p>
-                                        <p>Changer les fondements du fonctionnement de l’ASPC en matière de données constitue une transformation organisationnelle qui nécessitera un leadership attentif, déterminé et stratégique ainsi que des investissements à long terme afin d’améliorer les capacités de l’ASPC en gestion des données, son infrastructure technique et ses ressources analytiques, y compris ses ressources humaines. <strong>Le modèle de gouvernance devra déterminer la voie que l’Agence devra suivre et élaborer la charte de projet nécessaire pour permettre de mesurer et d’évaluer les progrès.</strong> L’intégration aux fonctions, aux programmes et laboratoires, ainsi qu’à la haute direction du Ministère est essentielle pour faire en sorte que l’Agence procède à la transformation numérique et aux données de façon intégrée. Notre plus grand avancement sera de reconnaître qu’un organisme reposant sur les données doit favoriser l’utilisation novatrice de la technologie. L’immobilisme n’est pas envisageable.</p>
-                                        <p>Les occasions qui se présentent à nous sont illimitées Au niveau de l’organisme, nous pouvons compléter nos méthodes traditionnelles de collecte de données en tirant parti de l’intelligence artificielle, des mégadonnées et des algorithmes d’apprentissage machine. Nous pouvons associer surveillance et données des médias sociaux afin de nous aider à prédire la façon dont les maladies se propageront, explorer l’utilisation de capteurs mobiles pour mieux comprendre la santé physique et la santé mentale, tirer parti de la surveillance des eaux usées pour soutenir un système permettant de signaler à l’avance les éclosions de maladies et les problèmes de toxicomanie ou mettre en œuvre le séquençage du génome entier combiné à la géocartographie afin de retracer l’origine d’une souche causant une maladie d’origine alimentaire.</p>
-                                        <p>C’est l’occasion pour nous de rechercher la relation la plus efficace, la plus efficiente et la plus moderne entre les données, l’information et le processus décisionnel afin d’obtenir les résultats souhaités pour les Canadiens, et de concourir à l’établissement d’une base plus solide pour les données fédérales sur la santé publique.</p>
+										<p>La Stratégie de données de l’ASPC est l’occasion pour nous d’examiner notre relation fondamentale avec les données de santé publique et la façon dont cette relation est capable de s’adapter àl’évolution rapide de l’environnement et les attentes en matière de données de plus en plus élevées au sein de la communauté de la santé publique, du gouvernement du Canada et des Canadiens.</p>
+										<p>La Stratégie de données de l’ASPC constitue une approche en évolution constante quant à la façon dont nous utilisons les données pour orienter nos interventions et nos décisions. Il s’agit de la version 1.0, laquelle se concentre sur nos efforts à bâtir des fondations plus solides pour les données.</p>
+										<p><strong>La portée de cette Stratégie de données est vaste et couvre les données quantitatives et qualitatives, les données des programmes, les données de surveillance, les données sur la mesure du rendement, les données administratives ainsi que les données d’entreprise, financières et relatives aux ressources humaines.</strong> Elle vise à créer un environnement de données au sein duquel toutes les données sont perçues comme une ressource partagée et une responsabilité commune. La Stratégie de données complète également le Plan stratégique de l’ASPC en soulignant notre besoin de « diffuser des données interactives en temps opportun et des analyses de hautes qualités pour appuyer la prise de décision et les mesures à prendre. »</p>
+										<p>Comme ressource partagée et responsabilité commune, le nouvel environnement de données de l’ASPC crée de nouvelles occasions d’exploiter les données quantitatives et qualitatives afin d’améliorer l’évaluation des résultats et de renforcer la mesure du rendement, l’évaluation des programmes et l’élaboration de politiques.</p>
+										<p>La Stratégie de données s’articule autour de six thèmes : la gouvernance des données, les données en tant qu’actif, l’analyse fondée sur la science,l’infrastructure de données, le partenariat et la collaboration ainsi que les personnes et la culture. Chacun de ces thèmes est accompagné d’un plan en trois phases doté de mesures concrètes pour s’attaquer aux problèmes et saisir les occasions en matière de données partout à l’ASPC. La Stratégie de données sera réalisée au moyen d’un Plan de mise en œuvre qui sera exécuté au moyen de 55 mesures sur cinq ans.</p>
+										
+										<a id="infographic" class="clickable-img local" href="images/Infographicfr.png" target="_blank"><img src="images/Infographicfr.png" class="img-fluid local" alt="Une infographie guidant visuellement à travers le contenu de la Stratégie de données."></a>
+
+										<p>La première phase du Plan de mise en œuvre comprendra des activités menées par le Centre des données, des partenariats et de l’innovation. <strong>L’établissement d’un modèle de gouvernance des données au niveau de la direction s’inscrit également dans cette première phase. Avec l’aide du Centre des données, le modèle de gouvernance guidera les travaux de l’Agence aux deuxième et troisième phases, en déterminant l’orientation future des activités proposées dans le Plan de mise en œuvre actuel</strong>.</p>
+										<p>Les deuxième et troisième phases comportent un certain nombre de mesures qui exigent la participation et l’adhésion de l’ensemble de l’Agence. Changer les fondements du fonctionnement de l’ASPC en matière de données constitue une transformation organisationnelle qui nécessitera un leadership attentif, déterminé et stratégique ainsi que des investissements à long terme afin d’améliorer les capacités de l’ASPC en gestion des données, son infrastructure technique et ses ressources analytiques, y compris ses ressources humaines. <strong>Le modèle de gouvernance devra déterminer la voie que l’Agence devra suivre et élaborer la charte de projet nécessaire pour permettre de mesurer et d’évaluer les progrès.</strong> L’intégration aux fonctions, aux programmes et laboratoires, ainsi qu’à la haute direction de l’organisation est essentielle pour faire en sorte que l’Agence procède à la transformation numérique et aux données de façon intégrée. Notre plus grand pas en avant sera de reconnaître qu’une organisation reposant sur les données doit favoriser l’utilisation novatrice de la technologie. Le statu quo n’est pas envisageable.</p>
+										<p>Les occasions qui se présentent à nous sont illimitées. <strong>À l’échelle organisationnelle, nous pouvons complémenter nos méthodes traditionnelles de collecte de données en tirant parti de l’intelligence artificielle, des mégadonnées et des algorithmes d’apprentissage automatique.</strong> Nous pouvons associer surveillance et données des médias sociaux afin de nous aider à prédire la façon dont les maladies se propageront; entreprendre ou tirer parti de la recherche communautaire pour comprendre et améliorer le traitement de la tuberculose; explorer l’utilisation de capteurs mobiles pour mieux comprendre la santé physique et la santé mentale, tirer parti de la surveillance des eaux usées pour soutenir un système permettant de signaler à l’avance les éclosions de maladies et la toxicomanie ou mettre en œuvre le séquençage du génome entier combiné à la géocartographie afin de retracer l’origine d’une souche ayant causé une maladie d’origine alimentaire.</p>
+										<p>À l’échelle internationale, il y a un mouvement universel pour accroître l’ouverture et la transparence, comme le montre le Partenariat pour un gouvernement ouvert. Il y a également de nombreuses initiatives de données et de sciences ouvertes en cours pour maximiser la collaboration entre les ministères et les agences fédérales à vocation scientifique. Un partage accru des données encourage l’exploration et la découverte afin de maximiser la modernisation des activités scientifiques intra-muros.</p>
+										<p>C’est l’occasion pour nous d’établir une relation efficace, efficiente et moderne entre les données, l’information et la prise de décisions afin d’obtenir les résultats souhaités pour les Canadiens et d’appuyer l’établissement d’une base plus solide pour les données fédérales en santé publique.</p>
 									</div>
 								</div>
 							</div>
@@ -307,7 +305,7 @@
 
 					<div class="row hex-row"> <!-- Hex Row Six themes -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#themesCollapse" aria-expanded="false" aria-controls="themesCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#themesCollapse" aria-expanded="false" aria-controls="themesCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -337,7 +335,7 @@
 												<div class="carousel-inner">
 													<div class="carousel-item active"> <!-- data gov panel-->
 														<h3 class="carousel-title">Gouvernance des données (1/6)</h3>
-														<p>La gouvernance vise à officialiser et à établir le leadership, les rôles, les responsabilités et les pratiques afin de fixer les priorités et les objectifs opérationnels. Les pistes d’action prévues dans la Stratégie sur les données permettront d’assurer la supervision des défis actuels et anticipés en planification, acquisition et gestion des données ainsi que les relations avec les fournisseurs de données. </p>
+														<p>La gouvernance vise à officialiser et à établir le leadership, les rôles, les responsabilités et les pratiques afin de fixer les priorités et les objectifs opérationnels. Les mesures prévues dans la Stratégie de données permettront d’assurer la supervision des défis actuels et anticipés en planification, acquisition et gestion des données ainsi que les relations avec les fournisseurs de données.</p>
 														<div class="glance">
 															<h3>Objectif</h3>
 															<p>Une structure de gouvernance des données qui soutient la gestion stratégique et efficace des données au sein de l’ASPC et qui englobe tous les partenaires gouvernementaux en santé publique.</p>
@@ -345,7 +343,7 @@
 													</div>
 													<div class="carousel-item"> <!-- data asset panel-->
 														<h3 class="carousel-title">Les données en tant qu’actif (2/6)</h3>
-														<p>Traiter les données en tant qu’actif exige de transformer notre approche de la gestion des données au sein des programmes et activités par une gestion des données globale à l’échelle de l’organisme afin de respecter notre mandat collectif en matière de santé publique. La Stratégie sur les données tracera la voie permettant d’établir des normes, processus et pratiques exemplaires à l’échelle de l’ASPC en matière de collecte, de stockage, d’accès, d’utilisation, de diffusion, de conservation et d’élimination des données pour faire en sorte qu’il soit plus facile de travailler avec les ensembles de données dans toutes les disciplines et que ces ensembles puissent servir à des fins multiples. Elle permettra aussi de raffermir notre engagement à ce que les données et l’information respectent la diversité et l’inclusion et soient conformes aux exigences politiques et législatives, surtout en ce qui a trait à la protection de la vie privée et des renseignements personnels.</p>
+														<p>Traiter les données en tant qu’actif signifie réorienter nos efforts et passer d’une gestion des données au sein d’activités et de programmes individuels  à une gestion des données globale à l’échelle organisationnelle afin de réaliser notre mandat collectif en matière de santé publique. La Stratégie de données tracera la voie à suivre pour établir les normes, les processus et les pratiques exemplaires à l’échelle de l’ASPC en matière de collecte, de stockage, d’accès, d’utilisation, de diffusion, de conservation et d’élimination des données pour faciliter le travail avec les ensembles de données dans toutes les disciplines et assurer que ces ensembles puissent servir à des fins multiples. Elle permettra aussi de raffermir notre engagement à ce que les données et l’information respectent la diversité et l’inclusion et soient conformes aux exigences politiques et législatives, surtout en ce qui a trait à la protection de la vie privée et des renseignements personnels.</p>
 														<div class="glance">
 															<h3>Objectif</h3>
 															<p>Un cycle collaboratif et intégré de planification, d’acquisition et de gestion des données.</p>
@@ -353,17 +351,17 @@
 													</div>
 
 													<div class="carousel-item"> <!-- Science-based analytics panel-->
-														<h3 class="carousel-title">Analyse fondée sur la science (3/6)</h3>
-														<p>L’amélioration de l’analyse fondée sur la science au sein de l’Agence aidera à cerner les cas d’emploi et tirera parti de la puissance des connaissances et des analyses prédictives. Il sera alors possible d’obtenir un rendement organisationnel amélioré en utilisant non seulement les données dont nous disposons déjà, mais aussi en puisant dans des sources de données nouvelles et novatrices et en exploitant des technologies d’analyse avancée employant le potentiel associé à l’intelligence artificielle et à l’apprentissage automatique. La Stratégie sur les données intègre nos réussites actuelles dans ces secteurs et met en évidence notre désir de compter sur une meilleure analyse fondée sur la science dans l’ensemble de l’ASPC afin de soutenir notre capacité de prendre des décisions complexes fondées sur des données probantes, surtout en réaction à des cas de santé publique et à des risques émergents pour la santé.</p>
+														<h3 class="carousel-title">Analyse fondée sur le science (3/6)</h3>
+														<p>L’amélioration de l’analyse fondée sur la science au sein de l’Agence aidera à déterminer les utilisations possibles de la connaissance et de l’analyse prédictive et à tirer parti de leur puissance. Il sera alors possible d’obtenir un meilleur rendement organisationnel en utilisant non seulement les données qui nous sont déjà disponibles, mais aussi en puisant dans des sources de données nouvelles et novatrices et en exploitant des technologies d’analytique avancée employant le potentiel associé à l’intelligence artificielle et à l’apprentissage automatique. La Stratégie de données intègre nos réussites actuelles dans ces secteurs et souligne notre désir de compter sur une meilleure analyse fondée sur la science dans l’ensemble de l’ASPC afin de soutenir notre capacité à prendre des décisions complexes fondées sur des données probantes, surtout en réponse aux événements touchant à la santé publique et aux risques émergents pour la santé.</p>
 														<div class="glance">
 															<h3>Objectif</h3>
-															<p>AUne vaste capacité spécialisée en matière d’analyse avancée et d’informatique de santé publique.</p>
+															<p>Une vaste capacité spécialisée en matière d’analytique avancée et d’informatique de santé publique.</p>
 														</div>
 													</div>
 
 													<div class="carousel-item"> <!-- data infrastructure panel -->
 														<h3 class="carousel-title">Infrastructure de données (4/6)</h3>
-														<p>L’infrastructure de données est l’ensemble des ressources technologiques (matérielles et logicielles) nécessaires pour recueillir, gérer, analyser et utiliser ou diffuser les données de santé publique à l’ASPC. Dorénavant, l’ASPC devra compter sur une infrastructure moderne, fiable et souple, un accès au réseau et un stockage collaboratif sûrs. Par conséquent, le personnel disposera des outils, des systèmes et des plateformes nécessaires à l’exécution de la fonction opérationnelle, l’interfonctionnement entre les sources et les systèmes de données sera assuré et la conversion transparente des données en renseignements et en images faciles à communiquer sera possible. La Stratégie sur les données préparera le terrain en vue de la collaboration avec les responsables des TI afin de planifier et de mettre en œuvre une infrastructure de données souple et accessible pour répondre à nos besoins en matière de santé publique et respecter notre mandat fédéral. </p>
+														<p>L’infrastructure de données est l’ensemble des ressources technologiques (matérielles et logicielles) nécessaires pour recueillir, gérer, analyser et utiliser ou diffuser les données de santé publique à l’ASPC. Dorénavant, l’ASPC devra compter sur une infrastructure moderne, fiable et souple, avec un accès au réseau sécurisé et un stockage collaboratif sûrs. Ce faisant, le personnel disposera des outils, des systèmes et des plateformes nécessaires pour réaliser leurs fonctions opérationnelles, pour guider l’interfonctionnement entre les sources et les systèmes de données, pour promouvoir des formats qui s’ouvrent par défaut (p. ex., version accessible, lisible par machine), et pour assurer la conversion harmonieuse des données en des renseignements et en des images faciles à communiquer. La Stratégie de données préparera le terrain en vue de la collaboration avec les dirigeants en TI afin de planifier et de mettre en œuvre une infrastructure de données souple et accessible pour répondre à nos besoins en matière de santé publique et respecter notre mandat fédéral.</p>
 														<div class="glance">
 															<h3>Objectif</h3>
 															<p>Une infrastructure technique moderne et stable pour la collecte, le stockage, l’analyse et la diffusion des données.</p>
@@ -372,19 +370,19 @@
 
 													<div class="carousel-item"> <!-- Partnerships panel -->
 														<h3 class="carousel-title">Partenariats et collaboration (5/6)</h3>
-														<p>La santé publique exige un effort collectif de la société pour mettre en place les structures et les systèmes qui protègent la santé de tous. La collaboration est au cœur de cet effort. Les réussites en santé publique dépendent largement de notre capacité à travailler ensemble au-delà des territoires de compétence, des disciplines et des secteurs. L’ASPC a un rôle majeur à jouer pour veiller à ce que la santé publique fasse partie intégrante des collectes nationales de données et de la planification de l’information en santé de manière optimale. La Stratégie sur les données vise à renforcer les collaborations externes et à saisir les occasions de créer de nouveaux partenariats.</p>
+														<p>La santé publique exige un effort collectif de la société pour mettre en place les structures et les systèmes qui protègent la santé de tous. La collaboration est au cœur de cet effort. Les réussites en santé publique dépendent largement de notre capacité à travailler ensemble au-delà des juridictions, des disciplines et des secteurs. L’ASPC a un rôle majeur à jouer pour veiller à ce que la santé publique fasse partie intégrante des collectes nationales de données et de la planification de l’information en santé de manière optimale. La Stratégie de données vise à renforcer les collaborations externes et à saisir les occasions de créer de nouveaux partenariats.</p>
 														<div class="glance">
 															<h3>Objectif</h3>
-															<p>Un réseau spécialisé de partenaires publics et de la protection des renseignements personnels travaillant de concert pour exploiter des données de santé publique partagées, aux niveaux national et international.</p>
+															<p>Un réseau spécialisé de partenaires publics et de la protection des renseignements personnels, travaillant de concert pour tirer parti des données de santé publique partagées.</p>
 														</div>
 													</div>
 
 													<div class="carousel-item"> <!-- People and culture panel -->
 														<h3 class="carousel-title">Personnes et culture (6/6)</h3>
-														<p>Notre personnel est au cœur de notre culture en matière de données. Pour pouvoir respecter les cinq autres thèmes de la stratégie, nous devons nous assurer de parrainer et de mettre en évidence notre expertise interne en matière de données, de donner à notre personnel des occasions de développer ses compétences en matière de données au besoin et de continuer à recruter les meilleurs talents pour faire un bond vers l’avant en tant qu’organisme dont le travail repose sur les données. La Stratégie sur les données a pour objectif d’améliorer notre culture en matière de données afin que nous valorisions, développions et conservions notre personnel, qui constitue la fondation sur laquelle nous nous appuyons tandis que nous nous efforçons d’être un organisme de santé publique de classe mondiale.</p>
+														<p>Notre personnel est au cœur de notre culture de données. Pour pouvoir respecter les cinq autres thèmes de la stratégie, nous devons nous assurer de parrainer et de mettre en évidence notre expertise interne en matière de données, de donner à notre personnel des occasions de développer ses compétences en matière de données au besoin et de continuer à recruter les meilleurs talents pour nous faire progresser en tant qu’organisation dont le travail est axé sur les données. La Stratégie de données a pour objectif d’améliorer notre culture de données afin que nous valorisions, perfectionnions et maintenions notre personnel en poste, qui, à son tour, constituera la fondation sur laquelle nous nous appuierons tandis que nous nous efforçons à devenir un organisme de santé publique de classe mondiale.</p>
 														<div class="glance">
-															<h3>Objectif</h3>
-															<p>Une culture de données dans laquelle notre personnel possède les connaissances, la capacité et la formation nécessaires pour gérer, interpréter, utiliser et comprendre les données afin d’informer la prise de décisions et les actions en matière de santé publique.</p>
+														<h3>Objectif</h3>
+														<p>Une culture de données dans laquelle notre personnel possède les connaissances, les outils, la capacité et la formation nécessaires pour gérer, interpréter, utiliser et comprendre les données afin d’orienter la prise de décisions et les mesures en santé publique.</p>
 														</div>
 													</div>
 												</div> <!-- end of carousel-inner -->
@@ -406,7 +404,7 @@
 
 					<div class="row hex-row"> <!-- Hex Row Principles -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#principlesCollapse" aria-expanded="false" aria-controls="principlesCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#principlesCollapse" aria-expanded="false" aria-controls="principlesCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -423,12 +421,12 @@
 										<div class="collapse-title-box">
 											<a name="Principles"><h4 class="collapse-title">Principes</h4></a>
 										</div>
-										<p>Tout au long du cycle de vie des données, des politiques, cadres, orientations, normes et pratiques guident la gestion et l’utilisation des données en tant qu’actif - certains existent, d’autres doivent être mis à jour et d’autres doivent être rédigés. Quelle que soit leur forme, la Stratégie sur les données de l’ASPC chapeaute tous ces éléments et fournit les grandes lignes d’une vision globale pour l’ASPC. La Stratégie sur les données établit la direction à suivre dans le futur, concentre les efforts et fournit un plan cohérent pour administrer, analyser et déployer les données pertinentes afin d’atteindre les résultats escomptés en santé publique et de soutenir une culture commune en matière de données.</p>
-                                        <p>Ces mesures prises pour atteindre une culture commune en matière de données seront soutenues par les principes suivants :</p>
-										<img src="images/Principlesfr.jpg" class="img right" alt="Nous sommes une agence, nous gérons les données en santé publique comme un actif et nous en avons les moyens et l'habilité de par notre infrastructure technique.">
-										<p>1.<strong> Nous sommes une seule et même agence :</strong> Nous abordons nos partenaires d’une seule voix et par des canaux bien définis pour établir des accords et communiquer des données. Nos structures internes et nos besoins sont notre responsabilité et n’ont pas à être pas être gérés ni compris par les autres.</p>
-										<p>2. <strong>Nous gérons les données de santé publique en tant qu’actif :</strong> Nous traitons les données comme un outil essentiel. Nos données peuvent être mises à profit, réutilisées, mises en commun et modelées pour être interopérables. Nous le faisons avec soin et de manière experte, cela afin de respecter la vie privée tout en améliorant les interventions en santé publique. Nous tirons parti de normes et pratiques exemplaires partagées et travaillons en collaboration avec nos partenaires provinciaux et territoriaux, la communauté de la santé publique et le grand public.</p>
-										<p>3.<strong> Notre infrastructure technique nous donne les moyens d’agir :</strong> Notre infrastructure technique nous donne les moyens d’agir car elle facilite la collecte, l’analyse et la diffusion des données. Sauf quelques exceptions, nos limites techniques n’ont aucune influence sur le type de données que nous recueillons, préservons et utilisons ni sur la façon dont nous effectuons nos analyses et diffusons l’information pour orienter les décisions et interventions en santé publique.</p>
+										<p>Tout au long du cycle de vie des données, il y a des politiques, des cadres de travail, des directives, des normes et des pratiques qui guident la gestion et l’utilisation des données en tant qu’actif - certains existent actuellement, d’autres doivent être mis à jour et d’autres encore doivent être rédigés. Quelle que soit leur forme, la Stratégie de données de l’ASPC chapeaute tous ces éléments et fournit les grandes lignes d’une vision globale pour l’ASPC. La Stratégie de données établit la direction à suivre dans le futur, concentre les efforts et fournit un plan cohérent pour gouverner, analyser et déployer les données pertinentes afin d’atteindre les résultats souhaités en santé publique et de soutenir une culture commune en matière de données.</p>
+										<img src="images/Principlesfr.jpg" class="img right local" alt="Nous sommes une agence, nous gérons les données en santé publique comme un actif et nous en avons les moyens et l'habilité de par notre infrastructure technique.">
+										<p>Ces mesures prises pour atteindre une culture commune en matière de données seront soutenues par les principes suivants :</p>
+										<p>1.<strong> Nous sommes une seule et même agence :</strong> Nous abordons nos partenaires d’une seule voix et par des canaux bien définis pour établir des accords et communiquer des données. Nos structures et nos besoins internes sont notre responsabilité et n’ont pas à être pas être gérés ni compris par les autres.</p>
+										<p>2. <strong>Nous traitons les données comme un outil essentiel</strong><strong> </strong><strong>: </strong>Nos données peuvent être mises à profit, réutilisées, mises en commun et modelées pour être interopérables. Nous le faisons avec soin et de manière experte afin de respecter les renseignements personnels tout en améliorant les mesures prises en santé publique. Nous tirons parti des normes et des pratiques exemplaires partagées et travaillons en collaboration avec nos partenaires provinciaux et territoriaux, la communauté de la santé publique et le grand public.</p>
+										<p>3.<strong> Notre infrastructure technique nous donne les moyens d’agir :</strong> Notre infrastructure technique nous donne les moyens d’agir car elle facilite la collecte, l’analyse et la diffusion des données. Sauf quelques exceptions, nos limites techniques n’ont aucune influence sur le type de données que nous recueillons, préservons et utilisons, ni sur la façon dont nous effectuons nos analyses et diffusons l’information pour orienter les décisions et interventions en santé publique.</p>
 									</div>
 								</div>
 							</div>
@@ -437,7 +435,7 @@
 
 					<div class="row hex-row"> <!-- Hex Row -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#futureCollapse" aria-expanded="false" aria-controls="futureCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#futureCollapse" aria-expanded="false" aria-controls="futureCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -455,7 +453,9 @@
 											<a name="FutureState"><h4 class="collapse-title">État futur</h4></a>
 										</div>
 										<br>
-										<p>Le contenu de cette section est constitué de l’image de Larimar.</p>
+										<p>L’image montre quelques uns des défis actuels en ce qui a trait aux données, les six thèmes de la Stratégie de donnée et l’état futur souhaité pour les données de l’Agence de la santé publique du Canada. L’image a été créée à partir des commentaires et de la rétroaction obtenus lors d’une discussion avec l’équipe de gestion de l’ASPC en août 2019.</p>
+
+										<a class="clickable-img local" href="images/futurestatefr.png" target="_blank"><img src="images/futurestatefr.png" class="img-fluid local" alt="Comme la description ci-dessus, l'image illustre quelques uns des défis actuels en matière de données, les six thèmes de la Stratégie de données et l'état futur souhaité pour les données de l'ASPC"></a>
 									</div>
 								</div>
 							</div>
@@ -475,14 +475,14 @@
 
 					<div class="row hex-row"> <!-- Hex Row Project Plan at a glance -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#implementCollapse" aria-expanded="false" aria-controls="implementCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#implementCollapse" aria-expanded="false" aria-controls="implementCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
 								<div class="hex-icon-container">
 									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#040ed8"><g id="surface1"><path d="M105.35,18.45977v28.84023h-32.25c-28.4707,0 -51.6,23.1293 -51.6,51.6v2.15h0.21836c1.15059,27.45449 23.6416,49.45 51.38164,49.45h19.35v-34.4h-19.35c-9.52383,0 -17.2,-7.67617 -17.2,-17.2c0,-9.52383 7.67617,-17.2 17.2,-17.2h32.25v28.84024l46.04024,-46.04024zM109.65,28.84024l35.65977,35.65976l-35.65977,35.65977v-22.75977h-36.55c-11.8502,0 -21.5,9.6498 -21.5,21.5v2.15h0.43672c1.13379,10.79199 9.97734,19.35 21.06328,19.35h15.05v25.8h-15.05c-26.15273,0 -47.3,-21.14726 -47.3,-47.3c0,-26.15273 21.14727,-47.3 47.3,-47.3h36.55zM116.1,43c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM122.55,49.45c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM73.1,55.9c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM81.7,55.9c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM90.3,55.9c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM98.9,55.9c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM129,55.9c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM65.13828,56.68105c-0.14277,0 -0.28555,0.0168 -0.42832,0.05039c-1.16738,0.22676 -1.92324,1.36055 -1.68809,2.52793c0.23516,1.15899 1.36055,1.91484 2.52793,1.67969c1.16738,-0.22676 1.92324,-1.36055 1.68809,-2.51953c-0.20156,-1.00781 -1.075,-1.73008 -2.09961,-1.73848zM57.47891,59.00742c-0.28555,0 -0.57109,0.05039 -0.83984,0.15957c-1.0918,0.46191 -1.6125,1.71328 -1.15898,2.81348c0.45351,1.1002 1.71328,1.6209 2.80508,1.16738c1.1002,-0.46191 1.6209,-1.71328 1.16738,-2.81348c-0.32754,-0.79785 -1.10859,-1.31855 -1.97363,-1.32695zM135.45,62.35c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM50.42422,62.78672c-0.42832,-0.0084 -0.85664,0.11758 -1.20938,0.36113c-0.99101,0.65508 -1.25976,1.99043 -0.59629,2.97305c0.65508,0.99102 1.99043,1.25977 2.98145,0.59629c0.99102,-0.65508 1.25137,-1.99043 0.59629,-2.98145c-0.39473,-0.58789 -1.0582,-0.94902 -1.77207,-0.94902zM44.24297,67.85938c-0.57949,-0.0084 -1.14219,0.21836 -1.54531,0.63828c-0.83984,0.83145 -0.83984,2.20039 0,3.03184c0.83145,0.83984 2.20039,0.83984 3.03184,0c0.83984,-0.83144 0.83984,-2.20039 0,-3.03184c-0.39472,-0.40312 -0.92383,-0.62148 -1.48652,-0.63828zM39.17031,74.04902c-0.73066,-0.0084 -1.41934,0.35274 -1.82246,0.96582c-0.66348,0.98262 -0.39473,2.31797 0.58789,2.98145c0.47871,0.31074 1.0582,0.42832 1.6209,0.31914c0.56269,-0.10918 1.0498,-0.43672 1.36894,-0.91543c0.31914,-0.47871 0.43672,-1.0582 0.31914,-1.6125c-0.10918,-0.5627 -0.43672,-1.0582 -0.91543,-1.37734c-0.34434,-0.22676 -0.73906,-0.35273 -1.15899,-0.36113zM35.40781,81.12051c-0.89023,-0.0252 -1.69648,0.50391 -2.03242,1.31855c-0.45352,1.1002 0.06719,2.35996 1.15898,2.81348c1.1002,0.45351 2.35996,-0.06719 2.81348,-1.16738c0.45351,-1.0918 -0.06719,-2.35156 -1.16738,-2.80508c-0.24355,-0.10078 -0.50391,-0.15957 -0.77266,-0.15957zM33.08984,88.78828c-1.0498,-0.03359 -1.95684,0.69707 -2.1584,1.72168c-0.23516,1.16738 0.5207,2.30117 1.68809,2.53633c0.5543,0.10918 1.13379,-0.0084 1.6125,-0.32754c0.47031,-0.31914 0.79785,-0.80625 0.90703,-1.36895c0.23516,-1.16738 -0.5207,-2.29277 -1.67969,-2.52793c-0.12598,-0.0252 -0.24355,-0.03359 -0.36953,-0.03359zM32.25,96.75c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM33.04785,104.72012c-0.15117,0 -0.29395,0.0168 -0.42832,0.04199c-1.16738,0.23516 -1.92324,1.36055 -1.68809,2.52793c0.22676,1.16738 1.36055,1.92324 2.52793,1.68809c1.15899,-0.23516 1.91484,-1.36055 1.67969,-2.52793c-0.19316,-0.99941 -1.075,-1.72168 -2.09121,-1.73008zM35.37422,112.37949c-0.28555,0 -0.57109,0.05039 -0.83984,0.15957c-1.0918,0.46191 -1.6125,1.71328 -1.15898,2.81348c0.21836,0.5291 0.63828,0.94902 1.15898,1.16738c0.5291,0.21836 1.12539,0.21836 1.64609,0c1.1002,-0.45352 1.6209,-1.71328 1.16738,-2.80508c-0.32754,-0.80625 -1.10859,-1.32695 -1.97363,-1.33535zM39.16191,119.44258c-0.43672,-0.0084 -0.85664,0.11758 -1.21777,0.36113c-0.99102,0.65508 -1.25137,1.99043 -0.59629,2.98145c0.31914,0.47871 0.80625,0.80625 1.36895,0.91543c0.56269,0.11758 1.14219,0 1.6209,-0.31914c0.47031,-0.31914 0.79785,-0.80625 0.90703,-1.36895c0.11758,-0.5627 0,-1.14219 -0.31914,-1.6125c-0.39472,-0.59629 -1.0582,-0.94902 -1.76367,-0.95742zM44.24297,125.64063c-0.57949,-0.0168 -1.14219,0.20996 -1.54531,0.62149c-0.41152,0.40313 -0.63828,0.94902 -0.63828,1.52012c0,0.57109 0.22676,1.11699 0.63828,1.52012c0.83145,0.83984 2.20039,0.83984 3.03184,0c0.41153,-0.40313 0.63828,-0.94902 0.63828,-1.52012c0,-0.57109 -0.22676,-1.11699 -0.63828,-1.52012c-0.39472,-0.39473 -0.92383,-0.62149 -1.48652,-0.62149zM50.44941,130.71328c-0.73066,-0.0168 -1.42774,0.34434 -1.83086,0.95742c-0.65508,0.99101 -0.39472,2.32637 0.59629,2.98144c0.99102,0.66348 2.31797,0.39473 2.98145,-0.58789c0.31914,-0.47871 0.43672,-1.0582 0.31914,-1.6209c-0.10918,-0.5627 -0.43672,-1.04981 -0.91543,-1.36895c-0.33594,-0.22676 -0.73906,-0.35274 -1.15059,-0.36113zM57.5125,134.48418c-0.88184,-0.0168 -1.68809,0.51231 -2.02402,1.33535c-0.46191,1.0918 0.05879,2.35156 1.15898,2.80508c1.1002,0.45351 2.35156,-0.06719 2.81348,-1.15899c0.45352,-1.1002 -0.06719,-2.35996 -1.16738,-2.81348c-0.24355,-0.10078 -0.5123,-0.15957 -0.78105,-0.16797zM65.18867,136.81895c-1.04981,-0.03359 -1.95684,0.69707 -2.1668,1.72168c-0.22676,1.16738 0.5291,2.30117 1.68809,2.52793c1.16738,0.23516 2.30117,-0.5207 2.53633,-1.68809c0.22676,-1.15898 -0.5291,-2.29277 -1.69649,-2.51953c-0.11758,-0.0252 -0.23516,-0.04199 -0.36113,-0.04199zM73.1,137.6c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM81.7,137.6c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15z"></path></g></g></g></svg>
 								</div>
-								<h3 class="button-title">Aperçu du plan</h3>
+								<h3 class="button-title">Aperçu du plan de projet</h3>
 							</a>
 						</div>
 						<div class="col card-col"> <!-- column with the expandable content -->
@@ -490,13 +490,11 @@
 								<div class="card card-body">
 									<div class="container">
 										<div class="collapse-title-box">
-											<a name="Projectplanataglance"><h4 class="collapse-title">Aperçu du plan</h4></a>
+											<a name="Projectplanataglance"><h4 class="collapse-title">Aperçu du plan de projet</h4></a>
 										</div> 
 										<br>
 										<p>Cliquez sur l'image du plan de mise en œuvre d'une page ou faites défiler jusqu'à la version texte ci-dessous.</p>
-										<a class="clickable-img" href="images/Implementation-Plan-fr.png" target="_blank"><img
-												src="images/Implementation-Plan-fr.png" class="img-fluid"
-												alt="Un tableau graphique montrant le plan de mise en œuvre"></a>
+										<a class="clickable-img local" href="images/Implementation-Plan-fr.png" target="_blank"><img src="images/Implementation-Plan-fr.png" class="img-fluid local" alt="Un tableau graphique montrant le plan de mise en œuvre"></a>
 										
 										<div id="plancontainer" class="carousel slide" data-ride="carousel" data-interval="false">
 											<ol class="carousel-indicators">
@@ -579,7 +577,7 @@
 
 					<div class="row hex-row"> <!-- Hex Row approach -->
 						<div class="col-md-auto hex-col" data-spy="affix" data-offset-top="197"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#approachCollapse" aria-expanded="false" aria-controls="approachCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#approachCollapse" aria-expanded="false" aria-controls="approachCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -597,15 +595,13 @@
 											<a name="Approach"><h4 class="collapse-title">Approche</h4></a>
 										</div>
 										<br>
-                                    <img src="images/Consultsfr.jpg" class="img left" alt="Une image 3D de 4 cylindres hexagonaux. Sur chacun d'eux se trouve une statistique sur l'étendue des consultations de la stratégie sur les données. Ces statistiques se lisent comme suit: « 1 agence, 6 régions, 37 événements et 500 personnes ».">			
-									<p>Afin d’élaborer sa Stratégie sur les données, l’ASPC a adopté une approche à la fois « descendante » et « ascendante ». Bien que le Comité exécutif (CE) de l’Agence ait approuvé la portée générale de la stratégie dans le cadre de ses « six thèmes » et de son approche de consultation, le contenu de la stratégie et le plan de mise en œuvre ont été préparés à la suite de la consultation directe de 500 membres du personnel de l’ensemble des directions générales, régions, groupes et niveaux.</p>
+                                    <img src="images/Consultsfr.jpg" class="img left local" alt="Une image 3D de 4 cylindres hexagonaux. Sur chacun d'eux se trouve une statistique sur l'étendue des consultations de la stratégie sur les données. Ces statistiques se lisent comme suit: « 1 agence, 6 régions, 37 événements et 500 personnes ».">			
+									<p>Afin d’élaborer sa Stratégie de données, l’ASPC a adopté une approche à la fois « descendante » et « ascendante ». Bien que le Comité exécutif (CE) de l’Agence ait approuvé la portée générale de la Stratégie dans le cadre de ses « six thèmes » et de son approche de consultation, le contenu de la Stratégie de données et le Plan de mise en œuvre ont été préparés à la suite d’une consultation directe auprès de plus de 500 membres du personnel provenant de toutes les directions générales, les régions, les groupes et les niveaux.</p>
 									<p>Le personnel a été consulté de l’une de ces deux façons :</p>
-									<ol>
-										<li>Par une série d’ateliers ouverts axés sur les six thèmes de la Stratégie sur les données. La participation s’est faite en personne et à distance (par téléphone ou par vidéo) pour ainsi inclure toutes les régions géographiques de l’Agence. Durant les ateliers, le personnel a fait part de ses expériences concernant la façon actuelle d’utiliser les données au sein de l’ASPC, a expliqué les défis auxquels il devait faire face dans la cueillette et l’utilisation des données et a proposé des solutions à envisager pour combler les lacunes.</li>
-										<li>Par plus de vingt séances de consultation ciblées avec des comités et groupes clés, notamment la Division de la gestion de la protection des renseignements personnels, le Bureau de l’audit et de l’évaluation, l’équipe d’intégration de la surveillance, le personnel du Laboratoire national de microbiologie et les comités de gouvernance de second niveau (politiques et opérations). Par ailleurs, le Centre des données de l’ASPC a entretenu un dialogue avec chaque comité exécutif de direction générale de l’ASPC afin d’établir leurs besoins et leurs attentes relativement à la Stratégie sur les données.</li>
-									</ol>
-									<p>Cette vaste approche de consultation a permis de s’assurer que les domaines de spécialité propres aux données ont orienté la portée de la stratégie et englobait les programmes de l’ASPC, les sciences de laboratoire ainsi que l’évaluation et la gestion fondée sur les résultats. Au terme de la période de consultation de six mois, plus de 25 % des employés de l’ASPC avaient assisté et contribué à au moins une séance de consultation.</p>
-									<p>Le Centre des données de l’ASPC s’est également engagé à<strong> travailler en toute transparence</strong> durant ce processus. Les résumés et les notes étaient soumis à une validation, puis publiés pour que d’autres puissent les lire. Pour obtenir la liste complète des séances de consultation et consulter les notes de ces séances menées par le Centre des données, veuillez consulter la page de la Stratégie sur les données de l’ASPC sur GCCollab, <a target="_blank" href="https://gccollab.ca/groups/profile/1801344/entrue-story-a-data-strategy-for-public-healthfr">Histoire véridique : une Stratégie sur les données pour la santé publique</a>.</p>
+									<p>1.    Par une série d’ateliers ouverts axés sur les six thèmes de la Stratégie de données. La participation s’est faite en personne et à distance (par téléphone ou par vidéo) pour ainsi inclure toutes les régions géographiques de l’Agence. Durant les ateliers, le personnel a fait part de ses expériences concernant la façon actuelle d’utiliser les données au sein de l’ASPC, a expliqué les défis auxquels il devait faire face dans la cueillette et l’utilisation des données et a proposé des solutions à envisager pour combler les lacunes.</p>
+									<p>2.    Par plus de 20 séances de consultation ciblées avec des comités et des groupes clés, notamment la Division de la gestion de la protection des renseignements personnels, le Bureau de l’audit et de l’évaluation, l’équipe d’intégration de la surveillance, le personnel du Laboratoire national de microbiologie et les comités de gouvernance de second niveau (politiques et opérations). Par ailleurs, le Centre des données de l’ASPC a entretenu un dialogue avec chaque comité exécutif de direction générale de l’ASPC afin de connaître leurs besoins et leurs attentes relativement à la Stratégie dedonnées.</p>
+									<p>Cette vaste approche de consultation a permis de s’assurer que les domaines d’expertise propres aux données ont orienté la portée de la stratégie et englobait les secteurs de programmes de l’ASPC, les sciences de laboratoire ainsi que l’évaluation et la gestion fondée sur les résultats. Au terme de la période de consultation de six mois, plus de 25 % des employés de l’ASPC avaient assisté et contribué à au moins une séance de consultation.</p>
+									<p>Le Centre des données de l’ASPC s’est également engagé à<strong> travailler en toute transparence</strong> durant ce processus. Les résumés et les notes étaient soumis à une validation, puis publiés pour que d’autres puissent les lire. Pour obtenir la liste complète des séances de consultation et consulter les notes de ces séances menées par le Centre des données, veuillez consulter la page de la Stratégie de données de l’ASPC sur GCCollab, <a target="_blank" href="https://gccollab.ca/groups/profile/1801344/entrue-story-a-data-strategy-for-public-healthfr">Histoire véridique : une Stratégie sur les données pour la santé publique</a>.</p>
 										<h4>Qui a été consulté</h4>
 											<ul id="whoengaged">
                                                     <li>Ensemble du personnel dans le cadre d’ateliers et de consultations en ligne (y compris Colonnade, Carling et les cinq régions)</li>
@@ -626,7 +622,7 @@
                                                     <li>Équipe d’intégration de la surveillance</li>
                                                     <li>Champion de l’analyse comparative fondée sur le sexe et le genre + (ACSG+) et Centre de prévention des maladies chroniques et de l’équité en santé</li>
                                                     <li>Comité d’orientation</li>
-                                                    <li>Comité des opérations</li>
+                                                    <li>Comité des politiques’</li>
                                                     <li>Direction générale des communications et des affaires publiques</li>
                                                     <li>Direction générale des services de gestion</li>
                                                     <li>Bureau des affaires internationales</li>
@@ -639,7 +635,7 @@
 
 					<div class="row hex-row"> <!-- Hex Row What we heard -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#heardCollapse" aria-expanded="false" aria-controls="heardCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#heardCollapse" aria-expanded="false" aria-controls="heardCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -657,8 +653,8 @@
 											<a name="Whatweheard"><h4 class="collapse-title">Ce que nous avons entendu</h4></a>
 										</div>
 										<br>
-									<h4 class="video-title">Introduction</h4>
-									<p>De mars à août 2019, le Centre des données, des partenariats et de l’innovation de l’ASPC a consulté plus de 500 employés de l’ASPC. Les consultations ont jeté les fondations de l’élaboration de la Stratégie de données et du plan de mise en œuvre. Nous avons entendu que la culture en matière de données de l’ASPC était décrite comme un chapelet « d’îles indépendantes » ayant de multiples occasions de partager leurs ressources, pratiques exemplaires et normes en matière de données. La solution la plus fréquemment proposée est la collaboration horizontale, l’intégration et le leadership dans les initiatives concernant les données. Le désir d’être sur la même longueur d’onde afin de simplifier et de rationaliser les processus adaptés qui sont actuellement intégrés à tous les éléments du cycle de vie des données était général. Pour obtenir de plus amples renseignements sur les commentaires du personnel, visitez la page Stratégie de données de l’ASPC sur GCCollab : <a target="_blank" href="https://gccollab.ca/groups/profile/1801344/entrue-story-a-data-strategy-for-public-healthfr">Histoire véridique : une Stratégie sur les données pour la santé publique</a>.</p>
+										<p>De mars à août 2019, le Centre des données, des partenariats et de l’innovation de l’ASPC a consulté plus de 500 employés de l’ASPC. Les consultations ont établi les bases de l’élaboration de la Stratégie de données et du Plan de mise en œuvre. Nous avons entendu à maintes reprises que la culture en matière de données de l’ASPC était décrite comme un chapelet « d’îles indépendantes » ayant de nombreuses occasions de partager leurs ressources, leurs pratiques exemplaires et leurs normes en matière de données. La solution la plus fréquemment proposée était la collaboration horizontale, l’intégration et le leadership dans les initiatives concernant les données. Le désir d’être sur la même longueur d’onde afin de simplifier et de rationaliser les processus adaptés qui sont actuellement intégrés à tous les éléments du cycle de vie des données était général.</p>
+										<p>Pour obtenir de plus amples renseignements sur les commentaires du personnel, visitez la page Stratégie de données de l’ASPC sur GCCollab : <a target="_blank" href="https://gccollab.ca/groups/profile/1801344/entrue-story-a-data-strategy-for-public-healthfr">Histoire véridique : une Stratégie sur les données pour la santé publique</a>.</p>
 									<div id="whatweheard" class="carousel slide" data-ride="carousel" data-interval="false">
 										<ol class="carousel-indicators">
 												<li data-target="#whatweheard" data-slide-to="0" class="active"></li>
@@ -678,11 +674,14 @@
                                                             « Chaque jour, nous sommes aux prises avec des lacunes en matière de données dans notre organisme qui ont une influence dans l’ensemble des directions générales. Or, nous ne pouvons signaler ces problèmes à personne. Nous avons besoin d’une entité pour agir sur le plan des données au nom de l’Agence. »
 													</blockquote>
 
-													<p>Les consultations réalisées par le Centre des données ont permis de constater de nombreux besoins à l’échelle de l’Agence mais, globalement, le besoin de collaboration horizontale, d’intégration et de leadership est celui qui a été le plus fréquemment mentionné.</p>
-													<p>Ce besoin était souvent exprimé en utilisant le mot « commun ». Le Centre des données a entendu les appels à adopter un langage, des définitions, des principes et des outils en commun, « une compréhension commune de la gestion des données » et une « approche commune en matière d’ententes de partage des données ». </p>
-													<p>Pour bien des gens, le rôle d’un dirigeant principal des données et une structure de gouvernance claire passaient pour être une façon convenable de déléguer les responsabilités et de se faire le champion des ressources et du soutien. </p>
-													<p>Sur le plan thématique, les commentaires obtenus lors des consultations se concentrent sur l’idée que des processus accessibles et cohérents permettraient aux employés de trouver des solutions à leurs besoins en matière de données et de développer de nouveaux domaines de recherche. Selon plusieurs, une gouvernance des données efficace permettrait aux employés de trouver leur voie et se traduirait par une compréhension commune de la façon d’acquérir et de gérer les données dans l’ensemble de l’ASPC.</p>
-												<a href="images/LTDataGovernance.jpg" class="clickable-img" target="_blank"><img src="images/LTDataGovernance.jpg" class="img-fluid" alt="A hand-drawn image of Data Governance themes"></a>
+													<p>Les consultations réalisées par le Centre des données ont permis de constater de nombreux besoins à l’échelle de l’Agence mais, globalement, le besoin de collaboration horizontale, d’intégration et de leadership est celui qui a été le plus souvent mentionné.</p>
+
+													<p>Ce besoin était souvent exprimé en utilisant le mot « commun ». Le Centre des données a entendu les appels à adopter un langage, des définitions, des principes et des outils communs, « une compréhension commune de la gestion des données » et une « approche commune en matière d’ententes de partage des données ».</p>
+													
+													<p>Pour bien des gens, le rôle d’un dirigeant principal des données et une structure de gouvernance claire étaient vus comme étant une façon convenable de déléguer les responsabilités et de parrainer des ressources et du soutien.</p>
+													
+													<p>Sur le plan thématique, les commentaires obtenus lors des consultations se concentrent sur l’idée que des processus accessibles et cohérents permettraient aux employés de trouver des solutions à leurs besoins en matière de données et de développer de nouveaux domaines de recherche. Selon plusieurs, une gouvernance des données permettra aux employés de trouver leur voie et se traduira par une compréhension commune de la façon d’acquérir et de gérer les données dans l’ensemble de l’ASPC.</p>
+												<a href="images/LTDataGovernancefr.jpg" class="clickable-img local" target="_blank"><img src="images/LTDataGovernancefr.jpg" class="img-fluid local" alt="Une image dessinée à la main du thème de la Gouvernance des données"></a>
 
 											</div>
 											<div class="carousel-item">
@@ -694,11 +693,14 @@
                                                             « La gestion et le nettoyage des données prennent du temps. Cela fait partie de notre charge de travail, ce n’est pas quelque chose que l’on fait en vitesse sur le coin du bureau. »
 													</blockquote>
 
-													<p>Les données de l’ASPC ont été décrites comme étant cloisonnées et propres au projet pendant les consultations. En tant qu’organisme, l’ASPC était décrite comme un chapelet « d’îles indépendantes » partageant peu leurs ressources, pratiques exemplaires et normes en matière de données.</p>
+													<p>Les données de l’ASPC ont été décrites comme étant cloisonnées et propres à des projets pendant les consultations. En tant qu’organisation, l’ASPC était décrite comme un chapelet « d’îles indépendantes » partageant peu leurs ressources, leurs pratiques exemplaires et leurs normes en matière de données.</p>
+
 													<p>D’une direction générale à l’autre, les données sont recueillies de manière différente, à des fins différentes et en vertu d’accords différents. Les données sont généralement utilisées pour atteindre un objectif initial, puis sont rarement réutilisées.</p>
-													<p>Comme l’a souligné un participant aux consultations, cela peut causer des inégalités car « sans portrait d’ensemble de nos données, il est impossible de déterminer les lacunes, si bien que certains secteurs ne reçoivent pas l’attention qu’ils méritent ». À l’avenir, l’ASPC doit délaisser de plus en plus les rapports statiques, principalement textuels, en faveur de la prestation en temps réel de communications ouvertes et visuelles au public. Si nous désirons utiliser nos données pour améliorer la santé globale des Canadiens, la collaboration horizontale est essentielle.</p>
+													
+													<p>Comme l’a souligné un participant aux consultations, cela peut causer des inégalités car « sans une vue d’ensemble de nos données, il est impossible de déterminer les lacunes, si bien que certains secteurs ne reçoivent pas l’attention qu’ils méritent ». Si nous désirons utiliser nos données pour améliorer la santé globale des Canadiens, la collaboration horizontale est essentielle.</p>
+													
 													<p>Tout au long des consultations, nous avons aussi entendu les appels à établir des normes, des processus et des pratiques exemplaires en matière de collecte, de stockage, d’accès, d’utilisation et de diffusion des données. Pour la plupart des participants, traiter les données en tant qu’actif signifie considérer les fonds de données détenues par l’ASPC comme une ressource pouvant servir à améliorer le rendement et la qualité des initiatives de santé publique dans l’ensemble de l’Agence.</p>
-												<a href="images/LTDataAsAnAsset.jpg" class="clickable-img" target="_blank"><img src="images/LTDataAsAnAsset.jpg" class="img-fluid" alt="A hand-drawn image of Data as an Asset themes"></a>
+												<a href="images/LTDataAsAnAssetfr.jpg" class="clickable-img local" target="_blank"><img src="images/LTDataAsAnAssetfr.jpg" class="img-fluid local" alt="Une image dessinée à la main du thème des Données en tant qu'actif"></a>
 											</div>
 											<div class="carousel-item">
 												<h3 class="carousel-title">Analyse fondée sur la science (3/6)</h4>
@@ -710,11 +712,14 @@
                                                         « On ne peut pas s’attendre à ce que chaque équipe possède des capacités en matière d’analyse avancée. Il n’est pas nécessaire que chaque équipe possède son propre expert en IA. Nous devrions plutôt compter sur une ressource ou une communauté de pratique centralisée qui viendrait en aide au personnel des programmes au besoin. »
                                                 </blockquote>
 
-												<p>Durant les consultations, nous avons voulu nous renseigner sur le potentiel d’adopter des pratiques avancées et novatrices en matière d’analyse des données en santé publique. Les données peuvent permettre de faire de saisissantes prédictions, de la détection précoce de l’éclosion des maladies infectieuses à la prédiction des risques individuels en passant par les maladies chroniques. Nous avons donc questionné le personnel de l’ASPC concernant le potentiel à cet égard.</p>
-                                                <p>Or, ce que nous avons constaté avec les réponses obtenues est que notre capacité à recueillir, gérer et utiliser les données ne nous permet pas de facilement soutenir les façons nouvelles ou novatrices d’utiliser les données. Bien des employés nous ont dit qu’avant d’investir dans de nouvelles technologies, nous devrions nous assurer d’être suffisamment efficaces dans les activités fondamentales. « L’innovation, c’est très bien », nous a mentionné un répondant, « mais je voudrais que la base fonctionne. »</p>
-                                                <p>Nous devons également changer notre façon de travailler en nous concentrant moins sur l’utilisation des données restreintes dans le but de produire des rapports statiques (principalement textuels) pour plutôt proposer au public des communications en temps réel, ouvertes et visuelles représentant ce que nous faisons.</p>
-                                                <p>« Nous profitions auparavant d’une plus grande souplesse dans le traitement des données mais, aujourd’hui, il existe plusieurs niveaux de sécurité, l’accès est limité et il y a trop de règles, de formulaires et de réunions. Le processus est encombrant. Dans l’environnement réel, nous devrions être capables de simplement agir. »</p>
-												<a href="images/LTSciencebasedanalytics.png" class="clickable-img" target="_blank"><img src="images/LTSciencebasedanalytics.png" class="img-fluid" alt="A hand-drawn image of Science-based Analytics themes"></a>
+												<p>Les données peuvent permettre de faire de saisissantes prédictions, de la détection précoce d’éclosions des maladies infectieuses à la prédiction des risques individuels en passant par les maladies chroniques. Nous avons donc questionné le personnel de l’ASPC concernant le potentiel à cet égard.</p>
+
+												<p>Or, ce que nous avons constaté avec les réponses obtenues est que notre capacité à recueillir, gérer et utiliser les données ne nous permet pas de facilement soutenir les façons nouvelles ou novatrices d’utiliser les données. Bien des employés nous ont dit qu’avant d’investir dans de nouvelles technologies, nous devrions nous assurer que nos systèmes actuels fonctionnent comme il faut. « L’innovation, c’est très bien », nous a mentionné un répondant, « mais je voudrais que la base fonctionne. »</p>
+												
+												<p>À l’avenir, l’ASPC devra également changer sa façon de travailler en se concentrant moins sur l’utilisation des données restreintes dans le but de produire des rapports statiques (principalement textuels) pour plutôt proposer au public des communications en temps réel, ouvertes et visuelles représentant ce que nous faisons.</p>
+												
+												<p>« Nous profitions auparavant d’une plus grande souplesse dans le traitement des données mais, aujourd’hui, il existe plusieurs niveaux de sécurité, l’accès est limité et il y a trop de règles, de formulaires et de réunions. Le processus est encombrant. Dans l’environnement réel, nous devrions être capables de simplement agir. »</p>
+												<a href="images/LTSciencebasedanalyticsfr.png" class="clickable-img local" target="_blank"><img src="images/LTSciencebasedanalyticsfr.png" class="img-fluid local" alt="Une image dessinée à la main du thème de l'Analyse fondée sur la science"></a>
 											</div>
 											<div class="carousel-item">
 												<h3 class="carousel-title">Infrastructure de données (4/6)</h4>
@@ -726,10 +731,12 @@
 
 													</blockquote>
 
-													<p>Au cours des consultations, le Centre de données a entendu des appels unanimes en faveur d’une meilleure infrastructure de données. Comme l’un des répondants l’a dit : « Nous n’avons même pas le strict minimum dont nous avons besoin pour faire notre travail. » </p>
+													<p>Au cours des consultations, le Centre de données a entendu des appels unanimes en faveur d’une meilleure infrastructure de données. Comme l’un des répondants l’a dit : « Nous n’avons même pas le strict minimum pour faire notre travail. » Le personnel fait face à des problèmes considérables avec la vitesse de leur connexion au réseau et la puissance informatique disponible sur les serveurs de données locaux, certains processus nécessitant des jours supplémentaires pour terminer le transfert de données ou alors il faut attendre que le serveur de la base de données réponde à une demande.</p>
+
 													<p>Les participants ont le sentiment que la technologie est souvent un frein : elle ajoute des niveaux de difficulté et de la redondance en plus de limiter l’espace et l’accès. De nombreux employés ont l’impression de passer la majorité de leur temps à éteindre des feux, à attendre qu’un logiciel réponde ou à chercher des solutions de rechange à des problèmes qui devaient être réglés par la technologie.</p>
+													
 													<p>Le personnel a aussi mentionné l’énorme influence que l’accès à l’infrastructure des données et le contrôle de celle-ci peut avoir sur la recherche en santé publique. Les chercheurs ont mentionné le potentiel de l’infonuagique pour réduire les coûts liés à l’utilisation des applications génomiques. Dans le contexte de notre infrastructure actuelle, le problème est que l’infonuagique et les outils qui y sont liés, comme les machines virtuelles, la géocartographie, l’analyse des réseaux sociaux et la modélisation, n’ont pas été adoptés à l’échelle de l’Agence. En d’autres termes, il est difficile de s’adonner à la recherche de pointe et à la science expérimentale en santé publique lorsqu’on n’a pas le contrôle de son propre équipement.</p>
-												<a href="images/LTDataInfrastructure.jpg" class="clickable-img" target="_blank"><img src="images/LTDataInfrastructure.jpg" class="img-fluid" alt="A hand-drawn image of Data Infrastructure themes"></a>
+												<a href="images/LTDataInfrastructurefr.jpg" class="clickable-img local" target="_blank"><img src="images/LTDataInfrastructurefr.jpg" class="img-fluid local" alt="Une image dessinée à la main du thème de l'Infrastructure de données"></a>
 											</div>
 											<div class="carousel-item">
 												<h3 class="carousel-title">Partenariats et collaboration (5/6)</h4>
@@ -742,10 +749,13 @@
 													</blockquote>
 
 													<p>Les partenariats sont essentiels à l’exécution du mandat de l’ASPC, qui est la principale passerelle qui relie les provinces, les territoires, les universités, les organismes sans but lucratif, le secteur privé et la communauté internationale de la santé publique. C’est pourquoi les défis auxquels nous faisons face ont une influence directe sur notre rendement.</p>
-													<p>L’un des principaux défis dont nous avons entendu parler concerne les problèmes de confiance. En bref, nos partenaires ne nous communiqueront pas leurs données si nous ne faisons pas preuve de leadership ou si nous ne démontrons pas une « approche globale » unique en matière de collecte, de gestion et d’utilisation des données. Lorsque nous recevons des données, elles manquent généralement de normalisation.</p>
-													<p>La valeur de nos partenariats peut se réaliser à travers des processus cohérents et dynamiques que nos partenaires peuvent respecter. Nos relations avec les provinces et territoires ont le potentiel de mener à de précieux partages des données. Toutefois, les tentatives du passé ne se sont pas déroulées comme nous l’espérions. Au bout du compte, l’ASPC devra offrir une forte proposition de valeur pour établir les fondements de partenariats efficaces avec nos homologues des provinces et territoires afin que tous se sentent investis.</p>
+
+													<p>L’un des principaux défis dont nous avons entendu parler concerne les problèmes de confiance. En bref, nos partenaires ne nous communiqueront pas leurs données si nous ne faisons pas preuve de leadership ou si nous ne démontrons pas une « approche pour l’ensemble de l’Agence » unique en matière de collecte, de gestion et d’utilisation des données. Lorsque nous recevons des données, elles manquent généralement de normalisation.</p>
+													
+													<p>La valeur de nos partenariats peut être soulignée par des processus cohérents et dynamiques sur lesquels nos partenaires peuvent se fier. Nos relations avec les provinces et territoires ont le potentiel de mener à des partages de données rigoureux. Toutefois, les tentatives du passé ne se sont pas déroulées comme nous l’espérions. Au bout du compte, l’ASPC devra offrir une forte proposition de valeur pour établir les bases de partenariats efficaces avec nos homologues des provinces et territoires afin que tous participent de bon gré.</p>
+													
 													<p>Comme un participant l’a clairement résumé : « [Nous devons] déterminer et formuler ce que nous allons apporter au partenariat, exprimer clairement ce que nous sommes en mesure de fournir dans une relation bidirectionnelle et articuler la proposition de valeur de l’ASPC faite à ses partenaires ».</p>
-												<a href="images/LTPartnershipsandCollaboration.jpg" class="clickable-img" target="_blank"><img src="images/LTPartnershipsandCollaboration.jpg" class="img-fluid" alt="A hand-drawn image of Partnerships and Collaboration themes"></a>
+												<a href="images/LTPartnershipsandCollaborationfr.jpg" class="clickable-img local" target="_blank"><img src="images/LTPartnershipsandCollaborationfr.jpg" class="img-fluid local" alt="Une image dessinée à la main du thème des Partenariats et de la collaboration"></a>
 											</div>
 											<div class="carousel-item">
 												<h3 class="carousel-title">Personnes et culture (6/6)</h4>
@@ -758,11 +768,14 @@
 
 													</blockquote>
 
-													<p>Les personnes et la culture sont des éléments déterminants de tout organisme performant, surtout dans une agence aussi spécialisée que l’ASPC qui rassemble des scientifiques, des chercheurs, des professionnels de la santé publique, des analystes de politiques et d’autres employés dont le rôle est décisif. La technologie, les outils et les données ne sont pas plus importants que les personnes qui les utilisent ou qu’une culture qui soutient une prise de risques efficace.</p>
-													<p>Au cours des consultations, quelques secteurs de l’ASPC ont signalé un niveau élevé de littératie en matière de données. Cependant, de nombreux autres groupes ont parlé de la nécessité d’accroître la littératie en matière de données dans l’ensemble de l’Agence, afin que nous puissions collectivement maximiser le trésor d’information qui est disponible grâce à la surveillance, aux sources administratives et à d’autres sources de données. Le personnel nous a donné plusieurs exemples de situations dans lesquelles le fait d’allier les compétences en matière de données à la technologie rapporterait d’importants bénéfices à l’ASPC alors que nous nous dirigeons vers un environnement nettement plus axé sur les données.</p>
-													<p>Aussi, s’assurer que le personnel de l’ASPC puisse parler une « langue commune » en matière de données permettrait à l’Agence de compter sur des équipes multidisciplinaires et de tirer parti d’outils collaboratifs afin de maximiser son influence sur les activités et programmes en santé publique, la promotion de la santé et les interventions en santé publique. Les employés estiment qu’il est nécessaire de veiller à ce que les personnels des sciences, des politiques, de la gestion des données et des opérations des programmes puissent collaborer en bonne entente pour réduire le cloisonnement. Nous avons également reçu des commentaires portant sur le besoin de s’assurer que le personnel scientifique et politique ainsi que celui affecté à la gestion des données et à l’exploitation des programmes collabore pour éliminer le travail en vase clos.</p>
-													<p>À mesure que notre environnement de travail évolue, notre culture en tant qu’Agence et notre base de connaissances doivent continuer à évoluer de manière dynamique pour rester en phase avec le changement. Pour ce faire, il faut mettre de la formation et des outils à la disposition de nos employés qualifiés et compétents actuels, afin de pouvoir demeurer à la fine pointe de la technologie, recruter et maintenir à l’effectif des employés qualifiés, et créer un environnement d’apprentissage durable. La formation, les outils et le personnel qualifié ne seront efficaces que si l’on donne aux employés la latitude nécessaire pour mettre en application leurs compétences acquises et leurs connaissances en milieu de travail, c’est-à-dire en leur permettant.</p>
-												<a href="images/LTPeopleandCulturel.jpg" class="clickable-img" target="_blank"><img src="images/LTPeopleandCulturel.jpg" class="img-fluid" alt="A hand-drawn image of People and Culture themes"></a>
+													<p>Les personnes et la culture sont des éléments déterminants de tout organisation performante, surtout dans une agence aussi spécialisée que l’ASPC qui rassemble des scientifiques, des chercheurs, des professionnels de la santé publique, des analystes de politiques et d’autres employés aux rôles est décisifs. La technologie, les outils et les données ne sont pas plus précieux que les personnes qui les utilisent ou qu’une culture qui soutient une prise de risques efficace.</p>
+
+													<p>Au cours des consultations, quelques secteurs de l’ASPC ont signalé un niveau élevé d’alphabétisation numérique. Cependant, de nombreux autres groupes ont parlé de la nécessité d’accroître l’alphabétisation numérique dans l’ensemble de l’Agence, afin que nous puissions collectivement maximiser la richesse d’information qui est disponible grâce à la surveillance, aux sources administratives et à d’autres sources de données. Le personnel nous a donné plusieurs exemples de situations dans lesquelles le fait d’allier les compétences en matière de données à la technologie rapporterait d’importants bénéfices à l’ASPC alors que nous nous dirigeons vers un environnement plus axé sur les données.</p>
+													
+													<p>Aussi, s’assurer que le personnel de l’ASPC puisse parler une « langue commune » lorsqu’il est question de données permettrait à l’Agence de compter sur des équipes multidisciplinaires et de tirer parti d’outils collaboratifs afin de maximiser son influence sur les activités et les programmes en santé publique, sur la promotion de la santé et sur les interventions à des événements de santé publique. Les employés estiment qu’il est nécessaire de veiller à ce que les personnels des sciences, des politiques, de la gestion des données et des opérations des programmes puissent collaborer harmonieusement pour réduire le cloisonnement.</p>
+													
+													<p>À mesure que notre environnement de travail évolue, notre culture en tant qu’Agence et notre base de connaissances doivent continuer à évoluer de manière agile pour rester en phase avec le changement. Pour ce faire, il faut mettre de la formation et des outils à la disposition de nos employés actuels qui sont qualifiés et compétents, afin de pouvoir demeurer à la fine pointe de la technologie, recruter et maintenir en poste des employés qualifiés, et créer un environnement d’apprentissage durable. La formation, les outils et le personnel qualifié ne seront efficaces que si on donne aux employés la latitude nécessaire pour mettre en application leurs compétences acquises et leurs connaissances en milieu de travail, c’est-à-dire en leur permettant d’expérimenter, de prendre des risques calculés et d’échouer.</p>
+												<a href="images/LTPeopleandCulturelfr.jpg" class="clickable-img local" target="_blank"><img src="images/LTPeopleandCulturelfr.jpg" class="img-fluid local" alt="Une image dessinée à la main du thème des Personnes et de la culture"></a>
 											</div>
 										</div>
 										<a tabindex="0" class="carousel-control-prev" data-target="#whatweheard" role="button" data-slide="prev" href="#previous">
@@ -785,7 +798,7 @@
 			
 			<div class="row section experts"> <!-- Data Strategy in Action Row -->
 				<div class="col-2 section-col">
-					<h3 class="phac">La Stratégie sur les données en action</h3>
+					<h3 class="phac">Stratégie de données en action</h3>
 				</div>
 
 				<div class="col"> <!-- this column houses a hex-button and the expandable content -->
@@ -794,7 +807,7 @@
 					
 					<div class="row hex-row"> <!-- Hex Row High Performance Cloud-Computing Pilot – National Microbiology Laboratory -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#learningCollapse" aria-expanded="false" aria-controls="learningCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#learningCollapse" aria-expanded="false" aria-controls="learningCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
@@ -812,23 +825,22 @@
 											<a name="LearningFromtheexperts"><h4 class="collapse-title">Apprendre des experts</h4></a>
 										</div>
 										<br>
-										<h4>Projet pilote d’infonuagique haute performance – Laboratoire national de microbiologie</h4>
-										<p>L’infonuagique prend de plus en plus d’ampleur dans l’univers de la haute technologie d’aujourd’hui. Elle offre des solutions aux contraintes de stockage de base ainsi que des applications plus gourmandes en puissance de traitement comme l’intelligence artificielle et l’apprentissage machine. Pour mettre à l’essai le nouvel environnement infonuagique, le Laboratoire national de microbiologie (LNM) a formé une petite équipe d’informaticiens, de biologistes et d’ingénieurs de la recherche chargée de répondre à trois questions simples : L’infonuagique peut-elle servir à l’extension du centre de données de calcul à haute performance (CHP) du LNM? Le CHP infonuagique peut-il être rentable? Le LNM peut-il tirer parti du CHP infonuagique?</p>
-										<p>Le LNM connaît des pointes importantes d’activité informatique qui utilisent au maximum l’infrastructure de CHP en place. Certains chercheurs et scientifiques doivent donc attendre pour obtenir du temps de serveur lorsque la demande pour les ressources de CHP est élevée. Jusqu’à présent, cette situation a été réglée par l’ajout d’ordinateurs et d’infrastructures physiques supplémentaires. Cependant, des centres de données ont commencé récemment à offrir un service de calcul haute performance (aussi appelé infonuagique) à des tarifs <strong>qui peuvent être rentables et, dans certains scénarios</strong>, sont moins élevés que les coûts liés à l’achat de nouveaux ordinateurs. Pour mettre à l’essai l’environnement infonuagique, l’équipe est passée du CHP sur place à Amazon Web Services (AWS).</p>
-										<p>Les choses ne se sont pas mises en place immédiatement. Sans optimisation des données, les essais de calcul à plus grande échelle ont donné des résultats pires avec AWS qu’avec des ressources informatiques locales. En examinant de façon approfondie les données sur l’utilisation des ordinateurs, <strong>l’équipe s’est rendu compte que le simple passage de l’architecture sur place à l’environnement d’AWS ne serait pas suffisamment efficient pour permettre d’atteindre les objectifs de performance</strong>. Grâce à une compréhension approfondie de la réseautique, l’équipe a été en mesure de choisir l’environnement de stockage et les stratégies de mise à l'échelle des ressources informatiques appropriés pour rendre le projet pilote AWS plus rentable par rapport à l’infrastructure de CHP sur place.</p>
-										<p>Le projet pilote a éventuellement permis de trouver des réponses positives aux trois questions. L’infonuagique peut servir à étendre le CHP au LNM. Le CHP infonuagique peut être rentable. Le LNM peut utiliser l’infonuagique pour exécuter des travaux véritablement scientifiques. De façon plus générale, le projet pilote a permis de constater <strong>qu’un environnement infonuagique</strong> d’AWS ne convenait pas aux <strong>essais informatiques à plus grande échelle</strong>. Heureusement, grâce à son expertise, l’équipe du projet pilote a pu trouver rapidement des gains d’efficacité pour améliorer la qualité de l’infonuagique de manière qu’elle soit supérieure à celle de l’infrastructure informatique traditionnelle.</p>
+										<h4>Projet pilote d’infonuagique haute performance - Laboratoire national de microbiologie</h4>
+										<p>L’infonuagique prend de plus en plus d’ampleur dans l’univers de la haute technologie d’aujourd’hui. Elle offre des solutions aux contraintes de stockage de base et permet de créer des applications qui font appel à une plus grande puissance de traitement comme l’intelligence artificielle et l’apprentissage automatique. Pour mettre à l’essai un environnement infonuagique moderne, le Laboratoire national de microbiologie (LNM) a établi un partenariat avec le Centre de recherche sur les communications et a formé une petite équipe d’informaticiens, de biologistes et d’ingénieurs de la recherche, chargée de répondre à trois questions simples : L’infonuagique peut-elle servir à l’extension du centre de données de calcul à haute performance (CHP) du LNM? Le CHP infonuagique peut-il être rentable? Le LNM peut-il tirer parti du CHP infonuagique?</p>
+										<p>Le LNM connaît des pointes importantes d’activité informatique qui utilisent occasionnellement au maximum l’infrastructure de CHP en place. Certains chercheurs et scientifiques doivent donc attendre pour obtenir du temps de serveur lorsque la demande pour les ressources de CHP est élevée. Jusqu’à présent, cette situation a été réglée par l’ajout d’infrastructures physiques supplémentaires et l’application de mécanismes de priorisation. Cependant, dernièrement, des services de CHP ont commencé à être offerts par des fournisseurs d’infonuagique à des tarifs qui peuvent être rentables. Pour mettre à l’essai l’environnement infonuagique, l’équipe s’est lancée dans un « défi de six semaines » pour passer du CHP sur place à Amazon Web Services (AWS) et mener une véritable analyse génomique.</p>
+										<p>Les choses ne se sont pas mises en place immédiatement. Sans optimisation des données, les essais de calcul à plus grande échelle ont donné de pires résultats avec AWS qu’avec des ressources informatiques locales. En examinant en profondeur les données sur l’utilisation des ordinateurs,<strong> </strong>l’équipe s’est rendu compte que le simple passage de l’architecture sur place à l’environnement d’AWS ne serait pas suffisamment efficace pour leur permettre d’atteindre leurs objectifs de performance<strong>. </strong><strong>En tirant parti de l’expertise en calcul de haute performance et en réseaux de grande capacité</strong>, l’équipe a été en mesure de peaufiner la stratégie d’infrastructure et de mise à l’échelle des ressources pour surpasser le centre des données sur place de manière rentable et sur demande.</p>
+										<p>Le projet pilote a éventuellement permis de trouver des réponses affirmatives aux trois questions. L’infonuagique peut servir à étendre le CHP au LNM. Le CHP infonuagique peut être rentable. Le LNM peut utiliser l’infonuagique pour exécuter des travaux véritablement scientifiques. De façon plus générale, le projet pilote a permis de constater que simplement « enlever et changer » un système existant à l’infonuagique ne permettait pas d’atteindre immédiatement les objectifs pour les<strong> </strong>essais informatiques à plus grande échelle. Heureusement, grâce à son expertise, l’équipe du projet pilote a pu trouver des gains d’efficacité rapidement pour améliorer la performance de l’infonuagique au point de surpasser le centre des données existant sur place en ce qui a trait à la rentabilité.</p>
 										
 										<h4>Infobase de la santé publique</h4>
-										<p>L’Infobase de la santé publique permet aux chercheurs, aux professionnels de la santé et à d’autres parties intéressées à la santé publique d’avoir accès à des données à jour et à l’histoire que recèlent les chiffres, et leur procure la capacité d’interagir avec des visualisations de données novatrices et accessibles.</p>
-										<p>L’Infobase a changé la façon traditionnelle dont la plupart des organismes de santé diffusent les données, depuis des publications sur papier contenant des tableaux volumineux et complexes à l’interprétation et à la manipulation en ligne des données sous forme de graphiques, de cartes et de tableaux simples, faciles à comprendre.</p>
-										<p>Bien qu’une partie de ce qui fait le succès de l’Infobase de la santé publique soit une culture axée sur la réussite d’apprentissage continu, de mesure du rendement novatrice et de conception itérative (ce qui comprend de tirer l’enseignements des échecs!), le moteur le plus important est le travail acharné et le soutien des équipes de données de toute la Direction générale de la promotion de la santé et de la prévention des maladies chroniques (DGPSPMC) et d’une liste sans cesse croissante d’équipes dans l’ensemble du portefeuille de la Santé.</p>
+										<p>L’<a target="_blank" href="https://sante-infobase.canada.ca/">Infobase de la santé publique</a> permet aux chercheurs, aux professionnels de la santé et à d’autres parties intéressées à la santé publique d’avoir accès à des <strong>données à jour</strong> et à l’<strong>histoire que recèlent les chiffres</strong>, et leur procure la capacité d’interagir avec des <strong>visualisations de données</strong> novatrices et accessibles.</p>
+										<p>L’Infobase a changé la façon traditionnelle dont la plupart des organisations de santé diffusent les données, des publications sur papier contenant des tableaux volumineux et complexes à l’interprétation et à la manipulation en ligne des données sous forme de graphiques, de cartes et de tableaux simples et faciles à comprendre.</p>
+										<p>Bien qu’une partie de ce qui fait le succès de l’Infobase de la santé publique soit une <strong>culture positive</strong> axée sur <strong>l’apprentissage continu</strong>, de <strong>mesure du rendement</strong> novatrice et de <strong>conception itérative</strong> (y compris d’apprendre des échecs!), le moteur le plus important est le travail acharné et le soutien des équipes de données de toute la Direction générale de la promotion de la santé et de la prévention des maladies chroniques (DGPSPMC) et d’une liste toujours croissante d’équipes dans l’ensemble du Portefeuille de la Santé.</p>
 
 										<h4>Réseau mondial d’information en santé publique (RMISP)</h4>
 										<p>Le Réseau mondial d’information en santé publique (RMISP) combine une plateforme Web qui analyse l’information de source ouverte dans le monde entier avec une équipe d’analystes hautement instruits, dévoués, multiculturels et multilingues qui filtrent et évaluent l’information.</p>
-										<p>Le RMISP aide le Canada et d’autres pays à effectuer une surveillance fondée sur les événements pour la détection précoce, l’évaluation et la déclaration des éclosions de maladies infectieuses et d’autres menaces émergentes pour la santé publique. Chaque jour, le RMISP traite en moyenne 3 000 bulletins de nouvelles en neuf langues, et les analystes sont toujours à l’affût de la prochaine menace éventuelle pour la santé publique.</p>
-										<p>Le RMISP a été reconnu comme un pionnier en matière de mégadonnées dans le domaine de la santé publique. L’apprentissage machine avancé dans le traitement du langage naturel a été mis en œuvre pour améliorer la notation de la pertinence, la catégorisation, l’étiquetage géographique et l’élimination du chargement en double d’articles dans la plateforme du RMISP.</p>
+										<p>Le RMISP aide le Canada et d’autres pays à effectuer une surveillance fondée sur les événements pour la détection précoce, l’évaluation et l’établissement de rapports des éclosions de maladies infectieuses et d’autres menaces émergentes pour la santé publique. Chaque jour, le RMISP traite en moyenne 3 000 bulletins de nouvelles en neuf langues et les analystes sont toujours à l’affût de la prochaine menace éventuelle pour la santé publique.</p>
+										<p>Le RMISP a été reconnu comme un pionnier en matière de mégadonnées dans le domaine de la santé publique. L’apprentissage automatique avancé dans le traitement du langage naturel a été mis en œuvre pour améliorer la notation de la pertinence, la catégorisation, l’étiquetage géographique et l’élimination du chargement en double d’articles dans la plateforme du RMISP.</p>
 										<p>Ces innovations en matière de techniques d’intelligence artificielle aident considérablement l’équipe d’analystes à être plus efficace en réduisant la charge de travail afférente à la subsistance du système, ce qui laisse aux analystes plus de temps pour effectuer l’analyse et la production de rapports.</p>
-										<p>Le Comité exécutif a également demandé au Centre de données de relever le défi qui a été lancé dans le rapport du gouvernement du Canada au greffier du Conseil privé : Feuille de route de la Stratégie de données pour la fonction publique fédérale, et de créer une stratégie de données pour l’ASPC.</p>
 									</div>
 								</div>
 							</div>
@@ -837,14 +849,14 @@
 
 					<div class="row hex-row"> <!-- Hex Row -->
 						<div class="col-md-auto hex-col"> <!-- column for the hex button -->
-							<a class="btn hex-button" href="##" data-toggle="collapse" data-target="#pilotsCollapse" aria-expanded="false" aria-controls="pilotsCollapse">
+							<a class="btn hex-button" data-toggle="collapse" data-target="#pilotsCollapse" aria-expanded="false" aria-controls="pilotsCollapse">
 								<svg viewBox="0 0 300 300" >
 								<polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
 								</svg>
 								<div class="hex-icon-container">
 									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#01043f"><g id="surface1"><path d="M127.925,36.55c-0.30234,0 -0.5291,0.04199 -0.77266,0.07559c-0.0084,0 -0.0168,0 -0.0252,0c-0.14277,-0.0084 -0.29394,0 -0.43672,0.0168l-59.51133,8.52441c-0.5123,0.07559 -0.98262,0.32754 -1.31855,0.72226c-1.94844,0.80625 -3.51055,2.41035 -3.51055,4.63594c0,2.93945 2.43555,5.375 5.375,5.375c0.32754,0 0.44512,-0.0252 0.50391,-0.03359l9.17109,-0.65508v13.25273c-14.5125,2.03242 -28.39512,4.90469 -39.10312,7.39063l-15.18437,-17.08242c-0.41152,-0.46191 -0.99941,-0.72227 -1.6125,-0.72227h-12.9c-0.65508,0 -1.26816,0.29395 -1.67969,0.80625c-0.40313,0.5123 -0.5627,1.18418 -0.41992,1.81406l6.57597,29.11738c0.09238,0.38633 0.28555,0.74746 0.57109,1.03301c0.73906,1.83926 2.10801,3.2334 3.92207,4.01445c0.20996,0.22676 0.45352,0.39473 0.73906,0.5123c0,0 30.33516,12.55566 81.29688,17.02363l4.2832,8.15488c-1.73008,1.57051 -2.83867,3.82129 -2.83867,6.32402c0,4.72832 3.87168,8.6 8.6,8.6c4.72832,0 8.6,-3.87168 8.6,-8.6c0,-4.72832 -3.87168,-8.6 -8.6,-8.6c-0.68027,0 -1.32695,0.10078 -1.96523,0.25195l-3.01504,-5.73613c9.61621,0.72226 19.83711,1.18418 30.78027,1.18418h2.15c7.09668,0 12.9,-5.80332 12.9,-12.9v-4.3h4.3v15.05c-0.0084,0.77266 0.39473,1.49492 1.0666,1.88965c0.67188,0.38633 1.49492,0.38633 2.1668,0c0.67188,-0.39472 1.075,-1.11699 1.0666,-1.88965v-15.48672c1.81406,-0.77266 3.10742,-2.49434 3.66172,-4.49316c0.41152,-0.40313 0.63828,-0.94902 0.63828,-1.52012c0,-2.77988 -1.81406,-5.14824 -4.3,-6.04687v-15.45312c0.0084,-0.57949 -0.21836,-1.14219 -0.62988,-1.55371c-0.41152,-0.41152 -0.97422,-0.63828 -1.55371,-0.62988c-1.18418,0.0252 -2.1332,0.99941 -2.11641,2.18359v15.05h-4.3v-4.3c0,-7.09668 -5.80332,-12.9 -12.9,-12.9h-2.15c-3.7877,0 -8.75117,0.07559 -12.9,0.20156v-14.84844l5.9209,-0.42832c0.5627,-0.03359 1.0834,-0.29394 1.46133,-0.71387c3.06543,-0.94062 5.51777,-3.41816 5.51777,-6.78594c0,-4.13203 -3.39297,-7.525 -7.525,-7.525zM127.925,40.85c1.80566,0 3.225,1.41934 3.225,3.225c0,1.72168 -1.30176,3.06543 -2.98984,3.19141c-0.09238,0.0084 -0.17637,0.0252 -0.26875,0.04199l-59.96484,4.25801c-0.03359,0.0084 -0.06719,0.0084 -0.09238,0.0084c-0.22676,0.0252 -0.25195,0.0252 -0.10918,0.0252c-0.61309,0 -1.075,-0.46191 -1.075,-1.075c0,-0.58789 0.41992,-1.01621 0.99941,-1.0582c1.17578,-0.09238 2.06601,-1.11699 1.98203,-2.30117l0.13438,1.97363l57.25215,-8.19687c0.10918,0 0.22676,-0.0084 0.34434,-0.0252c0.24356,-0.05039 0.42832,-0.06719 0.5627,-0.06719zM118.25,52.30547v16.6877c0,0.0252 0,0.04199 0,0.06719c0,2.02402 -0.07559,4.38398 -1.97363,6.41641c-1.88965,2.03242 -6.03847,4.07324 -15.22637,4.07324c-4.22441,0 -9.40625,-0.57949 -13.26113,-2.11641c-1.92324,-0.77266 -3.48535,-1.77207 -4.50996,-2.92266c-1.02461,-1.15059 -1.57891,-2.41875 -1.57891,-4.19922v-15.41113zM156.95,58.05c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM11.2875,62.35h9.24668l13.15195,14.78965l-1.42774,1.25137l0.15957,1.92324l1.6293,1.02461l0.75586,-0.05879l0.20156,-0.05039l1.36055,-1.20098c0.48711,0.31914 1.0834,0.41992 1.65449,0.29395c10.69961,-2.51953 25.04414,-5.47578 39.83379,-7.5502c0.41992,1.73008 1.0918,3.34258 2.20879,4.59395c1.6293,1.83926 3.7877,3.11582 6.13926,4.05645c4.69473,1.87285 10.25449,2.42715 14.84844,2.42715c9.82617,0 15.34395,-2.19199 18.37578,-5.44219c1.96524,-2.09961 2.56152,-4.3252 2.79668,-6.29043c0.17637,-0.28555 0.28555,-0.61309 0.31914,-0.94062c4.09844,-0.13438 9.1291,-0.22676 12.9084,-0.22676h2.15c4.77031,0 8.6,3.82969 8.6,8.6v21.5c0,4.77031 -3.82969,8.6 -8.6,8.6h-2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.12539 0.87344,2.06602 1.99883,2.15c-71.15996,-0.03359 -114.78984,-18.04824 -115.19297,-18.21621c-0.0084,0 -0.0168,-0.0084 -0.0252,-0.0084c-0.13438,-0.06719 -0.28555,-0.12598 -0.42832,-0.15957c-1.19258,-0.30234 -2.10801,-1.23457 -2.36836,-2.41875c-0.0168,-0.05879 -0.03359,-0.11758 -0.05039,-0.16797c0,-0.0168 0,-0.0252 -0.0084,-0.04199l-0.69707,-3.06543l0.50391,0.30234l0.74746,-0.05879l0.20996,-0.05879l1.43613,-1.27656l-0.15957,-1.92324l-1.64609,-1.01621l-0.75586,0.06719l-0.20156,0.05879l-0.83984,0.74746zM135.45,70.95c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM26.13594,79.24766l-0.75586,0.06719l-0.20996,0.05039l-1.43613,1.28496l0.16797,1.92324l1.6293,1.00781l0.76426,-0.06719l0.20996,-0.05039l1.43613,-1.28496l-0.16797,-1.91484zM135.45,79.55c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM135.45,88.15c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM150.5,88.15h6.08887c0.15957,0.0252 0.32754,0.03359 0.48711,0.0252c1.15059,0.06719 2.02402,0.95742 2.02402,2.1248c0,1.16738 -0.87344,2.05762 -2.02402,2.1248c-0.05879,0 -0.10918,-0.0084 -0.15957,-0.0084c-0.10078,0.0084 -0.20996,0.0168 -0.31074,0.03359h-6.10566zM135.45,96.75c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM156.95,118.25c-1.18418,0 -2.15,0.96582 -2.15,2.15c0,1.18418 0.96582,2.15 2.15,2.15c1.18418,0 2.15,-0.96582 2.15,-2.15c0,-1.18418 -0.96582,-2.15 -2.15,-2.15zM109.65,122.55c2.40195,0 4.3,1.89805 4.3,4.3c0,2.40195 -1.89805,4.3 -4.3,4.3c-2.40195,0 -4.3,-1.89805 -4.3,-4.3c0,-2.40195 1.89805,-4.3 4.3,-4.3z"></path></g></g></g></svg>
 								</div>
-								<h3 class="button-title">Nouveaux projets pilotes relatifs à la science de données</h3>
+								<h3 class="button-title">Projets pilotes en science des données</h3>
 							</a>
 						</div>
 						<div class="col card-col"> <!-- column with the expandable content -->
@@ -852,12 +864,12 @@
 								<div class="card card-body">
 									<div class="container">
 										<div class="collapse-title-box">
-											<a name="PilotProjects"><h4 class="collapse-title">Nouveaux projets pilotes relatifs à la science de données</h4></a>
+											<a name="PilotProjects"><h4 class="collapse-title">Projets pilotes en science des données</h4></a>
 										</div>
 										<br>
-										<p>En plus des « récits de réussite de l’ASPC » présentées à la section précédente, la mise en œuvre de la Stratégie sur les données sera soutenue par de nouveaux projets pilotes relatifs à la science de données qui illustreront la vision de la stratégie en action. Des collègues de tous les secteurs de l’ASPC ont approché le Centre des données pour obtenir de l’aide sur le plan de visualisation des données afin de les rendre plus accessibles et pertinentes pour divers publics. Les visualisations de données interactives permettent une meilleure compréhension des tendances en santé publique et fournissent ainsi une meilleure base sur laquelle prendre des décisions en matière de santé publique.</p>
-                                        <p>Au-delà de la visualisation, les projets pilotes permettront d’augmenter la valeur de nos données en créant des plateformes interactives, en automatisant les processus et en facilitant la production de rapports personnalisables afin de permettre au personnel de tirer le maximum des données de l’ASPC.</p>
-                                        <p>De plus amples renseignements sur les nouveaux projets pilotes relatifs à la science de données suivront.</p>
+										<p>En plus des « récits de réussite de l’ASPC », la mise en œuvre de la Stratégie de données sera soutenue par de nouveaux projets pilotes en science des données qui illustreront la vision de la stratégie en action. Des collègues de tous les secteurs de l’ASPC ont approché le Centre des données pour obtenir de l’aide sur le plan de la visualisation de leurs données afin de les rendre plus accessibles et pertinentes pour divers publics. Les visualisations de données interactives permettent une meilleure compréhension des tendances en santé publique et fournissent ainsi une meilleure base sur laquelle prendre des décisions en matière de santé publique.</p>
+										<p>Qu’est-ce que la science des données? La science des données est la discipline qui permet de transformer des données brutes en information compréhensible pour ainsi guider la prise de décision et l’élaboration des politiques, et ce, à l’aide de la visualisation des données, de la modélisation statistique, de l’apprentissage automatique, de l’analyse spatiale et de bien d’autres méthodes.</p>
+										<p>Au-delà de la visualisation, les projets pilotes permettront d’augmenter la valeur de nos données en créant des plateformes interactives, en automatisant les processus et en facilitant la production de rapports personnalisables afin de permettre au personnel de tirer le maximum des données de l’ASPC.</p>
 									</div>
 								</div>
 							</div>
@@ -876,36 +888,55 @@
 			<polygon points="100 33.3, 100 0, 50.6 0, 49.9 33.3"></polygon>
 		</svg>
 		<div class="footer-content container-fluid">
-			<div class="contact-container">
-                    <a class="contact-link" data-toggle="collapse" data-target="#contact" aria-expanded="false" aria-controls="contact">JOINDRE LE CENTRE DES DONNÉES</a>
-                    <div class="collapse panel-collapse contact-iframe-container" id="contact">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZCbZXzGrxbOOkuxx2z9QnVutklP7NbyUVEN8TVeUHfvLBPg/viewform?embedded=true?hl=fr" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    </div>
+			<div id="meetthehub">
+				<a data-toggle="collapse" data-target="#meetthehub-expanded" aria-expanded="false" aria-controls="meetthehub-expanded">
+					<svg viewBox="0 0 300 300" >
+						<polygon class="footer-hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
+					</svg>
+					<h3>Le Centre des données</h3>
+				</a>
+				<div class="collapse panel-collapse multi-collapse" id="meetthehub-expanded">
+					<p>Le Centre des données, des partenariats et de l’innovation (c.-à-d. le « Centre des données ») de l’Agence de la santé publique du Canada a été créé en automne 2018 pour appuyer l’ASPC dans sa façon d’adopter de nouvelles données et de nouveaux modèles de partenariats, d’expérimenter avec ceux-ci et de s’y adapter pour tirer parti d’un environnement d’information en pleine croissance au sein du gouvernement mais aussi à l’extérieur de celui-ci. Le Comité exécutif a aussi demandé au Centre des données de relever le défi posé dans le Rapport au greffier du Conseil privé du gouvernement du Canada, <a target="_blank" href="https://www.canada.ca/en/privy-council/corporate/clerk/publications/data-strategy.html">Feuille de route de la Stratégie de données pour la fonction publique fédérale</a>, et de créer une Stratégie de données de l’ASPC. En réunissant des experts en la matière déjà au sein de l’Agence et de nouveaux visages de l’extérieur de l’ASPC, le Centre des données fait avancer des travaux pour appuyer trois piliers : la base des données, l’accès aux données et l’innovation en matière de données par la mise en œuvre de plusieurs projets, y compris ceux présentés dans la Phase 1 du <u>Plan de mise en œuvre</u> de la Stratégie de données.</p>
+					<p>Le Centre des données agit comme fonction habilitante au sein de l’Agence à la veille de la quatrième révolution industrielle. <strong>Le Centre des données appuiera l’ASPC pour permettre la création d’un modèle de gouvernance des données, davantage de partenariats stratégiques à l’interne et à l’externe et un meilleur accès aux données.</strong> En d’autres mots, au lieu de remplacer les centres d’expertise existants au sein de l’Agence, le Centre des données servira d’intermédiaire pour soutenir les secteurs de programme en accélérant l’adoption de l’analyse moderne, fondée sur la science, au sein de leurs secteurs respectif.</p>
+					<p>Pour de plus amples renseignements ou pour donner de la rétroaction ou des commentaires, veuillez communiquer avec nous à l'adresse <strong>PHAC.DataHub-CentreDonnees.ASPC@canada.ca</strong></p>
+				</div>
 			</div>
-			<a href="#">Le Centre des données (à venir)</a>
-			<a href="#">Liens utiles (à venir)</a>
-			<a href="#">ESSENTIELS DE LA STRATÉGIE (à venir)</a>
+
+			<div class="footerlinks">
+				<div id="godataweek">
+					<h2>Semaine des données</h2>
+					<p>Joignez-vous à l'ASPC pour sa Semaine des données inaugurale, du 30 septembre au 4 octobre.</p>
+					<a href="gcpedia.gc.ca/wiki/PHACDataWeek">En apprendre davantage sur la Semaine des données</a>
+				</div>
+				<div id="strategyEssentials">
+					<h2>Essentiels de la Stratégie</h2>
+					<p>Vous voulez en apprendre davantage sur la Stratégie de données de l'ASPC en 3 étapes simples? Voici ce dont vous avez besoin :</p>
+					<ol>
+						<li><a href="images/Infographicfr.png" class="local">Infographie de la Stratégie</a></li>
+						<li><a href="images/Implementation-Plan-fr.png" class="local">plan de projet</a></li>
+						<li><a href="images/futurestatefr.png" class="local">état futur</a></li>
+					</ol>
+				</div>
+			</div> <!-- footerlinks -->
+		</div> <!-- footer-content -->
+
+		<div id="gcpediafooter">
+			<a class="gcpediaLink" target="_blank" href="http://www.gcpedia.gc.ca/"><span class="bold-gc">GC</span>pédia</a>
+			<a class="gcpediaLink" target="_blank" href="http://www.gcpedia.gc.ca/wiki/GCpedia:Privacy_notice">Politique de confidentialité</a>
+			<a class="gcpediaLink" target="_blank" href="http://www.gcpedia.gc.ca/wiki/GCpedia:Terms_and_conditions_of_use">Conditions générales</a>
 		</div>
-	</footer>
-	<div id="gcpediafooter">
-		<a class="gcpediaLink" target="_blank" href="http://www.gcpedia.gc.ca/wiki/Main_Page"><span class="bold-gc">GC</span>pédia</a>
-		<a class="gcpediaLink" target="_blank" href="http://www.gcpedia.gc.ca/wiki/GCpedia:Privacy_notice">Politique de confidentialité</a>
-		<a class="gcpediaLink" target="_blank" href="http://www.gcpedia.gc.ca/wiki/GCpedia:Terms_and_conditions_of_use">Conditions générales</a>
-	</div>
-	<!-- Footer -->
+	
 
+		<div id="searchingBG">
+				<span class="searchmodeTitle">Mode recherche activé</span>
+			</div>
+			<div id="searchModedies">
+				<span class="searchmodeTitle">Mode recherche désactivé</span>
+				<span class='bye'>Adieu!</span>
+		</div>
 
-	<div id="searchingBG">
-		<span class="searchmodeTitle">Mode recherche activé</span>
-	</div>
-	<div id="searchModedies">
-		<span class="searchmodeTitle">Mode recherche désactivé </span>
-		<span class='bye'>Adieu!</span>
-	</div>
-
+	</footer> <!-- Footer -->
 
 
 </body>
 </html>
-
-<!--{{datastrat}}-->
