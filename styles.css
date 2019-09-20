@@ -1000,6 +1000,10 @@ footer a:hover, footer a:focus {color: #01043f;}
   min-height: auto;
 }
 
+#sixthemes .carousel-item {
+  min-height: 891px;
+}
+
 .darkbg {
     background: #01043f;
     color: white;
