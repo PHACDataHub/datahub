@@ -1522,12 +1522,35 @@ main {
   font-weight: 100;
 }
 
+@media only screen and (max-width: 1500px) {
+  #portal {
+    width: 80vw!important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #portal {
+    width: 80vw!important;
+  }
+  .hex-b {
+    width: 40%!important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #portal {
+    width: 100vw!important;
+    max-width: 100vw!important;
+  }
+}
+
 #portal {
   background: white;
-  padding: 3rem;
+  padding: calc(1.5rem + 1.5vw);
   margin: 3rem auto;
   display: flex;
   flex-direction: row;
+  width: 60vw;
 }
 
 #words {
@@ -1537,7 +1560,7 @@ main {
 }
 
 #words span {
-  font-size: 4rem;
+  font-size: calc(2rem + 2vw);
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: -3px;
@@ -1558,20 +1581,6 @@ main {
 .one { color: #535cfa;}
 .two {color: #101ad4}
 
-.hex-button-lite {
-  background: url(images/hex.svg) no-repeat;
-  background-size: 100%;
-  display: inline-block;
-  width: 40%;
-  text-align: center;
-  padding: 2.5rem 1rem;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: bold;
-  line-height: 1.2rem;
-  text-transform: uppercase;
-}
-
 .portal-hex {
   fill: white;
 }
@@ -1591,7 +1600,7 @@ main {
   font-weight: bold;
   line-height: 1rem;
   text-transform: uppercase;
-  font-size: 1.0rem;
+  font-size: calc(0.5rem + 0.5vw);
   margin: auto;
   width: 80%;
 }
@@ -1625,4 +1634,19 @@ main {
 #landing h1.phac {
   font-size: calc(2rem + 2vh);
   line-height: calc(2rem + 2vh);
+}
+
+#landing main {
+  min-height: 79vh;
+}
+
+.doc-embed {
+  height: 60vh;
+  min-height: 800px;
+}
+
+.plat {
+  background: white;
+  margin: 2rem;
+  padding: 2rem;
 }
