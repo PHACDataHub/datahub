@@ -1522,3 +1522,107 @@ main {
   font-weight: 100;
 }
 
+#portal {
+  background: white;
+  padding: 3rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#words {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+#words span {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -3px;
+  line-height: 4rem;
+}
+
+#ports {
+  width: 40%;
+  background: #bad1ff;
+  padding: 1rem;
+}
+
+#ports p {
+  color: #101ad4;
+  font-size: 1.5rem;
+}
+
+.one { color: #535cfa;}
+.two {color: #101ad4}
+
+.hex-button-lite {
+  background: url(images/hex.svg) no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+
+.portal-hex {
+  fill: white;
+}
+
+.hex-b {
+  position: relative;
+  width: 30%;
+  display: inline-block;
+}
+
+.hex-b h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  line-height: 1rem;
+  text-transform: uppercase;
+  font-size: 1.0rem;
+  margin: auto;
+  width: 80%;
+}
+
+.hex-b svg {
+  height: auto;
+  display: block;
+  width: auto;
+  filter: drop-shadow( 4px 6px 0 #535cfa);
+}
+
+.hex-b:hover svg {
+  filter: drop-shadow( 2px 3px 0 #535cfa);
+}
+
+.hex-b:hover {
+  margin: 3px -2px -3px 2px;
+}
+
+#buttoons {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#landing .header {
+  height: 7.25vh;
+  min-height: 70px;
+}
+
+#landing h1.phac {
+  font-size: calc(2rem + 2vh);
+  line-height: calc(2rem + 2vh);
+}
