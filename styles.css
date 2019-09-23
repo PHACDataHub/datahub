@@ -1643,6 +1643,7 @@ main {
 .doc-embed {
   height: 60vh;
   min-height: 800px;
+  margin: 0 5%;
 }
 
 .plat {
