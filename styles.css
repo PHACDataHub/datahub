@@ -1641,9 +1641,9 @@ main {
 }
 
 .doc-embed {
-  height: 60vh;
+  height: 2500px;
   min-height: 800px;
-  margin: 0 5%;
+  margin: 0 0 0 2rem;
 }
 
 .plat {
