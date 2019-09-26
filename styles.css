@@ -1553,6 +1553,9 @@ main {
   line-height: calc(2rem + 2vw);
 }
 
+#landing h1.phac {
+  font-size: calc(2rem + 2vh);
+}
 
 #landing-buttons {
   display: flex;
