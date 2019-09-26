@@ -1592,6 +1592,8 @@ main {
 .one { color: #535cfa;}
 .two {color: #101ad4}
 
+
+/*
 #landing .header {
   height: 7.25vh;
   min-height: 70px;
@@ -1604,7 +1606,7 @@ main {
 
 #landing main {
   min-height: 79vh;
-}
+}*/
 
 .doc-embed {
   height: 2500px;
