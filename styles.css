@@ -1618,11 +1618,11 @@ main {
 }
 
 .vis {
-  height: 26rem;
-  width: 18rem;
-  background: #535cfa;
+  height: 31.38rem;
+  width: 25.02rem;
+  background: url(images/landing-vis.png) no-repeat;
+  background-size: 100%;
   padding: 3rem;
-  opacity: 0.3;
 }
 
 #gosomewhere {
