@@ -1633,4 +1633,10 @@ main {
 #landing main {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+#animation iframe {
+  display: flex;
+  margin: 2rem auto;
 }
