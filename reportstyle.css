@@ -1,0 +1,45 @@
+html {
+    font-size: calc(0.5em + 0.5vw);
+}
+
+body {
+    background: #111;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+}
+
+main {
+    background: #161616;
+    width: 700px;
+    height: 100%;
+    padding: 2rem;
+}
+
+main p, main ul {
+    max-width: 72ch
+}
+
+#frontmatter h1 {
+    font-size: 2.6rem;
+    color: white;
+    margin: 2rem 0 0 0;
+    line-height: 200%;
+}
+
+#frontmatter h2 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: normal;
+    margin: 0 0 1rem 0;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    color: #ffffffcc
+}
