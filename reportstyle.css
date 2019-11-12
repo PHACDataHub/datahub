@@ -1,10 +1,10 @@
 html {
-    font-size: calc(0.5em + 0.5vw);
+    font-size: calc(0.7em + 0.5vw);
 }
 
 body {
-    background: #111;
-    color: #f1f1f1;
+    background: #fafafa;
+    color: #222;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     display: flex;
@@ -12,34 +12,161 @@ body {
     line-height: 1.5rem;
 }
 
-main {
-    background: #161616;
-    width: 700px;
-    height: 100%;
-    padding: 2rem;
+nav {
+    background: #222;
+    flex: 0 0 8%;
+    padding: 4vw;
 }
 
-main p, main ul {
+p {
+    margin: 2rem 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+}
+
+nav ul {
+    position: fixed;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #535cfa;
+}
+
+main {
+    background: #fff;
+    flex: 2 0 70%;
+    height: 100%;
+    align-items: flex-start;
+}
+
+main p, main ul, main ol {
     max-width: 72ch
 }
 
+#frontmatter {
+    background: linear-gradient(130deg, #535cfa, #7A52FC);
+    padding: 14vh 4vw 0 4vw;
+    min-height: 86vh;
+}
+
+@media only screen and (min-height: 1100px) {
+    #frontmatter {
+        min-height: 0;
+        padding: 14vh 4vw;
+    }
+  }
+
 #frontmatter h1 {
     font-size: 2.6rem;
-    color: white;
-    margin: 2rem 0 0 0;
-    line-height: 200%;
+    color: #222;
+    margin: 0;
+    line-height: 100%;
 }
 
 #frontmatter h2 {
     font-size: 1.2rem;
-    color: white;
+    color: #222;
     font-weight: normal;
     margin: 0 0 1rem 0;
+}
+
+#bodymatter {
+    padding: 0;
 }
 
 h1 {
     font-size: 1rem;
     font-weight: bold;
     margin: 2rem 0;
-    color: #ffffffcc
+    color: #222;
+}
+
+.chart {
+    max-width: 72ch;
+    background: white;
+}
+
+.fleximg {
+    max-width: 70vw;
+    max-height: 60vh;
+}
+
+#ID-overview-sparkline {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sparkAnalytic {
+    flex: 0 0 15%;
+    margin: 1% 1% 1% 0;
+    padding: 1%;
+    font-size: 0.8rem;
+    background: #fff;
+    color: #333;
+}
+
+.sparkAnalytic:last-child {
+    border-right: 0;
+}
+
+.sparkchart {
+    position: relative;
+}
+
+
+.horizontal-3 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 0;
+}
+
+.horizontal-3 li {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    margin-right: 4.5%;
+}
+
+.horizontal-3 .head {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background: red;
+    margin-bottom: 4.5%;
+}
+
+
+
+.horizontal-3 span {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(130deg, #535cfa, #7A52FC);
+    color: white;
+}
+
+.sec {
+    padding: 4vw;
+}
+
+.dark {
+    background: #333;
+    color: white;
+}
+
+.dark h1 {
+    color: white;
 }
