@@ -45,9 +45,11 @@ a:hover {
 
 main {
     background: #fff;
-    flex: 2 0 70%;
+    width: 86vw;
     height: 100%;
     align-items: flex-start;
+    margin-left: 16vw;
+    overflow-x: hidden;
 }
 
 main p, main ul, main ol, main h1, main h2, main h3 {
@@ -87,14 +89,14 @@ main p, main ul, main ol, main h1, main h2, main h3 {
     padding: 0;
 }
 
-h1 {
+main h1 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 2rem 0;
     color: #222;
 }
 
-h2 {
+main h2 {
 
     font-size: 1rem;
     font-weight: bold;
@@ -209,22 +211,53 @@ h3 {
 
 nav {
     background: #222;
-    flex: 0 0 8%;
-    padding: 0 4vw;
+    position: fixed;
+    height: 100vh;
+    width: 16vw;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul {
-    position: fixed;
+nav > ul {
     padding-top: 14vh;
+}
+
+nav li li {
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
 }
 
 nav li {
     list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
 }
 
 nav a, nav a:visited {
     color: white;
     text-decoration: none;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav h1#chap2 {
+    margin-top: 1.5rem;
 }
 
 .hex-button {

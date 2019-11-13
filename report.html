@@ -6,55 +6,59 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="https://raw.github.com/kellym/smartquotesjs/master/dist/smartquotes.js"></script>
     <script>smartquotes();</script>
-    <script type="text/javascript" src="scripts/charts.js"></script>
+    <!-- <script type="text/javascript" src="scripts/charts.js"></script> -->
     <script src="https://kit.fontawesome.com/0ed02152b5.js" crossorigin="anonymous"></script>
+    <link class="local" rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link class="local" rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link class="local" rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link class="local" rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link class="local" rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link class="local" rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link class="local" rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link class="local" rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link class="local" rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link class="local" rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link class="local" rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link class="local" rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link class="local" rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+
+    <!-- Hotjar Tracking Code for https://phacdatahub.github.io/datahub/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1570507,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
 </head>
 <body>
     <nav>
         <ul>
+            <li><h1 id="chap1">Chapter One</h1></li>
             <li><a href="#Introduction">Introduction</a></li>
             <li><a href="#Overview">Overview</a></li>
+            <li>
+                <ul>
+                    <li><a href="Traffic">Traffic</a></li>
+                    <li><a href="Audience">Audience</a></li>
+                </ul>
+            </li>
             <li><a href="#Engagement">Engagement</a></li>
             <li><a href="#Conclusion">Conclusion</a></li>
-
-            <!--
             <li>
-                <a class="hex-button" href="#">
-
-                    <div class="hex-container">
-                        <svg viewBox="0 0 300 300">
-                            <polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
-                        </svg>
-                    </div>
-
-                    <span class="button-title">Introduction</span>
-                </a>
+                <ul>
+                    <li><a href="Recommendations">Recommendations</a></li>
+                    <li><a href="#">something</a></li>
+                    <li><a href="#">something2</a></li>
+                </ul>
             </li>
-            <li>
-                <a class="hex-button" href="#">
-
-                    <div class="hex-container">
-                        <svg viewBox="0 0 300 300">
-                            <polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
-                        </svg>
-                    </div>
-
-                    <span class="button-title">Traffic Overview</span>
-                </a>
-            </li>
-            <li>
-                <a class="hex-button" href="#">
-
-                    <div class="hex-container">
-                        <svg viewBox="0 0 300 300">
-                            <polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon>
-                        </svg>
-                    </div>   
-                        
-                    <span class="button-title">Engagement</span>
-                </a>
-            </li>
-        -->
+            <li><h1 id="chap2">Chapter Two</h1></li>
+            <li>(forthcoming)</li>
         </ul>
     </nav>
     <main>
@@ -67,7 +71,7 @@
             
             <div id="introduction" class="light sec">
             
-                <a name="Introduction"><h1>Introduction</h1></a
+                <a name="Introduction"><h1>Introduction</h1></a>
 
                 <p>The Data Strategy was the largest project undertaken by the Data Hub. We set out to make something <i>unlike a document</i>, ambitious in its design and content. We learned a lot.</p>
 
@@ -2516,29 +2520,63 @@
 
                 <p>We started collecting data on September 2nd. Since then we've seen <b>596 new users</b>, representing roughly <b>22% of the total staff at PHAC</b>. We don't know for sure how many of those users were 'truly' unique. There could be duplication from users who used different devices, but also a lack of data from browsers that block tracking scripts. This is a rough count of a small sample size, so put away your graphing calculators: we aren't going to be doing any regression analyses here.</p>
 
-                <p>Instead lets's look at the patterns and spikes in traffic.</p>
+                <p>For now let's look at the patterns and spikes in traffic.</p>
+
+                <script>
+                    google.charts.load('current', {'packages':['corechart']});
+
+
+                    google.charts.setOnLoadCallback(drawChart);
+                    google.charts.setOnLoadCallback(engageChart);
+                    
+                    function drawChart() {
+                    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1CHgW64Or3VF5mGeNV6Uv2xsnOJ7gMkEsMs0ekVddyUY/edit?usp=sharing');
+                    query.send(handleQueryResponse);
+                    }
+
+                    function handleQueryResponse(response) {
+
+                    // Set chart options
+                    var options = {'title':'Users per day',
+                    'width':'100%',
+                    'height':'300',
+                    'backgroundColor': 'transparent',
+                    'fontSize': '17'
+                    };             
+
+                    var data = response.getDataTable();
+                    var chart = new google.visualization.LineChart(document.getElementById('trafficChart'));
+                    chart.draw(data, options);
+                    }                
+                </script>
 
                 <div class="chart" id="trafficChart"></div>
 
                 <p>In the chart above you can see that traffic spiked on several occasions. There are a few observations we can draw from this traffic data:</p>
 
-                <ol>
-                    <li>Traffic did not grow steadily. This is to be expected when most visitors are new. In our case only 26% of visitors returned. This isn't particularly surprising: for most people, once they've seen the data strategy they have no reason to go back.</li>
-                    <li>Traffic spiked on days when we ran announcements in the Broadcast News thingy. This <i>could</i> tell us something about the effectiveness of Broadcast News, but we don't have anything to compare it to.</li>
-                    <li>If you look closely, you can see that almost nobody looked at the data strategy on the weekend. Nobody wants to read about data strategies on the weekend.</li>
-                </ol>
+                <h3>1. Traffic did not grow steadily</h3>
+                
+                <p>This is because only 26% of visitors returned, which just means that people aren't coming back to read the data strategy every day. This may not be a problem: perhaps an introduction to the data strategy is enough to inspire confidence and innovation throughout the organization. I do, however, think that we had the opportunity to create some reference-style materials that might encourage users to bookmark the page and return. I will get to that in the recommendations at the end of this chapter.</p>
+
+                <h3>2. Traffic spiked on days when we ran announcements in the Broadcast News thingy</h3>
+
+                <p>This <i>could</i> tell us something about the effectiveness of Broadcast News, but we don't have anything to compare it to. As you will see in the next section, there were limited means by which we could draw traffic to the GCpedia page.</p>
+
+                <h3>3. Data strategies are for 9-5</h3>
+
+                <p>If you look closely, you can see that our poor lonely website was alone almost every weekend and holiday. Maybe that's because people don't want to read data strategies on their time off, but even if they did this would require booting up the 'ol PHAC-issued Fujitsu, signing into the VPN, finding the link in the Broadcast News email, and waiting the full 12 seconds it takes for GCpedia to load the page. I'm going to talk about GCpedia more below, but we can already see how these barriers tend to filter out casual web traffic.</p>
 
                 <h2>Audience</h2>
 
-                <p>At first glance the data don't tell us very much about our audience. We already know that our audience was restricted to those who have access to GCpedia. This is unique because it means that users weren't being brought in by search engines or external links. Furthermore, as a platform, GCpedia doesn't generate traffic. Instead, users were brought in by the aforementioned Broadcast News announcements, as well as our kickass guerrilla marketing campaign.</p>
+                <p>At first glance Google Analytics doesn't say much about our audience. We already know that our audience was restricted to those who have access to GCpedia. This is unique because it means that users weren't being brought in by search engines or external links. Internal websites discourage sharing on public forums like social media, so these organic methods of attracting an audience were reduced. Furthermore, as a platform, GCpedia doesn't generate traffic. Instead, users were brought in by the aforementioned Broadcast News announcements, as well as our kickass guerrilla marketing campaign.</p>
 
-                <p>What we can see, however, is the peculiar way in which users access internal government websites. Specifically, we see <b>a disproportionate number of our visitors used Internet Explorer</b>.</p>
+                <p>So we don't have anything interesting to learn about how we acquired an audience. What we <i>can</i> see, however, is the peculiar way in which users access internal government websites. Specifically, we see <b>a disproportionate number of our visitors using Internet Explorer</b>.</p>
 
                 <p>This is interesting because IE is an outdated and risky browser. Globally most users (<a href="https://gs.statcounter.com/browser-market-share/desktop/worldwide/#monthly-200901-201807">all but 5%</a>) have moved to other browsers, while our website saw 51% using IE.</p>
 
                 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTAR8ctgd4Hu_iKYDhgxo3vDAqoMuLVNZsLwUx5kQgD39wF6r7wQ9UiMHYbOknZm9_flr7K8FWVLorN/pubchart?oid=806820273&amp;format=interactive"></iframe>
 
-                <p>This isn't surprising. Although Microsoft replaced and ended support for IE in 2015, most PHAC-issued computers use IE by default. Moreover, even though many PHAC employees have moved over to Chrome, I suspect that the average PHAC employee assumes that IE should be used for all internal websites. After all, IE is the only browser that will open many internal web-based applications (lookin' at you, Phoenix).</p>
+                <p>I know this isn't blowing your mind. Although Microsoft replaced and ended support for IE in 2015, most PHAC-issued computers use IE by default. Moreover, even though many PHAC employees have moved over to Chrome, I suspect that the average PHAC employee assumes that IE should be used for all internal websites. After all, IE is the only browser that will open many internal web-based applications (lookin' at you, Phoenix).</p>
 
                 <p>Still, the disproportionate number of people using this outdated browser puts a number on how out of date we are. The last time IE held above 50% of the global share of web browsers was 2010. I wonder if by creating internal websites we are contributing to the sustained use of outdated and insecure technology. At the very least it falls well short of our duty to be innovative.</p>
 
@@ -2548,7 +2586,7 @@
 
                 <a name="Engagement"><h1>Engagement</h1></a>
 
-                <p>Next let's start narrowing in on how people engaged with the strategy website. To get a sense of user engagement Google Analytics measures <strong>'sessions'</strong>, which are the duration of time in which a user interacted with the website before going idle.</p>
+                <p>Next let's start narrowing in on how people engaged with the strategy website. To get a sense of user engagement Google Analytics measures <strong>'sessions'</strong>, which are the duration of time in which a user interacted with the website before going idle for 30 minutes.</p>
 
                 <p>Attracting user attention is extremely difficult. One study showed that <a href="https://www.tandfonline.com/doi/abs/10.1080/01449290500330448">websites have less than 50 milliseconds to capture a user's attention</a>. </p>
 
@@ -3018,9 +3056,7 @@
                     </div>
                 </div>
 
-
-
-                <p>Highly interactive websites - like social media applications that involve a lot of scrolling, liking, sharing, and posting - often boast average session lengths between 2 to 9 minutes. In our case, Google Analytics measured 1,319 <strong>sessions averaging 1 minute and 9 seconds</strong>.</p>
+                <p>Highly interactive websites - like social media applications that involve a lot of scrolling, liking, sharing, and posting - often boast average session lengths between 2 to 9 minutes. In our case, Google Analytics measured 1,319 <strong>sessions averaging 1 minute and 9 seconds</strong>. The average s</p>
 
                 <p>This tells us that we didn't make a particularly interactive website, but it doesn't necessarily mean that people never actually engaged with the text.</p>
 
@@ -3033,13 +3069,15 @@
 
                 <iframe alt="a chart showing the sessions and pageviews for different durations of time." width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQVPGWad09kovWso7dnghqHodo7FUYuI7WwvSjdYFe0ueUEwXrSPnKxMm8eBCf6oCcKmVQkNNSjyqt/pubchart?oid=1626528620&amp;format=interactive"></iframe>
                 
-                <p>In the table above you can see that session durations weren't evenly distributed. The average was frontloaded, with 65% of sessions lasting less than 10 seconds. When you consider that almost 30% of users returned for multiple sessions, 3 groups of users emerge:</p>
+                <p>In the table above you can see that session durations weren't evenly distributed. The average was frontloaded, with 65% of sessions lasting less than 10 seconds. It's also interesting to note that Chrome users averaged significantly longer session durations (3:14) compared to IE users (1:34).</p>
+                <p> When you consider that almost 30% of users returned for multiple sessions, 3 groups of users emerge:</p>
                 <ol>
                     <li>Users who were instantly engaged.</li>
                     <li>Users who returned to engage with the content later.</li>
                     <li>Users who arrived at the page but never returned.</li>
                 </ol>
 
+                <p>If we want to increase engagement numbers then we're going to have to look deeper at these 3 groups of users. Stay tuned for chapter two!</p>
                 
             
             </div>
@@ -3050,7 +3088,7 @@
 
                 <p>Looking forward, many key aspects of our mandate involve delivering innovative digital services, projects, and general web communications. </p>
                 
-                <p>Although we drew over 500 people to the data strategy website, <b>less than half of these users engaged in sessions lasting longer than 2 minutes</b>. There are three ways to improve this metric:</p>    
+                <p>Although we attracted over 500 people to the data strategy website, <b>less than half of these users engaged in sessions lasting longer than 2 minutes</b>. There are three ways to improve this metric:</p>    
                 
                 <ul class="horizontal-3">
                     <li><div class="head"><span><i class="fas fa-users-cog fa-3x"></i></span></div><h3>
