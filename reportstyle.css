@@ -1,5 +1,5 @@
 html {
-    font-size: calc(0.7em + 0.5vw);
+    font-size: calc(0.7em + 0.4vw + 0.2vh);
 }
 
 body {
@@ -12,15 +12,11 @@ body {
     line-height: 1.5rem;
 }
 
-nav {
-    background: #222;
-    flex: 0 0 8%;
-    padding: 4vw;
-}
-
 p {
     margin: 2rem 0;
 }
+
+
 
 ul {
     margin: 0;
@@ -31,16 +27,20 @@ li {
     text-decoration: none;
 }
 
-nav ul {
-    position: fixed;
+a, a:visited {
+    color: #535cfa
 }
 
-nav li {
-    list-style: none;
+a:hover {
+    color: black;
 }
 
-nav a {
-    color: #535cfa;
+.dark a:hover {
+    color: white;
+}
+
+.source {
+    font-size: 0.8rem;
 }
 
 main {
@@ -50,7 +50,7 @@ main {
     align-items: flex-start;
 }
 
-main p, main ul, main ol {
+main p, main ul, main ol, main h1, main h2, main h3 {
     max-width: 72ch
 }
 
@@ -79,6 +79,8 @@ main p, main ul, main ol {
     color: #222;
     font-weight: normal;
     margin: 0 0 1rem 0;
+    border: 0;
+    padding: 0;
 }
 
 #bodymatter {
@@ -86,14 +88,47 @@ main p, main ul, main ol {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 2rem 0;
     color: #222;
 }
 
+h2 {
+
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    color: #222;
+    border-top: 1px solid #00000088;
+    padding-top: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #222;
+}
+
+.dark h3 {
+    color: white;
+}
+
+.dark h1, .dark h2 {
+    color: white;
+    border-color: #ffffff88;
+}
+
+
+.light .chart {
+    background: #333;
+    color: white;
+}
+
 .chart {
-    max-width: 72ch;
+    max-width: 66vw;
+}
+
+.dark .chart {
     background: white;
 }
 
@@ -105,10 +140,11 @@ h1 {
 #ID-overview-sparkline {
     display: flex;
     flex-flow: row wrap;
+    max-width: 72ch;
 }
 
 .sparkAnalytic {
-    flex: 0 0 15%;
+    flex: 0 0 30%;
     margin: 1% 1% 1% 0;
     padding: 1%;
     font-size: 0.8rem;
@@ -124,6 +160,9 @@ h1 {
     position: relative;
 }
 
+._GAGu {
+    font-weight: bold;
+}
 
 .horizontal-3 {
     display: flex;
@@ -167,6 +206,69 @@ h1 {
     color: white;
 }
 
-.dark h1 {
+
+nav {
+    background: #222;
+    flex: 0 0 8%;
+    padding: 0 4vw;
+}
+
+nav ul {
+    position: fixed;
+    padding-top: 14vh;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a, nav a:visited {
     color: white;
+    text-decoration: none;
+}
+
+.hex-button {
+	position:relative;
+    display: flex;
+    text-decoration: none;
+}
+
+.hex-button:hover {
+    cursor:pointer;
+  }
+
+.hex {
+	stroke: #ffffff;
+	stroke-width: 5px;
+	stroke-miterlimit:10;
+	-webkit-transition: fill 500ms, stroke-width 250ms; /* For Safari 3.1 to 6.0 */
+	transition: fill 500ms, stroke-width 250ms;
+}
+
+.hex-container {
+    flex: 1 0 20%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.hex-button svg {
+    fill: transparent;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+
+}
+
+.button-title {
+    flex: 2 0 75%;
+}
+
+.hex-button:hover .hex, .hex-button:focus .hex {
+	fill: #fff;
+	stroke-width: 10px;
 }

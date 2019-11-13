@@ -14,7 +14,7 @@ function handleQueryResponse(response) {
   // Set chart options
   var options = {'title':'Users per day',
   'width':'100%',
-  'height':'20rem',
+  'height':'300',
   'backgroundColor': 'transparent',
   'fontSize': '17'
 };             
