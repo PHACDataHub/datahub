@@ -4,9 +4,13 @@
     <link class="local" rel="stylesheet" href="reportstyle.css">
     <title>Birth of a Data Strategy</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/kellym/smartquotesjs/master/dist/smartquotes.js"></script>
+    <script type="text/javascript" src="scripts/smartquotes.js"></script>
     <script>smartquotes();</script>
-    <!-- <script type="text/javascript" src="scripts/charts.js"></script> -->
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/report.js"></script>
+
+
     <script src="https://kit.fontawesome.com/0ed02152b5.js" crossorigin="anonymous"></script>
     <link class="local" rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 	<link class="local" rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -21,7 +25,6 @@
 	<link class="local" rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link class="local" rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
 	<link class="local" rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-
 
     <!-- Hotjar Tracking Code for https://phacdatahub.github.io/datahub/ -->
     <script>
@@ -52,20 +55,26 @@
             <li><a href="#Conclusion">Conclusion</a></li>
             <li>
                 <ul>
-                    <li><a href="Recommendations">Recommendations</a></li>
-                    <li><a href="#">something</a></li>
-                    <li><a href="#">something2</a></li>
+                    <li><a href="#Recommendations">Recommendations</a></li>
                 </ul>
             </li>
             <li><h1 id="chap2">Chapter Two</h1></li>
             <li>(forthcoming)</li>
         </ul>
     </nav>
+
+
+
     <main>
         <div id="frontmatter">
-                <a name="Birth of a Data Strategy"><h1>Birth of a Data Strategy</h1></a>
-                <h2>Chapter One: Website Analytics</h2>
-                <img class="fleximg" src="images/iterations.gif" alt="gif shows how the data strategy website design improved over several iterations." />
+
+            <div id="hexheader">
+                <svg class="hex-item" viewBox="0 0 300 300" ><polygon class="hex" points="150,300 280,225 280,75 150,0 20,75 20,225"></polygon></svg>
+            </div>
+
+            <a name="Birth of a Data Strategy"><h1>Birth of a Data Strategy</h1></a>
+            <h2>Chapter One: Website Analytics</h2>
+            <img class="fleximg" src="images/iterations.gif" alt="gif shows how the data strategy website design improved over several iterations." />
         </div>
         <div id="bodymatter">
             
@@ -2527,7 +2536,6 @@
 
 
                     google.charts.setOnLoadCallback(drawChart);
-                    google.charts.setOnLoadCallback(engageChart);
                     
                     function drawChart() {
                     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1CHgW64Or3VF5mGeNV6Uv2xsnOJ7gMkEsMs0ekVddyUY/edit?usp=sharing');
@@ -2587,8 +2595,6 @@
                 <a name="Engagement"><h1>Engagement</h1></a>
 
                 <p>Next let's start narrowing in on how people engaged with the strategy website. To get a sense of user engagement Google Analytics measures <strong>'sessions'</strong>, which are the duration of time in which a user interacted with the website before going idle for 30 minutes.</p>
-
-                <p>Attracting user attention is extremely difficult. One study showed that <a href="https://www.tandfonline.com/doi/abs/10.1080/01449290500330448">websites have less than 50 milliseconds to capture a user's attention</a>. </p>
 
                 <div id="chart" data-highcharts-chart="0">
                     <h3>Most popular mobile social networking apps in the United States as of June 2019, by average session duration (in minutes)</h3>
@@ -3084,11 +3090,52 @@
 
             <div class="dark sec" id="conclusion">
 
-                <a name="Conclusion"><h1>Conclusion & Recommendations</h1></a>
+                <a name="Conclusion"><h1>Conclusion</h1></a>
 
-                <p>Looking forward, many key aspects of our mandate involve delivering innovative digital services, projects, and general web communications. </p>
+                <p>Looking forward, many key aspects of our mandate involve delivering innovative digital services, projects, and general web communications. This chapter gave us a look at some of the quantitative metrics that will help guide those future projects. We also saw some hints at the user experience lessons that we will uncover in the next chapter.</p>
+
+                <h2 name="Recommendations">Recommendations</h2>
+
+                <h3>Community Building</h3>
                 
-                <p>Although we attracted over 500 people to the data strategy website, <b>less than half of these users engaged in sessions lasting longer than 2 minutes</b>. There are three ways to improve this metric:</p>    
+                <p>We learned that only 26% of users returned for a second visit. This may not be a concern, after all most people don't need to look at a data strategy every day.</p>
+
+                <p>Then again, there are always opportunities to make useful things that encourage return visits. If we want to improve user retention, we need to give them something they'll want to bookmark and use later. The UK Policy Lab, for example, includes an "<a href="https://www.gov.uk/guidance/open-policy-making-toolkit">Open Policy Making Toolkit</a>" on their website. Because they are providing something useful, I have returned to the website many times, and here I am linking to it in this report, expanding their audience.</p>
+
+                <p>This is about asking the right 'user research questions'. The data strategy website served a purpose, but did it add value to its users? Did it address a user need? Maybe somewhere in the midst of our long-term planning and culture-shifting we need to check to make sure we are also making practical things for our users.</p>
+
+                <p>Going forward we have a lot of opportunities to provide resources for PHAC employees, from data inventories to data science toolkits. We can use these resources to help build an audience and ultimately a stronger and more innovative public health community. Here's what I recommend:</p>
+
+                <ul class="horizontal-3">
+                    <li><div class="head"><span><i class="fas fa-tachometer-alt fa-3x"></i></span></div>
+                        <h3>Conduct user testing earlier in the design process</h3>
+                        This will help inform design decisions based on user feedback.
+                    </li>
+                    <li><div class="head"><span><i class="fas fa-users-cog fa-3x"></i></span></div>
+                        <h3>Work and prototype in the open</h3>
+                        Working in public will build an audience organically and keep people engaged (maybe even on weekends).
+                    </li>
+                    <li><div class="head"><span><i class="fas fa-globe-americas fa-3x"></i></span></div>
+                        <h3>Ask good user research questions</h3>
+                        This will help us understand what people really need, and how to build practical tools that keep them engaged.
+                    </li>
+                </ul>
+
+                <h3>Inspiring confidence</h3>
+
+                <p>In our engagement section we identified three different groups of users:</p>
+
+                <ol>
+                    <li>Those who were instantly engaged.</li>
+                    <li>Those who returned to engage with the content later.</li>
+                    <li>Those who arrived at the page but never returned.</li>
+                </ol>
+
+                <p>I'm going to use these groups in the next chapter to help us understand the user experience. For now, the recommendations I'm providing are aimed at the third (and largest) group. Although we attracted over 500 people to the data strategy website, <b>less than half of these users engaged in sessions lasting longer than 2 minutes</b>.</p> 
+                
+                <p>In general, this occurs when websites fail to make good first impressions. Some research has shown that it takes as little as <a href="https://www.tandfonline.com/doi/abs/10.1080/01449290500330448">50 milliseconds for users to form opinions about the visual appeal of a website</a>. Similarly, Amazon famously found that <a href="https://www.gigaspaces.com/blog/amazon-found-every-100ms-of-latency-cost-them-1-in-sales/">for every 100ms of latency they lost 1% in sales</a>.</p>
+
+                <p>If we want to improve our engagement metrics, then we need to inspire confidence. Here are two recommendations:</p>
                 
                 <ul class="horizontal-3">
                     <li><div class="head"><span><i class="fas fa-users-cog fa-3x"></i></span></div><h3>
@@ -3096,17 +3143,15 @@
                     </h3>This involves conducting user testing earlier in the design process and allowing it to inform the entire project.</li>
                     <li><div class="head"><span><i class="fas fa-tachometer-alt fa-3x"></i></span></div><h3>
                         Improving page load times
-                    </h3>Latency causes people to lose confidence in the content. I recommend moving away from GCpedia, which added an average of 9 seconds of latency to the page.</li>
-                    <li><div class="head"><span><i class="fas fa-globe-americas fa-3x"></i></span></div><h3>
-                        Capturing a larger audience
-                    </h3>An external website will invite weekend and after-hour sessions, access by mobile, and access to a larger audience.</li>
+                    </h3>Latency causes people to lose confidence in the content. I recommend moving away from GCpedia, which added an average of 9 seconds of latency to the page. This will also help grow our audience.</li>
                 </ul>
 
             </div>
 
         </div>
-
-
     </main>
+    
+
+
 </body>
 </html>

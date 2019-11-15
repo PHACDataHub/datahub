@@ -45,7 +45,7 @@ a:hover {
 
 main {
     background: #fff;
-    width: 86vw;
+    width: 84vw;
     height: 100%;
     align-items: flex-start;
     margin-left: 16vw;
@@ -60,6 +60,7 @@ main p, main ul, main ol, main h1, main h2, main h3 {
     background: linear-gradient(130deg, #535cfa, #7A52FC);
     padding: 14vh 4vw 0 4vw;
     min-height: 86vh;
+    position: relative;
 }
 
 @media only screen and (min-height: 1100px) {
@@ -201,6 +202,7 @@ h3 {
 
 .sec {
     padding: 4vw;
+    position: relative;
 }
 
 .dark {
@@ -208,6 +210,9 @@ h3 {
     color: white;
 }
 
+:root {
+    --opacity: 0;
+}
 
 nav {
     background: #222;
@@ -222,6 +227,9 @@ nav {
 
 nav > ul {
     padding-top: 14vh;
+    opacity: var(--opacity);
+	-webkit-transition: opacity  500ms ease-in-out; /* For Safari 3.1 to 6.0 */
+    transition: opacity  500ms ease-in-out;
 }
 
 nav li li {
@@ -246,6 +254,7 @@ nav a, nav a:visited {
 
 nav a:hover {
     text-decoration: underline;
+    color: white;
 }
 
 nav h1 {
@@ -260,48 +269,55 @@ nav h1#chap2 {
     margin-top: 1.5rem;
 }
 
-.hex-button {
-	position:relative;
-    display: flex;
-    text-decoration: none;
+#hexheader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 84vw;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
 }
 
-.hex-button:hover {
-    cursor:pointer;
-  }
-
-.hex {
-	stroke: #ffffff;
-	stroke-width: 5px;
-	stroke-miterlimit:10;
-	-webkit-transition: fill 500ms, stroke-width 250ms; /* For Safari 3.1 to 6.0 */
-	transition: fill 500ms, stroke-width 250ms;
+/* set the default transition time */
+:root {
+    --left: 20%; 
+    --top: 20%;
+    --width: 20%;
 }
 
-.hex-container {
-    flex: 1 0 20%;
-    margin-right: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-}
-
-.hex-button svg {
+#hexheader .hex-item {
+    opacity: 1;
     fill: transparent;
     position: absolute;
-    left: 0;
-    top: 10%;
-    width: 80%;
-    height: 80%;
+    z-index:-1;
+	-webkit-transition: transform  10s ease-in-out; /* For Safari 3.1 to 6.0 */
+    transition: transform  10s ease-in-out;
+    will-change: transform;
+    mix-blend-mode: color-dodge;
 
+    
+    width: var(--width);
+    left: var(--left);
+    top: var(--top);
+
+    display: none;
 }
 
-.button-title {
-    flex: 2 0 75%;
+.hex {
+	-webkit-transition: fill 500ms, stroke-width 250ms; /* For Safari 3.1 to 6.0 */
+    transition: fill 500ms, stroke-width 250ms;
+    fill: #535cfa;
 }
 
-.hex-button:hover .hex, .hex-button:focus .hex {
-	fill: #fff;
-	stroke-width: 10px;
+#frontmatter > *:not(#hexheader) {
+    z-index: 2;
+    position: relative;
 }
+
+.hex{
+    fill: #7A52FC;
+}
+
+.hex-item:nth-child(odd) .hex {fill: #535cfa;}
+
